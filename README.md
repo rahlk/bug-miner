@@ -1,7 +1,7 @@
 # Bug Miner
 
-![](https://cdn3.iconfinder.com/data/icons/seo-outline-1/512/25_code_program_programming_develop_bug_search_developer-512.png)
 
+![image](https://user-images.githubusercontent.com/1433964/32741979-0369b01a-c876-11e7-8ae4-c4811e9b6dc3.png)
 A software bug miner for mining defects in code.
 
 # Support
