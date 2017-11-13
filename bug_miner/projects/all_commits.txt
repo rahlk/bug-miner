@@ -1,0 +1,69 @@
+2017-11-13 13:28:22 -0500___c018348___Autocommit
+.DS_Store
+.vscode/tags
+bug_miner/.DS_Store
+bug_miner/Utils/DataUtil.py
+bug_miner/Utils/FileUtils.py
+bug_miner/Utils/MetricsUtil.py
+bug_miner/Utils/__init__.py
+bug_miner/__init__.py
+bug_miner/projects/.DS_Store
+bug_miner/projects/__init__.py
+bug_miner/projects/ant_tags.csv
+bug_miner/projects/jars/.DS_Store
+bug_miner/projects/jars/ant/.DS_Store
+bug_miner/projects/jars/ant/ant-1.1.jar
+bug_miner/projects/jars/ant/ant-1.10.0.jar
+bug_miner/projects/jars/ant/ant-1.10.1.jar
+bug_miner/projects/jars/ant/ant-1.2.jar
+bug_miner/projects/jars/ant/ant-1.3.jar
+bug_miner/projects/jars/ant/ant-1.4.jar
+bug_miner/projects/jars/ant/ant-1.5.1.jar
+bug_miner/projects/jars/ant/ant-1.5.2.jar
+bug_miner/projects/jars/ant/ant-1.5.3.jar
+bug_miner/projects/jars/ant/ant-1.5.4.jar
+bug_miner/projects/jars/ant/ant-1.5.jar
+bug_miner/projects/jars/ant/ant-1.6.0.jar
+bug_miner/projects/jars/ant/ant-1.6.1.jar
+bug_miner/projects/jars/ant/ant-1.6.2.jar
+bug_miner/projects/jars/ant/ant-1.6.3.jar
+bug_miner/projects/jars/ant/ant-1.6.4.jar
+bug_miner/projects/jars/ant/ant-1.6.5.jar
+bug_miner/projects/jars/ant/ant-1.7.0.jar
+bug_miner/projects/jars/ant/ant-1.7.1.jar
+bug_miner/projects/jars/ant/ant-1.8.0.jar
+bug_miner/projects/jars/ant/ant-1.8.1.jar
+bug_miner/projects/jars/ant/ant-1.8.2.jar
+bug_miner/projects/jars/ant/ant-1.8.3.jar
+bug_miner/projects/jars/ant/ant-1.8.4.jar
+bug_miner/projects/jars/ant/ant-1.9.0.jar
+bug_miner/projects/jars/ant/ant-1.9.1.jar
+bug_miner/projects/jars/ant/ant-1.9.2.jar
+bug_miner/projects/jars/ant/ant-1.9.3.jar
+bug_miner/projects/jars/ant/ant-1.9.4.jar
+bug_miner/projects/jars/ant/ant-1.9.5.jar
+bug_miner/projects/jars/ant/ant-1.9.6.jar
+bug_miner/projects/jars/ant/ant-1.9.7.jar
+bug_miner/projects/jars/ant/ant-1.9.8.jar
+bug_miner/projects/jars/ant/ant-1.9.9.jar
+bug_miner/projects/raw/.DS_Store
+bug_miner/projects/raw/ant
+bug_miner/projects/raw/ant_tags.csv
+bug_miner/projects/raw/get_jars.sh
+bug_miner/tools/ckjm.jar
+main.py
+
+2017-11-13 13:25:10 -0500___ef86e18___Update README.md
+README.md
+
+2017-11-13 13:24:58 -0500___9c78cdb___Update README.md
+README.md
+
+2017-11-13 13:02:04 -0500___9d7ae91___Update README.md
+README.md
+
+2017-11-13 13:01:01 -0500___8c086a8___Update README.md
+README.md
+
+2017-11-12 15:18:12 -0500___f3c193e___Create README.md
+README.md

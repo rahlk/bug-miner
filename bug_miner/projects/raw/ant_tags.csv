@@ -1,75 +1,32 @@
-%aD h \t  (tag: rel/1.10.1, tag: ANT_1.10.1_RC1)
-%aD h \t  (tag: rel/1.9.9, tag: ANT_199_RC1)
-%aD h \t  (tag: rel/1.10.0, tag: ANT_1.10.0_RC1)
-%aD h \t  (tag: rel/1.9.8, tag: ANT_198_RC1)
-%aD h \t  (tag: rel/1.9.7, tag: ANT_197_RC1)
-%aD h \t  (tag: rel/1.9.6, tag: ANT_196_RC1, tag: ANT_196)
-%aD h \t  (tag: rel/1.9.5, tag: ANT_195_RC1, tag: ANT_195)
-%aD h \t  (tag: rel/1.9.4, tag: ANT_194)
-%aD h \t  (tag: rel/1.9.3, tag: ANT_193)
-%aD h \t  (tag: rel/1.9.2, tag: ANT_192)
-%aD h \t  (tag: rel/1.9.1, tag: ANT_191)
-%aD h \t  (tag: rel/1.9.0, tag: ANT_190)
-%aD h \t  (tag: rel/1.8.4, tag: ANT_184)
-%aD h \t  (tag: rel/1.8.3, tag: ANT_183)
-%aD h \t  (tag: rel/1.8.2, tag: ANT_182)
-%aD h \t  (tag: rel/1.8.1, tag: ANT_181)
-%aD h \t  (tag: rel/1.8.0, tag: ANT_180)
-%aD h \t  (tag: ANT_180_RC1)
-%aD h \t  (tag: rel/1.7.1, tag: ANT_171)
-%aD h \t  (tag: ANT_170_B1)
-%aD h \t  (tag: ANT_171_B1)
-%aD h \t  (tag: rel/1.7.0, tag: ANT_170)
-%aD h \t  (tag: ANT_170_RC1)
-%aD h \t  (tag: ANT_170_B3)
-%aD h \t  (tag: ANT_170_B2)
-%aD h \t  (tag: rel/1.6.5, tag: ANT_165)
-%aD h \t  (tag: rel/1.6.4, tag: ANT_164)
-%aD h \t  (tag: rel/1.6.3, tag: ANT_163)
-%aD h \t  (tag: ANT_163_B1)
-%aD h \t  (tag: rel/1.6.2, tag: ANT_162)
-%aD h \t  (tag: ANT_162_B1)
-%aD h \t  (tag: rel/1.6.1, tag: ANT_161)
-%aD h \t  (tag: ANT_161_B1)
-%aD h \t  (tag: rel/1.6.0, tag: ANT_160)
-%aD h \t  (tag: ANT_16_B3)
-%aD h \t  (tag: ANT_16_B2)
-%aD h \t  (tag: ANT_16_B1)
-%aD h \t  (tag: rel/1.5.4, tag: ANT_154)
-%aD h \t  (tag: rel/1.5.3, tag: ANT_153)
-%aD h \t  (tag: rel/1.5.2, tag: ANT_152_FINAL)
-%aD h \t  (tag: ANT_152_B1)
-%aD h \t  (tag: rel/1.5.1, tag: ANT_151_FINAL)
-%aD h \t  (tag: ANT_151_B1)
-%aD h \t  (tag: ANT_MAIN_15FINAL)
-%aD h \t  (tag: rel/1.5, tag: ANT_15_FINAL)
-%aD h \t  (tag: ANT_15_RC1)
-%aD h \t  (tag: ANT_MAIN_15B3)
-%aD h \t  (tag: ANT_15_B3)
-%aD h \t  (tag: ANT_MAIN_15B2)
-%aD h \t  (tag: ANT_15_B2)
-%aD h \t  (tag: temp)
-%aD h \t  (tag: ANT_15_B1)
-%aD h \t  (tag: MYRMIDON_PRE_CONF_MUNGE)
-%aD h \t  (tag: ANT_141)
-%aD h \t  (tag: ANT_141_B1)
-%aD h \t  (tag: rel/1.4, tag: ANT_14)
-%aD h \t  (tag: ANT_MAIN_14)
-%aD h \t  (tag: ANT_DOCS_PRE_14)
-%aD h \t  (tag: ANT_14_B2)
-%aD h \t  (tag: ANT_MAIN_14B2)
-%aD h \t  (tag: ANT_14_B1)
-%aD h \t  (tag: rel/1.3, tag: ANT_13)
-%aD h \t  (tag: ANT_13_B3)
-%aD h \t  (tag: ANT_MAIN_13_MERGE4)
-%aD h \t  (tag: ANT_13_MAIN_MERGE4)
-%aD h \t  (tag: ANT_13_B2)
-%aD h \t  (tag: ANT_MAIN_13_MERGE1)
-%aD h \t  (tag: ANT_13_B1)
-%aD h \t  (tag: rel/1.2, tag: ANT_12)
-%aD h \t  (HEAD, tag: rel/1.1, tag: ANT_11)
-%aD h \t  (tag: TOMCAT_31_FINAL)
-%aD h \t  (tag: TOMCAT_31_RC1)
-%aD h \t  (tag: TOMCAT_31_BETA1)
-%aD h \t  (tag: TOMCAT_31_M1)
-%aD h \t  (tag: TOMCAT_31_M1_RC1)
+2017-02-02 20:01:49  e003f5e0c  1.10.1
+2016-12-25 18:45:20  0e20ef34f  1.9.8
+2016-04-09 08:35:34  cecbf5c6b  1.9.7
+2015-06-29 06:28:45  b09976c3d  1.9.6
+2015-05-31 15:25:02  ea7bf2858  1.9.5
+2014-04-30 03:03:47  1c927b15a  1.9.4
+2013-12-23 14:56:20  281db9e21  1.9.3
+2013-07-08 16:49:23  4225ec6b4  1.9.2
+2013-05-16 02:44:40  c2b4e32ba  1.9.1
+2013-03-06 04:20:43  b47c505fa  1.9.0
+2012-05-22 04:16:50  7105ec785  1.8.4
+2012-02-25 19:19:07  25f34e9d0  1.8.3
+2010-12-20 18:59:29  cd4c13a2a  1.8.2
+2010-05-01 03:41:05  511c99567  1.8.1
+2010-02-02 00:49:23  7d104a8e4  1.8.0
+2009-01-15 11:20:14  ac9312e5a  1.7.1
+2007-10-29 17:30:35  6bfe7759b  1.7.0
+2005-06-02 13:03:52  a8730e5fe  1.6.5
+2005-05-19 12:29:28  fd1c5a944  1.6.4
+2005-04-28 13:12:32  e124660c8  1.6.3
+2004-07-16 07:37:11  873e0bf34  1.6.2
+2004-02-12 12:39:00  026aec5fe  1.6.1
+2003-12-18 12:46:41  95b3cf06f  1.6.0
+2003-08-11 06:09:51  2f25bfb11  1.5.4
+2003-04-08 14:17:04  c4fd3ec17  1.5.3
+2003-02-28 15:19:59  9e0288a83  1.5.2
+2002-10-02 14:48:48  cb3bc5fa5  1.5.1
+2002-07-09 15:05:30  6a58fc065  1.5
+2001-09-03 09:40:05  17edf5261  1.4
+2001-03-01 11:53:58  71d035b07  1.3
+2000-10-24 08:45:24  311a5f7cc  1.2
+2000-07-18 07:50:21  5b11971b9  1.1
