@@ -1,0 +1,649 @@
+Hash,Message
+ad82fe67b,javadoc
+4afd11bb1,discussion on junit triggered me to look at this task; fix some things the IDE warned about on localisation.
+a4bf99606,"new test tasks, not declared yet -so they dont exist-"
+7da916d5b,make it impossible to have a null notify value
+7b13653ce,read the javadocs on wait(long) to see why this change was made
+c6a53a5c6,"no, I'm  rolling this back. Let's wait and see what the tests I'm running at work on something similar say."
+422d55a33,defect 38732; rmic task doesn't work with -Xnew and JDK 6.0
+c4176305c,test changes to handle windows systems better
+fbd52b803,test changes to handle windows systems better
+d5b6bc898,fmting
+7be8dec56,Bug ID 43780: weblogic RMIC fails on ant1.7.0
+bbcd8aea0,default access precedent for testcase access
+a2b40eac3,checkstyle
+02bc80db7,some javadoc
+081e60cec,ws
+e9d1a3170,add failing test for BZ 43799
+771dd6772,BZ 43799 / touch sees e.g. empty fs as unspecified args
+14b1d1862,oops; introduced NPE
+06dfd6ef5,43799
+315c00f5d,Add sponsorship program links
+c8fac18c2,re-generate site
+b955593f7,"fix some ""serialVersionUID"" warnings"
+3ff20b066,use static methods in a static way
+85189970a,Remove use of deprecated constructor calls: Reference(String) and Reference()
+92e4570d8,- remove some unused (internal) variables - remove unused imports
+487cc320d,-use StringUtils
+8d1843b59,-output for windows test
+3b9dfc6b0,-make encoding tests pass on windows
+6b642c8f5,"-use astext=""true"" so the test passes"
+d1b86f00e,some javadoc
+4a73a85b7,-comment WLrmic tests
+fe29f53a0,-correct setCreateFile to use provided flag
+021957cc5,Add missing license headers
+f45212cbe,Add missing license headers
+0bde74aa3,"Add pointer to MakeRunScript, submitted by Dan Kaplan"
+23bbf0857,pulling out unneeded this. references in everything but the constructors
+75110026a,pulling out unneeded this. references in everything but the constructors/initialisers. No other changes.
+f47e4095c,Bug 43936: <fixcrlf> errors are unhelpful
+393f5d34f,bit of tuning
+9f31cffbb,43936: <fixcrlf> errors are unhelpful
+00c53aef1,"Bugzilla Bug 43624 symlink task failonerror=""false"" does not stop build from failing when 'ln' command returns non-zero"
+5d43aad1c,description style
+9d0c47e4d,FIX: on windows the css is not included (wrong path was calculated)
+6195b6330,add new list
+9ffa86dfb,"Example as discussed on user@ant >>Select ""marked"" directories<<"
+3ca7e297f,Missing space between clauses.
+e8331272b,add xavier PGP key
+47de006e0,Fix error in the examples.
+301743a48,"remove eyebrowse in favor of mod_mbox, add MarkMail"
+a261de08b,"<tar> examples: - tar: tarfile is deprecated since 1.5 - gzip:ipfile is not deprecated, but use of common name - fix attribute names (Bug 44082)"
+e8339a490,ups ...
+dbc91d42e,Update Ivy links
+ad6b39a62,* update javadoc * remove double blanks
+94dd480d0,"request from cactus team, backward incompatible change in FileUtils made backward compatible"
+46bf9d8c8,improved lay-out + add since ant 1.7.1 instead of 1.8
+16901b97d,1. move idldepend 2. kill some broken links on the external page (my own)
+0d89047e6,Found some information about <sound> in my local storage which should be in the manual.
+437d53cbd,BugID 44240 factor out classpath support from JavaResource  into an Abstract resource
+0b551678f,bug 44241 add JavaConstantResource to read string constants.
+525ae6c4c,Bug# 44242 Add <funtest> task for functional testing
+cb4cbd528,- spelling - a sentence was incomplete (missing additional docs?)
+787e7cf94,mention toString:
+1e8f7ef1f,BugID 44239: Add ability of resource classes to act as factories for relative resources
+4a55178c1,add info on ivy-user list
+65c7209b8,re-generate site
+63c9a29e5,remove duped index attr
+6352c4ac1,checkstyle
+57c3643ac,Helper class for checking task configurations.
+ad88bbb8e,Examples for * <union> <intersect> <difference> * resource selectors
+f1dea0d36,Make code following the documentation.
+1017c8530,tweak
+b4ba0ddba,<style> is deprecated in favor of <xslt>
+a1e34e70c,-just testing netbeans
+86b59ef90,"fix part of Cactus problems with the refactored JUnit task of 1.7.0: create the ""delegate"" as needed instead of in execute()"
+5fbd70b8a,-bugzilla #44198
+92ae184d3,"track JUnit change in WHATSNEW, bump copyright year, add some Javadocs to new JUnit methods"
+4848c4503,re-gen site
+6e72d89be,Bug 42275 running ant off a network share can cause Ant to fail
+82372e064,"bz 44493 <sql> task cannot differentiate between ""no resources specified"" and ""no resources found"""
+f715dc614,error in example
+4978e3324,skip scripty AntUnit tests if BSF/javax.script are not there
+82d7b730e,Test failed on Windows since the file has never been created (and thus never had the wrong case)
+cd65163dc,excess blank caused test failure
+96582825b,"Ensure the line-ends match the platforms expectation in UTF-16 case.  I can't seem to find a way that svn will accept UTF-16 and native eol-style, so I fall back to the trusted fixcrlf."
+efcb32ddf,"add ""testcase"" for bug 44323"
+7ea420955,"normalize build file name. In essence, turn relative file names given on the command line into absolute ones.  Submitted by: Justin Vallon.  PR: 44323"
+37353d212,"Record Justin Vallon, who provided the patch for issue 44323, as contributor"
+496b59d0a,merge license additions from 1.7 branch (i.e. revs 637870 to 637914)
+c36b3e794,fix for bugzilla 44630 - error expansion of properties in docs dir
+76d35d045,add some missing depends
+ea09feb05,some of the antunit tests depend on code in antunit-1.1 trunk
+ded146c2d,comment out the junit collector code (I cannot figure out how to make it work)
+3a0ea500b,Do not make system be the default location - it is too dangerous - noone reads manuals!
+69819ee3c,Remove jython.jar from list of downloaded jars jython2.1.jar contains an old copy of oro [There does not seem to be a way in fetch.xml to  specify the exact version number of the downloaded jars]
+281e28004,javamail is now in a maven repository (http://vafer.org/blog/20060504000836)
+5cc488df3,add a compiled version of stylebook to allow ant to be compiled
+2832a90d2,"Opps, I must have compiled this with > javac5"
+b4769e1c2,"up the jdk version to 1.3, and add a note about ant's jdk requirements for older versions of ant (bugzilla 44610)"
+c8254a23e,fix unit test
+1cb20ea69,fix for 43799: ManifestClassPath cannot traverse system root
+811a4f50d,update release instructions
+561706f38,Bugzilla 44689: NPE with multiple targets and id's in task
+7546276d2,Adding test case and further note for #42263 w.r.t. ${ant.core.lib} propagation.
+e464463a0,the path doesn't look that way on Unix
+59475a0bf,Add Jasper in order to test <jspc>
+6248c7599,"JSPC test doesn't seem to work with Jasper 4.1, requires servlet-api as well."
+1a2cd2b11,At least on Windows I can't seem to get jspc to work with either version.  Use 4.1 for now at wait until I get to my Linux box.
+68ecc9207,bump a few versions
+30f053c4b,fix JspcTest by making the test file well-formed again
+5ee25fec6,"Xalan seems to require explicit encoding specifications when including files, should fix XsltTest and TraxLiaisonTest"
+2ee4e322a,Redirect formatter output to out directory so it can get removed in cleanup target
+6cd793232,test case for bugzilla 44731 - index out of bounds in globmapper
+ee2509159,bugzilla 44731: index out of bound in globmapper (due to overlap)
+521890b42,bugzilla 44731: index out of bound in globmapper (due to overlap)
+8542d84b4,Try to get more information from test failure in Gump
+b229582ff,whitespace changes only
+b1e478fd6,disable FailureRecorder test when running JUnit4
+c4155d7da,Add information about DBPatch antlib in sandbox
+30a591dfb,Clearify the matching-rule
+d0cf7ed1e,-spelling
+3ec2b738a,"Some links to JavaDoc API (Doclet, Taglet)"
+3f26f9a75,make ant.project.name a magic property
+792a2f16f,Add a new property to hold the current project's default target
+fa52b460c,Add a magic property that lists the targets that have been specified in order to run the current project.  Based on patch by Colm Smyth (just like rev663051 was).  PR 44980
+13c659aeb,-getDocumentElement instead of getFirstChild().getNextSibling()
+21e315ab6,moved
+7d77f6e9f,add some useful diagnostics messages when sftp fails.
+613f1f333,extra diags when expand and untar fail
+d30dab715,Add JsDoc
+e2ec616a3,re-generate site
+921491863,"fisheye URL changed.  PR 45161, Submitted by Andrew Stevens"
+9ff170cb8,"Add link to JDeb, submitted by Emmanuel Bourg"
+30c1ed6f8,regenerate site
+9e13d731c,"Use FileUtils, should fix PR 45190"
+09e0f524e,"Re-order, don't even enter the try block if there is nothing to do"
+d3c9ac9bf,whitespace changes
+c00d3f670,forgot to track the fixed issue 45190
+65b09851f,scale back synchronization
+ebff9b41e,revert broken stuff
+97e0129bf,constant
+95d238748,unused
+f4f447049,oops
+b9a590f78,unused
+1a82a29cb,helper method
+f2b07b0ac,version
+00829ad00,[43348] Use FileProvider interface
+538af2f04,extract ContentTransformingResource from CompressedResource
+e03db7484,remove synchronization in addReference since getReferences hands out an un-synchronized table anyway
+ea41c72f7,"finer grained synchronization of current Thread task handling, only lock the threads table but do so consistently"
+a65cadb43,Add a separate lock for the BuildListener collection
+a05aca8a7,Add a test that fails if we allow a logger to recursively log messages
+a7e2a93ee,Remove synchronization around logging of messages in order to avoid potential deadlock - see PR 45194
+018b7a9de,whitespace changes
+bd0ca5c9e,One more File.toURL case
+d8ae5c5bd,assign final variable initialized only once
+983f0dbc1,fix NPE when running inside a container that puts non-String values inside the system properties
+5676d56ee,FileProvider changes
+66adfb896,bugzilla [45271]; process nonexistent resources with length mode=each
+298b10ada,45271 comment
+61cdb478b,clarify in case people expect directories to be empty just because they don't contain any matched files
+4bc4228b3,sp
+f4b28f1de,fix bug I introduced
+88ba87259,simplify
+a89f19ddb,ws
+eb12bd93a,add Project to FileResourceIterator
+8d46e8fa1,ws
+93c43205f,polish
+d85f74bd3,sp
+446f9ff33,add subclass hook
+83f7a5425,trivial
+2756fee00,tearDown
+56897ab43,"change URL of Doxygen task, submitted by Karthik Kumar"
+ba6d6347c,add an example of a unix function implemented with \<tokens\>
+e986c5b9d,add fscache to sandbox antlibs
+f3f0de4ef,unbreak bugzilla
+191412479,propertyhelper stab
+c48bdcbc8,remove executable flag.  Cygwin's svn client?
+8e97288f9,Add my public key
+fb97da874,remove executable flag
+a5cc97a7d,remove executable flag
+0137cd8b6,ws/sp
+835a8f0cc,type any
+9f64412c0,disable ErrorInCase check on osx
+f4e07bbce,Merge revision 672098 from 1.7.1 tag - i.e. announce the release
+4d9062069,Announce release here as well
+f4f4546aa,some days I don't even know the current year
+40adcf2e2,update with new things learned during the 1.7.1 release
+02b3a7d13,sql's onerror='stop' shouldn't make the task fail.  PR 24668.  Based on a patch by Dante Briones.
+f401fa3ab,"ejbjar has a manifest attribute, PR 25003."
+9d992c668,clean up previous state when building multiple ejbjars in Borlands Appserver.  PR 26921.  Submitted by David leRoy.
+d8ce03fe1,properly deal with multiple arguments to java2iioparams.  PR 27444.
+6644eb5bb,properly detect MacOS X when running inside OpenJDK.  Bugzilla Issue 44889
+165e9f5dd,"More cases whete includeJavaRuntime=""false"" may fail for gcj.  PR 34638."
+c5bd07a9d,mark shell scripts as Unix line-ends explicitly
+b84036427,mark shell scripts as Unix line-ends explicitly
+535d3552c,document disagreement of differentIP implementations when it comes to timestamps
+72e471f0b,Allow subclasses to modify the connection and statement instances used by <sql> or to access the cached instances.  PR 27178.  Submitted by Mike Davis
+543148ca1,fix resultset und update count logic in sql.  PRs 32168 and 36265.
+d6bde1c2c,Avoid NPE if database doesn't match expected vendor
+435c6e551,document null return value
+352396620,Allow ant to continue even if <sql> fails to connect to the database.  PR 36712.
+e1f227ae3,work on PR 26459 - in progress (fighting with the tests and my environment)
+e7b3093e3,allow a more lenient matching mode when searching for delimiters in <sql>
+1a8500873,new showWarnings attribute that makes <sql> display SQLWarnings - if any.  PR 41836
+eaffd9d71,allow SQLWarnings to stop <sql>.  PR 41836.
+a3570b87f,table ended too soon ;)
+f110a5fb7,XmlLogger could lose messages when parallel is used.  PR 25734.  Based on analysis and patch by Craig Sandvik
+b1a5b4989,since; ws
+df2f921cd,threadsafety warning
+93af3c50d,add local properties; bugzilla 23942
+a3ac41924,add loadproperties tests; bugzilla 45372
+d17c520e7,remove erroneous text
+7e387dfc1,doc/test global locals
+b10218728,type any
+f97926a10,Allow more control over CSV output.  PR 35627.
+c9913e80f,log where ftp is going to
+d2c31ad39,log where directories get created
+a0e5b158c,allow ftp remote verification to be disabled.  PR 35471.  Suggested by Viacheslav Garmash.
+b92950795,stronger warning that timeout in ssh and telnet use different units.  PR 23991
+a52db0621,command line password is not always better than hard coded
+41373655c,better pointer for local properties
+d796e53fe,Add input to sshexec.  PR 39197.  Based on patch by Robert Anderson.
+13bc6453f,Add preservelastmodified to scp.  PR 33939.  Based on patch by Sandra Metz.
+9ffa99a02,fail with a meaningful error of remoteDir is not parseable.  PR 42770.  Submitted by Scott Johnson
+fd126ea83,"Create remoteDir if needed, More meaningful error when exception occurs.  PR 42781.  Submitted by Eduard Wirch."
+e56206c3c,New task sshsession.  PR 43083.  Submitted by David S. Johnson
+795504806,Use the same warning in all three documents about ssh authentication.  PR 43941.
+b16652b45,feed Deflater smaller chunks because it seems to copy around the data a lot.  PR 45396.
+26c330800,note working directory for forked compilers.  PR 30542.
+74163482c,(failing) AntUnit test for bug 30542
+9c616cacd,more on relative paths to executables
+bda4fe61b,note on string trimming for length task
+69d85ab03,propertyHelper info
+59c41d005,resources/fileproviders
+f1edf20a8,resources/fileproviders
+ae13bd879,note on string trimming for length task
+4716be40f,convenience constructor
+f58770686,"<echo> supports an ""output"" Resource attribute as an alternative to ""file""."
+37820a501,"<sql> ""output"" attribute now supports any Resource in addition to a file."
+7f344fbc1,since
+996b7048d,tweak docs
+c51d1ce61,More sanity in CBZip2*Stream if the streams are empty.  PR 32200. Submitted by Kevin Jackson.
+efbd99c9a,Don't rely on Java verifier when checking for JavaMail in mail task.  PR 31969.  Submitted by Kev Jackson.
+fb1e6a07e,use configured local DTDs in Iplanet deployment tool.  PR 31876.  Submitted by Daniel Henrique.
+7d8e56b37,SSH keyfiles can be password-less.  PR 33718.
+7ecb89e1d,Swallow stacktrace of timeout exception.  PR 32853.
+80e8b2977,an archive with an empty central directory is broken.  PR 35000.  Submitted by Thomas Aglassinger.
+4a1038e34,an empty central directory is fine for an empty archive
+549fc1f68,don't trust permissions read from anotherIP file blindly.  PR 42122.
+dd8cab177,typo
+e7e99f061,more explicit existence chacks in unzip/tar.  PR 44843
+7d174c342,"Made up my mind on the fix for PR 35000.  Empty != broken, so make it two separate use cases."
+0bb2e45e7,add testcase for PR 34764
+5019b99eb,New attribute allows stripping of leading path spec from files before extracting them.  PR 28911.
+730b66951,avoid excessive StringBuffer.toString calls while waiting for a response string.  PR 34464.  Based on patch by Adam Blinkinsop.
+3acc6012b,wrong version on the cover page
+53cdbd10e,some notes on running Ant as a background process.  PR 34461.
+c1142173a,new attribute allowNativeBasedir for <ant>.  Not yet documented.  Not yet complete (doesn't work when basedir is a user or inherited property).  Work in progress.  Needed for PR 30569.
+bbdc2558a,whitespace
+c247c7b57,Noting that NetBeans 6.5 bundles Ant 1.7.1.
+b13399b45,Fixing some broken links.
+fdc28daf8,javadoc spelling
+59785f30c,junit.jar is available in the source tree; might as well compile against it.
+f1c3a91b6,guard against null Blob
+023bd5dc7,spelling error.  PR 45477.  Submitted by Peter Hecht
+59b0b7634,re-generate site
+d5c411399,there are no nightly builds
+bc502f637,re-gen site
+9b4b922d2,fail early ifipFile is applied to a non-ZIP archive.  PR 45463.  Suggested by Alison Winters.
+834973f38,make sentence understandable.  PR 45300.
+105c2b80c,make sure JAVA_HOME and ANT_HOME are set before passing them to cygpath.  PR 45245.
+e4b8fc0bd,document fix for PR 45245.
+7dc2ce522,Test for PR 45227.
+5c2fb2713,clarify timeout attribute.  PR 35877
+934e6f4de,add a FAQ about Java requirements od Ant.  PR 44610.
+a3e9c2a63,Better error reporting in case a corruptIP file is on the classpath. Formerly would show aipException stack trace but give no indication of which file was responsible. (Of course it would be better ifipFile.open itself included the file path in the detail message!) Cf.: http://www.netbeans.org/nonav/issues/show_bug.cgi?id=142733
+3f609f977,"explicitly guard against nul values, mark to and from attributes as required.  PR 44790."
+22f2e929e,whitespace
+d8b918468,Make JUnit's output less confusing when a forked VM running more than one test is terminated.  PR 45227.
+02e939c26,Add readable and writable selectors.  Addresses PR 45081.
+d814a03e9,support regular expressions in filename and name selectors.  PR 45284.
+6e184be6c,whitespace
+e713682ea,sometimes an infinite recursion of filters is flagged when there is none.  PR 44226.  Submitted by Adam Bryzak.
+695ce2ed1,Enhance performance of Project.fireMessageLoggedEvent (PR 45651)
+1c7138c4d,"fix very unlikely thread safety issue (may occur if PropertyHelperTask is used in a parallel, which would be a strange use case)"
+3d554dec7,untabify
+195c8e773,whitespace
+1b5e862bc,whitespace
+979cf1d7c,whitespace
+4c4ad3483,"Thread safety fix (list of delegates were modified and copied concurrently without common lock).  The hashtable is thread safe and not published outside the class, so no need to copy it (synchronize non atomic modification is enought).  However, the list contained in the delegates hashtable are published and should thus be copied.  I put the copy in the add method so that the getDelegates doesn't need to be synchronized."
+4068d7cd9,Thread safety fix in case a macrodef/presetdef is executed in parallel to other type related tasks (like TypeFound conditions or starting a subproject)
+a9831bdca,Add a new attribute to javadoc to allow URLs for location of offline links.  PR 28881.
+eaf2df67d,whitespave
+8ac94ac4a,Point to Virtual Ant.  PR 41189.
+db76442a8,explain build.sysclasspath only once.  PR 39338
+75899750a,apply patch for #36901 LayoutPreservingProprties (includes tests)
+b03502c20,add Philip Hourihane to contributors for supplying patch for #36901
+e03bfc445,line-ends
+75704aff0,Add license
+0fccd329c,style
+7a1f5b527,typo
+01a000d12,style
+d0e9cd3cc,typo
+1bbf2f16f,"version 2.0 is the Apache License (without ""Software"").  PR 43576."
+02eb1fcc6,add an FAQ entry for PR 34461 and friends
+f54b5d1e2,"oops, stray bell character"
+36bcc18f2,re-generate site
+49324dc8c,testcase for PR 44659
+739c7e224,document backwards compatibility hack in chmod.  PR 41054
+1f06891d0,Enhance performance of DirectoryScanner by parsing the patterns only once.  Introduce a PathPattern to do that. (# 44226)
+724a6a66c,typed into wrong window?
+502a6bcbf,add some final keyword to immutable things
+053240d92,add some final keyword to immutable things
+8aace6872,bad XML in example.  PR 45668.
+cb0f79a19,Add FAQ entry for PR 45370
+10e2efa08,Add some links to bug reports
+254ff1913,re-generate FAQ
+8be0b6387,Make sure JunitTestRunners return code is correct when running under JUnit4.  PR 43892.  Submitted by Brian Curnow.
+71c5e730e,May need special JUnit4 handling if a suite method has been used as well.  PR 43892.
+52d49f84d,inconsistent linefeeds
+ff1c8616d,Add namespace support to echoxml.  Based on patch by Joey Richey.  PR 36804.
+ab5fb066b,Ant disallowed manifest attributes that contained the character 8.  PR 45675.
+b456160d7,Fix possible race condition when modifying/reading restrictedDefinitions
+6aa8785e3,Fix possible raise condition when modifying/reading restrictedDefinitions (missing from previous checkin)
+e73391195,reallyput the value into the map.
+c4ab43e8d,defer self-generated subBuildStarted event until project instance has been configured and basedir has been set.  PR 45607.
+0da84c14a,"BigProjectLogger always fiddled with the basedir, not only if the attribute was absent."
+bd76a2fb3,Don't use a thousands separator at all for minutes.  PR 44659.
+cf16fb5f6,Add test for worst case of elapsed time
+2ef296824,"formatters need to know about VM exits, no matter whether they use a file or not.  PR 37312."
+05bffcf9f,properly clean up test directory
+b550611aa,some additional diagnostics
+bc60284c4,JUnitTestListenerTest removes the out dir and makes JUnitTaskTest fail when run as a nested test.
+94da71c76,"change command line parser so that version is only printed once - and version as well as diagnostics methods know the current loglevel.  The former is PR 45695, the later useful for 45692."
+b7a61200e,Add a special listener that tries to invoke tearDown in a test class that caused a timeout or crashed the forked VM.  PR 37241.
+f70370a70,document the full beauty of how <ant> sets the basedir of the called project - related to PR 30569.
+46520b1e0,"to be honest, there is yet another twist to basedir"
+c2838fbce,"I think this is telling the truth now (modulo allowNativeBasedir), but does anybody understand it?"
+b8a829b11,"make allowNativeBasedir work even when nested, PR 45711.  fixes PR 30569 at the same time."
+0c9bcf218,whitespace
+ab42a6eff,Make copy's protected API backwards compatible to Ant 1.6.5 - PR 45701?
+6a0be3bb1,"Add ""since 1.7.0"" to pattern and format.  PR 45712."
+1bff308e5,Bugzilla 45098: update jar index with no other changes
+284423a5c,Properties aren't necessarily delimited by ${} anymore.
+6af68d214,typo
+246480ed2,allowNativeBasedir -> useNativeBasedir. Document it. PR 45711.
+ec569ea63,close stream so that unit tests can delete the output directory.
+828a869a3,fireTaskFinished delegated to targetFinished
+c1591f1ff,fix lineends
+eb9ac0c38,document <ant>'s behavior when multiple nested <property>s set the same property.  PR 45226.
+129b60dd1,announce AntUnit 1.1 beta
+fd62e2c7b,re-generate site
+59428329a,upgrade AntUnit
+fd5bdd281,typo and the joys of copy/paste
+ea803d1b4,re-generate site
+5a0c835c6,Tests for PR 45411
+e562954f9,ensure TestListenerEvents get labeled even if they span multipl lines.  PR 45411.
+0aa4c77a0,"Refactor tests that use antunit-base so they all use the same output dir and share a common cleanup target, output goes to the temp directory.  Fix some inconsistent line-ends as well."
+04a5b627b,initial tests for dirscanner behavior and symlinks
+8309c2d61,fix syntax
+71caca154,tests for a basedir that is a symlink itself
+af2e4c713,Test for symlink loops
+09c3f9835,fix include pattern to show the behavior
+9b51b4613,add FAQ about deleting a directory only if it is empty.  PR 44013.  submitted by Vincent Legoll
+d4b13dc32,re-generate site
+8ea8f38c2,allow symlink to delete broken links.  Part of PR 41285.
+5348fe6bc,symlink delete now works if the link points to a parent directory as well.  PR 45743.
+5392ebd0d,don't try to re-rename a target that failed to be renamed in the first place.  Related to PR 41525.
+57dd5aeb7,whitespace
+133104905,"fall back to ""rm"" if target cannot be renamed when deleting a symlink"
+472c46251,whitespace and javadocs
+f625d964c,delete broken symbolic links.  PR 41285
+5f3176833,whitespace
+af0fb970a,"don't delete plain files with symlink, must have been broken by my last changes to symlink"
+dfcdd8495,Make test pass on vmgump
+1776e0710,Tests fail in Gump if BSF has been built without JavaScript support.
+35d8c0ef9,remove duplicate code
+4b3e8042b,"deleting something might break old builds, even if it is expected behavior"
+a87871c71,"some style changes, doc fixes (non-wildcard patterns are store upper-case), some minor optimizations and some additional memoization of File.list() that may actually improve performance"
+4248bab8e,make sure the 'correct' error is reported if the directory doesn't exist.  Sync error messages of DirectoryScanner and AbstractFileSet.
+446436982,honor followsymlinks on a fileset's dir as well.  PR 45741.
+1d3ca73f3,don't run into infinite lopps caused by symbolic links.  PR 45499.
+cd517c288,fix tests broken by changed exception message of svn revision 685593
+7830ff460,some more memoization.  try to ballance memory vs i/o costs.
+4c6cba963,extract constant
+917f222ee,whitespace
+e362b3b1f,tiny optimization
+c13dba6d5,"Avoid repeated tokenization, make DefaultExcludesTest happy."
+e438a9bf8,add a fileOnError attribute to <patch>.  PR 44772.  Submitted by Michael Bayne.
+dda05149e,use sigfile attribute when checking whether a jar is already signed.  PR 44805.  Submitted by Clemens Hammacher.
+78f58cb78,allow different <mail> tasks to use different smtp hosts.  PR 37970.
+6a02f4483,"use the configured ProjectHelper to parse antlib descriptors, if possible,  PR 42208."
+a98a49253,minor performace tweaks
+5d1320e99,"split PathPattern into two classes, more behavior will be added later"
+3def9c5ed,spelling
+2b925503d,avoid some tokenization (should really pay of in the next iteration/s) and replace recursion with iteration in findFile/isSymLink - right now we lose memoization of File.list but I'll reintroduce this later.
+2c4faa154,"avoid redundant tokenization. this is almost complete except for non-wildcard include patterns, will take care of them next."
+8b58203e3,avoid redundant tokenization of non-wildcard include patterns as well.
+be9a92866,cleanup
+4ecea70e9,Bring back memoization of File.list
+a2516f47d,performance tests for DirectoryScanner
+acb91faca,replace protected Vectors with a Vector subclass that has constant time access for contains
+75c8d30f5,another test
+80762323e,optional bigger testbed with an order of magnitude more dirs and files.
+4c0eb6ca6,wrong property name
+9b76a8661,remove memoization which measurably (sp?) hurts performance more than it helps
+91d793f24,alternative scan task that uses resourcecount to isolate memory effect of pathconvert (and its result) from scanning
+be09d4522,no need to clone a linked list to iterate through it
+b6aa5cb51,make log more usefull.  PR 45841.
+bc22c6a47,create useable output even if the input is empty.  PR 45836.  Submitted by Tom May.
+d51fbdd73,allow executable of signjar and verifyjat to be configured.  PR 39189.
+15de83a00,properly handle non-standard chars in key alias.  PR 45820.
+2e5eacfa9,increase default for numer of times a symlink may be traversed
+5f55a47e8,whitespace
+7dfa3cac9,Point to the Continuous build
+15be7e5bd,re-generate site
+604e9095d,List all Ant+Ivy CI-builds with more details.
+4d6375103,Clarification + typo
+8acb2b724,Change redirect-XMLNS according to Xalans recommendation on http://xml.apache.org/xalan-j/extensionslib.html#redirect.
+678363493,"Dont require to have Checkstyle on the classpath - use Ivy to get it. Use the ""init-ivy"" target according to Ivy's tutorial. As this is not the main buildfile we could use the external library ivy.jar for help."
+fcd6eb260,Remove code in commented
+de1b90343,remove unneeeded <ivy:cachepath>
+e14dfb1fd,Specify the output directory for XSL:redirect
+6838b5d4c,* two more builds * also list when the builds will start
+e0d63af0c,"only add classpath elements to existing loaders, not to a freshly created one.  PR 45847."
+59f1d6794,don't add the same file more than once.  PR 45848.
+5c86c0350,"two more builtin properties, PR 45850."
+e286bfe17,"Change TeamCity configuration - remove Ant based - addes command line based (Linux, Windows, MacOS) because of problems having double Ant on the classpath while testing."
+940895930,Passing tests for PR 40457
+3d8e3a89d,don't skip the full begin token since it may contain the start of the real begin token.  PR 45094.
+b62e67338,Announce AntUnit 1.1
+16c0b1dba,re-generate site
+ebf25e877,upgrade to AntUnit 1.1 final
+d8922d6d2,deprecate reverse attribute.  PR 45845.
+36786a3b7,make order of compositemapper's results predictable.  PR 44873.
+71e473c94,Improve logging.  PR 45716.
+78ba5f075,Add a firstmatchmapper.  PR 44873.
+0a679803f,Add a maxtime option to <get> to allow it to escape hanging downloads.  PR 45181.
+a4e5c13b8,"Allow selectors for remote filesets in <ftp>.  Submitted by Mario Frasca.  PR 44726.  (unfortunately some whitespace changes slipped in as well, sorry for that)."
+430b0251e,what started as an innocent minor performance improvement of antClassLoader lead to an infinite recursion and thus to a testcase for VectorSet.
+3ccb6172a,"Better maintenance of CI builds - a modell containing just the data, not the HTML - VM templates for generating the HTML"
+4111103e5,Happy copy: the MacOS configuration is not for Linux development ;-)
+96b385b6c,(disabled) tests for PR 45944
+6fdd18707,(disabled) testcase for Bug 45916
+ed9d69e03,make sure <depend> closes JARs.  PR 45955.
+f1d71eaeb,whitespace
+9f30d0550,factor out symlink methods into a separate utils class
+a1d605947,Prepare for introducing Findbugs. Problem: current version (1.3.5) is not in the Maven repositories (as requested).
+0afd94529,don't delete classes if the source is not there.  PR 45916
+11dd4c733,whitespace
+09ada7b0d,"don't trust Vector's implemenation too much.  Tests passed in JDK 1.4.2 but failed on Java 6, now pass on both."
+ad4fad2be,"Because the Findbugs version in the Maven-Repository is very old, change from Ivy-download to simple GET."
+f17374550,Add a new CI-Configuration which runs Findbugs regularly.
+cc3962b0d,"Improve copy documentation,  PR 45944."
+b6f9a1919,re-use a pre-allocated stack.  PR 45960.
+6b265b561,use the same logic as <delete> if deletion of a recently closed file fails on Windows during rename.  PR 45960.
+167630e64,whitespace
+6e3fcad6a,don't swallow original exception.  PR 34633.
+24808c7d4,Move delete method to SymbolicLinkUtils
+054b37deb,disabled tests for interaction of delete and symbolic links
+d8114b36f,Print failing tests.
+8bf76a6d5,"space is not the only whitespace that could show up.  bottom/head are free-form HTML with line breaks, tabs and all that."
+5f81fd801,javadoc fails if bottom/gead contain line breaks.  PR 43342.  Based on patch by Robert Streich.
+db105dffc,make symlink junit test pass on OS X
+e8a1adf6c,small refactorings
+16b8c7f5b,Ant knows Java6 if it sees it
+a06591b7b,Ant 1.7.1 requires Java 1.3+
+a65070051,re-generate site
+7929bf168,Peter says Ant 1.7.0 didn't work with Java 1.2 either.
+c43123e21,re-generate FAQ
+43166e688,Add charset and MIME-Type properties to MailLogger.  PR 27211.
+7eff21c38,<mail>'s auto-encoding-selection was broken.  PR 42389.
+19434df75,"Fix potential NPE in mailers, remove root cause of NPE reported in PR 44009."
+b1b76c9c7,whitespace
+1be216b5d,Allow <mail> to ignore bad recipients.  PR 36446.
+95a79b97f,sync Javadocs with supported properties
+e5e17582b,Allow MailLogger to send a fixed email text.  PR 38029.
+b8e3f831d,"subclasses of AssertionErrors are caused by test failures, not errors.  PR 45028."
+42a0fb556,delay expansion of command line args.  PR 31601.
+c0fab21f2,cvs tasks don't work with arbitrary executables named cvs.exe.  PR 39551.
+8983c83c5,"Support CVSNT in <cvsversion>, submitted by Andy Wood.  PR 31409."
+0140d366b,"Make port attribute work for some ""non-standard"" CVS clients.  submitted by Johann Herunter.  PR 30124."
+2a77a7377,experimental local CVS repository as a testbed for CVS tests
+d302bf911,Make cvsversion work for local repositories as well
+ef94da3c2,allow cvstagdiff to ignore removed files.  Submitted by Rob van Oostrum.  PR 26257.
+068651116,test for PR 38583
+d85c862e9,"support modules with space in their names in <cvs> and <cvschangelog>, will be supported in <cvstagdiff> once PR 35301 is fixed.  PR 38220."
+a1853e277,Make cvstagdiff work properly for multiple modules and modules with spaces in their name.  Open for optimization.  PR 33501.
+70f35e754,optimize handling of package names
+ae202f6ff,allow control over whether <concat> creates a file when there are no resources.  Submitted by Mark Salter.  PR 46010.
+80d45d8db,add remote option to use rlog instead of log to cvschangelog.  Submitted by Rob van Oostrum.  PR 27419.
+548fee43b,support for CVS tags as start/end in cvcchangelog.  Submitted by Rob van Oostrum.  PR 27419.
+19f31ba0f,whitespace
+8ead313e9,properly deal wih multiple modules specified in the package attribute
+6a67c09af,remove .NET tasks
+8aaa00583,"close streams passed in toipFile(InputStream, ...).  PR 42632."
+ceeb5bd1f,BZ 46057
+b35a59d11,don't use copypath
+47fda4e26,Add STARTTLS support to MimeMailer and use it in MailLogger and <mail>.  Part of PR 46063.
+8f488f087,make tasks with add(Foo) method play nice with TaskContainer.  PR 41647.
+28447bc7c,allow TaskContainer and DynamicElement(NS) to coexist.  Hijacked PR 41647 for this.
+491cd1e2d,Make <mail> work for SSL + authentication with javamail 1.4.1.  PR 46063.  Submitted by Craig Richardson
+98caa52a0,turn PR 45499 into a FAQ since there is a workaround.
+99529fd6c,At least try to log the real reason of an error.  PR 26086
+e68ba71a9,test for PR 41464
+05e90275e,ws
+34933b03e,Suppress displaying the stderr prompt for storepass/keypass when we in fact are passing it on stdin.
+ef0fffc8c,use copy not copypath
+aa5f97f70,ws
+18681d7fc,allow custom propertyhelpers to supply a Boolean for Target if/unless as an alternative to specifying a property NAME
+8da250af7,add some examples
+b374c9f8a,move an antunity test
+4dbe4dd92,simplify(?); use constants
+7f3406304,deal with resources without name in <copy>.  PR 39960.
+9a90265a3,additional example
+be90dbd7b,Bug ID 43660: JavaResource returns a null input stream if the resource is missing
+39a7cce3e,Add the classloader in question when we get CNFE problems
+d6cccd3f5,Bug 43348: add awareness of FileProvider toipScanner; lets usip from other places.
+2d183a571,Bug 43348: add awareness of FileProvider to ArchiveFileSet
+aca4b348d,Bug 43348: add awareness of FileProvider to ArchiveScanner
+3ec40a80a,Added key
+40f8fea04,more alarmist warning if launcher jar is missing.  PR 34505.
+6aff19de7,Improve fixcrlf's error messages.  PR 43936.
+afb49574c,Don't use getReference in <isreference> unless really required.  PR 44822.
+ee0fc90c1,make sure log messages to get emmitted twice in double-pass mode.  PR 39426.
+27868015e,whitespace
+789ca1c02,log correct directory when failing to delete it
+640f4f7af,"adding external project ""Antiplate"""
+0823bcba4,trunk requires 1.4 now
+b17f72b88,trunk requires 1.*4* !
+d754a20c3,Take advantage of Java 1.4
+9770fe02f,emulate async I/O when processing output of forked processes in order to deal with the case where a child of the forked process outlives its parent.  PR 5003.  Based on a patch by Adam Sotona.
+03726c31c,whitespaces
+586e5dc6e,additional example
+a6d4ce254,remove some warnings from code that is by now carved into stone
+dcf31da59,add 'as' attribute to <import> in order to control the imported target's prefixes
+4b364736e,deal with nested invokations
+32c6ef39e,add an <import> variant named <include> that matches EasyAnt's <use>
+f7cec58a6,Document Java bug 6442982 : javadoc crashes when finding annotations not on its classpath
+3ae69e82c,add Appendable interface with echo as first supporting task
+1e962d0d6,make concat support dest resources
+02d1bce5d,adapt to Dominique's feedback
+27b0172aa,merge changes from import.html
+6b2378c2e,"Make prefix separator configurable, nest prefixes in include"
+7bca21470,rename input-test which is interactive so it doesn't ge run during automated builds
+5f7fbe8b7,keep track of links that haven't been followed
+ebac98453,add an attribute that allows symbolic links to be deleted without following them.  PR 36658.
+c27376e22,document that <delete dir=...> doesn't play well with symlinks.  PR 45742.
+193919c32,make sure prefix isn't set to project name in import.  make sure it is set even when no target has been encountered in include.
+bee14ad0d,"allow chmod, chgrp, chown and attribute to be used outside of their native environment.  PR 7624"
+c12fc78d6,wrong name of constant
+44c3680f0,"initial, completely non-functional mapped resource.  There must be a better way to support the optional resoucre interfaces!"
+f179a4285,"add an ""as"" method to Resource that allows extensions without actually implementing additional interfaces"
+a22e945b3,use an adapter to use Appendable instead of instanceof checks
+31e1bc069,use adapter for Touchable instead of instanceof checks
+be943a8c9,use adapter for FileProvider instead of instanceof in MappedResource
+392af32d3,better choice of exception
+a82afc852,no reason to implement any of those interfaces
+664647fb6,make it a runtime exception
+6f748504c,"Actually, to make it work, MappedResource must not look like a FileProvider at all"
+9deb19dac,Add mapped resource collection including test for <copy>
+c4b1f65a6,"yes, mapperesources work inside <zip>"
+edb0dd958,use adapter instead of instanceof checks
+d5103ff56,re-instante contract of resourceCompare by throwing ClassCastException for non-FileProviders
+b10fa1121,two more places where Appendable can be used
+99deca2a7,extract a common base class for resource decorators
+0da719e8f,document mappedresources
+ade0b033e,appending may be a bad thing to do for compressed outputs and other subclasses
+2077f6716,"Add target-group, a special target that must be empty and whose dependency list may be extended by other target(-group)s using their (new) target-group attribute"
+08bdfe8f1,allow target-group attribute to use a comma-separated list
+57ee171b1,use antunit-base
+f0c143b6e,add an erroronmissingarchive attribute to tar/zipfileset.  PR 46091.
+435a6330e,"recommend useexternalfile=""true"" as first option to deal with javadoc problems.  PR 41958."
+a68bd2253,remove non-1.4 stuff from javadoc
+f1a903928,Add attributes for javadoc's -docfilessubdirs and -excludedocfilessubdir CLI args.  PR 34455
+6a2312cf4,Example: counting lines in a file
+8d3f3bc35,passing testcase for issue 46285
+57473c182,Initial AntUnit test for xslt
+9cdb30b43,add a test for issue 32461
+bf5fd7938,fail early if stylesheet doesn't exist.  PR 34525.
+58069d347,Try to load TraX factory via configured classpath.  PR 46172
+a0c1be104,add an option to suppress processor warnings.  PR 18897.
+a92061f3c,Add failOnError to xslt.  PR 36260.
+def52dd8a,Add a failOnNoResources attribute to xslt.  PR 46274.
+197f9ee4e,Add support for setting system properties in xslt.  PR 36653.
+aee918fc2,Use FileUtils.close
+df7e805e8,Initial version of a resource collection that extracts archives nested as resources.  PR 46257.
+450b3ce6a,forgotten new files for svn revision 721344
+020546329,some refactoring
+ea007977a,fix link
+027f5c796,Add a few more tests - and fix the bugs found by them.
+e88414ba3,first step of reference-check auditing after I re-understood how things are supposed to work.
+6eb8c15ed,document <archives>.  PR 46257.
+aa373b9f5,simplify
+cbe9978c1,reference-usage audit on all classes that extend DataType directly
+a738000ac,refid-audit of indirect subclasses of DataType
+53db3a260,Add support for Xalan2 Traces.  PR 36670.
+6b043c5c8,tests for PR 45226
+0e91a587d,CVS commit made while investigating PR 24569
+b85b78ce0,don't say a file was modified in the future if it has been modified a second ago.  PR 43665.  Submitted by Kim Hansen.
+bf76cf8d2,make dependset test more regular
+4d9b1cdf1,use meaningful target names
+163e6b921,some assertions on dependset's logging
+190fdaaa1,Add a verbose attribute to dependset.  PR 13681
+875955fe1,Typo.  PR 46335
+1147be293,the teamcity builds are not official
+4a68ab59a,re-generate site
+f630bc5d6,re-factor depend test a little.
+e19934b16,add a few more debug log statements
+1d600fe6d,passing tests for PR 36220
+7171341fc,store remote output in outputproperty even if it fails.  PR 46340.
+1bae2089f,Add resource collection support to replaceregexp.  PR 46341.
+344ac7bcc,test for PR 46341
+ba89626cd,test for PR 43159
+23c2c29cb,Document behavior noted in PR 43159
+fd3ea4903,"Take advantage of JDK 1.4 (and 1.2, actually)"
+6b2e7156f,make <replace> support resource collections.  PR 24062.
+75a677f70,allow token and/or value of replace's replacefilter children to be specified as nested elements.  PR 39568.
+647cd1207,add a preservelastmodified attribute to replace and replaceregexp.  PR 39002.
+e673741d3,optionally expand properties in <replace>'s nested elements.  PR 11585.
+fe67f9560,add a failOnNoReplacements attribute to replace.  PR 21064.
+44f0fda1a,two propertyhelpers useable for Resource-valued attributes
+727dc821b,Resource-enable replacefilterfile and propertyfile attributes f <replace>.  Somewhat related to PR 42702.
+f4bdfee52,allow tokens in replacetokens filter to be read from a resource.  PR 42702
+12d18fd53,test for 42702
+6b888144b,fix since for <globmapper> and friends.  PR 46383.
+f0d6ce37d,fix references to license files.  PR 46390
+89730519e,typo
+4f0c76df8,refactor sync tests in preparation for more changes WRT PR 43159
+b1cc0a4ed,"slowscan has been broken, no idea since when."
+7b84ae34e,"partial implementation of a new preserveemptydirs attribute for sync's preservintarget.  PR 43159.  Unfortunately DirectorScanner.slowScan doesn't work as expected and I'm running out of time before a meeting, so I'm commiting it unfinished."
+cd22c5c17,another sync preserveintarget edge case
+dd72ac08f,Avoid slow scan unless it really is required
+c807cf91c,properly handle non-recursive excludes (breaks one other test because of the same slowscan bug that I'm going to fix later)
+66b7fa5b8,slow-scan was broken for recursive exclude patterns since contentsExcluded was added about four years ago
+10f8a113a,"now that slowScan is fixed, I realized that Sync cannot use it.  Full implementation of PR 43159."
+948e2c6f0,passing unit test for PR 29460
+6cc29239b,make diagnostics check the file it has just written in order to detect full filesystems.  PR 32676.
+e6d58bd9d,Passing test for PR 35634
+aee67d5f1,testcase for PR 36748
+6c29cfdd7,make checksum's totalproperty platform independent.  PR 36748.
+044aff92a,"No, loadfile doesn't overwrite properties.  PR 46440."
+77cc5846c,sleep a little longer during tests
+2f46b6af9,most likely fix PR 46480
+8557fcb14,tiny refactoring.  Allow JUnit task to be less concerned about formatters (right now formatters could close System.out/err unless they guard against it).
+e84c70cd1,"rename test, remove unneeded tasks, add some assertions"
+7d23a63fb,test for PR 46506
+705993f91,don't automatically assume a to pattern contains a * in globmapper.  PR 46506.

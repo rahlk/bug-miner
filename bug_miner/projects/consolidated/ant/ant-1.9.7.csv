@@ -1,0 +1,247 @@
+Hash,Message
+cecbf5c6b,prepare first RC of 1.9.7
+fba0be381,updating Release Instructions - WIP
+94bdfe8e9,document next step
+e7840bd27,typo and whitespace
+55ddb5517,update for our 2-branch model
+763c70ba4,and another place that needs an update for the 1.9.x branch
+ce5d25715,tweaks
+a8a8ba1ee,we can always assume java8+
+bcf801667,can't run apt tests with Java8
+39a534544,remove tests for JDKs < 8
+3c930b932,more obsolete Java version checks
+afdf355c6,"remove apt task, there is no apt tool in java8"
+dcf24136c,typo
+c5e90bead,symlink and executable file selectors
+dc34b252d,looks as if the files are executable by default on Windows?
+bcfcb4d8e,removed anchor by accident
+32bf39369,ownedBy selector
+062ccd01f,fix javadoc for parameter in OwnedBySelector#setOwner
+8e8f4de8f,Merge tag 'ANT_197_RC1' into 1.9.x
+cf2e984d5,Merge branch '1.9.x'
+059d44fac,almost complete release instructions
+d8e3aa781,add cleanup notes
+8767a85c5,Merge branch '1.9.x'
+32e3ed022,a few things will be different for 1.10.0
+abdaa5845,try running the symlink condition tests on windows as well
+03481a6b0,lower-case macro attribute names set via API
+f6e6c20a8,Merge branch '1.9.x'
+97a0b26c7,helper class for dealing with file permissions
+cee2935c7,setpermissions task using NIO rather than platform tools
+c7d9b17b0,user setpermissions rather than chmod
+d96c85ba4,mklink doesn't work on our Jenkins nodes
+75f123740,StringUtils.join: new method
+a80c75af5,Files.setPermission may throw additional exceptions (e.g. on Win7-NTFS)
+434193d08,whitespace
+647bdfb2d,<get>'s quiet attribute is broken
+0c2ca5525,Merge branch '1.9.x'
+5c24a75a7,fix possible race-condition
+fc0b2ab11,Merge branch '1.9.x'
+6ab698cf9,optional callbacks for non-POSIX file systems
+04b9e2bd1,implement DOS-friendly fallback in setpermissions
+24f3afe79,whitespace
+c03b8a506,make StingUtils#join do what its tests expect
+eb4cd6385,and fix the array-based join method as well
+424050061,tabs and linefeeds
+e5d53d3e6,enhance chance of tests passing on Windows
+259684f03,"new test, mainly to debug error on Windows"
+2d21d2667,don't try to set executable permission on Windows
+8e87ef9e6,disable a few tests on Windows
+0edf3ca25,<zip> up-to-date check doesn't work properly on NTFS
+3c37952d6,Merge branch '1.9.x'
+f44dd8255,<setpermission> requires Ant 1.10+. For the (nightly) build it is not that important.
+de5b4058b,must not set file and dir in <fileset>
+73bcc2813,Merge branch '1.9.x'
+440021dbf,Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/ant
+3fe363e21,add compression support to <scp>
+3966616f2,linefeeds
+e982f0195,record fix for 58982 by Dana Dahlstrom
+d5f2b0c0b,Merge branch '1.9.x'
+deaa7d54a,Merge branch 'bug_47552_scp_compression' into 1.9.x
+5c13bb841,Merge branch '1.9.x'
+5669303f2,<setpermissions>: failonerror=false doesnt work in conjunction with nonPosixMode.
+4c903be17,build.xml: undo last change as it doesnt bring the desired result
+381c47c26,interim deactivation of build tools for Nightly Build
+d28974c28,check.xml - update RAT - run checkstyle only if Antlr is not on classpath due problems
+600c69d0a,check.xml: make Simian work again
+82b2e47ba,remove unused throws clauses
+a4381a68e,Merge branch '1.9.x'
+1be6cf50a,remove unused throws clauses
+d840ddb41,check.xml - update Ivy - update Findbugs
+2d86edf69,Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/ant
+fef3ea39f,"fix Bug 59556 - support ""jdk"" package for Java 7+"
+a394a0bdf,record fix for 59556 - closes #19
+9dee500e5,Merge branch '1.9.x'
+31cc48c6f,JDK9 modules support for JUnit by Tomášezula
+5c85c4460,JDK9 modules support for JUnit by Tomášezula
+e22fab961,linefeeds
+49e5b77cf,linefeeds
+e25e82c8a,fix version number
+cec99780f,record JDK9 module support for junit
+a4575c442,record JDK9 module support for junit
+d24dbe78c,add a real test for native2ascii
+270fb2cf3,try to get better error reporting from Jenkins
+0319f8134,built-in implementation of native2ascii
+51bd1cbff,try to make tests pass with default encoding != UTF-8
+4ef2554a5,builtin implementation of ascii2native
+26fd1bfee,Merge branch '1.9.x'
+5518577ed,use Java7 features
+fd61c0af5,make builtin native2ascii implementation the default
+326727692,add a filter for native2ascii
+41d51241c,Merge branch '1.9.x'
+902b38599,java6
+a5f386f1d,"I don't think it's encoding this time, but let's try"
+a10f57e2e,Merge branch '1.9.x'
+7c3db4a63,formatting was broken
+dda54c698,detect Java 9 via jigsaw
+625d3d371,nobody is going to call Java 9 1.9 anymore
+a6d07c624,Merge branch '1.9.x'
+84019606f,master requires Java8
+d21cef3f5,line-ends
+53fed9e4e,old JAVA_1_9 still works as expected
+2bac4d001,we can always assume java5
+fdfebe801,default to forking rmic on JDK 9+
+32f7fdb9b,Merge branch '1.9.x'
+ad8630572,non-GNU sed needs an extra newline character
+46a3af1d1,Merge branch '1.9.x'
+10a563d2c,always > Java 5
+e896e5a8c,remove tests corresponding to last commit
+8d3744ee7,try debugging Jenkins
+e74054fbb,rmic doesn't allow -Xnew on JDK9
+b746f1e7d,Merge branch '1.9.x'
+1f9adc1d5,additional tests for javah
+7ebbdc995,implement a forking implementation for javah
+378fb22e2,Merge branch '1.9.x'
+83bb1217a,typo
+5d6adaef8,use forking javah by default
+98e87c528,document changed javah default
+eb906395f,typos
+ee85859ea,add support for javac -h
+047844b24,Merge branch '1.9.x'
+77fbe3782,fix the patterns used by touch and date selectors
+2df17719c,line-ends
+a62d5f9f2,formatting
+c50b683cf,Merge branch '1.9.x'
+1de4dfa58,<get>'s retries attribute has a misleading name
+0c4f5b1b6,<get>'s retries attribute has a misleading name
+b30a636ed,Merge branch '1.9.x' as I committed 1de4dfa to the wrong branch
+bf3b31ac8,update Xalan
+e290fd743,line-ends
+bdba0f5c1,whitespace
+e345ccf53,refactor test
+9b6f92697,some additional redirect-extension tests
+cac55fbfc,add support for TraX factory features
+7e55fea85,use the undocumented TraX factory feature for extensions
+2cec63f68,allow Ant references to be used for xslt attributes
+703aceddb,Merge branch '1.9.x'
+1d7b62415,don't try reflection when we know it doesn't work
+ffd3d14c5,Merge branch '1.9.x'
+882d21a92,no need to check for Java7 in Ant 1.10.x
+5bbc7b618,JDK9 command line options updated to JEP 293
+8daeb41b0,JDK9 command line options updated to JEP 293
+aa1a234bc,closes #21
+bda488eaf,Fixed forgotten -upgrademodulepath in the DefaultCompilerAdapter.
+3af6fcc32,fix version numbers
+1bc100ff0,Merge branch '1.9.x'
+9bb1b77cd,closes #22
+6ec247850,remove try-with-resources
+e95fe1109,really remove Java7 and Java8 features
+3f552b1e5,"not really merge branch '1.9.x', just record the commits"
+281d91870,Arrays.copyOf is too new for 1.9.x branch
+e843dd287,no real merge of branch '1.9.x'
+ce6843657,fix 60150 values containing backtick or $ character cause shell error on *nix
+26d8c5ff2,fix 60150 values containing backtick or $ character cause shell error on *nix
+af3d90cce,JEP-238: create a MultiVersion-JAR with current possibilities
+6b17b4cf6,simple way of creating a JEP-238 multi release jar
+d37df73a8,register AntClassLoader as parallel capabale
+a3897d4e9,document how to use XSLT extension functions in Java9
+9a0fa3f5d,Merge branch '1.9.x'
+b37d64d02,committed conflict marker
+a50633c17,record fix for https://bz.apache.org/bugzilla/show_bug.cgi?id=60150
+642a050e0,record fix for https://bz.apache.org/bugzilla/show_bug.cgi?id=60150
+c43870d45,Merge branch '1.9.x'
+c2666b199,try to fix https://bz.apache.org/bugzilla/show_bug.cgi?id=59321
+46b13c31c,Merge branch '1.9.x'
+c1bbf2fc0,add support for Java9's javac --release
+96264ffd7,Merge branch '1.9.x'
+173c28f76,fix problems with argument handling of trailing space and sed/echo quirks
+7cad63309,Merge branch '1.9.x'
+8cf0c0bb4,try to fix test errors in Gump build
+b923f8f9f,Merge branch '1.9.x'
+1ac9459a1,multi-release jar test doesn't completely work inside Gump
+c385fc66f,next attempt at fixing Gump build
+fea1cfe23,Merge branch '1.9.x'
+61e1cccf3,latest iteration of Jeff Adamson's script fixes
+d48317a4b,Merge branch '1.9.x'
+0d1928a58,corrected comments
+2dfcbe349,corrected comments
+6d5eb30b4,"closes #26, thanks Jeff!"
+74e57b25b,Bugzilla-60349: add Ivy to fetch.xml
+ceb531572,"Bugzilla-60349: add ivy to fetch ""all"""
+9eef94a6f,Bug 58661: avoid duplicate characters in stack traces
+8925f08be,Bugzilla 58661: record fix by barney2k7
+aa57218c6,Merge branch '1.9.x'
+0619afc83,try configuring SonarQube for Ant
+79b97a0ef,add a build file for sonarqube
+990a664c4,sonar.projectVersion seems to be required when using the Ant task
+ac1b7652d,Sonar false positives for resource leaks
+032e888aa,plug resource leaks detected by Sonar
+c8a72df59,whitespace
+89b267eff,Merge branch '1.9.x'
+851a0b208,try-with-resources
+2bb5b057d,use FileUtils
+197ed22d5,Sonar's idea of Streams is a bit strange
+99deebc03,not sure what Sonar sees here but not a few lines later
+1f045ecb3,Merge branch '1.9.x'
+cb933030d,avoid NPE
+fba969ee6,avoid NPE
+c939c1f3a,Merge branch '1.9.x'
+20026444c,use FileUtils
+7ffc0970d,false positives for exceptions thrown from finally
+6c8b3542f,don't hide original exception by throwing a new one from finally
+451c42444,Merge branch '1.9.x'
+e1f9674ab,false positives for null dereferences
+77c681c5b,fix possible null dereferences
+85ff7bf69,whitespace
+5db9f3401,Merge branch '1.9.x'
+720df700d,we really want those fields to be static ...
+bcc245e99,fields don't need to be static
+0d58df76f,Merge branch '1.9.x'
+23f3c9de3,I disagree with Sonar - moving the assignment make the code worse
+ef80b111c,I disagree with Sonar - moving the assignment make the code worse
+07ce505d5,extract assignment statements
+7b9ca06ea,extract assignment statements
+144fc493a,objects created for side effects only
+eaf3af0ae,Sonar falsely claims expressions to be constant
+64d1056c4,uncover hidden NullPointerException
+db6204470,unnecessary condition
+52c917b19,Merge branch '1.9.x'
+06c42512f,enable Java8 checks
+9d53feac7,false positive for spurious wakeups
+f79b8e935,deal with spurious wakeups
+0b6fbd338,whitespace
+9d1186128,could have used isAssignableFrom since Ant 1.9.0
+70eaedaca,don't want to cause compile-time dependencies
+0d648167b,false positive for class name comparison
+3e235a8f5,DataType already implements Cloneable
+8e56f57ab,fix SimpleDateFormat cases (the instances are used single threaded)
+60162945d,fix Serializable classes that were in fact not Serializable
+f74ca5229,false positives and trivial fixes
+ae7f01f64,compareTo requires equals requires hashCode
+754efaae6,Merge branch '1.9.x'
+44cd14d10,fix some oversights
+b67ec7170,Merge branch '1.9.x'
+45152b520,Sonar meets backwards compatibility requirements
+0555c6d5f,"""hard coded password"""
+4cecc03af,there simply is no better logger around
+008f1c8be,embrace StringUtils#getStackTrace
+984a03d1c,special paths can be final
+121043fe5,false positives
+7aeadd7b0,Merge branch '1.9.x'
+476b4ef62,Java7 way pf creating a temp directory
+da943ea14,"accept ""impossible"" exceptions"
+18877234f,accept generic exceptions because of backwards compatibility
+934adc2ee,there is no better choice of a non-generic exception
+0715dda31,use better suited exceptions
+7081e356a,stick with RuntimeExceptions to prevent recursive logging loops
+5e0632687,Merge branch '1.9.x'

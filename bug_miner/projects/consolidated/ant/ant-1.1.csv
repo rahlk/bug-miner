@@ -1,0 +1,325 @@
+Hash,Message
+5a008aafa,Preparing for release.
+5b11971b9,This commit was manufactured by cvs2svn to create tag 'ANT_11'.
+8fd0d861a,Changed the version number to ensure nothing but the relase could call itself Ant 1.1.
+3e49b015c,Provides an Ant Class loader.
+3e3008a15,New Execution Framework.
+685433c24,JavaCC task. Submitted by:	Thomas Haas <thomas.haas@softwired-inc.com>
+fa41974df,Fixed some JDK 1.1 problems.
+1c3e443dd,Added fileset and patternset types and made MatchingTask use them.
+6ece0b71b,"Talked about the nested arg element and forgot to include it, tss."
+b58278ca5,Execute task that works on multiple files.
+9faf51fc3,Corrected documentation to javadoc's packagenames attribute. Submitted by:	Tom Klaasen <Tom.Klaasen@the-ecorp.com>
+b10787b4a,Optional JUnit task. Submitted by:	Thomas Haas <thomas.haas@softwired-inc.com>
+a965b11a6,Updated documentation of Ant task. Submitted by:	Glenn McAllister <glennm@ca.ibm.com>
+2cffdf83c,Initial documentation on the EJB related optional tasks
+b63d11b05,Ensure the target file's parent directory exists. Submitted by:	Russell Gold <russgold@acm.org>
+a67f5b98b,Workaround for a problem when compiling many files on Windows.
+c4b5bdd37,Better support for subbuilds in XmlLogger. Output of XmlLogger can be sent to another file using the XmlLogger.file property. Submitted by:	Glenn McAllister <glennm@ca.ibm.com>
+2054505cb,Added a nested patternsetref element to fileset.
+6da6eeb41,Added support for patternset and patternsetref to MatchingTask.
+ded305a2d,Added an antcall task as a shortcut for ant tasks invoked on the same buildfile.
+1b25a5ab7,Updated example to match the implementation.
+12f19c932,Modified Ant task to be less memory consuming.
+8b613e7fb,Add Javadoc to AntClassLoader Clean up the Javadoc (a little) in the new FileSet and PatternSet classes
+b2af359bb,Fix verbose message printed when property overrides are ignored.
+983a85c49,"Remove the copying of support files by the Javac task. This feature has been deprecated for some time, including the recent release."
+2ae9b05a8,Remove include filter on Java files. This was originally included to ensure no support files were copied by the javac task. This deprecated behaviour has now been removed.
+80d35a939,Moved the inclusion of .ant.properties to the top to give the user a chance to override build.compiler there (and maybe other variables as well). Submitted by:	Paul Philion <philion@acmerocket.com>
+7db5bdf3b,Documentatin for ejbjar optional task
+0c1efed95,Added usetimestamp attribute to Get so that it only downloads a file via HTTP if the source is newer than the local file. Submitted by:	Steve Loughran <steve_l@iseran.com>
+a6910f6f9,Chmod didn't work if used as a matching task. Reported by:	Alex Smith <asmith42@hotmail.com>
+951046ee1,Task to execute SQL from a file (or directly in the task)
+9b79c03c8,"Didn't handle relative paths in project's basedir attribute correctly. Reported by:	<Glen_Stampoultzis@ansett.com.au>,                 Jesse Glick <Jesse.Glick@netbeans.com>"
+abd598791,"Made Path resolve relative paths through Project. Moved it to the types package on the same instance, so I had to touch a lot of ather files as well. Reported by:	Frederic Lavigne <fred@L2FProd.com>"
+1f7eed82c,Moved EnumeratedAttribute to types as well.
+e87e8fc11,Changed the execSQL method. Interbase's JDBC driver will throw an SQLException in executeQuery if the query doesn't return a ResultSet.
+2f546331b,Used the deprecated version of EnumeratedAttribute. PR: Obtained from: Submitted by: Reviewed by:
+989be3547,Reprocess files if stylesheet has changed in style task. Submitted by:	Russell Gold <russgold@acm.org>
+f2e200153,Changed testcases to reflect the new packages of Path and EnumeratedAttribute.
+7f9865214,Removed items from the TODO list and added a WHATSNEW file.
+61320f305,Reworked the <exec> and (now so called) <execon> tasks. Submitted by:	Mariusz Nowostawski <mariusz@marni.otago.ac.nz>
+e79bd24e1,Removed all command line switches that didn't start with a -.
+962c579f1,Add the concept of a BuildLogger - A BuildListener with the following - An output level used to filter build events - Access to the ant output print stream - An emacs mode.
+cdef1ea2f,Update for logger changes
+4f46532c9,Modified <sql> task to accept #PCDATA and added autocommit attribute. Submitted by:	Jeff Martin <jeff.martin@synamic.co.uk>
+c7321fa32,Allow paths to be passed to environment variables of exec task.
+ce27573d6,"The instance variable conn was shadowed by a local variable in execute, failed to remove ; from statement with trailing white space, made class easier to extend for specialized tasks like <plsql>. Submitted by:	John H. Lee <jlee@c.kiracom.com>,                 Curt Hagenlocher <curt@hagenlocher.org>,                 Jose  Alberto Fernandez <JFernandez@viquity.com>"
+d7c3057bb,Updated documentation to Get task. Submitted by:	Steve Loughran <steve_l@iseran.com>
+d3bb8dc2f,Corrected the URL for nightly builds. Added reference to the ant-user mailing list. Removed pointer to the list of external tasks and known projects.
+0dfb55090,Add the ability to output all EJB jarfiles to a single directory.
+5d9435d2d,Removed the deprecated versions of Path and EnumeratedAttribute.
+98977466d,Update example in documentation
+4a15cb13d,"Added documentation for the sql task. bootstrap.sh and ant complain if JAVA_HOME is not set. Updated building ant section and README. Submitted by:	Jeff Martin <jeff.martin@synamic.co.uk>,                 Barrie Treloar <Barrie.Treloar@camtech.com.au>"
+a41723ab3,Available didn't resolve filenames correctly. Reported by:	Marc Gemis <marc.gemis.mg@belgium.agfa.com>
+e868ebf02,"<property file=""...""> didn't resolve relative filenames correctly. Reported by:	Marc Gemis <marc.gemis.mg@belgium.agfa.com>"
+ed0a9da53,Added entries to the fixed bugs section.
+38bfb1206,Change the install targets
+6cc434039,Add in properties for versions of the JDK Convert ejbjar to build on JDK1.2 or above.
+eb0ebe689,Renamed javacc task to mparse and moved the corresponding class. Submitted by:	Michael Saunders <michael@amtec.com>
+5e898465a,Improved Jikes support. Added build.compiler.pedantic option for Jikes +P flag and use JIKESPATH if set. Submitted by:	Peter Donald <donaldp@mad.scientist.com>
+c5faebbd8,Java rewritten so that it no longer extends Exec.
+89fcd5b57,Somehow lost the jvm attribute of <java> with last update.
+78b414381,Added nested <filesetref> element to <execon>.
+1c38f4ed5,Didn't set the basedir correctly if the attribute to project was ommitted and the basedir was not the process's working directory.
+6035bbf18,Converted <patch> and <cvs> to new framework.
+632dad413,Make Chmod extend ExecuteOn instead of MatchingTask.
+0b389735d,Recognize Windows 2000 for ther purposes of exec (so that it behaves in the same manner as NT) Submitted by:	Robert Watkins <robert.watkins@mincom.com>
+9174fbde3,Added maxmemory attribute to <java>.
+c2077d52d,Javadoc doesn't extend Exec any longer.
+20dede5ad,MSVSS doesn't extend Exec any longer.
+a8d4fe6d9,Add nested fileset and filesetref attributes to Path.
+d4187a814,Support more than 9 arguments under Win 95/98
+0de273b25,Allow parallel execution on windows - now that antRun.bat has been fixed.
+4290fbceb,fixed NullPointerException in <sql> Submitted by:	Jeff Martin <jeff.martin@synamic.co.uk>
+cf07b113a,Change the ejbjar to separate out vendor specific processing into separate tool classes.
+813dfa5f8,Nested <src> element of <javac> would cause a NullPointerException. Reported by:	Paul A Bemowski <pbemowski@z-tel.com>
+17a06c47f,Return the actual type rather than the interface type to avoid any introspection issues
+f8a23baad,Removed ancient utah whiteboard area. The material in /spec is much more up to date (even if it does need to be updated... :)
+089d421c3,Rewrote the property resolution code so that it handles empty property lists. I also cleaned it up a little so it doesn't continually restart resolving all properties from the start of the list and it handles circular dependencies.
+f23f966ca,Fixed JDK 1.1 compilation issue.
+1f8aca50b,New task genkey. Submitted by:	Peter Donald <donaldp@mad.scientist.com>
+9dffc42e1,"The ""cvs add"" I had forgotten, sorry."
+63363f91c,"Some documentation patches. Submitted by:	Barrie Treloar <Barrie.Treloar@camtech.com.au>,                 Jesse Glick <Jesse.Glick@netbeans.com>"
+e7e63a0e7,Delete the corruptIP-file if <zip> or <jar> tasks fail. Submitted by:	Jesse Glick <Jesse.Glick@netbeans.com>
+0245d769b,"Added missing dot to default extension in <style>, ensured Xalan gets infile as a file:// URL. Submitted by:	Brianimmer <bzimmer@ignitemedia.com>"
+565b600d9,Added flatten attribute to <copydir>. Submitted by:	Jeff Martin <jeff.martin@synamic.co.uk>
+ee344eb12,New optional task <cab> to create Microsoft CAB archives. Submitted by:	Roger Vaughn <rvaughn@seaconinc.com>
+29cf33f78,Mac patches to Execute (regarding working directory). Submitted by:	beard@netscape.com (Patrick Beard)
+6d7c13097,Did some cleanup.
+24964c323,Removed JDK 1.2+ dependency from <cab> task. Submitted by:	Roger Vaughn <rvaughn@seaconinc.com>
+b18b40b15,Moved the javadoc == 1.1 or 1.2 check out of init().
+0dd985bc2,Add some eror checking to the syntax of the linkoffline attribute Fix the output of argument list under verbose logging (Thanks to Ken Wood)
+4f10a1e3b,DirectoryScanner will now only scan directories which are included or could hold included files. All other directories will only be scanned when one of the getExcluded... or getNotIncluded... methods is called.
+5a75c7353,Removed possible NullPointerException in <vssget>. Cleaned up JDK version detection in Project. Submitted by:	Jeff Martin <jeff.martin@synamic.co.uk>
+82e6aad20,Make Jikes use the new Execute class instead of calling Runtime.exec itself.
+32cfa5b10,"Moved MailMessage from com.oreilly.servlet to org.apache.tools.mail (imitating org.apache.tools.tar).  Also made it pure copyright ASF. For those interested in legalities, my understanding is I'm granting the ASF copyright on this code but have my own copyright on the code as it existed before the grant.  That means I can include my own code in my book without following the Apache license, but I can't use improvements to the ASF code without following the Apache license (as is perfectly appropriate)."
+dbf806213,"Changes the translateline method so that backslash escaping only applies to the quote characters "" and '."
+81a0f04e4,Add JIKESPATH and JAVA_HOME warning to the Windows batch files
+1f870a7a5,Stop ANT_OPTS growing
+6667e4cdd,Some cleanup in Javac. Removed duplicate code and used the nested fileset element of Path to fake extdirs for Jikes.
+00ecf29ec,Still to Unix centric.
+3c6661202,New task <ftp> to do FTP _uploads_.
+c32873b51,Added nested elements and attributes to reference CLASSPATH structures defined at another place in the same project.
+c437e0d2a,Replace can now work on multi line tokens/values.
+65e7fa576,Modern compile was broken. Reported by:	Scott Sutherland <suthsc@ncs.com>
+2c09476bf,Make Path.append() more forgiving.
+ab761fc43,Added some (deep) clone methods.
+ae6285b06,Fixed typo (but I swear it compiled before).
+92ba08996,Use new Runtime.exec() method of JDK 1.3 instead of antRun if present. Submitted by:	Jesse Glick <Jesse.Glick@netbeans.com>
+10c41029a,The real patch for exec and JDK 1.3.
+818cb969a,<junit> more or less completely rewritten and documented.
+c2007a847,Move addExisting functionality from javac to Path Fix error in Path constructor
+c3f2def55,Documentation for the multi line extension of <replace>
+c30a78b74,Do not try to load from jars which don't exist
+0097b2ed9,Documentation for nested <env> in <exec>.
+776e95126,Documentation for command line arguments (the nested elements for them).
+4a102d1bd,fixed typo.
+3a854da6a,Make <genkey> and <signjar> work again - they've been broken since <exec> became ExecTask instead of Exec.
+b469445f8,Changed antRun to handle arguments containing spaces properly. Removed the magic that would invoke dir/command.sh instead of command.
+a252eb854,\ is no special character for Commandline anymore.
+e2a75898e,avoid NullPointerException in DirectoryScanner.scandir.
+7db902758,Avoid NullPointerException in FileSet. Submitted by:	Jeff Martin <jeff.martin@synamic.co.uk>
+0679f04a8,Removed <keysubst> and <expand> which have been deprecated in 1.1.
+ca6e87319,"Documented fileset and patternset, removed the items and ignore attributes of MatchingTask."
+7cd8917ae,Added references to fileset where appropriate.
+75eff8434,Added documentation for the <antstructure> task.
+3facebf53,Updated documentation for <chmod> and removed <chmod>'s src attribute.
+23f7147dc,"Removed class attributes of <available>, <rmic> and <taskdef>."
+6e876ab7f,log environment variables we set for the subprocess when -verbose is used.
+f929d4bc2,documented the <execon> task.
+de3b5b852,Work around a problem with a NullPointerException on IBM JDK 1.3/Linux.
+c06445673,Added documentation for the ID attribute and classpathref.
+bbcbfb186,Added <classpathref> element to <junit>.
+95f437b2d,"The attribute name is id not ID, ts."
+403c32e5c,Fixed typo and changed second <script> example to use NetRexx.
+655df7f9e,Upgraded Classloader to allow more control over which classes are loaded by the system classloader Upgrade Ejbc task and its helper to use the new facilities of the classloader Runs the weblogic.ejbc task in the ant VM. Examines the build.compiler setting and uses Jikes if it is selected.
+b211d1bcb,Print the ant version when ant is run in verbose mode.
+ef6aec825,"Provide an explanation, at verbose level, of why Javac decides to compile certain classes."
+6f00ce7c0,Add forceoverwrite option to copyfile task
+26067ee1d,JavaCC and JJTree optional tasks for use with the javacc suite of tools.
+54057d742,Extend optional FTP task Allow DirectoryScanner to work with remote directories.
+68a070dbd,Update copyfile documentation
+dc7444ae5,StarTeam checkout task
+21ac4b4b7,Print Projet help information
+a99eb8f35,Fixes checkout directory under windows (current version lobs off last character).
+bb0594b89,Make expand a matching task.
+2f2302b85,Change ejbjar so that the deployment descriptors and class files can come from different directory trees. Update ejbjar documentation. Update WhatsNew
+9ee88d11c,Set exit code appropriately when build file missing or invalid.
+bec067e80,Update to FTP dtask documentation
+587a3c4f5,New task for sending email
+f504cf793,Increase speed of Javadoc task
+bf5836e72,Javadoc update
+76248d54a,Make it fly with 1.1
+7ac63c0bc,Improvements toip and Jar tasks
+dc7611502,Workaround for Jikes compilation problem
+a5fc8cdc6,Fixed some typos. Submitted by:	Steve Sonntag <VTAG@novell.com>
+46b4505bc,Added infrastructure to create data types independent of tasks.
+4a96c6e0b,Make <taskdef> and <property> do their job in execute instead of init. Call execute on tasks living outside of <target>s at parser time.
+493b6bf4f,"Reverting part of my last patch. This one slipped through somehow, too early to go that far, sorry."
+62961601a,Added support for jvc (Microsofts Java compiler) to <javac>. Submitted by:	Nico Seessle <nico@seessle.de>
+1f04dfb4f,"Added encoding attribute to <javac>. Submitted by:	Hiroaki Nakamura <hnakamur@mc.neweb.ne.jp>,                 Eric VanLydegraf <ericv@kinzan.com>"
+86029316f,Use line.separator instead of hard coded \n. Submitted by:	Nico Seessle <nico@seessle.de>
+f923ab50f,"<javadoc> and <patch> would fail if the execute method was called more than once on the same instance of the class. This is why the second <javadoc> in the nightly builds (""ant dist install"") failed."
+76924feb0,Correctly handle the case where one of the defaults.properties files cannot be found. Submitted by:	Nico Seessle <nico@seessle.de>
+29217089f,"Corrected example in ""Writing your own task"" to use <taskdef> as a child of <project> instead of <target>."
+7d54561b8,"Added support for data types to be defined at the project level. The currently implemented data types are <path>, <fileset> and <patternset>."
+8b01a00d1,"filtering would fail if the number of @ was an uneven number. Reported by:	Stover, Michael <Michael.Stover@usa.xerox.com>"
+fa4f79ea0,Avoid StringIndexOutOfBoundsException when .java files were found directly inside one of the source directories (classes in the default package).
+e8d2007cf,"Add a nested <path> element to <path>. This means one path can include another path (by reference as well as literally, although I doubt the latter is of any use). Circular references should be caught. Suggested by:	Barrie Treloar <Barrie.Treloar@camtech.com.au>"
+3336811fd,JDK 1.1 compatibility issue.
+5dbbf38ae,-d is not an option of javadoc in 1.2 but of the standard doclet. Submitted by:	Glenn McAllister <glennm@ca.ibm.com>
+7b4a065d2,Problems with the .bat files on Win98. Submitted by:	Glenn McAllister <glennm@ca.ibm.com>
+9977131b5,Javadoc's destDir attribute should now work again.
+6fa35bec3,Perl script to Invoke ant Submitted by:	Steve Loughran <steve_l@iseran.com>
+8b2d7026b,If the output has not been redirected (via -logfile) write error messages to stderr instead of stdout. Suggested by:	Peter Nordlund <peter.nordlund@lentus.se>
+982db474c,"Added a type attribute to <execon> and <chmod>. It can take the values ""file"", ""dir"" and ""both"" and deteremines, whether the task should work on plain files only (the default), directories only or both. Suggested by:	Peter Donald <donaldp@mad.scientist.com>,                 Kitching Simon <Simon.Kitching@orange.ch>"
+ff810113d,"Removed all nested <classpathref> elements in favor of <classpath refid=""..."">."
+76e7f15fd,Allow an arbitrary number of arguments to be passed to Ant - even on Win98. Submitted by:	Glenn McAllister <glennm@ca.ibm.com>
+a8387980f,Make the description attribute of Task accesible to build files (that's what it has been intended for I guess). Add the one for Target to <anstructure>.
+505d4a8c1,"Removed <filesetref> and <patternsetref> everywhere, <fileset> and <patternset> support the refid attribute directly instead."
+a192c1f16,New task <fail> which does nothing but throw an exception. Submitted by:	Nico Seessle <nico@seessle.de>
+25fea2ba5,"<project basedir=""""> didn't work for absolute filenames. Reported by:	Gardner, David <david_gardner@mentorg.com>"
+a7988a63f,"Change the order parts are added to the CLASSPATH in bootstrap scripts. PR: Bug 24, Bug Report 75 Submitted by:	Mason J Warner <mjw@novanews.com>"
+17fbe62a7,Changes to EJBJar task
+5c185694a,Add error reporting to copyfile and copydir.
+4be4d85ae,"CVS wouldn't work if you used the command attribute to specify additional arguments (like ""update -d -P""). Reported by:         Roger Bj�revall <roger.bjarevall@ideit.com>"
+77959a23a,<replace> shouldn't change the timestamp of files if it doesn't actually replace anything. Submitted by:	Scotteinn <szinn@patronix.com>
+b95c44d8a,Fixed broken link to <execon>. Reinstated alphabetical order of built-in tasks. Submitted by:	Diane Holt <holtdl@yahoo.com>
+f6745b24f,New task <jlink>.
+b61e78e9a,Changed -projecthelp to show targets that have a description before the other targets. Submitted by:	Marcel Schutte <marcel@schutte.com>
+02bf23c46,Allow commands to be reused by clearing their arguments
+6c26371a0,Task to perform JSP compiles using Weblogic's JSPC compiler.
+3aaf6e364,Removed some unused files and added a pointer to the mailing list archive at covalent.net.
+5b1dbf444,Updated Documentation on EJB tasks. Submitted by:	John Hall <jhall@solant.com>
+6ecbe2421,Moved ${} expansion and task evaluation to runtime.
+409b0917b,Added usefile attribute to <formatter> to allow testoutput to be sent to stdout instead of a file.
+53ff5c314,<junit> now works again as it did before tasks started to be configured at runtime.
+b42831ce4,Added value attribute to <available>. Submitted by:	Glenn McAllister <glennm@ca.ibm.com>
+4771d246a,"Make <javadoc> ignore .java files in directories containing a ""-""."
+002d084d5,Provide the SAXParser with the File instead of an InputSource to give it a chance to parse relative URIs.
+34d011b22,Make <echo> accept #PCDATA.
+41509d641,Fixed message text when a class can not be found. Submitted by:	Nico Seessle <nico@seessle.de>
+aa71851fb,When using the temporary file to hold the source file names (in jikes compilation on Windows) Ant included the command itself as well as all arguments as source files. PR: #74 (linked to bug #31) Submitted by:	Nico Seessle <nico@seessle.de>
+6c89d5a7b,Adapt <ant> to the fact that <property> does its work in execute() and not in init() now.
+20a1e91d1,New tasks <war> and <unwar>.
+472977c92,Updated WHATSNEW for <war> and <unwar>. PR: Obtained from: Submitted by: Reviewed by:
+bd02671bd,Updated this task so that you can have <classpath> inside that tells the Available where to look for classes and resources. It is completely back compatible so should cause any harm to anybody.
+13eb95ae4,Fixed situation where Class.getClassLoader returns null for the bootstrap class loader - JDK 1.1.7 on Linux for example.
+f0282fd8b,Various checks for required attributes and better error messages added. Submitted by:	Nico Seessle <nico@seessle.de>
+beee9e6a6,Make filtering of the copy tasks work with leading @ characters. PR: #129 (bug #32)
+4fbcfdeda,Treat OS/2 like Win NT with regard to <exec>'s dir attribute. PR: #126 (Bug #33)
+8c59db789,Allow tasks to be added at runtime and only fail if they cannot be found at runtime.
+4727d20b8,Removed some garbage.
+2aaf152da,Only set location in BuildException if the task didn't provide it before.
+98d528797,Put the PATH obtained from extdirs between bootclasspath and userclasspath when using jikes or jvc to make them match javac's behavior. Submitted by:	 Robert Krueger <krueger@signal7.de>
+9490ce8f9,Ant will now scan for build.xml in the parent directory (directories) as well.
+fef46698f,Make <war> use the .war directory layout. Don't ask me where my mind has been.
+d36ee0d77,Added verbose and depend attributes to <javac> along with yet another undocumented magic property (YAUMP?) build.compiler.fulldepend that triggers Jikes' +F option. Submitted by:	Sean Brandt <sean@fuzzymagic.com>
+4a9c1fbf6,Added dir attribute to <junit> and documentation for the one of <java>.
+a341406b2,Fixed a link. Submitted by:	Diane Holt <holtdl@yahoo.com>
+7ee8e30cd,<ant> now copies the definitions of data types to the child project as well. Reported by:	Jose Alberto Fernandez <JFernandez@viquity.com>
+640c3528b,"garbage again, sorry."
+53b4dec9a,extdir attribute/nested element of <javac> was broken when using jikes. PR: #137 (Bug #35)
+33100d85b,Formatter would close System.out (preventing further output)
+7c231e500,Added unittests for a bunch of tasks. Submitted by:	Nico Seessle <nico@seessle.de>
+683a5f143,New task <uptodate> that set's a property if a given target file is newer than a given set of source files.
+20429db1c,Make defaultlogger easier to extend. Submitted by:	<mcclain.looney@webhelp.com>
+6b11d7b61,Improved output and error checking in <java>. Submitted by:	Diane Holt <holtdl@yahoo.com>
+bcb96c9e9,Didn't know JUnit had its own website.
+ba5b2b8d7,New task <native2ascii>.
+ad48a0d39,Make the handling of nested #PCDATA more predictable by not stripping anything. The older version depended upon the parser (does it invoke characters once per #PCDATA section or once per line).
+6422ae65b,Cosmetic changes.
+78089779a,Make <junit>s dir attribute work on JDK < 1.3 Reported by:	Peter Nordlund <peter.nordlund@lentus.se>
+0f12933d9,Add the WLJspc task to the registered tasks
+054a8aba2,Documentation update
+e5d53ff1e,Fix minor typo Submitted by:	Nico Seessle <nico@seessle.de>
+d4458b764,Only print messages from exceptions which are non-null
+2067d20b5,Allow sql task to write results to a file. Submitted by:	Julian M. Savage <jsavage@fisci.com>
+b8d38ba07,Allow filters to be set from a file.
+f688c57ce,Include any inner classes in the generated Jar file.
+f3a0918e1,Allow sub classes ofip to hold their own filesets and not tellip about it.
+da89ca486,Make JavaCC use the correct path when checking whether the generated files are up to date. Submitted by:	Adam Murdoch <adammurdoch@yahoo.com>
+b4a550aaf,Second try to fix a typo. Submitted by:	Nico Seessle <nico@seessle.de>
+67eceb37c,Third try to fix a typo. Submitted by:	Nico Seessle <nico@seessle.de>
+dddcf551a,Loading tasks from a ClassLoader other than the default one now works on JDK 1.1 as well.
+e6a52064b,Allow the driver for <sql> to be loaded from a different CLASSPATH. Submitted by:	Julian M. Savage <jsavage@fisci.com>
+6c4a81e3d,Fixed typo that made the filtersfile attribute unusable. Submitted by:	Gero Vermaas <Gero.Vermaas@sun.com>
+79903e422,Make sure the JDBC driver knows how to handle the URL.
+3f2688a0e,Added a refid attribute to property. Submitted by:	Vincent Bergbauer <vincent_bergbauer@yahoo.com>
+0b508c328,Add a file attribute to echo to have a simple task that can create files on the fly.
+9bab4dab1,"Class.forName("""") throws an IllegalArgumentException instead of ClassNotFoundException in JDK 1.1. Make available behavior consistent by ignoring empty classname attributes."
+e47b4d5ac,Make Execute work for arguments containing spaces under JDK 1.1 under Windows (where Runtime.exec() doesn't quote them properly). Submitted by:	Adam Murdoch <adammurdoch@yahoo.com>
+63a3e9609,"Documentation for the JavaCC task, changed the location where the generated file will be placed if no directory has been specified. Submitted by:	Adam Murdoch <adammurdoch@yahoo.com>"
+db6f84aa2,- Javac.getCompileClasspath(true) adds the correct runtimeip files when running in the MS VM.  It adds ${java.home}/packages/*.zip instead of ${java.home}/lib/classes.zip
+37ed344b3,Enable redirecting either the output or error or both from a cvs command to a file.
+33107ab10,"- Add new attributes onerror= (continue, stop, abort) to <sql> - Add new nested element <transaction> to <sql> which allows executing   multiple transactions, multiple files on the same connection. - Added documentation on sql.html - Modified AntClassLoader.java to send most of the ""loading class...""   messages to MSG_DEBUG instead of MSG_VERBOSE. So that it does not   cluter debugging other tasks. - Add new attributes 'rdbms=""product""' and 'version=""release""'   if those versions do not match what is returned by the connection, the   task will be skipped."
+ccea99668,"Patch to ensure a properties file is always closed after its read. Contributed by Nico Seessle. Some cleanup of field access levels, etc. by me."
+38c1cabaa,"Consolidation of Copyfile, Copydir, Delete, Deltree, and Rename into Copy, Move, and Delete tasks."
+1b6e91563,Made the old file handling tasks even more deprecated. Made Ant use the new tasks in its own buildfile.
+57fee8713,Fixed detection of duplicate entries in <jlink>. Submitted by:	Matthew Kuperus Heun <matthew.k.heun@gaerospace.com>
+918b40a4f,Fixed some testcases:
+fc10e0487,Made sure that Project.resolveFile would always use the canonical path of a file. Submitted by:	Adam Murdoch <adammurdoch@yahoo.com>
+dfb50d12f,Extended testcase for <filter> to show that Bug #38 (report #184) has already been fixed. Submitted by:	Erik Meade <emeade@geekfarm.org>
+3858aba32,Make sure files are getting closed. Submitted by:	Nico Seessle <nico@seessle.de>
+6c40e0ca7,Let jikes use the temporary file solution if the total length of the command line exceeds 4k.
+47dce162e,"Allow the user to specify a classpath to <junit> even if fork=""off""."
+a06347279,Fixed type on jlink documentation. Submitted by:	Steveindel <steve.zindel@semrev.ch>
+9f766c7fa,Removed dir attribute from Copy and Move tasks.  Now you can only copy or move entire directories with nested FileSets.
+c020a34a5,Fixed what looks like a typo in the error message.
+35195cb13,"Fixed documentation for <antcall> Submitted by:	Nico Seessle <nico@seessle.de>,                 Diane Holt"
+df7215b8f,Don't assume it has been the build file if the parser throws a FileNotFoundException. Could be an external entity or a DTD file as well.
+d1c16d4c5,(Re)enable support for multiple CVS modules in a single cvs task.
+52f8d9c02,New optional task for the SCC system Perforce. Submitted by:	Walker Joe <Joe.Walker@barclaycard.co.uk>
+e13d92274,Documentation for the perforce task. Submitted by:	Joe Walker <Joe.Walker@barclaycard.co.uk>
+fd507cf2d,"Added an includeEmptyDirs attribute to Copy and Move tasks.  The default action is to include empty directories in any copy and move action.  It makes a lot more sense for Move, and seems reasonable for Copy."
+cf33deb63,Updated the copy and merge task docs to include the includeEmptyDirs attribute.
+843de6102,Make the system call a little bit more secure.
+c23f0f5fa,Synced the documentation for <javac> with the implementation.
+e2bb645b6,"Make <sql> ignore empty ""statements""."
+a1eaa272b,Throws BuildException if it tries to resolve a path which will go further up than the root of the file-system.
+30385849b,Made AntClassLoader always add java.* and javax.* to the list of packages to load via the system classloaders.
+c89099e9b,Make <javac> use the value of srcdir as destdir if the latter has not been specified.
+fd1daa717,"Documentation change, javac.destdir is no longer required."
+18cf53f2b,Throw an exception if theip/jar/warfile attribute has been omitted inip.
+3c045b38b,Make sure a BuildException thrown inside a <script> doesn't get wrapped into yet another BuildException.
+8e8cf291a,Made destdir in <javac> optional - don't use the -d switch at all if this one hasn't been given.
+d8bff4d35,Added a nested sysproperty element to <java>. This allows the user to set system properties even in non-fork mode.
+7c29b7f87,typo
+e88e9617e,Added a location attribute to <property> to provide easy access to the Project.resolvePath functionality to the user.
+7241d07c9,"Give the user a clue what to do when the ""task could not be found"" exception occurs."
+117269133,Reset destDir to null in <copy> if destFile has been set. This allows a single instance of Copy to be used more than one - like in
+d96001e69,Change version from 1.2alpha to 1.2rc - release candidate.
+e04a05bbe,Documented some more changes in WHATSNEW.
+8402298bc,Changed examples to use copy and delete instead of copydir and deltree.
+8656b7985,Some convenience targets for release builds.
+4673e840d,"Better error reporting when <ant> cannot find the build file, grammar correction."
+b02f11df7,Don't print the message of a thrown BuildException to stderr twice.
+2deeb0512,Add warning about sytnax change for this task
+a58b5083c,Provide more control over running Weblogic.
+cf01e99f9,Provide access to more ejbc options
+533852ac9,Document the <doclet> nested element for Javadoc
+70958ae9f,Add documentation for wlrun and wlstop tasks
+5308826fb,Make the flatdestdir attribute work when using deployment descriptors in the root directory
+7548efa18,Changed bootstrap.sh so that you can specify the compiler to use via the JAVAC environment variable. This enables a bootstrap process using jikes.
+28100edfa,Copy types/defaults.properties during bootstrap.
+04d285ff1,Made sure bootstrap.sh is executable in the distribution builds.
+76641fe51,Make MacOS X a valid Unix (in <chmod>'s point of view).
+afd1f285d,Make sure ejbc task handles situation when build.compiler is not set
+b0027003f,Don't print stack traces on compilation errors.
+838def06a,And no stack trace for classic compiler either.
+786f23865,Documented Ant's built in properties.
+626d7f944,Allow ant to be installed in a Windows directory containing spaces such as c:\Program Files\ant
+081d01391,Resolve filenames in SYSTEM entity declarations relative to the project's basedir.
+205151486,"It seems far more plausible to interpret a relative file URI in SYSTEM entities relative to the build file instead of basedir, doesn't it?"
+34b083983,Roll back EJBC changes to the separate helper run in a separate VM. The use of the class loader was causing some users problems which arise when the system classpath and the classloader's classpath overlap.
+079ebdba2,ejbc rollback
+99f3f52ed,Ensure the output of the modern compiler is going to be redirected as well.
+2b0355c52,Better redirect stderr and stdout instead of stderr twice.
+2198f70d7,and don't swap stderr and stdout either.
+b14ee14da,Include src/etc in the binary distribution.
+2a3982483,"exclude the helper files for the testcases from the binary distribution, we don't ship the test sources there either."
+b189662ba,Make <javac> always add +F to the jikes command line if build.compiler.fulldepend has been set.
+c98b45861,Update documentation for Filter task Update documentation date
+98665d1a7,Preparing for 1.2 release build
+09e39b702,Update locations of the latest release

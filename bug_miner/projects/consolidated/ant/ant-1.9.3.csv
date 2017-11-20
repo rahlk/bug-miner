@@ -1,0 +1,104 @@
+Hash,Message
+df6777ddd,update ReleaseInstructions
+0c614c40e,bumping version number to 1.9.4 for the next release
+3212aa453,Add toString() method for easier debugging
+7ee36a0dc,Add missing ASL headers
+8bbf71ca4,changing recipe to update the manual
+c7741302f,import failed to import file specified as absolute path imported from an URI/jar - PR 50953
+5f5da6899,untabify
+f4f656dff,equals implementations are not null-safe
+6a6bf3879,put some more effort into detecting duplicate imports.  PR 55097
+234c1d9ff,weed out race-condition in mkdirs calls inspired by PR 55290 and Matthias Bhend's suggestion
+6ef5a1f1b,synchronize access to helpers cache - PR 37501
+c35ce9c03,document userAgent attribute.  PR 55489
+65f4b403f,whitespace
+a9c761db3,manifestclasspath uses wrong path for parent directory of jar.  Patch by Grégoire Vatry.  PR 55049
+c92f8f160,enable test
+169becaf5,prefixValues=false in <property> doesn't work - PR 54769
+ecac58c5a,fixlastline didn't work when the no-arg read() method of MultiReader was used.  PR 54672
+6ea9dc102,When loading resources from jars it seems to be advisable to disable caching.  PR 54473.  Combining patches by René Krell and Antoine Levy-Lambert.
+9bd753321,deal more gracefully with non-JARs on the CLASSPATH - PR 53964
+bfa0ded76,Don't use leading slashes for patterns inipfileset.  PR 53949
+326b38f70,assorted micro-optimizations by Adrian Nistor - 13 different Bugzilla issues
+075882d3d,two more optimizations by Adrian Nistor I overlooked
+13c01b296,improve skipping of non-zips based on feedback by Jesse
+b4cc7e84a,happy new year
+562c27936,"don't set the use-caches flag for all connections, just for the one currently read from - caught by Jesse Glick"
+39734fdce,NPE in javadoc when no destdir is specified.  PR 55949
+a17032a42,merge filesetmanifest=mergewithoutmain even if no explicit manifest has been specified.  PR 54171
+a8bcf75d2,add a null-guard PR 53754
+e7af303b2,Don't delete the target if copy failed because the target was read-only.  PR 53095
+e46fd219c,removeNotFollowedSymlinks='true' might be deleting too eagerly.  PR 53959
+6307fed88,allow System.in to be passed to sshexec'ed process.  Patch by rosvit.  PR 55393
+93eb23657,various new attributes around System.err handling in sshexec.  Submitted by Gilbert Rebhan.  PR 48478
+c7befb5bd,whitespace
+965917ea1,seems to be wrapping the wrong stream
+812852292,failOnWarning attribute for javadoc.  Patch by Tim Boemker.  PR 55015
+7dbdd6081,"outputencoding for sql, patch by Miroslavaťko.  PR 39541"
+c098b9c80,whitespace
+313479bb3,try to make OOM in <junit> less likely.  PR 45536.  Submitted by Steve Loughran who decided not to commit it himself :-)
+d4ad83411,missing WHATSNEW section for Daniel Trebbien's patch to help make an OOM in XMLJunitResultFormatter less likely.  PR 54147
+2f3db21a4,whitespace
+875a96d99,add testcase for PR 55015
+f079bd6d5,Add an extra second in the hope this fixes the inconsistent test on Gump
+0e01584f3,extract method refactoring
+a5ad127be,copy using channels ignored append attribute so must not be used when append is requested
+0c41850a5,Fall back to stream based copy if channel based copy fails for some reason - PRs 53102 and 54397
+cd9ed042d,forgot to save WHATSNEW
+d3f98c2b7, Javadoc.postProcessGeneratedJavadocs() fails for Classes that extend Javadoc - PR 56047
+0e9021fe5,Add keys for cduffy to KEYS
+38f4bc677,be more lenient when parsing tar headers
+5fc48a4bf,assorted spelling fixes by Lajos Veres - closes #4
+3c1f0ee7f,"add a 'binaryOutput' attribute to redirector to prevent Ant from corrupting, well, binary output.  PRs 56156 and 55667"
+bea36bbd2,don't assume File#isDirectory == !File#isFile - i.e. explicitly test and drop objects that are neither files nor directories.  PR 56149
+6e5a68837,add inputencoding to mail's message when read from a file.  PR 56258
+065256f57,whitespace only
+671dff9a1,no need to buffer anything when all we perform are bulk operations
+0faf6e94d,small refactoring
+5bb9e1adb,try to help Java5 builds and finally figure out what was wrong with disabled test
+601c71b1f,simply doesn't work on java5
+c60268299,"add gzip content-encoding support to <get>, submitted by Maarten Coene.  PR 49453"
+1030536db,"add gzip content-encoding support to <get>, submitted by Maarten Coene.  PR 49453"
+51441438e,really only triggering new Jenkins builds
+2d283dd11,"URLResource#isExists returns true for non-existent http and ftp URLs, based on patch by Anthony Wat, PR 51110"
+92bbb897e,some of our tests require JUnit4
+6d1f9a9fa,fix test-compile configuration for ant-apache-oro
+42beec8e1,"A new resource collection multirootfileset, PR 48621"
+d2734857f,somehow a space managed to slip in
+0a4b4812b,try to make tests pass on Windows
+002c84be0,another attempt to make tests pass on Windows
+d21069fb0,a bit more readable and tests for cache=false
+444a95325,"add a new quiet attribute to <get>, GitHub PR by hydra1983, closes #1"
+9d3c394c5,junit task should support parallel/threads option PR 55925
+d448e74cb,hydra1983 is Edison Guo
+b44a63dfe,starting to change the test cases to make them use unique temporary directories to be able to run the test cases in multiple threads.
+91773c13c,removing debug output
+547aa925b,@since marker
+4205adcb7,zip test wasn't cleaning up properly - and testDefaultExcludesAndUpdate errored out
+4305c12e4,filelists look borked
+14581f9b7,removing obsolete targets used for releases in the past
+3fb8df68d,"adding the junit jars to the source distribution, problem reported by Michael Durket"
+245209850,creating temporary directory with a unique name
+47e566b00,creating temporary directory with a unique name
+d7d337b63,creating temporary directory with a unique name
+2b49aae79,creating temporary directory with a unique name
+b56846282,changing tests to adopt unique temporary directories
+0d9a9e084,changing tests to adopt unique temporary directories
+788127703,changing tests to adopt unique temporary directories
+abf373b6c,changing tests to adopt unique temporary directories
+241a7d6d0,Don't try to copy the javadoc if generation was skipped
+4c0b73f72,detect Java9
+105011430,fix javadoc comment
+395d280d9,adding mention of Java 1.9
+7d0916e46,By default disable JavaDocs Doclint which was introduced in Java8 and breaks the builds due not-strict-html JavaDoc comments. Could be enabled via -DwithDoclint=true
+bed22b00f,JavaDoc fixes (for Java8 doclint) - first bunch
+7830e9cb4,"Property ""args"" is set on project level. So setting a default value inside a target wont work."
+e5d319e8e,more Java9 stuff - create the CompilerAdapter for J9 - tests of source and target - add detection of J9 to antunit-base.xml
+7eab7687d,hit the commit-button too early: have to comment these two tests out
+b61c80746,"Test improvements: convert to JUnit4, improved error testing and remove sleeps"
+5bc13a2c0,Prevent on cleanup NPE when test skipped
+84e495132,Increase timeout in test to give loaded systems a chance to complete properly
+b5fa00fce,Add Intellij IDEA control files to GitIgnore
+7bde4f27d,preparation for Ant 1.9.4 release
+3460aa3bb,preparation for ant 1.9.5 release
+cef41d260,rolling back to ant 1.9.4 as the pom.xml of ant-testutil was referencing incorrectly junit 3.8.2 instead of junit 4.11

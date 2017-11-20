@@ -1,0 +1,174 @@
+Hash,Message
+7aa7d5ba3,Announce Ant 1.5.2
+96cf0f784,#17142 - enhance Javadoc tag element to allow a fileset
+18537aa25,"Jon has declared himself ""emeritus"""
+959d02d12,Add pointer to generics compiler adapter.
+016fab406,Move items to the correct version
+0f276785d,<scp>
+c2baa1471,Set file mode correctly for files read from <zipfileset>s.
+8eb5f371e,Make JIKESPATH construction on Mac OS X take JAVA_HOME into account. This won't change anything if the user doesn't set JAVA_HOME.
+24436a1c9,Remove email address from sources
+29b103aba,This is what I think about ePost's new business model
+d3cca72f1,Some PGP key changes
+5a6b83a78,Improve log message when classloader fails to read a resource.
+91aa5050e,looks better that way
+39939945c,Fix ambiguity in the manual
+4a288273a,When changing dirs resolve to the coorect separator conventions PR:	10755
+af734d01c,".ssh is in ${user.home}, not ${user.dir}."
+c3e4e8395,point out that CVS is a requirement
+2bdf958cf,implementing bug 12060: provide a toString operator so that turning into a property is mildly meaningful.
+92f62e7eb,a raid by the deprecation police.
+77ee46ba7,"refactoring so that ilasm can share code (and moved something into NetCommand as it may be more at home there, but that may be bogus). Fixed  ilasm to handle multiple files and do dependency checking. More convoluted than one would have thought."
+18f584943,dotnet tests
+f3a31e1d1,Upgrade to jsch-0.1.2
+7f2ab4f51,2003
+cbc4de47e,ildasm inserts a copyright statement on everything it disassembles...
+362a94080,"Rounding off the toolchain with <defines> that has the same syntax as that of <cc>, a resource type for resource inclusion, and , uh, a J# compiler. Notice how I reverse the pureJava setting from that of vjc, so you need to explicitly ask for impure java. I havent enabled this in the types yet, in case anyone wants to veto the concept altogether."
+d4d037c40,new tests
+ccbba5ab9,"dotnet tests in the build file. with the references and definitions, we are almost nearing a workable .net solution in ant. Which makes this a good candiate for tearing out into a standalone project, were it more popular"
+12793a5b1,bug 14034: doc corrections
+16792b478,2003
+783efcbef,.NET tests need .NET apps
+75a3e2d83,Save some (mega)bytes
+5fdf0eb22,Make test more robust.  In particular - make it pass on Mac OS X.
+2c59f23fd,Make test more robust.  In particular - make it pass on Mac OS X.
+5e0218a96,Adapt to JDK 1.4.1 for Mac OS X.
+ddd4677c1,Add key based authentication to scp.
+242569903,New task <sshexec>.
+f674a326e,Update Checkstyle - Ant version compatability
+0ce80a2f8,document new scp functionality
+65ce43ffe,No reason for a dummy passphrase.
+c17abf513,"better track the version for now, jsch is still in a flux a bit"
+4e9e01a1f,remove JDK 1.4 dependency
+c42c66bca,"finish this fix. it is <depend />, without the s"
+75a944cb2,currently failing testcase to demonstrate PR: 17780
+8d651ad96,Fix the bug.
+a892ac586,keep track of changes
+023621fb1,Update sig
+b1849c09f,Documentation for <sshexec>.
+f984f9775,This is supposed to fix bug 17871.
+4bdc90bd5,misleading @since tag
+2270580b7,"option to preserve formatting in inline SQL, bug ID http://nagoya.apache.org/bugzilla/show_bug.cgi?id=10719"
+e8dec6b49,xdocs is strict about semicolons outside methods
+28a907131,documentation for xdocs to pick up
+8d8f877c7,subant goes in there (provisionally)
+ec05fe2dc,"Henri doesn't have the time to upload every new Ant RPM anymore, better stop providing them from our site, then."
+f99cce140,Remove reference to Jakarta
+53a5f3aac,Add pointer to XInclude.
+9b1f68940,New filter <escapeunicode> that translates non-ASCII characters to \u1234 escapes.
+6caba693a,A little housekeeping
+368ff94af,17871 is fixed
+f624f1bf4,"Add support for HP's NonStop Server (formerly known by several names, including Tandem)."
+dbf3ccbed,hopefully fix the Gump build
+71ee2798e,upgrading to an XDoclet that works on Mac OS X JDK 1.4.1 - woohoo!
+fc6826126,JDK 1.1
+c4e985f82,Pointers Submitted by:	Jan.Materne <Jan dot Materne at rzf dot fin dash nrw dot de>                         Markus Gebhard <markus at jave dot de>                         Steve Neal <S dot Neal at Smartkey dot co dot uk>
+45359d125,untabify
+526589e66,Greebo has moved
+ebe4a52c1,Merge fix for bug 14974 from 1.5 branch
+49cd2040d,Merge fix for bug 18053 from 1.5 branch
+d02db89e8,Merge fix for bug 17952 from 1.5 branch
+7deabb5ca,Merge fix for bug 17660 from 1.5 branch
+4bfc6d0df,Merge fix for bug 17293 from 1.5 branch
+1bfbc041c,Merge fix for bug 14697 from 1.5 branch
+23828535f,Merge fix for bug 14521 from 1.5 branch
+ff5fe94c1,Demonstrate bug 18105
+d64034d24,TarEntry's File-constructor didn't work for many OSes.
+4e347a681,Make <cab>'s basedir optional.
+7d1a567e2,Missing merge from 1.5 branch :-(
+1a679d72d,AntDoc has moved
+a8170f879,Typo
+b86016b5a,Don't include Sun's runtime when compiling with jvc unless the user explicitly asks for it.
+ee990e4e8,Typo
+7f78161f3,"Some cleanups, changes and additions:"
+709e8bb7a,Add manifest encoding options to control the encoding used to read in manifests
+98e20365e,2003
+e020b459d,Add pointers to JBuilder 8 Enterprise and Gel.
+63dca2a74,Fix some URLs
+46f083250,update info on AntFarm
+40ce7de3a,New task <sync>.
+d082c0f81,Update website with 1.5.3 Beta 1 availability Remove Ant2 reference from front page
+4bd7216e7,Fix javadocs.
+3bf298063,manual insertion of xdocs pages
+6482a14b6,Make starteam checkout handle deleted labels correctly.
+5af1ce76d,Make wrapper script work if ant is a relative symlink and ANT_HOME isn't set.
+130eef527,Demonstrate bug 18403
+5d14cd4e4,prefix attribute of <zipfileset> would not generate directory entries for the prefix itself.
+21eb88b56,Add a forwardslash attribute to <apply>
+1a07b74e7,Provide some intra-page navigation links.
+4f509c65b,Not only the absolute paths
+c84425e27,Add outputencoding attribute to <copy> and friends.
+0eeac76aa,demonstrate bug 17441
+c699181d0,<stripjavacomments> would consider // inside String constants comments.
+3abe710ac,Upgrade to Xerces 2.4.0
+2b6e7767d,Demonstrate bug 18414
+52b0cf00a,Oops
+04c60dbd6,<copy> and <move>'s failonerror didn't apply to filesets pointing to non-existant directories.
+53e3cf8d7,revert some formatting changes
+d1856da94,Keep track of fixes
+76b3474db,Add testcase that shows property expansion in action - this one fails
+d90686a9a,Disable failing test
+96e6561e6,The xml formatter for JUnit will now honor test case names set with setName
+88dcebf81,Various <concat> enhancements.
+cc1ba1b47,Improve pvcs docs by moving a paragraph
+f7d07d585,"Insert empty strings instead of ""null"" for groups that didn't match."
+2864cede9,files attribute splits at spaces as well.
+5e0752cf2,merge from 1.5 branch
+dbb7a9ccf,One ANT_OPTS should be enough
+014117fff,Two fixes will be in 1.5.3
+c99b33079,Add tempdir attribute to <junit> to control placement of temporary file.
+161579a6d,"Move ""where has this class been loaded from?"" logic to LoaderUtils. Use it in <junit>, <antlr> and Diagnostics."
+49dd9d7a4,unURIfy build-file name if necessary.
+7ffe10a74,"ANTLR 2.7.2 creates two files, PR 17807"
+6540a295c,Small cleanup
+5cdfabc03,Sync with main code line
+99905c75a,Part 2 of Antoine's patch
+e601be9dd,Make <sshexec> wait for the remote command to finish.
+b65d193a6,Don't say milliseconds when you mean seconds
+79d5993c2,"Compile, then commit!"
+c26280a07,Remove redundant classes
+3d1bc7efc,Fix ANTLR's test8 testcase.
+4c30847da,demonstrate bug 12961
+13355064e,Recompile grammar if supergrammar has changed.
+662f68f09,Change reporting of problems creating elements within Task containers to say that the container does not support the given nested element.
+38f6eba8a,Defer configuration of TaskContainer's tasks. This forces Tasks to get configured just prior to execution picking up latest property values etc.
+aa60b7cb1,Remove some tables from HTML and use CSS for layout instead. More to come
+41029abcb,2003
+dd281425a,Eliminate a few more tables for layout
+8d3002cf8,Tweak the handling of config of tasks in task containers. Tasks in task containers are not configured until they are used. Other elements in Task containers (which is now supported by 1.6) will be configured when the task container itself is configured.
+9c51b355f,Add <classespath> nested element to mirror <sourcespath> but point to compiled classes.
+b001eb2bc,Initial refactoring to address 14849
+5c01d4c16,"Use a class that's only in antlrall.jar to add the ""real"" jar to our classpath."
+006b093ab,Don't hardcode /usr/bin/env for Unix.
+360b0da7f,Enable test for task container property setting
+59d49ed44,Demonstrate bug 10262
+299865367,"Ignore index lists found when creating a jar with index=""on""."
+eb4b039d9,2003
+af00b2e81,Make sure that streams get closed
+a8ad5a10b,Remove footer table
+f208f1dd8,Menu now rendered with CSS
+a17b515b5,More CSS based layout
+f362736b9,Regen all files
+5d135bf96,Demonstrate bug 16972
+9ba0cb2f6,Improve standards compliance of created index.
+df03da5c6,Add support for JProbe 4.x.
+a88ec34a6,Fix up handling of input in nested builds.
+0396f77f9,Apply some reflection to become JDepend version independent
+6c656bb0f,More CSS - less tables
+60e727e4e,KHTML does not right align table cells
+ff657cc0d,Regen other pages
+3bb2c149a,Speed up <junitreport> by buffering output.
+b719b19b8,Sync docs with new functionality.
+062217277,Make <javacc> and <jjtree> work with JavaCC version 3.x.
+f6e86e880,Remove stray CRs
+1aca5cf03,Avoid reusing StringBuffers to work around JDK 1.4.1 memory leak.
+224400e50,"New task container test, which fails. This doesn't fail as badly under 1.5.x but nevertheless is not functional"
+312804ccf,Remove stray character
+4e5861e4d,Add license
+a87868236,Replace unprintable character (x'a0') with a space
+bfad69862,Fix up handling of TaskContainer configuration.
+90e36a855,Article has been removed.
+397cfc713,Remove duplication in Parallel
+d9ac8e598,Document <input>'s defaultvalue attribute.
+0eb5b8341,Add pointer to JMX4Ant.
+cbd2da200,FAQ about the brokenip task in 1.5.2

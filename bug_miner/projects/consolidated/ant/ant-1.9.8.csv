@@ -1,0 +1,48 @@
+Hash,Message
+0e20ef34f,set version numbers for 1.9.8
+66edbcf65,fix small errors in instuctions
+09dcf43ff,Merge branch '1.9.x'
+451364131,set versions for Ant 1.10.0 RC1
+445a6a028,README.html now contains the combined release notes
+968bc0e6a,Merge branch '1.9.x'
+6345b5650,Merge tag 'rel/1.9.8' into 1.9.x and bump versions
+a6a211e06,Merge branch '1.9.x'
+99711de1f,Merge tag 'rel/1.10.0' into master and bump versions
+2cd0300f6,happy new year
+d801c5488,Merge branch '1.9.x'
+af4eb228e,remove obsolete awk escaping - related to PR 60562
+94dc12187,Merge branch '1.9.x'
+02aedbc90,replace backticks with $() - may fix PR 60562
+9700398e6,Merge branch '1.9.x'
+296086084,"Revert ""replace backticks with $() - may fix PR 60562"""
+193f24672,Merge branch '1.9.x'
+d1e64cc7f,infrastructure for XZ compression support - PR 60350
+5ed0aeaa4,unxz task - PR 60350
+c8dde69e2,Ant 1.10.1 will also be available as tar.xz
+fe327c78c,xzresource task - PR 60350
+d7fd05639,alphasort
+be4c1c5ad,only execute test if XZ for Java is present
+0e3026cfc,typo
+14ad5c43c,xz support in untar - PR 60350
+f479b5f52,xz support in tar - PR 60350
+0c38fb606,Fixed a typo (instanciated -> instantiated)
+6a40bdb9d,document XZ support - PR 60350
+fae6f19f4,Merge branch '1.9.x' - closes #28
+1348ebb91,Eclipse tries to write to systemClasspath - PR 60582
+f64dbc053,Merge branch '1.9.x'
+9ef4ba386,better use the 1.10.x version - PR 60582
+022cee192,detect solaris 10 to avoid certain POSIX expressions
+4bd9b4a6e,"Scriptdef task new options : 'compiled' (if javax.script engine implements Compilable), 'encoding' to load resources"
+8d03bfd67,trim whitespace
+0dfa2918b,Merge branch '1.9.x' - closes #29
+a92845215,"first try all f2 dependencies, then get"
+1630d0c0f,Fix CRLF to LF
+49896d336,"Cleaning, proper classpath in JavaxScriptRunner"
+5710193e1,Cosmetic changes
+ea7091756,"Enhanced JavaxScriptRunner, Junit, docs, Javadoc"
+b83bdcebf,[AA] Bugzilla Bug 60628 - Ant Get Task To Accept Arbitrary Header
+3d2151014,[AA]  bugzilla-Bug-60628-Ant-Get-Task-To-Accept-Arbitrary-Header : simplifying test
+198d7a2f4,[AA] Bugzilla Bug 60628: Change after code review by @janmaterne
+d5bd3b4cb,document PR 60562 as fixed
+530e59dbd,Merge branch '1.9.x'
+d556d2c96,preparing for 1.9.9 release

@@ -1,0 +1,160 @@
+Hash,Message
+0b5171749,change docu about subversion
+4a277f561,reverting previous changes in docs.xml because we need velocity 1.4 to maintain these pages. updating generated html pages
+309677ab6,readding file removed by error
+2061d4f08,Added public key for Jon Schneider
+dcd9b525f,Fixing charset decl.
+38516dc8d,Broken links.
+c21dc37a8,NB 6.9 should bundle the new release: https://netbeans.org/bugzilla/show_bug.cgi?id=179463
+ef80c3829,document sortfilter
+27e28f450,fix markup in examples
+feee81046,"update index page, updating Ant's self-description, also removing old paragraph about Ivy"
+d045f666c,fix visible text to link for svn4ant.
+f369bf544,bump version
+a01fc5a82,Java 1.4 is required
+34efe2c19,Java 1.4 is required
+b50c46304,update of FAQ
+481cb3fc2,bump version
+11b928d06,Avoid ConcurrentModificationException when iteratong over life-maps.  PR 48310
+ca7de48b5,update doap file
+e731d415a,test failed on Windows
+c1091535b,(silently) failing testcase for 6836
+6d13fceec,filesmatch throws NPE when comparing texts and the second one has fewer lines.  PR 48715
+923ce185d,fix regression in <ear> that would allow multiple application.xml files.  PR 6836
+b3d0778d1,make war-test use more of antunit-base's infrastructure
+6c678fd2c,add a test for <war> to guard against a bug like 6836 from <ear>
+95fc2bb2e,make war-test use more of antunit-base's infrastructure
+b376b026f,provisional change of ReleaseInstructions
+fb48a0fab,testcase demonstrating PR 48734
+49a001d9c,make comparision locale insensitive
+92efb66fc,Deleting some obsolete FAQ entries.
+e9f610b51,obsolete faq entries removed by J Glick
+9ced5ea9f,updating description of how to generate the docs from xdocs
+f197ffbdd,adapting the creation of the maven artefacts to maven2 repository layout
+77cba689c,fix javadoc warnings
+36633b987,update upload instructions for java-repository artefacts
+044c3e33c,here is my new longer public key
+83ab773aa,trivial duplicate=fail test
+e5598cb61,clarify where addConfigured plays into the task's life-cycle.
+a20f25cb9,Removing xercesImpl.jar and xml-apis.jar. JDK 1.4+ should include a working XML parser already.
+192168751,remove portions that are no longer necessary when we don't ship Xerces and xml-apis anymore
+6bbdce0b7,Xerces has gone
+1c5c68f3e,correct name for xerces
+f665a4d33,accept a wider range of existingip archives by being more lenient when parsing extra fields
+b22234e73,-u option is not needed with new versions of svn client
+083a228b1,we are not using cvs any more either
+ba12ac85f,better use the full potential of a Hashtable.  PR 48755.  Submitted by Marc Bevand.
+70c93da9a,"a few more O(n) lookups where O(1) would be possible - optional tasks not checked, yet"
+e310776b9,embrace Java 1.4 and use LinkedHashMap instead of a Hashtable and a separate index to keep insert order
+01ca57a31,typo
+d58f4d380,"Change more List#contains() cases, most of the changes are unlikely to have a real performance impact since the lists usually are too small"
+58f0bb04d,if user input is compared to fixed strings in a case insensitive manner we should use the default locale.  Use Locale.ENGLISH consistently
+8a8995b99,typo
+0f8c5ae4b,VectorSet#remove doesn't work if the vector is at its capacity
+2dc4a513d,round out test and document the bug
+4f1e68bd2,remove what appear to be the last of my formerly habitual uppercase HTML CODE tags ;)
+c767541c7,"As Jesse points out, equalsIgnoreCase is not locale-sensitive"
+bce2b193e,Removing stale references to xercesImpl.jar and xml-apis.jar.
+69eba07e7,Removing ant-trax.jar and folding TraXLiaison into ant-nodeps.jar.
+d3e00e275,EFS in APPNOTE.TXT stands for 'Early Feature Specification' so our usage of it as 'use the general purpose field to signal UTF8' is wrong.
+4d7bc0e15,fix getClassLocation method in Diagnostics class. Bug 48782. Reported by Torsten Werner. Patch by Ludovic Claude.
+ef2d46393,"Fix for bug 48746, ""exec task sometimes inserts extraneous newlines"""
+a40f5fbc6,Bug 48788 -  add removeKeepExtension option to NetRexxC task - patch submitted by Patric Bechtel (bechtel at ipcon dot de)
+7fe0839f2,Fixing SymlinkTest#testSymbolicLinkUtilsMethods on Mac. Removing special handling of the Mac platform in this test case.
+d7cd65aa7,untabify
+919c88282,BZ48768: invalid ignoring of property setting in property file
+819e23c77,tearDown
+8a68340fc,sp
+9ce605cca,testcase for PR 48768
+9caa9ff44,enforce property immutability when resolving properties read as a map
+fd52d72c6,<fail> used to be called <exit> for a few days.  PR 48809
+18ccac830,antunit-ize exec test to minimize number of layers at work
+9773faa8b,unused import
+37b33d60c,remove temp antunit overridden target
+6db7cf141,remove empty directories
+427d7a924,antunitize LoadProperties JUnit tests
+1b990a501,null guard
+af5bab224,add prefix attribute to loadproperties task + more tests
+1dd445f40,test last property wins
+354b40f37,sp
+e46c4cd3c,Add resource attribute to length task.
+0a8c19b47,PropertyResource will effectively proxy another Resource if ${name} evaluates to a Resource object.
+0c0abb417,Nabble URLs have changed
+9ae42e07c,re-generate site
+33e7d8090,failing test for bug 48816
+91df263ee,"Bug 48816 - If <concat>'s first resourcecollection child is a <resources>, any subsequently added child resourcecollection joins the first"
+2bcbbabc0,sp
+e67bfbd2b,sp
+083e29809,Added forcestring attribute to equals condition
+5661b005e,add test demonstrating omission of nonexistent resources
+84926aa01,removing the stylebook task
+2b79ae469,hopefully make the tests pass in gump's module test-ant-no-xerces
+51815e4c8,Add pointer to Flaka submitted by Wofgang Haefelinger
+94099ccb0,re-generate site
+f8e0dcd65,Bug 48833 -  NPE in <get>
+c30aceefb,Bug 48834 -  BuildFileTest.assertPropertyUnset() could fail with a slightly more meaningful error message
+4c0ab96f5,fix for bug 48789 -  Pipe broken. This is an issue that we have been experiencing in the gump runs on Ubuntu. The tests below will hopefully be fixed by this checkin. src/tests/antunit/taskdefs/exec/apply-test.xml : testRedirector13 and testRedirector14 src/tests/antunit/taskdefs/exec/exec-test.xml  : test-redirector-outputfilterchain-errorfilterchain
+4f95b2899,remove old Java hint add requirement Java1.4+ typo
+de0fc904c,allow AntUnit tests to pass on Windows even if the created jar cannot be deleted.  This will likely leave test.jar lying around in $TEMP on Windows.
+6bbbeb7cb,there now is an issue we can link to for theIP change
+8c6f05f3b,using JDK 1.6 on Windows D:\ has a valid canonical path even if the drive is not ready
+13b958488,typo
+2423f7e6e,make available detect the gump conditions
+dec2829b4,available classname is nicer for a class actually
+44d82385e,test that shows Ant 1.8.0's findClass to take 10x the time of Ant 1.7.1's version
+9a0f85aff,indentation
+3e2cbab6b,reduce performance loss in AntClassLoader from 1000% to about 50%.  PR 48853
+b33d33d75,embrace java.util.jar.  PR 48853
+a03b5aac1,unused imports
+0ba487ad5,clarify the meaning of other in different selector manual.  PR 48078
+680180b35,"it looks like the name of www.apache.org has changed to eos from aurora, the IP address from 192.87.106.226 to 140.211.11.130"
+0ce6fda03,"one bug fix by Peter Reilly was omitted, Bugzilla 48768, propertyFile"
+91cf4c953,bug 48881 - changing URL for TeamCity nightlies
+0bd1b3f1d,"fix for Bug 48876, ANT_CMD_LINE_ARGS are rippling through lower level Ant usage"
+90bf63566,Removed my short key and added long key.
+d58a06319,pr 48896
+c72633ebe,problem 48894
+d9c6fb903,Inspired on one of the patches on debian ant Minimum java version 1.8+ is 1.4.
+6136859a6,elaborate on srcfiles a bit
+cd4f36c8c,"bugzilla 48932, IO error sending mail with plain mimetype, socket closed"
+6f0e98a28,"test for bug 48932, socket closed"
+724299a14,remove tabs
+d46268dc5,reject empty test names.  Submitted by Clark Archer.  PR 43586
+bcd34c5d1,Correct typos according to Bug-48984
+b57059863,"adjusting the name of an attribute of the p4integrate task, nocopynewtargetfiles instead of nocopytargetfiles"
+16b517871,indentation
+520de2a8f,bash completion failes if ant throws an exception.  Submitted by Omer Shapira.  PR 48980
+e5559c804,uniform reference to bug numbers
+3d77ed2e0,rmic's sourcebase is broken.  PR 48970.
+2af904c30,not sure whether this is the correct syntax for non-absolute redirects
+a5ffa2e18,speed up fast executions (where the process finishes in way less than a second) like attrib.  PR 48734
+7e54a7d21,seems that line is broken an kills the other redirects
+3078886d8,Proven to be useful to pick up just one feature of BigProjectLogger without all the chrome.
+c5dc8c182,Doubled slashes in includes.
+43f3df1bc,JUnit is required if you build from source
+c35f045b9,make failonerror work as expected when copying to a file instead of a directory
+b9b253df5,whitespace
+ee8262bfc,Use a CGI script as testcase for Issue 48972
+ca1c170b4,"Most probably fix Issue 48972, will close it once I can enable the test and verify the fix (works with a different server)"
+16d4f876a,"problems 49079, 48961"
+3628209a3,"problems 49079, 48961"
+afadfc856,document fixes
+84d14bfb7,remove unused rsel ns declaration
+1038e813e,"Now that we are on Java 1.4, track RuntimeConfigurable attributes using a LinkedHashMap instead of List/Map combination.  Priority of 'refid' preserved; bug whereby setting an attribute multiple times would add it multiple times to the attribute names list is also corrected."
+ec26cc419,add serialVersionUID
+43b854e3c,remove test file we must not distribute.  PR 49080
+eb2fdfacb,idldepend is on the move.  Submitted by byteslooser AT gmail.com
+9969e4d60,jar filesetmanifest=merge only worked for an OS where filesep == /.  PR 49090
+7d05241b9,"File(""foo"").getParent() is null if ""foo"" is a symbolic link - File(""./foo"").getParent() is not.  PR 49137."
+f70ce7b08,document that symlink's link attribute is not resolved against basedir
+a2ab86062,isSymbolicLink throws a NPE if invoked for the file system root
+5788dcef7,extract constant
+bc2214965,I was tempted to remove reflection because the comment said 1.3 but loadFromXML is a Java5 method
+45485bd54,Add enableMultipleMappings and cache attributes to mappedresources
+22cc386d2,Added the augment task to manipulate existing references via Ant's basic introspection mechanisms.
+08ce84765,loglevel
+38446ae43,"looks as if bug 41948 was reappearing on Win7, needs further inverstigation - add some diagnostics"
+2c468c212,don't warn about duplicate project names if importing the same URL twice.  PR 49162
+8016bd8d2,telnet and rexec have been broken.  PR 49173.  Based on patch submitted by James Wartell
+13941782f,extension-point doesn't work with import.  PR 48804
+9f96b52f9,preparation for ant 1.8.1 build

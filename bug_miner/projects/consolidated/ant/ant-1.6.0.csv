@@ -1,0 +1,148 @@
+Hash,Message
+28a2be9b0,ReleaseInstructions step 18 - migration to ant 1.6.0
+e4ed29508,Ant 1.6.0 release
+961cbd0f4,Add a setbyline(boolean) as well as a setbyline(String) to replaceregexp PR:  25653 Obtained from: Jesse Glick
+0c6eb9142,update setproxy doc with xdocs changes
+d31ebab75,Fix javadoc for ScriptDefBase PR: 25446 Obtained from: gudnabrsam at yahoo dot com Submitted by: Reviewed by:
+494e5affe,stylecheck changes
+821f6378b,typo Submitted by: Yuji Yamano
+10b2e8062,"The ant 1.6.0 distribution includes 5 documents which still refer to the beta, most notably the index.html at the root of the docs directory. Let's try to put the ReleaseInstructions in an order such that we do not have this type of problems in the future. PR: 25652"
+647134d2a,Re add something about mirrors.
+6aba7c507,Macrodef can only see lower case attribute names due to its use of DynamicConfigurator. Fix the doc and the code to at least make this consistent. PR: 25687 Obtained from: Geoffrey Wiseman
+2edcfbaa0,Add typedef for concatfilter in types/defaults.properties PR: 25697 Obtained from: Tomasz Broniarek
+8ad083164,Remind user that JDK 1.4+ includes its own regexp impl PR: 25709 Submitted by: Jesse Glick (jglick at netbeans dot org)
+85f6ea379,Fix for script memory retaining problem. PR: 25394 Obtained from: Jose Alberto Fernandez /  Antoine Levy-Lambert
+b8c5368ce,Correction of pages which do not fit with XHTML or JavaHelp PR: 25707 Submitted by: Jesse Glick (jglick at netbeans dot org)
+476da8dd2,"UnknownElement set the created task to null for gc , but did not set the RuntimeConfigurable's copy to null as well"
+336e5b4ed,Reverting setting the wrapper proxy to null as the unit tests failed.
+80b892fb4,ComponentHelper. Logic for copying the checked namespaces to new projects was broken.
+806443cf9,still 2003
+e71c461e8,Back out javadoc-generated overwrite of our online version of the Ant API docs. This has happened before. Please be careful.
+060b4735d,Fix unit tests.   - addtypetest used an unused invalid classpathref   - PathTest used an invalid reference in testing attributes
+92ff24a7e,add original exception to new buildexception for projectHelper#addLocationToBuildException( PR: 25777 Obtained from: Jesse Glick
+5fef1f8fd,"allow IH to handle Constructor(Project, String) in general and not just for Path PR: 25777 Obtained from: Jesse Glick"
+74a7ac99f,typeo in checksum.html PR: 25895 Obtained from: Pieter Bloemendaal
+5410d80ef,Use getDestDir of jboss element of ejbjar PR: 25826 Obtained from: Damon Sicore
+a1b18ea9c,Fix for ant namespace support for nested elements Obtained from: Dominique Devienne
+5efe60998,Happy New Year
+5482c670b,Update site
+e2688b631,Fix for error in inifinite loop checking in filtersets PR: 23154
+7b0865572,Previous fix for filterset broke the infinite filter testing
+954b95702,"Update with the fixs for filters, namespace and ejb task"
+1a3ed5bfc,some more variables named enum
+636efd4eb,Very initial JDK 1.5 support
+5086d9369,"<touch> to handle filelists. Forced me to add more tests for new and existing touch code, and in the process note that the granularity for unix filesystems is not 0 but 1000 milliseconds. oops. PR: 23526 Submitted by:	gudnabrsam@yahoo.com"
+bc177c27e,Change message on lack of cmp decriptor from warning to verbose as it is optional PR: 25959 Obtained from: Eric Molitor
+2deefc838,Fix typo Obtained from: Yuji Yamano
+4f1313504,2004
+1b60864bf,"Fix npe if <include> does not have a ""name"" attribute PR: 25982 Obtained from: Dawid Weiss"
+afa4931ee,date
+4d35c0f2b,documented some changes I've made
+2b5e1fd2a,Typeo in faq.xml Obtained from: Yuji Yamano
+60087ef9a,Typo in propertyset.html Obtained from: Yuji Yamano
+049e8cfaa,Add description attributes for elements and attributes of macrodef PR: 24711 Obtained from: gudnabrsam at yahoo dot com and Yuji Yamano
+f5921264e,"fix for CRLF adds extraneous character at the end of File if a file does not end in an eol, fixcrlf will add an eol this patch adds an attribute to fixcrlf to stop this behaviour PR:  23262 Obtained from: gudnabrsam at yahoo dot com"
+616ae7c4c,opps
+856b2d1f3,document change to fixcrlf
+08d430255,2004
+07e9f9859,Failing unit tests for whichresource
+73d92708f,"A leading slash in a resource name is only required for Class.getResource*, not the corresponding ClassLoader methods.  Adding the slash makes the task completely useless."
+a6dcdfae7,"Oops, the change shouldn't break anything"
+4509fa928,"Revert, and learn reading."
+dfb102a12,Class.getClassLoader may return null for the system classloader
+fc7e960e1,Add pointer to AntTimerTask
+c9ee19786,Fix for ant -keep-going a b where target a fails PR: ? Obtained from: Darin Swanson
+4a56f455f,Allow presetdef'ed types to be used with the ant-type attribute
+c0c23ce53,presetdef fix
+615d2fd6b,"add "" to "" to jsp output PR: 26082 Obtained from: Robert Flaherty"
+6b6b21223,stop corruption of .zip files in docs PR: 25698 Obtained from: Jesse Glick
+7aa2a8266,correct fix for 25698
+5c2fb3d31,Date
+4f2603925,2004
+90908c63d,Upgrade to xdoclet-1.2 final
+2b7897016,add a blurb about the xdoclet update
+467a2b6f8,remove entry concerning xdoclet in proposal/xdocs
+5d00590b0,"doc error for ""onerror"" attribute of typedef/taskdef, warn is actually report"
+c856036f3,2004
+4db617fc7,Add two new attributes in p4submit : needsresolveproperty and changeproperty PR: 25711
+0ffe9589d,New external Task 'Pamda'; New Ant-Version in NetBeans
+af0809b04,macrodef element names are case insensentive due to use of DynamicConfigurator PR: 26225 Reported by: John Sichi
+eb5088c22,Fix date
+00727cc99,use a static map of jarfile->manifest classpath entry
+c529489b0,macrodef updates for WHATSNEW
+3398e1c32,opps - deleted other change
+86985db5f,Added CocoonTask
+f9a5ef361,Typo in CocoonTask
+5f41947fe,"- Added an extra option to 'failonerr' to each ClearCase task/command. - Extended the functionality of cccheckout. It can check (notco) to see if   the desired element is already checked out to the current view. Thus it   won't attempt to check it out again. - Added three new ClearCase commands: ccmkattr, ccmkdir, ccmkelem - Checkstyle PR: 26253 Submitted by: Sean Egan (sean at cm-logic dot com)"
+630347951,Typo: missed blank
+7b5e67f53,add textname attribute to macrodef
+a20d0ddab,new condition: typefound
+218df7b24,fix doc for mapper element of apply PR: 26352 Obtained from: Matt Benson
+8b3eb5386,added textname attribute
+6356d19ab,better reporting of linkage error in checkTaskClass PR: 26332 Obtained from: Jesse Glick
+74ba756ba,checkstyle
+6ed7b543c,followed up peter reilly's suggestion; full testing for unimplemented as well as undefined
+3386b229b,2004
+dc783273b,homepage @deprecated
+bf736586f,Change textname attribute in macrodef to a text element
+ca50596b9,Document Java 1.5 support
+48891ada6,Bug 25801: had written filelist instead of fileset. Thanks to Jim Fuller
+57248b5df,2004
+5ec7e1db1,Add a new cvsversion task Modify CvsChangeLog to accept a branch as the tag attribute ChangeLogTask.java now inherits from AbstractCvsTask PR: 13510
+fd6969e08,added @since tags
+931c326a9,"got hit by a line ending problem, now this will be the right format"
+b16d9b61f,typo in manual for enablemultiplemappings attribute of copy task
+fd7b47505,Release of ant1.6.1beta1
+e79af06b0,2004
+46a9d8a1c,<java> ignored the append attribute.
+ba56fe06a,fix wrong javadoc comment.
+ded399dd7,The gcj compiler adapter failed if the destdir didn't exist.
+6c29f8992,Fail with a useful error message when the user asks us to fork a process in a directory that doesn't exist.
+29cd9759d,forgot to setTaskType when cloning UnknownElement
+49e25589b,Upgrade to Xerces-J 2.6.1
+7e42bcab6,"Clarify what update=""false"" in <zip> does."
+0f18fba94,Improve docs on assertions.
+a41ecd0f2,Handle unexpanded properties in Windows CLASSPATHS
+6a9d1e472,Merge
+a15c0667b,Keep those grade school teachers happy
+8942302ce,first test to move to the Apache License 2.0
+f5d5fede9,Update manual entry for javac to document when tempdir is used PR: 26559 Obtained from: Steven Scheffler
+32276de41,Check if character is in range for special array PR: 26642 Obtained from: Jesse Glick
+ca1513552,Switch to Apache Software License 2.0
+eb25eb17c,adapt checkstyle configuration to the new license
+c1a80fbda,add flush are println in DefaultHandlerHandler#handleInput - some java jvms do not flush the output for System.err.println() in particular/OS PR:  26655 Obtained from: wwalsh at curamsoftware dot com
+66555ca10,Remove trailing spaces in all java files in order to make checkstyle happy
+037cb17de,bring back original copyright years
+1ba91e485,Changes to make Ant installed in JPackage's RPM environment behave a little bit more friendly.
+712414307,Added NOTICE file as discussed previously on the development list
+05a31e3b4,"Added the NOTICE to the metainf dir of ant.jar, ant-launcher.jar and ant-nodeps.jar and also to the distribution files Updated the copyright notice in bootstrap.sh"
+ab6b17d63,PR: 19301 Use xalan extensions to replace strings and avoid a stack overflow when doing deep recursions.
+e15f867c9,PR: 19301 Use xalan extensions to replace strings and avoid a stack overflow when doing deep recursions.
+f03ec5183,Apache License 2.0
+abd5a4b0e,New license
+be8c8a8bd,License version 2.0
+dbc7f86de,added new license
+918cac291,Make failure to display the splash screen non-fatal.
+8afdb58dd,Allow unit tests to pass for java 1.5 Compiler name for 1.5 is javac1.5
+c2e7261d5,Make license upgrade more prominent PR: Obtained from: Submitted by: Reviewed by:
+15cd432b9,Upgrade to License 2.0
+64af2a0b8,Upgrade to License 2.0 continues
+f7c404f46,Upgrade to License 2.0
+81b7c947c,Upgrade to License 2.0
+975abbe8b,"Add something about the support of MS FTP servers, using the CVS HEAD of commons-net and jakarta-oro"
+7c2107f6d,Copyright year
+0d5edbdfc,Update information concerning MS FTP server required libraries
+29815cef7,Give 2 seconds to these tests to succeed instead of 1 Avoiding gump failures
+74124d752,Shebang line had been lost in the copyright update
+487f084e0,Make touchtest pass on Win2 PR: Obtained from: Submitted by: Reviewed by: Make touchtest pass on Win2K / FAT Dates earlier than 1990 seem not to work for me as last modified dates of files
+69fbedca6,New Task: snip
+581160297,XmlLogger: Remove tasks and targets from the hashtables when the task/target finished event arrives. PR: 25086 (a patch provided in one of the comments) Obtained from: Artur Lorincz
+278781dcd,Copyright owner is The Apache Software Foundation
+33c177007,Copyright owner The Apache Software Foundation
+3dd67df3b,restoring files committed by mistake
+3cb816afa,Copyright owner The Apache Software Foundation
+ff348804c,Copyright owner The Apache Software Foundation
+9a6370872,changes following tests under cygwin adding a second backslash to variables terminated with a backslash to ensure also prevent problem with evaluation of test expressions where -f is compared to something else this error message was happening + [ -f = --h -o -f = --help ] [: --h: unknown operand + [ -f = -h -o -f = -help ] [: -h: unknown operand
+cc9f4f71f,"Be a little more defensive in a protected method of a non-final public class, PR 26737"
+d3f02f3fa,support the groovy language for the script and scriptdef tasks Add groovy to the BSF supported tasks Change the script names to remove <> to allow current Groovy implementation to work
+0c757a017,comment on groovy support

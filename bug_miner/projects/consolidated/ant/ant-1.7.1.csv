@@ -1,0 +1,481 @@
+Hash,Message
+8031d7c31,move resource comparators tests to antunit
+19b043673,REALLY antunit-ize the test
+23b6d1df6,failing test for PR 46257
+b7858a932,pathconvert preserveduplicates
+5e7b9b56d,pathconvert preserveduplicates
+2c7748a3f,PR 46527; sort losing equal entries
+2126e623b,restore stuff accidentally blown away
+4a89dbed5,Add link to Ant+DocBook article.
+8efbd0e19,"need to add a path separator after the first path element, not before it"
+48a59fa35,Document ProfileLogger
+190f0ac69,Initial announcement of Ivy 2.0.0
+ac360836a,Use Matt's proposed text to fix PR 46526
+ef0bc712f,"The ""welcome"" page uses another content than the ""news"", but Ivy 2.0.0 is worth to be announced on a more prominent place (too)."
+d44b844cf,Added announcement for the Ivy 2.0.0 release.
+382ff3b79,Fixed the anakia.classpath construction when using velocity 1.6.1
+970247d77,"#45902: <zip> (without dofilesonly=""true"") sometimes recreated archives unnecessarily."
+4ff97c4cf,Two more examles.
+ca4b6cc23,turn Jesse's testcase in PR 45902 into an AntUnit test (failed before applying revision 738330 and passes after it)
+2714152a1,document resourcecontains condition
+130b9317e,support source/target on gcj.  PR 46617.  Based on patch by Pawełuzelski
+8d48bc679,Move theip package into a Java 1.4 world
+601cdf67b,Make sureIP archive is closed even when a RuntimeExpection occurs.  PR 46559
+0e6ae7261,fix MIME type
+499deaa37,Include information about the XSLT processor found (if any) in -diagnostics.  PR 46612.
+3b62d3b48,the fix for 46506 is not backwards compatible
+e73a7f649,IgnoreIP extra fields that don't contain the recommended header+length structure - this is what unzip does as well.  PR 42940
+24fe82e43,"Adding task to provide host info, requests in bug reports 31164 and 45861."
+2ca342fb2,"Fixed some obvious errors. (Formatter class is not thread safe, equals from string to another object)."
+d534f1e1a,Math.abs(rand.nextInt()) may yield negative value. rand.nextInt(Integer.MAX_VALUE) seems to be what was meant.
+9c88ea5b4,Original toString would always throw a NPE.
+05aa4509f,Forgot to commit this one yesterday (belongs to commit r739567)
+485c20f2f,Another thread-unsafe date formatter
+8c3c62ba7,"Do not filter out AssertionError bugzilla 45631. Also some corrections and still avoid inclusion of the AssertionError ""Caused by"" line as originally present when converting to AssertionFailedError."
+8c0cc2ec6,45631
+c89504bc1,looks like an artifact of a typo
+6cc73a736,Use a real transformation error instead of an XML parsing error in testTransformationError
+336c1beb2,Added signature
+2d1ac70e3,fix XMLCatalogTest on Java6
+b27fa7d06,indentation changes only
+1497397ce,* Add Hudson builds * Add Velocity makros for Hudson * Use Guest-Link for TeamCity (thanks to Yegor Yarko)
+a9c72d0ac,regenerate site
+817fd3199,"fix a bunch of findbugs reported problems in theip, tar and bzip2 classes.  PR 46661"
+28901945f,link to Ivy svn modules
+4a39c7583,re-generate site
+ff303a559,fix eol-style
+2e2292e57,"Removed the own implementation for creating a temporary file, in case deletion of temp file fails, added it as candidate for deletion on exit."
+4f5c70357,Deprecated the public DateFormat
+61f6e3225,Marked the DeweyDecimal in extension package deprecated.
+e1dba00d6,deprecated since
+3ade0b6e7,"Pr 44544: Deadlock between in, out and err in the redirector."
+ca6ea64af,provide a finish method separate from close - merge from commons-compress
+43622a4c8,revision 741608 actually closes PR 42713
+7d2c3a1c0,"provide a finish method separate from close - merge from commons-compress, this time merging the correct revision"
+a40f84b2b,jdk1.4
+479a97c38,"Bugzilla Report 46659, space missing between define and value in RPM task (verified against help page of rpm)."
+1fa24dc23,fix linefeeds
+bba4624fa,#43114: ensuring that package-info.class is created/touched when package-info.java is compiled.
+ae70a9608,JDK 1.4 - unfortunately
+6b472602f,eol-style
+8d0bd81aa,"starting the tests for this, fixing the code as the problems show up. Task is not yet ready for use."
+2f61ee2bf,linefeeds
+25f451bd3,Add support for InfoZIP invented extra fields for Unicode file names and comments.  Submitted by Wolfgang Glas.  Merge from commons-compress revision 745528
+9416f208d,allow extra fields to be added at the front
+53691bd66,"TestCase for new Unicode extra fields, based on submission by Wolfgang Glas.  Merge from commons-compress"
+2f0ab7912,Adapt to ASF infrastructure change
+3cb22aa1c,Support more modern encoding flag where archives signal filenames as UTF-8.  Based on submissions by Wolfgang Glas to commons-compress and TAMURA Kent to Ant.  PR 45548.
+fa5775963,whitespace
+8264511a2,use nio for decoding of names - merge from commons-compress rev 746933
+545ff63ab,use the desired encoding to decode
+1113e19f8,sync can cause NPE whith broken symlinks.  PR 46747.  Submitted by skoppehel at intersoft dot de
+5395cd37d,typo
+def28d00c,Add 'Ant Script Library'
+8a183a492,"optionally read/write InfoZIP unicode fields, merge from commons-compress"
+3b7986524,fix self-assignment
+a8c2ab186,"provide options for enhanced encoding support inIP, document it.  Many thanks to Wolfgang Glas who provided most of the test input as well as patches the new support is based on."
+cbd20a77e,eol-style
+752d64fa4,"improvedip-encoding support for JDK < 1.5, submitted by Wolfgang Glas, merge from commons-compress"
+6c0ab4d9a,typos and unused imports
+6cd0de102,Parse central directory part ofIP extra fields.  PR 46637
+f21a51dfd,even more encoding options forips
+272ec48fc,ensure the same encoding is used for name and comment in all places.  Submitted by Wolfgang Glas
+f975128c7,Link check of externals/projects.
+c75a494bd,"Bug 46812 -  <tarfileset> no longer takes a fileset ref (regression) -changed the overrode the Datattype.getCheckedRef() logic in ArchiveFileSet, delegating to the overridden getRef in all such cases; the subclasses all do their fileset imports there. Added a test. Not changed WHATSNEW unless there's evidence that this test fails in Ant1.7.1"
+54166cfaf,deal with file system roots being added - was leading to IndexOutOfBoundsExceptions in File-arg constructor
+a29bda027,properly set the size of directories
+228fb9839,remove redundant boilerplate code from NOTICE files
+9922008d6,"Improve bzip2 performance, submitted by Rodrigo Schmidt, PR 24798"
+d7c3883e5,document SecureInputHandler and add to known input handler types
+94232b62a,Better documentation of getSubProjectExecutor()
+d4d520b05,FAQ entry: How to precompile JSP
+63817463c,add my key
+9aac905f3,support MSYS/MingW.  Submitted by Clement OUDOT.  PR 46936
+f826376e2,preserveInTarget has been introduced with Ant 1.7.0
+0cda41d5b,add a force option to signjar.  Based on submission by Pavel Jisl.  PR 46891
+d6f0b126b,missing piece of revision 763661
+2bba1c825,Example: How to pass multiple JARs via -lib
+de5ed88e5,"Remove pre java 1.3 construct. Remove spawn from Execute (spawn from ExecTask is actually used, the one here was never used)"
+cba01025c,honor failonerror on connection problems.  PR 46829.
+b138994dd,"we keep adding attributes to fileset but not to MatchingTask, so don't lie.  Related to PR 46738"
+c502b3b5c,"fix numbering, part of PR 46797"
+7984fd240,special handling of IllegalArgumentExceptions in attribute setters for better error messages.  PR 47129
+8ef3166ad,"make test pass for me - it could be that ASF's infrastructure is using Geo-IP information in DNS, though"
+347bbc40b,tests for PR 47168
+2b8fbea11,create SHA-512 checksums as well
+cd1b6501a,show how to use stronger hash algos
+7b58a7d7d,preference for stronger algorithms
+dfcafdf3c,"use technique used by many other projects to get rid of SSI without an iframe, related to PR 46895"
+f7477d1b2,testcase for PR 47196
+89468d631,whitespace
+bbea1d834,javadoc creation of Ant's own sources failed on JDK 1.4.  PR 46731.  Patch submitted by Martin von Gagern
+76aa47231,replacetokens failed if stream ends in begintoken.  PR 47306.
+120dcf4e5,clean up test files/dirs
+467da8230,whitespace
+3b47767f6,"show that .svn is excluded by default, independent of platform"
+aaf629b7a,pass on IOException from Runtime.exec as the old code did - and as promised by the javadocs.  This fixes ant-contrib's tests in Gump.
+18141ca0a,really add setbeans attribute to scriptmapper/filter/condition.  PR 47336
+65434f5a3,test fails in 'svn export'ed directories
+38db83d1c,Don't ignore missing resources in copy when failOnError is true.  PR 47362
+ab8c8e14e,loadproperties' encoding attribute is broken.  PR 47382
+4e9a6dca5,document that javadoc merges the different ways to specify input.  PR 47196
+183de933a,explicitly set encoding to iso-8859-1 since this is what Properties.load expects
+c62e477a0,"prefix and suffix attributes for command line arguments, PR 47365, submitted by Martin von Gagern"
+0ce2545f6,add prefix and suffix attributes to apply's srcfile and targetfile elements.  PR 45625
+50f09a9b5,don't put test files into the source tree
+82ae2eb24,"Issue a warning in case neither includeantruntime nor build.sysclasspath were set, since the default gives scripts an implicit environmental dependency which is often unwanted. See also: http://www.netbeans.org/nonav/issues/show_bug.cgi?id=158958"
+7cb6f4d99,clear out buffer so the last block is always filled with EOF records.  PR 47421
+8b05902d4,make javac independent of CLASPATH
+7d945f51c,Typo.
+b044980b9,"Added ""hidden"" sandbox antlibs."
+b1315e5e6,additional tests for new prefix/suffic attributes of command line args.  PR 47365.  Submitted by Martin von Gagern
+6a43b6dc3,Add ant4hg external antlib for Mercurial SCM
+2fa45322b,add a passing testcase for PR 47470
+7f2456889,add a new indexMetaInf attribute to <jar>.  PR 47457.
+5a534d114,whitespace
+a9c576b74,make the executable attribute of apt inherited from javac work as expected.  PR 46230
+d4071f9eb,Also allow redirect from http to https a subset of what was requested in pr 47433. Tests from https to http v.v. have also been executed I couldn't find a https space for public testcases though.
+8d4985ca7,made easier to switch loglevel on the antunit testcases
+f62d56341,"PrintWriter hides exceptions, avoid it"
+38bbf18dc,whitespace
+104de0d7d,double buffering
+d24621d41,potential NPEs
+ddf5cd73c,check error on remaining PrintWriter instances
+349919492,try to unwrap ScriptException - unfortunately it doesn't seem to work - PR 47509
+e8e131fdf,testcases for PR 43114
+88d3bf125,Generating docs needs velocity 1.4 (1.6 doesn't seem to work correctly)
+37f2ba806,"Add a page for IvyDE, just like the one for Ivy"
+4de20278c,Add an executable attribute to rmic.  PR 42132
+a9d97290a,typo.  PR 47522
+0768b9b64,filesetmanifest=mergewithoutmain didn't work for nested manifests.  PR 29731.
+393113dc6,record task doesn't work properly with subbuilds.  PR 41368.  Submitted by Greg Schueler
+a9aa3e7ef,tests for PR 43946
+c341e8606,refactorip archive creation logic into smaller chunks
+a6e42833f,preserve timestamps for directories added to aip archive (and potentiallyip extra fields as well)
+5c440d248,preserveIP extra fields
+e24b8aa6a,newip logic bypassed overridden method in jar and broke manifest/index logic
+4b52f604a,alphasort directories read from non-FileSet resource collections - DirectoryScanner already sorts them appropriately for FileSets
+50558dd27,don't ignore directory resources when performing up-to-date checks
+a4c986354,don't compare timestamps on directories but add missing dirs
+d18b66588,extract method
+88bdf1337,add a delay so newip is certain to get a more recent timestamp
+8df1ef0ec,"make update=""true"" and filesetmanifest=""merge"" work together.  PR 30751"
+ffe7ce3c5,log stuff when actually creating the archive
+30ebea71b,fix xmlproperty examples.  PR 43583
+8ac822fd7,javah doesn't support command line argument files.  PR 43320
+2ed62d6ba,use the non-deprecated filemode attribute in example
+373ed6b2a,keep escaping XML in stacktraces.  PR 39492
+964bac4fa,Java 1.2
+c5a945fe3,"Allow users to specify a classpath when using a custom adapter in javac, rmic, javah or native2ascii.  PR 11143"
+39ff544a6,pretty persistent typo
+e04ff4d52,make all classes use the same AntClassLoader constructor
+8ebe808f7,override getResources in a new AntClassLoader subclass that will be used consistently when Ant is running on Java5+.  PR 46752
+26f846b83,allow access to parent.  PR 35436
+22d3473e8,passing test for PR 43994
+c8e91147e,properly set CodeSource when loading classes.  PR 20174
+a1941d875,"META-INF is no longer special in grabFiles, thanks Gump"
+08fd7a4c8,typo
+c8232ed82,allow methods other than GET in http condition.  Submitted by Robert Clark.  PR 30244
+a1003b0b8,configurable display text and more control over progressbar in splash task.  Submitted by Tomasz Bech.  PR 39957
+5c6ae59fc,"configurable number of retries in get, option to skip existing files.  Submitted by David M. Lloyd.  PR 40058"
+b0eca5e4b,print where core and optional classes have been found.  PR 47574.  Make check for optional classes work again after the test task has been removed.
+670a91ad2,passing testcase for PR 47593
+329f6d356,"report name of corruptIP to System.err,  PR 47593"
+ae2ce5907,make error message more readable
+28d7d5d8d,Huh?
+77a9566be,Unused variable
+160c377d0,simplify
+30331f07a,passing test for PR 47602
+bf5b0645a,wrong attribute name.  PR 37696
+30b9d9875,hint at maxmemory setting.  PR 43301
+a123ff4d3,example for implementing PR 18656
+4608e8f4a,"compress -> minify, 'new' compress"
+44b6fcc18,use the same logic as getResource in getResourceAsStream.  PR 44103
+d9ad5addc,whitespace
+091710e02,"Depending on exactly how you run 'ant test', its classpath could contain different things; legitimate for ${ant.core.lib} to be a classes dir. (Would be better if the main build script actually ensured that it was testing the classes just compiled and controlled the test CP; unless you do e.g. 'CLASSPATH=lib/optional/junit-3.8.2.jar ./bootstrap.sh test' it does not seem to work, because '/usr/bin/ant test' actually runs tests against /usr/lib/ant.jar etc. Quite a mess.)"
+37d7a6b67,"provide access to encoding stuff in unzip, hide it in untar"
+f00dea8ea,fix NPE when logging an exception without message.  PR 47623.
+8d0f54d59,Missing space in error message.
+9ca903fd4,Use java.runtime.version instead of java.vm.version in Created-By manifest attribute.  Submitted by Gilbert Rebhan.  PR 47632
+7cc70f15b,forgotten file from revision 801246
+9a03f0431,"oops, didn't mean to replace the vendor property"
+aec61d53b,support FileProvider inipResource
+d12b483bb,executable?
+c338d749d,executable?
+0d2218167,fall back to java.vm.version if java.runtime.version cannot be found
+ba8cedaaf,"Writing test for #43398, which is not satisfactorily fixed."
+b9e04be31,Handle case that test is run on Windows.
+78f88a7c4,"#43398 revisited: display full stack traces for non-BuildException's, even inside <ant>."
+b38b45047,make ftp task compile against commons-net 2.0 and 1.4.1.  PR 47669.  Submitted by Alexander Kurtakov
+ea73ec7d7,expose native encoding constant
+598e18997,log something when expand doesn't extract a file that doesn#t match the patterns
+75126703f,allow setting of arbitrary JDBC connection properties.  PR 33452
+65c667d14,new islastmodified condition
+f59787396,some extra verbose diagnostics
+af56e7c49,clarify that Ant conforms to manifest standards when writing
+818ddcf18,add a destdir attribute to rmic so generated stubs or whatever can be put into a different place.  PR 20699.  Submitted by Mark A.iesemer
+f31845f71,Add a listfiles attribute to rmic.  PR 24359
+93f679b73,"clear compilelist in rmic before execute, not afterwards - just like javac does.  PR 21089"
+e5a993341,whitespace
+f0b014623,enhance copy filtering docs.  PR 16848
+8fc4c4ece,a password inside the build file is not secure.  PR 20208
+9522e0c3b,document chmod.fail property.  PR 22500
+83bc4ad6a,the last filter wins.  PR 41403
+4ac80ba42,"really, don't use Java5's XSLTC.  PR 45011"
+f12aca5b4,improve nested-record patch.  PR 41368.  Submitted by Gene-Sung Chung
+f1e80a0d1,passing test for PR 47666
+e87e1b281,DefaultLoggerTest must run in same classloader that loads DefaultLogger itself
+083e03672,option to suppress FAILED lines in JUnit log output.  PR 35073
+9244de5a1,"zips and jars use / as separator, so weblogicdeploymenttool may fail on Windows.  PR 35649"
+a7b64a73d,the update attribute of the modified selector was ignored.  PR 32597
+55a163b0c,Typo.
+3ba5435ef,make sure the entry has been read when looking for uid/gid and so on
+67fee4b82,"really return the group id, not the user id in getGid"
+bd264ff3b,"missing column in attribute table, a few corrections"
+b264711b7,tests for manifest merging
+72939923a,<propertyfile> now support deletion of entries
+05f8f8bd0,place values into the right columns; add forgotten value
+77024a43a,allow Class-Path attributes to be merged and optionally be flattened.  PR 39655
+433387b88,"delete was scanning the same fileset three times, making modified selector useless.  PR 43574"
+0e645ceb6,document fix of 43574
+bbcec8567,cache iterator in Resources if asked for size
+50b49e76b,document that targets should have unique locations.  PR 47640
+bfb9681bc,passing test for PRs 39122 and 44300
+9db85168c,document that directories need to come from resources PRs 39122 and 44300
+82511dabe,wrong bug number
+de5e98ece,provide proper control over caching in <resources>
+173ed4bfe,document @since for resources/@cache
+7fdc6df7c,take advantage of caching in Resources
+b6b81eb5d,tests can't pass in Gump because Xerces is pushed into the bootstrap classloader
+52f34ecb8,resourceexists condition
+63c50270d,Test for Gump was not sufficient
+934dd104d,"Text flow, some typos, uniform way of addressing Bugziall tickets"
+cfb2e0108,errorproperty and warningproperty for <sql>.  Submitted by Andrew Stevens.  PR 38807
+8d275b78c,It may be better to set the property before an exception is thrown
+4e4a35935,rowcountproperty for <sql>.  PR 40923
+1896560c9,document limitations of build started event.  PR 47730
+8741512d8,"Make preserveLeadingSlashes in tar work again, was broken by revision 755231"
+9ae5d99eb,Use NIO when copying files without filtering.  PR 30094.  Submitted by J Bleijenbergh and Robin Verduijn
+26839fdb3,zipgroupfileset is-a fileset.  PR 47725
+541157c5d,Add mapper support to <image>.  PR 23243.  Submitted by Rob Oxspring
+4666247fc,show how to combine checksum and get to achieve PR 44662
+10e250f3b,Add httpusecaches attribute to <get>.  PR 41891
+f2d99c202,create parent directory of archive in <zip> and <tar> if needed.  PR 45377.  Based on patch by Remie Bolte
+927fb1863,new filter sortfilter by David Leal.  PR 40504
+7107fa72d,"Now that we have sort, throw in uniq as well"
+a3238da97,wrong anchor
+4d706d4ad,"Unmappable character, anyway incorrect acc. to <http://en.wiktionary.org/wiki/via#Etymology_2>."
+028ba47c8,Some miscellaneous updates given that JDK 1.4 can be assumed. The biggest outstanding JDK 1.3 code is in Locator but I am scared to touch it.
+efd287b87,More cleanup of pre-1.4 code and docs.
+11c355f54,Taking advantage of Throwable.cause.
+e0b4aa354,provide access to compression method
+6aa494cb3,"UniqFilter is not only simpler if implemented as a TokenFilter, it is even more useful as well"
+9d15809c9,"Hey, TokenFilters can be used in filterchains with no effort, didn't know that"
+1c24c78ca,allow rootfilesets with a dir other than the dir attribute of the classfileset.  PR 37763.  Submitted by Alexei Yudichev
+d72413184,"refactored <ftp> so commons-net may be loaded via a separate classloader.  Based on patch by Greg Roodt in PR 45860.  Not really tested, yet, therefore I haven't changed defaults.properties so far"
+d8f18f1b9,add some more documentation about property helpers
+edec015af,more regex stuff
+cb9fd814b,make stuff needed by FTPTaskMirrorImpl public
+abe974363,Optionally enable caching for <path>.  Should help in situations like PR 45696
+28baeb722,@since
+6e6aa3020,support nested text in <property>.  PR 32917.  Submitted by Alexey Solofnenko
+9f1bf3524,getResourceCollections is useful for composition of resource collections as well
+d7de88f3c,"Caching of system classpath breaks environments where directories that are part of CLASSPATH get created during build (Gump, for example)."
+443354b96,Hints for handling <exec> errors 'CreateProcess error=2' on Windows.
+fb3ab15ff,Passing test for PR 47755
+1822d8285,provides more precise error message in case of failure
+6c014111c,make nested text in <property> less intrusive on existing build files
+90f1f69a5,whitespace
+6fe9eeccd,A few people I found while researching the compress code origins
+b312b8863,wrong classname
+6689f2cf2,simplify propertyhelper usage
+7af3e2519,"failing test for PR 26917, not sure whether this is a bug"
+e716ef9c9,upgrade jsch dependency
+a9cbacc4f,Make javaresource and friends honor build.sysclasspath
+eb64d092a,add a parentFirst attribute to javaresource so you can load resources from the specified classpath instead of the system classpath.  PR 41369
+33fea605c,backwards compatibility
+9923ec169,ensure classloaders get cleaned up when no longer needed
+01f6e232c,"Oops, logic was backwards.  Clean up classloader unless it is added as a reference later."
+0d63880cc,"filterchains leak classloaders,  PR 45439"
+26a42bd20,clean up classloaders if things go wrong as well
+63eeac0b8,extract method
+88c531d76,whitespace and make method paarameters final
+52b6f9a43,New address for jarpatch.  Submitted by Norbert Barbosa
+e11335f5b,"document PropertyExpander and helpers, some minor optimizations in ParseProperties"
+12d618105,Improve PropertyHelper documentation
+e2c45d16d,method level Javadocs for PropertyHelper
+996e3e6ff,fix some javadoc warnings
+96932a3c7,"compiler adapter as nested element in javac, rmic, native2ascii and javah.  Document package-info.java stuff in javac manual page."
+e931e7bad,plug some more classloader leaks and mark those places where a leak remains and I don't see an obvious way to fix it
+65fc13760,whitespace
+759f97729,Use FileUtils.getRelativePath which knows how to deal with drive letters.  PR 44499
+69eb6fa98,better move the check into the 'this is Windows' block
+9c8f401ba,testcase for <property location>
+5ddb0dfbd,Calculate relative paths.
+86377b86a,"note <property location=""from"" basedir=""to"" relative=""true""/>"
+df7dfba9d,convenience constructor
+a7cf25e50,"Close all input streams when unzipping, Submitted by David Schlosnagle, PR 42696"
+6b524acbb,steal 'CreateProcess error=2' text from manual and add it to the FAQ
+34cfd3f92,re-generate site
+e06e8ceec,Passing tests for PR 47844
+396f8e9b9,enable test
+e25dc381c,implement a new ${ant.refid:} syntax to expand project references as properties
+2e0b8b7d3,handleDirSep on name selector.  PR 47858
+30138dd85,unballanced blockquote
+32f323668,URLProvider interface
+a920aa9f3,Make <get> support resource collections and mappers
+aea6464f0,test with more than one resource
+b1a62de50,oops
+3935277bc,improve logging
+3495f4b72,use a single get task in macro
+5438260e4,"GlobMapper's from attribute was broken, too"
+df8a59cf0,www.ao is aurora for now
+1e3a38677,and aurora has a different address
+cb2df5750,things you didn't know target could do ;-)
+df121a6cf,"PR 47830 : implementation of the ProjectHelperRepository to make Ant able to choose a ProjectHelper, and some doc about it"
+5edb2be59,Syntax error.  PR 47911
+d6b9d9ccd,whitespace and a typo
+abe09254e,"create fresh instances in each invocation of getHelpers.  Needed by ProjectHelper implementations that keep state and cannot be reused, like ProjectHelper2"
+b31df63e3,Add missing license
+5c99aa9c2,some grammar fixes (as good as a non-native speaker may correct the narrative of a non.native speaker)
+f77a471a6,document antlib descriptor parsing
+c6b7ba94c,Make target's if/unless treat true/false strings as booleans
+3bd6a1fce,47929 inconsistency between source and src in example and explanation
+df102bb3a,"Move ""don't check conditions if the attribute hasn't been set at all"" logic"
+1d56ecb5a,Make fail task use the same if/unless logic as target
+f95493959,fix logging logic
+bf8a13577,behavior when property value is neither true nor false
+8a848413c,better deal with null projects
+b71fd5ddc,provide project instance to internally created types
+73c0030ac,make select selector and include/exclude use the same logic as target for if/unless
+48468d899,use the same logic as target for xslt's param element's if/unless attribute
+d514ec356,move props antlib section
+cf4eecfe0,re-generate site
+a4445df98,properly indicate the oldgnu format for tar entries with long file names.  PR 47653.  Submitted by Lorenz Diener
+f503d05c5,make funtest even less visible
+163f90f6b,Make junit's formatter if/unless behave like target's if/unless
+fa67ab499,Make if/unless und junit test children use the same logic as target's if/unless
+f81509b0c,Promote Compress Antlib and add an initial homepage - not much more than a placeholder for now
+e43a2ddc2,Ivy 2.1.0 Released!
+271df98a9,Add EPP
+8e5112970,Add an annoucement for IvyDE 2.0.0
+b1d2aa25c,"revert 826209: I wanted to commit the xdocs, not the docs"
+45e67769e,re-generate site
+26fe7e110,"adapt to BCEL change, see dist-ant's Gump build failure"
+8b2485e6b,Add a bit more information
+98f78e19b,tar doesn't always recognize the target isn't up to date.  PR 48035
+2f1a9d25b,extract and expand property documentation
+f38b56bd8,steal some documentation for the props Antlib
+d5ce1f6ef,add new list style to avoid forgotten brs in places where uls are more appropriate semantically
+f64f21469,use new inlinelist wherever convenient in TOC/list pages
+ea6d5e011,Spelling correction.
+a2cedaed6,Same fix as for AncestorAnalyzer - make code compile with BCEL's trunk
+632c01d04,Only store the command's output with no decoration in sshexec's outputproperty if the command attribute is used.  PR 48040
+89ddfa3d6,- use the project helper repository for antlib too - change the ProjectHelper API to start using Resource instead of URL or File
+18ebfda11,update externals: - add AntRunner - remove entries which were marked as not-longer-available
+28ca06231,Use URLProvider instead of URLResource
+211d0a8ea,make javaresource an URLProvider
+d39df7145,explicitly state that tar doesn't even try to preserve existing permissions
+6d8280390,"Mark field final (not strictly required, but looks better)"
+2d6124688,#48114: typo.
+a1c1579d2,Setting MIME types so manual can be browser directly from the repo (I hope).
+81814fc72,Deleting excess '>'.
+f0faf53bc,Simplify/update NetBeans entry.
+6a0ad17b8,"Anchors should be inside, not outside, header tags."
+8bc3e4330,Fixing some HTML errors.
+a1ef830db,Documenting new if/unless behavior.
+65985b1f8,Noting new if/unless behavior.
+45cb0df5b,Another -Xbootstrap typo.
+2ef9a200a,allow import of FileProvider or URLProvider resources
+fa1b0d74f,Another typo corrected thanks to Jonathan Gibbons.
+3a39ebed9,"All instances of the same scriptdef task shared a single ScriptRunner, causing problems in multithreaded situations.  Submitted by Valentino Miazzo.  PR 41602"
+a5da600a7,make import support resource collections.  PR 22269
+746437d82,Try for CI-build: use another tmp.dir
+42f31b452,"Fix import's file attribute if file is imported from URL, test it, document it.  Note to self - url resource needs a way to create relative urls.  Not to self - the duplication in the manual pages for import and include must stop."
+e1cd13c79,support creating url resources relative to other URLs
+d672cd219,Added Jon Schneider to Active Committers list.
+70c56ba7c,How to update the online homepage
+1c75ce2be,Added Jon Schneider to Active Committers.
+37cf105bb,"Trying to improve robustness in <subant> and <propertyfile>. Observed a long-running build randomly failing with text like this: [propertyfile] Updating property file: .../whatever.properties       [subant] Failure for target 'something' of: ...module1/build.xml       [subant] The following error occurred while executing this line:       [subant] .../something.xml:123: java.lang.OutOfMemoryError: GC overhead limit exceeded       [subant] Failure for target 'something' of: ...module2/build.xml       [subant] The following error occurred while executing this line:       [subant] ...module2/build.xml:12: The following error occurred while executing this line:       [subant] .../something.xml:123: Syntax error in property: ${some.prope       [subant] Failure for target 'something' of: ...module3/build.xml [etc., hundreds of times] Turns out that whatever.properties had been truncated at exactly 24k characters, in the middle of a line. Fixing <propertyfile> to therefore collect all of what it plans to write, then write it. Also trying to make <subant> actually stop the build when it gets OOME, rather than continuing (probably in vain) just because failonerror=""false"" (which is intended to catch ""normal"" problems). ThreadDeath should also be rethrown, not logged as a subscript failure."
+fbd5fe56f,"Fixing fix for OOME in <subant>. Was getting wrapped in BuildException by both DispatchUtils.execute and Project.executeSortedTargets. Instead of trying to prevent wrapping, which is difficult to enforce, just die on wrapped hard errors."
+f8a1512d8,How to update the online home page.
+42b64be71,Trying to improve on r881624 robustness fix: 1. Use FileUtils.tryHardToDelete to delete possibly corrupt properties file. 2. Do not try to delete until after closing output stream.
+37b4989c0,allow scp verbose flag to actually log info - also makes ssh more chatty
+6bc649071,Update expected output from Ant 1.7.0 to Ant 1.7.1 Add note about expected environment variables
+7ec0d25b3,documentation for sshexec verbosity
+bb9fcbf17,Update FAQ: double expanding the property / nested property names
+d1e9fb460,Make sure hashvalue algorithm of modified selector reads the files completely.  Submitted by Nathan Beyer.  PR 48313.
+87142931b,take advantage of FileUtils
+792092f44,add a debug log statement to increase pressure on GC and hope to avoid PR 42696
+6cb11c4a2,"try a bit harder to close the archive when reading a build file.  Since that still doesn't work, add a task to brutally close jars and use it in import-url-test"
+a19ffe6be,add a manual page for targets and target-groups
+ce573700c,"- remove double ""for example"" - two minor words about command line use"
+96a7c2dc0,- Call-Graphs - Root-Tasks
+5f1f4200a,Typo.
+009a57815,-fix typo
+2fa25afa4,-remove unused import
+a87dab03d,"a resource collection that reads its members from a list file/resource.  Untested and undocumented, likely to be pushed to 1.8.1 unless I'll finish it in time for the RC1"
+1d9f0594c,reference handling tests for ResourceList
+bfc70a711,functional tests for resourcelist
+94cf2091b,document resourcelist and make it available
+24fbc8626,complement prefixlines with appendtolines
+009c4a440,copy-paste error + @since
+510f6b08f,target-group -> extension-point
+f815d1f87,removing ant-weblogic and ant-starteam
+d48905f7e,preparation for ant1.8.0RC1 release
+f563e6713,preparation for ant1.8.0RC1 release
+980c8d1df,"I had trouble with txt2html, I found another converter online which works for me."
+121c6bf8d,"Skip Javadoc creation on JDK 1.4, as it always fails for unknown reason."
+701fa300a,remove moved sandboxes
+88c1dbb94,move myrmidon
+907e2ddce,move ant-site proposal(s)
+6ecafdd4d,move embed proposal
+1f8ba82cf,move xdocs proposal
+e8877c979,move completed selectors experiment
+543662b8e,move stalled junit experiment
+d0beadded,move httptasks experiment - is this different from the sandbox http antlib?
+009621d18,move clearcase sandbox to a sandbox antlib
+7051ecb32,reduce weight of trunk by moving all proposal subdirs to the sandbox
+98563c788,additional testcase
+683d210da,follow Jesse's suggestion and use ant.core.lib - make testBasicOperation platform independent
+f34a0d9bb,add an empty lib/optional to the source distribution
+9d178c791,missing license headers
+cd6c4191d,Target for downloading and running Apache RAT (Release Auditing Tool)
+0db092804,"the changes are between 1.8.0RC1 and ant 1.7.1, not 1.7.x"
+4aa424ed3,componentdef clarification
+2c48717ea,Add a txt2html target for discussion.
+3d35f27ec,use new target created by Jan
+fec4519b6,update POMS
+73a3dfbc2,appendtolines -> suffixlines
+4afc76a41,Make target description consistent with other targets.
+0591bc259,try to delete temporary files in fixcrlf.  PR 48506.
+e4150ab94,update of poms to make compile
+14131d6b5,"changing jsch version to 0.1.42. Previous version was not good enough to compile and different from version from ""library.properties"""
+73456f461,really preserve extra fields
+dd92def3a,try to makeipExtraField change inip backwards compatible for subclasses that overrideipFile.  PR 48541
+d81cc42e7,A kind of answer to an often asked question - when is the final release expected.
+8d7988ffe,2010
+098280bc2,make newipFile signature final
+f3502267e,<scp> task didn't report build file location when a remote operation failed    Bugzilla Report 48578.
+c2875d3bd,only add a newline before the first new property rather than every new one
+a9f17b876,don't add the same comment over and over again.  Related to PR 48558
+127dbbc94,Don't add new Date comments each time the file is written.  PR 48558
+af292a48c,relative and basedir attributes are new.  PR 48609
+c16ac4046,fix for bug 48186 ant.bat file ignores -noclasspath if it is the first parameter supplied by Ken Southerland.
+9fd3da80a,"Mapper-aware selectors (depends, different, present) now accept typedef'd FileNameMappers"
+2e7eacb2b,javadoc/formatting/protected constructors for abstract classes
+9e2123765,javadoc
+c7ec6f659,@since Ant 1.8.0 for new features
+a91aa6325,start mentioning the idea of creating an ANT_SITE branch
+b30e40b92,sound doesn't work on Java6.  Submitted by Ed Brannin.  PR 48637
+03f83a7da,preparation for the 1.8.0 release
+f0ef3f314,new release informations
+59487f22d,"JUnit stack traces were missing when filtertrace=""on"", the default. Reported by N C, see http://marc.info/?l=ant-user&m=126488326902069&w=1 and http://marc.info/?l=ant-dev&m=126491578731948&w=2"
+766f15139,a few more places where FileUtils.close can be used + a few places where a BufferedWriter might be unflushed when the underlying stream gets closed.
+14c45a062,whitespace
+f21a1750c,More FileUtils.close and a moved flush operation in XMLJUnitresultFormatter
+74f04b527,extract method
+692c1fe19,"flush will be called in any case, make this more explicit"
+be18a2559,preparation for a new 1.8.0 build including fixes for the junit stack traces
+49262da32,change the tentative release date of 1.8.0 to February 8th
+439bb1ebd,removing unused property xalan2.present

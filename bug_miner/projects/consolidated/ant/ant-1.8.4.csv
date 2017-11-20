@@ -1,0 +1,101 @@
+Hash,Message
+463d1984a,1.8.4 is out
+cb43c97e5,more svnpubsub stuff
+bc6a6269e,Documentation update: Bug 53215 - Broken link to oracle doc in Manifest task
+a0a88c778,Bug 53291 - Several spell checker findings in apache ant 1.8.3 documentation -- excluding api --
+6b7bc9e53,Bug 53291 - Several spell checker findings in apache ant 1.8.3 documentation -- api --
+2596f6285,Bug 53202 - Typo in JUnit task documentation
+3d3f26df4,"Bug 53036 - FixCRLF does not respect the eol=""asis"" setting"
+1d63aeddf,Bug 51792 - Unable to override system properties with 1.8.2
+0461296c6,#53347: <javac> by default fails when run on JDK 8. Follow-up to revision 1236803.
+ceaf7b9c6,@Override not supported when implementing interface methods in JDK 5 javac. (Spec compliance bug fixed in JDK 6 even for -source 5.)
+4c1732b36,wrong type in carargs array
+aa43e37a0,vararg calls
+dee95e3ac,mergeip64 support from Commons Compress
+333b90446,some stray @since tags from CC
+91daac5ad,#53405 : ExtensionPoint doesn't work with nested import/include Thanks to Jean-Louis Boudart
+abec7e48e,PR 52706: allow command launcher to be selected via a task.  Submitted by Vimil Saju
+b43f4224d,PR 52706: allow command launcher to be selected via a task.  Submitted by Vimil Saju
+2e5b53fa1,"merge tar package from Compress, bringing some POSIX tar support"
+a67cf020b,"Merge bzip2 input from Compress, bringing support for files with multiple streams"
+b817fdb2b,Properly expand bzip2 files with multiple streams in <bunzip2>
+ca10b52e3,Add a longfile='posix' option to tar task
+6e192308c,packagemapper mapped too uch with handlediresep true.  PR 53399
+467514567,"verifying resourcexists works for URLs, see PR 53383"
+aa467f9a2,test fails on Windows
+3ea65f1ce,AntUnit test for commandlauncher and a typo fix by Vimil Saju
+e8a0f1f13,#53571: ClassLoader problems with Subclass of JUnitTask
+706051d86,#53617: fixed POM URLs. (Patch thanks to Eric Barboni.)
+261050f72,fix the ponctuation of the error message
+e5f339325,Allow Object to be injected as attribute of tasks
+1885612e5,Allow Condition as if and unless attributes of targets and extension points (Java API only)
+9585ec663,Wrap the if/unless attribute evaluation by the PropertyHelper into the generic case via a Condition
+4e97d0d88,Fix the test of the unless condition
+a6aa4e67a,Stronger tests in preparation for #53622.
+439545ad2,#53622: faster VectorSet.retainAll.
+b8c35567e,NPE in ExpandProperties when input is empty.  PR 53626
+d377aa50f,BR 53549 Make the ProjectHelper class expose the method which properly bind targets and extension points. Thanks to Jean-Louis Boudart
+944210b38,"BR 53550, thanks to Tim Pokorny Improve the resolution of the extension point to bind to: - first try the extension point which might be in the same file - then try the one in the root file"
+38688e758,"Add a log mode which logs nothing but ant task output and build failures; useful for using ant output in scripts, like for cacti for instance"
+f19432838,Ignore Eclipse settings files
+d8aad6eec,"Add .gitignore for thoses like me who need to ""commit"" while being offline"
+f7f699feb,Rounding out signature of DeweyDecimal and writing some tests.
+5f3fe87de,JDK 5 javac is apparently buggy; @Override should be allowed on methods implemented from an interface.
+f0579bdbb,improve readability of test failure info
+b3f4d2032,java 5
+d25488cbb,Any FileResource whose represented File has a parent also has a basedir.
+3d706ab81,java 5 updates
+bb05312e6,cross-platform
+da5f3bfd2,"java 5, continued"
+0b3dbe0ca,"this kind of problem should be rare and should only affect recompiles, thus doesn't impact drop-in BC"
+e488c5bcb,try cross-platform again; apparently my Ant-fu is horribly rusty :o
+62ebdd1f7,organize imports
+7829faf36,"To make an URL of a file, use FileUtils.getFileURL, which seems to do the job correctly"
+9caeed508,"Java 1.5, continued"
+27dfb191b,Java 5
+579f8745e,switch to more informative idiom
+055f4eb65,Make Locator.fileToURL and replace its use by FileUtils.getFileUtils().getFileURL()
+97d423a27,Don't mess with classloading of the launcher
+b031b8766,"getAbsoluteFile is useless since as the javadoc of File.toURI clearly explain, produced URIs are absolute"
+c88ff163c,try to fix a random failure on Windows
+dba10d633,Fixing test: javac 1.5 doesn't seem able to infer properly types here (incomparable types: org.apache.tools.ant.types.Path and java.lang.Object)
+ee5f3b418,Use the output dir which get cleaned up in the tearDown
+eb08ea9fd,Add the possibility to register a custom command line argument processor
+b5849676d,Add a failing test case to illustrate an unexpected behavior on self-referencing Antlib (more explanation on ant-dev@ in a few minutes)
+ca86f1677,Inspired by PR 54056 I looked for thread-safety issues with HashMap in our code - nothing major found
+73d3298e6,merge recent fixes from Compress' tar package
+995856afc,one more fix from Compress
+171220cb3,PR 54374: support status code 307 redirects in <get>
+1fe6b17d5,another fix from commons - tar doesn't use specified encoding when reading GNU long names
+98f306fa8,re-use a bunch of temporary arrays - merge from Compress
+a3bbe9f59,PR 53437prevent ssh tasks from prompting for kerberos username/password under Java 7
+0282d8fe2,PR 54026ip task on <mappedresources> that excludes certain files by way of the mapper results in a NullPointerException
+41798d8d1,2013
+80cdef498,fix indentation
+adede93ab,port Tomcat's logic for setting JAVA_HOME to an script - PR 52632
+b103f7e35,PR 54090 Depend task does not handle invokeDynamic constant pool entries - java.lang.ClassFormatError: Invalid Constant Pool entry Type 18
+f844348ef,Base64Converter not properly handling bytes with MSB set (not masking byte to int conversion). PR 54460
+1a4946cfd,"improve performance when reading nonip64ip files, merge from commons compress, based on patch by Robin Power"
+82641d77b,don't search beyond the start of the archive
+8344e79c7,removing Perforce Ant tasks
+c4cc9c42b,add suppresssystemout attribute to optionally make sshexec silent PR 52070
+2487a9050,fix test error happening under Windows @ Jetbrains see http://teamcity.jetbrains.com/viewType.html?buildTypeId=bt133
+ef9d85e59,fix error in testDifferentDrive under Windows @ jetbrains
+db6344773,size comparator was vulnerable to integer overflows.  PR 54623
+3e12dead7,UK is not a valid country code.  PR 54590.  Submitted by Patrick Altaie
+06dc6c0ee,adding an encoding attribute to the contains selector StringResource default encoding becomes UTF-8 changing ResourceUtils to use the String's encoding when copying from a String Bug Report 54606
+eb46493de,checkstyle
+9dc608c24,fixing a text which is not passing under MacOS with JDK 1.7
+76c39ce80,removing mention of a first build step under JDK 1.4
+a186908ce,preparing a 1.9.0 version
+241479888,prepare development for Ant 1.9.1
+4213be740,reverting to state before first attempt to release 1.9.0
+3930d3e93,JUnit4 tests marked @Ignore do not appear in XML output. PR 43969
+9500eb81f,adding ASF header
+473d49f5a,"adding hamcrest to the lib/optional because it is required at runtime for some tests, also bumping junit dependency in pom file"
+ffdeaca2f,Odd indentation.
+4e101e3c4,Junit → JUnit
+d5131086b,Was not compatible to make systemClasspath (and systemBootClasspath) final; the NetBeans Ant integration in fact overwrites this value (for a reason).
+cefa594fa,Restored Java 5 compilability.
+3e7e9989a,Diagnosis of XMLResultAggregatorTest.testFrames failure on Java 7.
+aea016a70,StringUtils.replace is obsolete.

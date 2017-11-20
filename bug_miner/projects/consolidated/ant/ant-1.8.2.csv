@@ -1,0 +1,204 @@
+Hash,Message
+8a525b9d1,updating URL of Eclipse's Platform Ant Project
+2b42aa7c1,Fixed error in globmapper example: the correct attribute is 'handledirsep' instead of 'ignoredirchar'.
+810aab73c,Spelling corrections.
+5dd644d23,adding dtAnt as per http://mail-archives.apache.org/mod_mbox/ant-user/201012.mbox/%3C95C3F961795BFE4D81708040CABCCD582BA3AE@ATEX01.dynatrace.local%3E
+5165803e8,bumping version up to 1.8.3 for next release preparation
+07842a054,adding 1.8.2 release
+e763106c8,suggest to use commons-openpgp instead of a script to sign the artifacts
+9c9f01284,preparation for 1.8.3 release
+8676c1c61,test for bug 50515
+913929ecc,adding a reference to the bug report
+bb2695af1,"fix for bug 50515, incorrect unicode escapes in propertyfile task"
+5ad76f716,testFailNone (now renamed testTestMethods) was passing without actually doing anything.
+998309cd5,add maxmemory attribute to javacc and friends.  PR 50513
+50333ecba,happy new year
+74fb3d870,#50543: decodeUri broken for non-ASCII chars in input.
+4f58b5982,NetBeans 7.0 should bundle 1.8.2.
+094261329,update of complete-ant-cmd.pl suggested by Ondra Medeksee http://mail-archives.apache.org/mod_mbox/ant-user/201101.mbox/%3CAANLkTinbngSscXy5nAQJaCRQPcVHJQqRJSyuzdneyene@mail.gmail.com%3E
+d7538fe27,note about bug fix of 50515
+94d175bff,fixing typo
+5084636a1,the -source magic was broken for 1.5 and 1.6.  PR 50578
+d7fa5b454,make it a sentence
+7b1c15b5b,"update of the blurb about dynaTrace ant task, see\ http://mail-archives.apache.org/mod_mbox/ant-user/201101.mbox/%3C95C3F961795BFE4D81708040CABCCD582BC35E@ATEX01.dynatrace.local%3E"
+95c52bcee,docs regeneration
+c1ef55c46,the image tasks are no longer available. PR 50595
+d32c57ef6,eol style
+ec4a7fa66,re-generate site
+3a077bdc1,typo
+c737f55aa,Give build.sysclasspath a chance to influence a forked VM's bootclasspath even if the user didn't supply one herself
+e36ab2259,fall back to system properties for build.sysclasspath if there is no project instance
+0588dc863,reduce the number of different directories tests compile classes to
+9585f199b,embrace antunit-base
+1cbc0fe76,embrace antunit-base here as well
+8a8bbe2fb,Actually implement inputstring and document inputproperty.  PR 50576
+43698b433,Maillogger ignored starttls property.  PR 50668
+9cd109fd3,Add a news about EasyAnt incubation
+5f20b9914,microoptimizations.  PR 50716
+8a8af50e5,tearDown target has been removed from propertyhelper-test
+888f9bbc6,actually make use of the final variable
+6d85382d0,.NET Antlib 1.1 released
+f80d127c2,re-generate site
+4954d8076,Fixed typing error.
+f49a4a282,grammar
+8e9189ac4,"documentation fix for Delete task example does not work, PR 50816"
+4427f8c1e,PR 50716. Here is a case where optimizing a loop by using a variable for the upper bound of the loop breaks an existing test case RhinoTest.
+10a4302dd,introducing agilebuild
+bfce233a2,changes in order to get tests to pass under gump; resources paths used have to be standardized
+3d5e58186,try a bit harder to delete used jars
+e466d8e0b,redundant delete
+ff69b5124,consistency
+564de6c5f,sync with build.xml
+d65fcc705,redirect makes test fail on my machine
+e9c2dc92e,intervert execution order of tearDown and antunit-base.tearDown
+039e4fa40,"antunit-base.xml was not imported from this file, but needed to define some properties like"
+ad08d0cbc,testAdapterNotFound was failing in gump because the adapter in the gump environment is systematically on the classpath
+4634eae4e,testCompilerNotFound is not relevant if the class folder containing the adapter is on the system classpath like in Gump
+20372c38f,fixing test for gump
+bbdd61de1,setproxy does authentication as well
+737d0434c,use setproxy inside splash in order to fix PR 50888
+edaa68e6d,Bug #50866:  - the prefix was not propagated to imported resources within included resources.
+eb330f6be,URL update.
+11616a619,The site is now at https://svn.apache.org/repos/asf/ant/site/ant/sources Only the manual will be in the distribution
+5ffcd3e37,no need for a build for the doc
+9fb3d4fa8,BR 50960. Use autoflush so that content get pushed to the forked application
+f845c8402,Update the release instruction regarding the move of the website
+ddd80042e,Get back get docs.xml which is used while releasing for the txt2html target And make it use a fixed revision of Txt2Html
+acaefe7e8,typos
+48c55de75,allow to specify name when using concat as a resource
+a1b00e5c6,ws consistency
+5ba5cd072,add (failing) testcase that exposes a current weakness of fileResource
+9af2cd23b,fix fileResource specified using basedir/name attributes
+778d54d38,move propertyset test to antunit
+5909b77dc,"add a basic resources test, plus a failing test demonstrating that propertysets with mappers don't function properly wrt returning resource iterators"
+14ea08b49,Resource collection implementation of mapped PropertySet returned unusable resources.
+65df42db5,javadoc
+17520fdfd,add basic functionality test for expandproperties filter
+4b329724c,sp
+314d4d7ba,Bug 51044 - Allow a <propertyset> in an <expandproperties> filter
+4b3719fe4,"readFully(), then index into a char[], rather than calling substring(1) after each read() call"
+ad860385a,Rewrote netrexx target to never call M2 tasks. Otherwise maven-antrun-plugin in src/etc/poms/ant-netrexx/pom.xml dies under M3 with a linkage error.
+d2693fcfe,commons-net trunk has removed all static final ints from FTPReply
+d6466e0fd,- make the sources of the individual ant jars also published into the maven repository - make a javadoc jar publish with ant's main jar
+1369b7ee3,creating test for bugrep 50507 Exec task may mix the stderr and stdout output while logging it
+f1091d6ac,"I had hardcoded the test.can.run property, also I had emptied the cleanup"
+11af84f76,code in tutorial relies on references being resolved even if the definition has never been reached.  Found by Magnus Strandberg
+171a1f35e,raise a more useful error when a class cannot be loaded because of a SecurityException in the hasmethod condition.  PR 51035.
+33bac6508,typo
+fd52ae619,Exec task may mix the stderr and stdout output while logging it. Bugzilla 50507
+ab38cf750,tweaking tests affecting by having made flush a no-op in fixing bug 50507
+bfa9cad02,adding MacOSX blurb
+a260fdb09,accept sh.exe from env.Path as well as from env.PATH to be able to run the tests
+6ee4efee0,fixing shell variable syntax
+4491aae66,"Missing space between finished and timestamp in task/target finish message from ProfileLogger, bugrep 51109"
+491487a82,adding a linux blurb
+7396577cf,Improve javadoc
+f60db1986,Revert commit #1095768 on java.xml and fix the redirector to not funnel streams if there is an errorProperty set
+49c8751e2,"Fix for BR #48789. Handle an IOE with ""Pipe broken"" just like a one with ""Write end dead"". They are raised for the same reason but not at the same time."
+0600b2bae,the bug 48789 was fixed with r1097584
+febed7447,"typo, found by Javier Murciego and fixed by Anthony Wat - PR 51176"
+af1971681,PR 51213: anchors.
+3ee692f33,Noting contributor on #51213.
+5b65b7e51,PR 51286: move anchors inside headers.
+244fe4c3f,TMified logos by Christoph Wilhelms
+a4c396da1,"Using apparently official URL base, at least according to the HTTP redirect."
+c4c9d2552,clean up Inflater instance as some JDKs won't do it for us.  PR 42696.  Submitted by Mounir
+f63266096,merge tracking
+355eef0c2,Full name for Mounir El Hajj who contributed to patch for PR 42696
+80d8d90c2,"fix link to svn docs, submitted by Matt Wildig.  PR 51375"
+45c397532,regexp and ORO have been mothballed
+c3a13beae,fix a bunch of links
+ec8453fec,FindBugs.
+cd3b91417,"java.util.zip now supports the EFS flag, http://blogs.oracle.com/xuemingshen/entry/non_utf_8_encoding_in"
+309943afd,BR 41986  - add a quiet attribute to the copy task to not print warning messages Thanks to Timoteo Ohara
+bf4c769b2,BR 41986  - fix whatsnew
+827e9b065,BCEL moved from Jakarta to Commons
+38700692d,BR 51161:  - don't close System.in otherwise it won't be readable anymore
+6f56a4726,support multiple resource collections in sync.  PR 51462
+82642e35e,when working on resources <sync> forgot about the source resources that are not out-of date.  PR 51462
+1a514800a,no reason to keep a reference to the enclosing Restrict instance
+045ec7726,restore RCW id once augment has performed its job so it can be reused by other targets.  PR 50894
+e2dcc15e5,"complete task cleanup, likely not necessary but looks better"
+d25f4c402,finalize deflater instance inipOutputStream.
+7d02a9f6c,there is an off-by-one error in the loop that searches for the 'end of central directory record'
+087f02897,JUnit's filtertrace swallows the assert failure message if it contains the word 'more' as reported on the user list - http://mail-archives.apache.org/mod_mbox/ant-user/201107.mbox/%3CCAPsH_EDFnhkW4Y4r87U2jmN2gKPAyK6ZJX5F-4ohC6tJ9rXi6Q@mail.gmail.com%3E
+5b5987c95,sync docs with code
+d121ce11a,never filter out the first line of the exception stack trace in junit so the failure message is preserved
+f2b0b3311,Cactus => Attic
+95834baf7,document JUnit filtertrace change
+021d52822,make AntClassLoader$ResourceEnumeration adhere to the Enumeration contract.  PR 51579
+e9bbf8ef7,"JRuby no longer at Sourceforge, reported by Gilbert Rebhan"
+7a6cc371c,Upgrade to AntUnit 1.2
+ed37e77d9,Fails to reproduce https://netbeans.org/bugzilla/show_bug.cgi?id=201022 but might as well leave it here.
+cd69b894b,Had which.jar but run-which was still failing.
+735f3fca3,#51668: JAXP regression preventing <junitreport> from working in JDK 7 w/ SecurityManager.
+d0d1325e5,provide read access to Mkdir.dir. PR 51684
+13b0b1e14,BZ 51684
+ececc5c3e,Add an option to <delete> to run the GC before retrying a failed build on non-Windows OSes as well.  Might fix the NFS problem described in PR 45786
+cba6d868a,Make <move> use tryHardToDelete under the covers
+28c651a95,Empty package-info.class is created in wrong directory if no destdir is specified.  PR 51947
+301bbff43,Corrected location for jboss-public-repository-group.
+ea4b41e1d,make loadfile/resource less noisy for empty resources when asked to be quiet.  PR 52107.
+5ecf92bf5,add an option to suppress the artifical package-info.class files created by <javac>.  PR 52096
+6923618f3,whitespace only
+7e64db1b2,"Loading FindBugs with Ivy, since garr.dl.sourceforge.net seems to be dead."
+6516a3d24,JUnitReportTest.testEmptyFile was failing for me.
+b31adfe83,JUnitReportTest.testStackTraceLineBreaks was failing for me.
+61ade34e4,#51049: <junitreport> mishandled ${line.separator}.
+394f66521,no reason to log at ERR if a URL doesn't exist and all we do is checking whether it does.  Addresses PR 51802
+c04d3e26a,"if specified stylesheet doesn't exist, log the file resolved relative to project rather than the task's basedir"
+e995f38a7,make packagemapper take handledirsep into account.  Submitted by Anthony Wat.  PR 51086
+3d53a476c,this test actually fails but Bug 41400 hides it
+589af888e,-f/-file/-buildfile accepts a directory containing build.xml.
+7d1ecbc1b,don't expand properties twice in attributes of macrodef'ed tasks
+393f2a2c8,It seems as if jvc didn't like quotes around source file namesin @argfile.  PR 31667
+390433f7b,clarify requirements for manifestclasspath task to address questions like PR 52227
+8786be5f2,trying to narrow down transcoding error of exec test on Ubuntu.  Looks like ReaderInputStream was working just fine
+6000b81da,"LineOrientedOutputStream breaks encoding, this is the reason why the fix for PR 50507 broke outputencoding in <exec>.  PR 52283"
+0e150acfd,ZipFile doesn't work properly for archives using unicode extra fields.  Port of fix for COMPRESS-164 by Volker Leidl
+291e7b021,Allow retry task to sleep between retry attempts.  Submitted by Arjan Veenstra.  PR 52076
+5b256dff1,provide control over signature and digest algorithms in <signjar>.  Submitted by Wang Weijun.  PR 52344
+4495b959d,Should not throw an error if the temp dir does not yet exist.
+4dab12fb9,"Use official namespace for Xalan redirect, to work even if using JRE's bundled Xalan (see junit-frames.xsl)."
+fe829a9d0,#52382: <xslt> with redirect broken on JDK 7 when a SecurityManager is set.
+d9feb7d3e,explain how relative paths are resolved for the basedir attribute.  PR 52343
+02d9f46c2,hint at namespace declaration rules.  PR 52309
+5a75e3c69,Several bug numbers for 1.8.3 were wrong. Perhaps we should be generating this list from a BZ query?
+cc47289e1,#48633: pass correct parent to loader.
+379895a02,synchronize access to default excludes.  PR 52188.
+40a73d22b,whitespace
+43430b541,ibiblio doesn't carry maven tasks anymore
+132fb3252,"OpenJDK8 snaphot works, I have found a new class in java.lang.reflect and OpenJDK's javac defaults to -source 8.  No, I don't like the code in DefaultCompilerAdapter either."
+df7e0ca08,five identical assumeJavaXY methods are enough
+54ea4a4a0,tests for javac internal modifications of -source attribute
+e3e9dc011,avoid classloader issues when not forking
+7a0427656,"either Java 1.5 accepts -source 1.2 or it doesn't, be consistent"
+ec4f34574,also set -source implicitly if -target uses 5 rather than 1.5 etc.
+4a2da130a,Make the logic that implicitly sets -source more readable
+0ceef36b9,extract handling of -source 1.1 and 1.2
+6d9e7cb56,another readablilty tweak
+82ab7bf6e,help dealing with the case where BSF is there but JavaScript support is not - the current build failure in Gump
+f07f1dd87,#52556: removed buggy duplicate JAR list in RPM mode.
+0e71da85e,documentation for retryDelay attribute of retry task.  PR 52076
+cd9866805,support for pseudo-terminals in sshexec.  PR 52554
+eebac461e,bump copyright year
+6aa0a70ff,make sure Project#createTask has read defaults.properties.  PR 50788
+e743ff572,Remove reference to WebLogic and Starteam tasks that have been removed more than four years ago
+40ba45c4a,make it work on Linux
+e99d5b225,linefeeds
+269329e76,"Make source and javadoc artifacts work, add ant-junit4"
+602c5f453,bump version
+b2ffab709,fix failing test
+eb3adb5c7,adapt test
+c77568d3a,wrong classifier for javadoc artifact
+4db8f4cdc,Finally documented SimpleBigProjectLogger properly.
+d090f2834,"stray ampersand, PR 52667"
+9bf87cff6,Better failure reporting.
+2d89206b9,Some tests which failed when run with CWD not equal to ${basedir}.
+9140aaae2,#52754: correcting basedir for external resolver.
+d884406a0,"Refer to faq.html on the web site, not using a relative path."
+84abb27b2,"#52621: restore default behavior from #42046 for compatibility, but make it configurable."
+8383c1a94,tyr to fix Gump failure which may be a race condition
+0c0e45353,"Fail promptly if antunit-tests is run with some random version of Ant, since this would not be testing the sources in this tree."
+791541805,add a test verifying properties get expanded twice in macrodef attributes by default.  PR 52621
+25ce7c817,"Update versions in STATUS file, getting a little ahead of myself as for released versions"

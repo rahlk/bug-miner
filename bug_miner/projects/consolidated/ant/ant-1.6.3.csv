@@ -1,0 +1,78 @@
+Hash,Message
+ab73df2ef,Ant 1.6.3 release
+ebe4bdde4,Added myself into contributors list.
+4de60a1ff,Corrected email address.
+de756970b,change name of current release from 1.6.2 to 1.6.3
+bd1175188,Minor HTML corrections.
+9e538b50c,Updates.
+7e48ae3ff,"I'm so particular about capitalizing ""Ant""."
+2a0bbc499,"Removing some gratuitous XHTML-isms. They still break JavaHelp, alas, and the manual is anyway not even strictly formatted plain HTML, much less XHTML."
+65fcd362e,"Oops, correcting stupid mistake - had listed 'executable' attr to <javadoc> as part of the <tag> nested element by accident. Unfortunately got into 1.6.3."
+8c8611e85,Added myself into this file too.
+92ce28ea2,Moved myself into correct session.
+5d6618cee,cleanup
+050227e32,Added closing &quot; to last example. PR: 34706 Obtained from: Submitted by: Reviewed by:
+24f88a7a6,Different contact address
+c4bfae539,"As a (-n inactive) Jext project admin I have decided it doesn't have "" - "" in the middle of its name."
+9aea64c3e,"Convert some "" - "" to emdashes, semicolons, etc. where appropriate."
+72e3174bf,Move to WeakHashMap to reduce resource leakage on long-lived many-exec runs
+b94dbbaf7,"And this time, I make sure the 'reformat code' button is not set on the commit."
+225c78f0b,WeakHashMap
+529deb1cf,Bugzilla 34680: make AntXMLContext#setCurrentTargets current
+2fbb2e62a,"Not 100% sure this fixes the entire bug, but it eliminates NPEs for me. PR: 34722"
+da4edf3f9,"Validate system properties before running a Java command, PR 34725"
+c18cc624f,Partly rewrite the delegating-classloader FAQ since 1.5.x and 1.6.x are really quite a bit different
+2451f14c1,"Document javah and DirectoryScanner.slowScan() fixes. PR: 34681, 34722"
+ddeab9a4d,AntXMLContext.setCurrentTargets() is now public. PR: 34680
+0c8407b31,Attempt to fix broken encoding due to miscalculated output buffer. PR: 34734
+4439a0410,"removes fork option from Apt, in code, in docs."
+f6624325f,antlib awareness in diagnostics messages
+4ddc8483e,"Base64 conversion of userid:password was (always) broken.  The length of the result was calculated correctly, but was translating two bytes to four instead of three.  This would obviously cause buffer overruns. PR: 34734"
+307462e01,ApacheCon commercial
+e090bc324,2005
+a950bd593,Spelling/punctuation/wording/etc.
+fddcc94a0,Maybe somebody should have said that the image was transparent and antialiased for a white background.
+8522387c4,fix NPE reported by Curt Arnold
+588caddad,"Add SHA1 checksums, prepare stuff for http://www.apache.org/dist/java-repository/"
+de17c73d4,Will provide SHA1 checksums soon
+8d168c680,"Silly me, when Ajax picks up this change, the checksums will be there as well"
+091610197,"Patch XMLValidate to create a new parser every time, plus test case that verifies it works. Note that there is an extra change, the return code of doVerify() is now boolean and not void. I have plans for an option to halt the build only if a schema is valid (I'm using ant/gump) to validate XSD files, and want to test that a schema correctly rejects invalid files. This is just a step on the way, while I was in the method."
+c21529a53,Correct granularity attribute from 1.6 to 1.6.2
+b2f7c19e9,1.6.4 changes
+ce53f734e,"Adapt Ant to use the new functionalities of commons-net 1.4.0 to enable greater configurability of the server: Month names other than English, date formats other than the standard ones (such as all-numeric timestamps on unix), and different server timeones can now be supported in Ant. PR:30706, 33443 Obtained from: Submitted by: Neeme Praks Reviewed by: Steve Cohen CVS: ---------------------------------------------------------------------- CVS: PR: CVS:   If this change addresses a PR in the problem report tracking CVS:   database, then enter the PR number(s) here. CVS: Obtained from: CVS:   If this change has been taken from another system, such as NCSA, CVS:   then name the system in this line, otherwise delete it. CVS: Submitted by: CVS:   If this code has been contributed to Apache by someone else; i.e., CVS:   they sent us a patch or a new module, then include their name/email CVS:   address here. If this is your work then delete this line. CVS: Reviewed by: CVS:   If we are doing pre-commit code reviews and someone else has CVS:   reviewed your changes, include their name(s) here. CVS:   If you have not had it reviewed then delete this line."
+2b97df9b2,"Adapt Ant to use the new functionalities of commons-net 1.4.0 to enable greater configurability of the server: Month names other than English, date formats other than the standard ones (such as all-numeric timestamps on unix), and different server timeones can now be supported in Ant. PR:30706, 33443 Obtained from: Submitted by: Neeme Praks Reviewed by: Steve Cohen CVS: ---------------------------------------------------------------------- CVS: PR: CVS:   If this change addresses a PR in the problem report tracking CVS:   database, then enter the PR number(s) here. CVS: Obtained from: CVS:   If this change has been taken from another system, such as NCSA, CVS:   then name the system in this line, otherwise delete it. CVS: Submitted by: CVS:   If this code has been contributed to Apache by someone else; i.e., CVS:   they sent us a patch or a new module, then include their name/email CVS:   address here. If this is your work then delete this line. CVS: Reviewed by: CVS:   If we are doing pre-commit code reviews and someone else has CVS:   reviewed your changes, include their name(s) here. CVS:   If you have not had it reviewed then delete this line."
+b977b55da,<unzip> and <untar> could leave streams open.  PR 34893
+30c0d31cc,Use FileUtils.close()
+813c24822,"Add FTPConfigurator class so as to avoid forcing users to upgrade to version 1.4.0 of commons-net. As long as users use the ftp task as they have previously, they do not need 1.4.0."
+de249300a,improve clarity of what FTPConfigurator is doing.
+4a0393898,checkstyle - mostly javadoc
+0dbe0a8b0,1. new books 2. touched up old books 3. stripped out my old email address. I now know why that alias still get so much virus/spam mail.
+07680bb2e,"tests for junitreport handling various forms of bad data, plus explicit handling ofero-byte files with a different error message.."
+da4aeef1c,and of course the date change.
+923140f49,"added a special case that detects -cp and -lib calls in Main, and tells the caller that they have a probable version mismatch."
+16c4a37b4,"more changes, plus some corrections to existing reports."
+da924b682,change name of attribute from systemKeyConfig to systemTypeKey as a more intuitive name and check in documentation for revised FTP task.
+86c0c290b,punctuation
+65190d753,scp doc tweakage.
+f5d573cf7,merged antlib: strings to a single (currently private) constant.
+480363a8c,typefound logic.
+2836fb941,"utterly without documents or tests, a utility task to extract a path to a dir, by way of a mapper."
+2a0461182,apply apache rules as to position of + on a multiline string
+3d66f4ef9,Allways create qualified targets in imported build files PR: 28444
+5ee66cf25,"<scriptmapper>, with tests and docs. At this point we have near total script coverage of all the core ant extension points. Note the refactoring of scriptcondition to give us a better base for these things."
+f2eef391c,build the distribution with subdirectories source and binaries like the directories on the Apache web site
+140403da7,2005
+8be3ac4c4,jruby support in script. We ought to have a task to add these declarations.
+3a8f51f69,2005
+a978673a2,"no, I didnt need to do that. rolling back."
+8d5a90a82,Exclude AbstractScriptComponent.java as well
+5555fa6a0,"fetch moves to maven, though no auto download of those tasks, yet."
+8d19ece48,add correct (c) statements
+73b52c9fd,remove unnecessary &quot; marks.
+c08178cee,Roxes is now Orangevolt
+a6897db17,No more nightlies for now
+df61e4781,Fix �-umlaut that got translated from ISO8859-1 to UTF-8 by accident
+3d0a16ece,Seems to be an typo for me.
+c09b4ad62,"propertyset threw NPE with nested, mapped propertysets."
+eb4cd9127,Note current state of extension case.
+fd1af1a4a,fix bug 34941

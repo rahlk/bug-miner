@@ -1,0 +1,43 @@
+Hash,Message
+d5e0cccd5,Unused import.
+aa200450f,Still more diagnostics for #54641.
+5dd71dccd,"#54641: XSLTC error. Use String.replaceAll rather than StringUtils, since some versions of Xalan (as patched by Oracle) try to load the class while compiling the stylesheet."
+ffa7d9705,preparing the ant release 1.9.1
+8bd167649,bumping version in this testcase too
+ff6e96511,updating ReleaseInstructions
+5fb2cfb93,added Changes that could break and Other changes sections
+a391e0018,"mentioning that Ant 1.9.0 requires Java 1.5, fixing a typo"
+15b31983d,add LoadResource to the list of tasks supporting filterchains
+06a819d3a,No reason to have ant-junit4.jar anymore.
+bce64d5aa,Fix launch of the build on Jenkins
+9ecd8f010,"Jenkins configuration doesn't seem to work, hard code the launch config in the build"
+5e75cf129,Trying cmd.exe /C build.bat
+dc0415802,Handle space in path and fix echo
+630444744,"Reverting, I don't understand Windows..."
+e98502714,typo reported by Charles Antony
+064e259cf,AntUnit test case for Bugzilla Isue #54762
+e7726a439,Make the test actually test anything apart from my copy-paste errors
+30a0e6bf8,intermediate stream is not needed and may even cause issues withip64 support
+1837ea72c,indentation
+b50517921,create tmp dir when running individual test as well
+ef4c94df7,"Provide more control overip64 features, in particilar turn them off in <jar> by default - this might fix bugzilla issue 54762"
+5588e0e66,Add documentation forip64mode attribute
+a1d12934e,Fixing external dependency loading in JUnit task. PR 54835.
+6af381837,Re-introduce ability to build JUnit task for only JUnit3
+7a1aff605,Re-introduce JUnit3/JUnit4 split
+98fde1618,PR 54879: echoxml documentation for namespacePolicy is unclear
+a7632decb,Remove JUnit4 requirement note as it is no longer true
+df121979c,Report skipped tests in junitreport - PR 54670
+4b516a485,"adding strict attribute to signjar task, PR 54889"
+132742159,simplifying Execute.getEnvironmentVariables since we are now always at least on Java 1.5
+5d6a0dd1e,Deleted line break introduced by accident in antoine’s 1476700.
+edbb09d86,Bug-53538: Manual requires clarification about the use of property/propertynames
+12e9d5f0d,Bug-53490: unrequired stuff breaks code formatting
+46c940785,adding if and unless namespaces allowing to put conditions on all tasks and nested elements. Code written by Peter Reilly. Bugzilla PR 43362.
+58a2039b5,"Debian patch for GNU Classpath, contributed by Emmanuel Bourg. Bugzilla PR 54760"
+51ce8fac7,"fix for Target rewriting for nested ""include"" only works when ""as"" is specified, Bugzilla PR 54940"
+464b35f29,recommending to use jsch 0.1.50 going forward due to fix of https://sourceforge.net/tracker/index.php?func=detail&aid=3605486
+3ea9b3dbc,updating ReleaseInstructions since svn:externals do not work currently with svnwcsub
+059cc9adc,Passing AntUnit test for PR 54967
+5ea308e41,Test for #54967 actually fails if the second task has work to do
+e6fde1cec,preparing to build Ant 1.9.1

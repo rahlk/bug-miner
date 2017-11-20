@@ -1,0 +1,15 @@
+Hash,Message
+de3dccde5,at least for me the bouncycastle version is completely different
+b2a33d114,bump versions
+52533c0df,updates
+68a0a221b,don't forget to remove the temporary branch
+016fa9943,Bug 47955: little hint on capitalization
+e9d4c9ae8,Bug 50785: example of inserting a line break
+6e34f177e,COMPRESS-317 ArrayIndexOutOfBoundsException inipArchiveEntry#getMergedFields
+5d3888d2a,Bug 53808: fix links in the manual
+529e86bfa,Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/ant
+9953e3cbc,Bug 44241: 'activate' Steves <javaconstant> resource
+3a3575562,Bug 53017: fix 1st sentence of antlib manual
+fdf5d315e,little refactoring
+a94a07d71,typo in signjar's manual
+8d630f6aa,version bullet point needs to be moved until after the branch has been created

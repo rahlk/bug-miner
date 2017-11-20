@@ -1,0 +1,84 @@
+Hash,Message
+38e6ffb46,new target upload merged from Ant 1.6 branch
+312594503,Ant 1.6.4 release
+dfa0ee5e4,Add information concerning the new java-repository
+3b13b6862,fix mistake
+5a8d0dcb2,add uri attribute to typefound type
+894920921,move typedef to 1.7 section of WHATSNEW
+d50c8c978,"If launcher gets an InstantiationException when using the default constructor of ant, change the error message to say that this is an incompatible version of ant main and attempt to print out the location of this class. Some jar files have old version of ant within them - (weblogic in particular) so this should help in showing if this is the case."
+08f2880c5,small clarification
+873ae06de,Make XmlValidateTest pass.
+0a9fc364a,Complement includeTests with excludeTests
+5cf7540ba,Add isfailure condition.
+1c4bde9df,Javadoc
+22bdc578f,"Change so that systemTypeKey and all the new xxxConfig attributes work by the convention that setting the attribute to """" leaves the attribute unset, at whatever value it had before, that is, for all these, the default value of null.  This would enable property-file based development to proceed more easily. Update documentantation to reflect this. PR: 34978"
+2e04fa985,"add option to read properties file from the user's home directory as well as from the top of the ant tree, where it is vulnerable to being wiped out from cvs replace operations."
+b586ae4ed,"more diagnostics, corrected method name, but not working. Bug#35006"
+607f1c735,use of fileUtils.close
+6706bbc03,"Added tests for the ""newer"" attribute in conjunction with the servertimezoneconfig attribute in the PUT and GET actions."
+778ee790c,"Throwable caught for 1.1 compatibility only according to comment. As catiching Throwable generally is a bad thing, removed."
+3783d9744,"Avoiding use of Error for clauses that indicat programming errors, using runtime exceptions instead."
+151148759,Avoiding to catch unspecified Error. The context indicates we want to continue even when loading a class is unsuccessful. The only Error we expect and want to continue on would in that case be LinkageError (and not e.g ThreadDeath / VirtualMachineError).
+34e72a660,Removed reflection for 1.1 purposes
+754141348,Add new timestampGranularity attribute to account for the typical case in PUT operations where the client is HH:mm:ss and the ftp server is HH:mm.
+fde455e0d,"Document new timestampGranularity attribute and spiff up the page generally, add links to Java code as appropriate, fix up the table column sizing which had become rather unwieldy."
+199a35c84,update stale link to Sun javadocs.
+fa038427c,Removing constructs to close streams that catch Throwable -> FileUtils.close.
+af67c9bf8,Avoiding Throwable while BuildException was actually meant
+41bb1f619,Catching Throwable while calling new on a no statement constructor (all fields / base classes only have no statement constructors as well) seems overdone. Removing catch clause.
+fcd9581d6,add brief version of getElementName()
+e539f6378,new methods for reference checking and logging
+37e97ef42,use DataType's (new) convenience methods
+b92e6b644,allow absolute include paths & no basedir for Directory scanning
+21955959d,add TimeComparison ExtendedAttribute; retrofit DateSelector
+ec980be73,use DataType's convenience method
+fbb988663,ResourceCollections
+b6173b684,ResourceCollections
+1480e646f,Remove clone task.
+1ee135912,"Oops, must build in the contents of src/resources"
+db072584a,Update concat documentation for ResourceCollections.
+c59d0a0d9,Document pathconvert changes.
+ea8958052,Document length task changes.
+433067077,Document the resourcecount task.
+af007ba13,add resourcecount to Resource Collections blurb
+81b65c0ea,"Improved the newInstance method in ClasspathUtils, and used this method from the places where newInstances are made and Throwable is caught."
+512fd5020,document recent changes to FTP task
+d716a8309,2005
+a47a15bd3,Add pointer to Parabuild
+9b84eec8f,checkstyle - mostly javadoc
+f8c14ca44,checkstyle - javadoc
+ff9b546d8,checkstyle - mostly removal of _
+7ad041a63,checkstyle javadoc
+b746aeaa3,go ahead and close elements with no children
+626c03beb,Add an echoxml task just for Steve!
+de92c9e60,Oops need this for echoxml task.
+6a659a85b,checkstyle - mostly javadoc
+e208a40a7,Add resourcecount + a little cleanup
+c2095f911,various inconsequentials/cleanup
+f03354ed8,Document ResourceCollections in paths.
+8acee3f19,"Avoid multiple instantiations of equal File objects, and multiple resolveFile calls."
+629a2649e,Obtain subproject instance from Project to satisfy the remote chance of Project having been subclassed. PR: 17901
+cb2daf1d8,Document the change wrought by introducing Project.createSubProject(). PR: 17901
+39cc96663,Consistency and some spaces
+746224b88,Javadoc (fixing my uppercase code tags!)
+eaa5e6610,Make -projecthelp output display even in -quiet mode. PR: 17471
+5673b8cf5,add installation information for the jpackage distirbution
+525466de4,Fix the condition; formatting.
+013b69106,Javadoc + very slight code reworking
+4285e2be2,Replace properties in description elements
+3885afdd7,Convert ftp task systemTypeKey and timestampGranularity attributes to using the EnumeratedAttribute pattern and add some JUnit tests of the new configuration stuff.
+536a84c21,convert serverLanguageCodeConfig attribute to use EnumeratedAttribute pattern
+d0cb59084,"Based on a patch submitted by Neeme Praks, allow support for a retry count on FTP transfers.  Some servers are unreliable for unknown - this allows for a retry count to be specified to accomodate work on such flaky servers."
+fc469f931,improve new test
+2a816a536,* <macrodef> with redefined default values was incorrect. (Fix for    31215 had a bug). Bugzilla report 35109. PR: 35109
+f2d32ac66,"Add initialSiteCommand and siteCommand attributes. PR:34257, 34853"
+696bf3b93,Added ISBNs for later use (e.g. Online Bookstore)
+b1278e4e6,The Bookstore
+11f0a8954,Add logging of local vs remote timestamps in <ftp> task. PR:31812
+bb7725aa2,2005
+c07b787a9,Clearly (hopefully) document '$'-escaping relating to Ant properties; increase findability of this information by linking from property task. PR: 34534
+a95fba781,Move javadoc backslash with space fix to ant 1.6.5 Check if file separator character is backslash before conversion
+ec702149b,reorder imports before adding more.
+f67efecf7,"Renamed <file> resource's ""base"" attribute to ""basedir"", for consistency / familiarity."
+5733c1f7c,s/baskslashes/backslashes
+b8c138379,"fixed strange example, property names do not usually start with ${"

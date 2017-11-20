@@ -1,0 +1,40 @@
+Hash,Message
+7391be842,forward to 1.9.3alpha
+d79bed61a,PR 55271: obey to section 1.4.2 in http://www.pkware.com/documents/casestudies/APPNOTE.TXT
+13000c1a4,sconnolly advises using TODO rather than XXX in comments.
+86fad58f2,Documentation fix for if/unless attributes.  PR 55359.
+18e098d81,merge TAR long link handling fix by Emmanuel Bourg
+915d5575a,merge small improvements from commons compress
+52d21be98,System.err debugging of a problem in Gump
+adf98d787,System.err debugging of a problem in Gump
+73b9def75,remove debug output
+4a8f2b267,test needs beanshell in addition to BSF
+40454ed87,pass ant.home down to antunit tests
+26e6bc116,wrong attribute name inip documentation.  Found by Jeffrey Adamson.  closes #2
+5d4b03bbe,hint at Permissions manifest attribute and signing requirements for applets in upcoming 7u51 - PR 55542 - Submitted by Erik Costlow
+f5fb02e49,modernize a whole lot of links and example outputs - BZ 55551 - submitted by Erik Costlow
+14c701bcf,Allow JUnit task to skip non tests rather than report errors
+7587f4259,Disabling bad check discovered from revision 1523198
+6b9311408,don't swallow fail's status in parallel - PR 55539
+0963d161c,race condition in <fixcrlf>'s temp file creation.  BZ 54393. Submitted by Jan Stolze.
+9ded4758e,forgot to update WHATSNEW
+625eac733,yet another attempt to get the mailport right with smtps. BZ 49267
+5764c6b4b,Adding missing WHATSNEW note
+ec877a578,javadoc post-process should be skipped when no javadocs have been created
+803f9c877,"explicitly set milliseconds to 0 when parsingipEntry's time field, it has two second granularity anyway"
+5e36d6068,"PR 42702 - document replacetoken's support for resources, which was added in 1.8.0"
+70e913ffe,PR 55751 description of filesmatch's textfile attribute is wrong
+ee75571cc,PR 55835 - log executed build file in subant's verbose mode
+9b8fa0748,Add nested propertyset to filterset.  PR 55794.  Submitted by Richard Steele
+834d0d120,configurable User-Agent for <get>. PR 55489. Submitted by André-John Mas
+f0565366f,Allow params of XSLT to be optionally typed.  PR 21525.  Submitted by František Kučera
+2ec47519e,fix format of the NOTICE file.  PR 55672
+cb20f5088,"removing the restricted attributes from what gets fed to macrodefs, Bugzilla Report 55885"
+ce5e41296,".isEmpty method only exists in Java 1.6, Ant supports still Java 1.5"
+e505c281d,"making the exec task fast again, using the patch provided by Tim Whittington, Bugzilla PR 54128"
+3c1b53b3f,Bug-55895: typo in the manual
+72e13d5ac,adapting code and tests since Apt is not available under JKD1.8 PR 55922
+5f266021f,adapt documentation. PR 55922
+99dcdaae8,"adding Mac OS X .pkg installer generation in build, PR 55899"
+90dadab4f,adding ignores for IntelliJ Idea files/directories
+66b0e99e2,preparation for Ant 1.9.3 release

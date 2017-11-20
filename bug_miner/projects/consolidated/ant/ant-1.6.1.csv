@@ -1,0 +1,392 @@
+Hash,Message
+78f12b3df,Ant 1.6.1 release
+148519167,Forgot to update these files PR: Obtained from: Submitted by: Reviewed by:
+1abe95bf6,correting typos
+ccf15859f,copy/paste typo correction
+87c50a640,Separate 1.6.0 to 1.6.1 changes from the other changes
+122793e23,"Add retroactively fix of bug 26642, possibility of running programs in directories having non ascii names"
+f298615cf,"Adhering to the last point in <http://www.apache.org/dev/apply-license.html>, more commits to follow for the subdirectories."
+a7acaf9e6,Second batch
+7b27a575a,Correct copyright statement
+f4ab6966b,Final batch
+94565cfd8,Accommodate Windows bug encountered in both Sun and IBM JDKs.
+1f6115c62,"Redirector exhibited inconsistent behavior with regard to split output.  When sent to file only, files would be created in all cases; when split file-property, files were only created if writes were performed."
+499d174f0,Add several I/O related test cases to <exec> and <apply>.
+91092b496,Code cleanup.
+231e15c24,Fix information concerning library requirements for ftp task. jakarta-oro 2.0.1 or greater commons-net 1.2.0 or greater when using MS FTP servers
+d516e1424,Remove comparison between cvs update and HTTP get from corresponding ant tasks reference
+76a6e36fe,subant: catch throwables from ant.execute() with failonerror is false PR:  27007 Reported by: Mariano Benitez
+9ac23b1ec,update WHATSNEW - subant haalt on failure
+ef9e8aca0,Let 'testcase'-property choose the right target for running tests.
+c97b81b64,Testcase for duplicate targets. Reported by Dominique Devienne.
+9c369c29d,Make note in FAQ about taskcontainer differences between ant 1.6 and ant 1.6
+7e562b584,"If initialization determines that the corresponding target could not run, bail out of the test (pass)."
+bbd6a3bd9,fix for macrodef broken @@ escape handling PR: 27069 Reported by: Daniel Spilker
+e8a61057b,Remove 1.6.0 from homepage
+c7f123a60,Change some links as requested by Pavel Vlasov
+55fd720ee,added authors tags to make conversion to forrest easier
+41227cd11,typos
+57debbf8b,add author tags to prepare conversion to Forrest changed attribution of bylaws to Apache Ant PMC
+f6c034b00,TokenFilter.ReplaceString only replaced the first occurrence.
+298880094,Adding author meta information
+aa8332fb3,further preparation for forrest migration
+c361e9480,Set the author of the license to The Apache Software Foundation Fix the case of the tt element in the antidote docu
+e13da426b,"Antelope new url; new tasks: antariel, rundoc"
+df6d711fd,regenerate site
+c06b502ac,"Well, let's face it, more and more time is eaten up by Gump"
+194e61bbf,Adapt to latest board meeting results - i.e. boast a little 8-)
+caf0645f5,Another testcase for double target-definition
+505aa524b,Added me.
+d99dce793,regenerate site
+b4c31671f,Allow subclasses of <junit> to plug in command lines of their own.
+6d7fe8048,Fix occasionally thrown IOException when the stream has already been closed with alwaysCreate.
+e43598075,Cause AntLikeTasksAtTopLevelTest to pass on cygwin.
+036aacdf4,Autoload of antlib.xml from default namespace
+085edaf82,allow ./build.sh test to work
+5bc841852,Remove check for author in javadoc class header
+6fb42d703,"ConditionBase: stylecheck, also remove author as per apache guidelines (should be added to style check?)"
+62fcbf852,stylecheck
+dd0d33bb3,Add nested file element to file list to allow filenames to contain white space and commas
+48d010f54,"Remove Author for SQLExec:    authors are:  * @author <a href=""mailto:jeff at custommonkey dor org"">Jeff Martin</a>  * @author <A href=""mailto:gholam at xtra dot co dot nz"">Michael McCallum</A>  * @author <A href=""mailto:tim.stephenson at sybase dot com"">Tim Stephenson</A> conform to stylecheck"
+2a1a857ad,Fix for SQLExec when used with Informix. PR: 27162 Obtained from: Bohuslav Roztocil
+959fd0f7c,separate 1.6 changes from 1.7 (cvs head) changes
+41d2a975a,add bugzilla report 27162
+a0c2e2864,MacroDef did not allow attributes named 'description'. PR: 27175 Reported by: Jayson Raymond
+3deb50ae8,"adding an article to a (belated) article to resources, and removing my unavailable JUG presentation"
+f3a2a405f,style check on PatternSet
+e5fc96441,Throw build exception if name attribute is missing in a patternset PR: 25982 Obtained from: Jose Alberto Fernandez
+8942563e9,typo
+57c40e724,Docs fixes for xmlvalidate.html PR: 27092 Obtained from: Jesse Glick
+94e81238b,Typo
+beddd2bdf,Remove --path from cygpath command as specified by Antoine. PR:  17257
+a75d603ca,manual page update for @@ change in macrodef
+e0a983e35,"adding hints about presetdef/macrodef to the errors. Now that I am using them, they are the main source of this error :)"
+feb03ce2d,added cloning support; bug #27218
+fd9f899c2,documented
+8cbb49d6a,nothing wrong with setFailOnError(false) and spawn.
+4e1532800,Javadoc all public methods.
+2ce327371,"Exclude ProjectTest from being executed (hopefully :), because of testDuplicateTarget."
+3e7907c85,"Fix for duplicate targets in the build file. In ant 1.5 these were not allowed. In ant 1.6, with import file's targets being allowed to be overridden, duplicate targets where incorrectly allowed in normal build files. The fix just checks if the duplicate target is defined in an imported file or in a ""main"" file. Reported by: Dominique Devienne See: http://marc.theaimsgroup.com/?t=107705039100004&r=1&w=2"
+7617c7398,A new roundup attribute on <zip> and related task can be used to control whether the file modification times inside the archive will be rounded up or down (sinceips only store modification times with a granularity of two seconds).  The default remains to round up.
+be91e2871,<apply> with nested <filelist> didn't check out-of-dateness.
+2a225a1ba,"More tweaks to the RPM specific section, submitted by Randy Watler"
+aaed31a8a,"Remove part of the NOTICE file that is covered by section 6 of the License - don't ask me what constitutes a trademark for US law, but I've been told Ant would be an unregistered one"
+6483e3877,Add nested <mapper>s to <pathconvert>. PR: 26364 Submitted by:	Peter Reilly
+7cb8da420,Testcases for <pathconvert>.
+19fe5b25a,Merge
+d0c105c14,Update contributors to reflect emeritus committers
+600084582,Updated committers
+025cd82e8,Point to new Wiki
+d59c09c16,Add 'run.failing.tests' support.
+814f289fd,Make conform to used encoding.
+afe94812e,Xerces-J 2.6.2
+51b5b08a0,Fix typo.
+3c013c9e5,update cvs hreference and some tiding up of cvs manual page Obtained from: Larry Shatzer
+fbb67ce4e,Make test pass in Gumpy - at least I hope it does
+90a2a192d,This test has been randomly failing on Unix systems ever since their file system is considered to have a granularity of a second.  Give it the same treatment as Windows.
+c860131f7,Minor cleanup.
+6afe11b4b,tagdiff.xsl got whacked when the apache license got updated PR: 27057 Obtained from: Ted McElwee
+3ce4e1260,tagdiff.xsl update
+8dfea1a8c,corrections by Larry Schatzer
+f1cc5cb1b,mention file nested element to filelist
+ac5e9903d,opps
+98c3a0ea1,[PATCH] Misspelling: s/occured/occurred/g PR: 27282 Obtained from: Jesse Glick
+8a0dc2dea,Make <depend> less verbose if it doesn't do anything.
+9e3bcc166,update WHATSNEW
+c619bba33,doc fixes for javadoc PR: 27284 Obtained from: Jesse Glick
+c885f5683,remove authors from files PR: 27177 Obtained from: J.M. (Martijn) Kruithof
+dfcfadbc5,"initial list of contributors to ant, with e-mail addresses removed PR: 27177"
+8a5186ec7,fix if build file name has ../ or ./ PR:  26765 Reported by: Ian E. Gorman
+2b5378f47,add fix for 26765
+cfc35789f,"Wrong condition in flush, submitted by Martijn Kruithof, PR: 27549"
+8892a1ce6,doc fix for starteam tasks PR: 27554 Obtained from: Alexz Machinski
+cd466ddf6,exec task outputted two redundant trailing newlines PR: 27546 Reported by: marcel at schutte dot com Obtained from: Martijn Kruithof
+ce89090b4,Nested file mappers; container mapper. PR: 26364
+996e16066,"Add ""negate"" attribute to <propertyset>s."
+2d3188c5d,NPE while useing -listener for commons logger. There is a difference between using a -logger and -listener. The former may use a log file and the latter does not get this set. The commons logger code assumes that it is passed the log stream in both cases. The fix is just to initialize the out and err streams in the commons logger class. PR: 27373
+00f6d0e66,add javadoc
+be5097ce7,Add <nice> to the manual. PR: 26637
+6a67ee10d,"Add ""since"" for nested <mapper>."
+1ac367174,nice task: checkstyle and fix some comments
+a16a445aa,Removing my name
+54b827ff4,Don't swallow the stack trace if a Java program throws an exception.
+0e58e7173,White-space changes only
+e3ce39634,Allow setting of uid and gid in a tarfileset - in addition or in place of user and group. PR: 19120 Reported by: Dale Sherwood
+80c2d3216,stylecheck
+72621f720,stylecheck
+9e43b77ab,checkcheck
+05eda0c97,doc: clarification of targets in using.html Obtained from: Jack J. Woehr
+7cbf740ee,Quick refactoring.
+a38273bbf,ant -p swallows (configuration) errors silently. PR:  27732
+685ef88e9,sshexec: document 'host'. Thanks to Gedge
+d15ef9e13,Reduce level of skip message to VERBOSE. PR:  27784
+e4209b284,filterset used by filtertask doesn't respect loglevel PR:  27568 Obtained from: Marcel Schutte
+379094965,Update license
+8671950c6,Added examples of using the line.separator system property in the message. PR:  27953
+bf495f677,"Log4J is no longer a Jakarta subproject, don't wait for the others to graduate as well."
+3732eb195,"working to get Axis & smartfrog to generate their task docs from this code. the generation is good, dvsl bad."
+b0507d445,Add <redirector>.
+b5adaac3d,Remove comment.
+a86e53313,Forgot the default typedef and type unit tests initially.  ;)
+e353e5f5a,spelling
+2d25bc689,"I do not like the current process of marking incompatibility, as it is a dog to use from programmatic task access. We should validate immediatly before execution instead. This commit is not a fix, merely a partial workaround."
+a6c07f5d4,Minor corrections
+1b72f9a64,Add Windows 2003 support to getProcEnvCommand() + minor refactoring. PR:  28067 Submitted by:	Irene Rusman
+1b510286c,Whitespace changes only
+46e87d8cd,Try to make Gump happy
+fefa29d94,ProjectComponent incorrect compare used in logging PR: 28070 Obtained from: Matt Small
+327f55746,Add Windows 2003 support to getProcEnvCommand() + minor refactoring. PR:  28067 Submitted by:	Irene Rusman
+e8acf2f07,Forgot manual page.
+5ecbfc243,<parallel>: failonany was tested even if the task succeeded. PR: 28122 Reported by: Oliver Dungey
+14211b597,I/O-intensive processes hung when started by Execute.spawn() PR: 23893/26852. Submitted by: Daniel Spilker
+eb85ba43d,fix mailing list address
+9557aed0f,UNC pathnames did not work for ANT_HOME or -lib locations on Windows. PR: 27922
+831857b1f,One Gus is enough (PR: 28169)
+8195ed0fa,"Fix the previous change; handle invalid URLs and 1.2 compatibility. Submitted by:  Martijn Kruithof, Rainer Noack"
+9b0ab4b26,Make contributing to Ant easier for Eclipse users
+adde2729f,"Clarify that antstructure isn't really that useful, PR: 27735"
+c92c5c363,Document build.clonevm
+4b2cd31d4,"remove refernce to optional.jar in ""unable to create task/type"" message Obtained from: Jack J. Woehr"
+3e41fe6d6,add jack to contributors
+13eae87a1,Expose MacroDef from MacroInstance PR: 28242 Reported by: Darin Swanson
+8ec6497d8,Add progress report to <scp>.
+e33f1d105,Add pattern attribute to DateSelector.  Document granularity attribute. Submitted by: David Kavanagh
+89ab1168c,Don't die if the ant.file property hasn't been set.
+4f1b9e115,Spelling corrections and minor wording change.
+3a8b2fb42,Cleanup.
+fa462555f,2004
+cf1b1d635,Add RedHat S/390 hint submitted by Jack Woehr
+83b7e75aa,Add special local/remote variants of the file and todir attributes to explicitly state what is local or remote.
+404179188,less noisy verbose mode for <scp> by Rami Ojares
+f7d96a02a,book-keeping
+17e505e62,enable gcj's java -> native compilation.
+7d1c3c774,"Fixed ""optional"" attribute. Reported by:  Nick Gianakas"
+dcc4fb26f,"Fixed <import>'s ""optional"" attribute. Reported by:  Nick Gianakas"
+6f099c227,Add macrodef-solution to 'propertycopy'. Thanks Stefan
+267fb740f,new attributes for the tests: hostname and timestamp.
+487c38e91,Adapt the OS/2 wrapper scripts to the new launcher.
+451b75d33,"Fix line-ends, one more wrong license"
+0b8142a73,and one more wrong license
+5ee9f7e6b,-breakiterator fixes by Jack Woehr
+cca008dd0,"Capture stderr in <sshexec>, PR 28349"
+021fdf251,"Add forkStyle attribute to <junit> with possible values of once, perTest and perBatch."
+ba3f83877,Merged the subclass-friendly <junit> version into 1.6 branch
+990243c78,"Set context classloader in <xslt>, PR: 24802"
+6dbabcb77,"Add nested mappers to xslt, PR: 11249"
+bb473f44f,Some doc tweaks and a new goal
+b56144731,"Don't delete existing file when trying to update a read-only archive, PR: 28419"
+e5f8b0409,Use addMapper instead pf createMapper as suggested by Peter
+9d7309a0e,Add hostname/timestamp from Jeff Tulley. Remove authors (like in java files).
+ff5aeaff3,Remove doubles.
+41b4662f9,very experimental WiX task
+7287e7e70,Clarify use of the depends attribute with regard to overridden targets. PR:  27116
+2765e2f09,More cleanup.
+6720b4e6a,"Replaced ""The""."
+e81ed0423,accessor to arguments
+14d5a4009,This is a test that demonstrates that assert checks dont get through properly. Fix in progress.
+9dc81a031,Javadocs and some refactoring. tmpDir is now validated and used consistently where properties files are created.
+6d4dd928d,show the alternate invocation mechanism does work. hmm.
+b25905ba4,removing one line
+c0a344bdd,28479: NetBeans ships 1.6.1. Thanks Jesse
+e8f55deaa,"<assertions> inside <java> or <junit> didn't work, PR: 27218"
+40cf93ab7,Minor formatting changes
+cdf5f5a18,"Document yet another classloading quirk within <junit>, PR: 24646"
+ffce0c725,"Various typo fixes by Jesse Glick, PR: 28480"
+55c133cec,"Generate proper file URLs in AntClassLoader#getResource, PR: 28060"
+919e3d3e5,Document the use of @{attributes} inside <attribute/> definition.
+3988c2b07,move to the Java1.2 implementation.
+5d9b37c5b,Typo correction.
+4f4e3cc30,Add nested text support commentary to HEAD.
+4985cd891,Removed v1.14 conflict indicator.
+531e66cb1,Switch getParentFile(File) to delegate to File.getParentFile() and deprecate.
+b6298168c,Add resource support to <loadproperties>. PR: 28340
+5ab01659b,Add <touch> <filelist> support to 1.6 branch.
+d8657e910,One not too much
+88039803e,"don't depend on jre being lowercase, PR: 25798"
+a3697532b,Fix syntax errors in examples.
+f8c1bb00f,One less complaint from jikes about code style.
+122c6ddd9,"A new uptodate test that includes granularity. the intent is to move all date tests to this single place, to eliminate inconsistencies. The only place I use it is signjar, which, by virtue of the fact there is no signjar test, means I know it wont break the tests. Also, cleaned up the reflection hacks for 1.1."
+fb7735966,"Purge of many (but not all) the if-java-1.1 tests in the ant code. I left those in the tests in, and I left the javac and javadoc tests in, as they are more complex. This is the simple set."
+3375d671a,Incorporate <waitfor> to improve the chances of a pass on Windows.  :( Also make the failures more instructive for redirect* testcases.
+2ead66e52,"Make ContainerMapper abstract; move chained/composite behaviors to subclasses ChainedMapper and CompositeMapper, respectively."
+7518f0175,Merge Redirector bugfix to 1.6 branch.
+819d9a02f,The small things you find when reviewing code
+c00d5a697,"Implement jar index for referenced jars, PR: 14255"
+1be95e51f,"Make attribute und element names in <scriptdef> lowercase (like <macrodef> does) to avoid problems with name=""Foo"" -> the task X doesn\'t support the attribute foo"
+7fb49c37c,"Make attribute und element names in <scriptdef> lowercase (like <macrodef> does) to avoid problems with name=""Foo"" -> the task X doesn\'t support the attribute foo"
+0b7caf230,Don't tell people what you're not giving them; it only makes them feel cheated.
+85c27718e,Merge Windows UNC fix to 1.6 branch
+99de043a3,More HEAD to 1.6 cleanup
+e160d8323,JDependTask did not close an output file PR: 28557 Obtained from: Jeff Badorek
+58d6ff11a,Make <apply> differentiate between empty and up-to-date filesets/lists. PR: 23734
+1786aff36,More merges
+33ac6bc3c,"Add a Location member to oata.Target, with the appropriate settor & gettor. PR:  28599"
+9f7f747fa,Full HEAD/1.6 sync
+715bb6924,Document DateSelector pattern attribute for 1.6 in HEAD
+dde581880,Missing '<' in @text-example.
+dc6ab2dfe,forkstyle -> forkmode
+fc014731e,@since
+08fc13867,Close process streams in waitFor(Process). PR: 28565
+e69dbc941,Fix typo.
+591f197bd,More typo corrections (not mine).
+c25de7702,"Move Process stream closure into a new public static method, closeStreams(Process). PR: 28565"
+98f917577,Anton Mazkovoi has provided the base for PR 24697
+1cac66df9,File paths to imported build files should not be canonicalized PR: 28505 Obtained from: Jesse Glick
+6f608f120,update WHATSNEW
+64556cb11,<fail> accepts nested conditions. PR: 19220
+1f6f45aeb,Describe relative file behaviour in <import> task.
+7665bc264,Restore Task inheritance to Exit/<fail>.
+4c844c8f2,Remove unused import.
+5f7b64f43,"Add pointer to JReleaseInfo, submitted by Thomas Cotting"
+cfd785ed3,Update the external image-task.
+fd7bc9489,Link Check
+b706854c2,Cygwin/UNC ANT_HOME compatibility using mixed paths on NT-family systems.
+368ee310b,Make sure CLASSPATH is set before attempting to change it; make sure --mixed option is available to cygpath before using it.
+bec0ae9f9,Antworks/Centipede; BuildMonkey; sync table layout of projects/external
+f4d97c3b5,Fix echotest example. Submitted by:	Yuji Yamano
+f4aaa6b5e,Yuji Yamano
+0852629ad,Concat throws ArrayIndexOutOfBounds with fixlastline PR: 28820 Reported by: Andre Vanha
+a2c25511f,Assertions require fork
+bc7255a55,2004
+46925591a,New article about Ant in Java-Spektrum 5/04.
+7e2def37d,hint to projects.xml; os-specific configuration
+526cd172f,antlib: allow a typedef in an antlib to override the classpath unittests to follow
+39b58c573,"test1 failed unless it was the first test to run. CVS: ---------------------------------------------------------------------- CVS: PR: CVS:   If this change addresses a PR in the problem report tracking CVS:   database, then enter the PR number(s) here. CVS: Obtained from: CVS:   If this change has been taken from another system, such as NCSA, CVS:   then name the system in this line, otherwise delete it. CVS: Submitted by: CVS:   If this code has been contributed to Apache by someone else; i.e., CVS:   they sent us a patch or a new module, then include their name/email CVS:   address here. If this is your work then delete this line. CVS: Reviewed by: CVS:   If we are doing pre-commit code reviews and someone else has CVS:   reviewed your changes, include their name(s) here. CVS:   If you have not had it reviewed then delete this line."
+c7165c227,"Make tests pass on MacOS X. CVS: ---------------------------------------------------------------------- CVS: PR: CVS:   If this change addresses a PR in the problem report tracking CVS:   database, then enter the PR number(s) here. CVS: Obtained from: CVS:   If this change has been taken from another system, such as NCSA, CVS:   then name the system in this line, otherwise delete it. CVS: Submitted by: CVS:   If this code has been contributed to Apache by someone else; i.e., CVS:   they sent us a patch or a new module, then include their name/email CVS:   address here. If this is your work then delete this line. CVS: Reviewed by: CVS:   If we are doing pre-commit code reviews and someone else has CVS:   reviewed your changes, include their name(s) here. CVS:   If you have not had it reviewed then delete this line."
+f10dfc61e,Add docs for <indexjars>
+9cc95d155,cosmetics
+52a4c5f90,Misc. corrections in SignJar.java PR: 28999 Obtained from: Jesse Glick
+dcf43033b,Remove redundant <hr> from javah.htm PR: 11559 Obtained from: Jesse Glick
+e0ca6435b,Ignore built distributions for cvs PR: 11557 Obtained from: Jesse Glick
+e32a24de0,Permit building under JDK 1.5 PR: 28996 Obtained from: Jesse Glick
+fa45d9628,Fix use of hashcode in MacroDef Logger code uses the macrodef as a key in a map before it is fully configured so the hashcode had changed while the object was in the map PR: 28993 Obtained from: Jesse Glick
+6cc4c84df,better diagnostics from XmlLogger.java PR: 28993 Obtained from: Jesse Glick
+642befb44,Javadoc syntax error corrections PR: 28998 Obtained from: Jesse Glick
+c8546b42a,update WHATSNEW for jesses fixes
+0ef8ca2b3,resolve changes in WHATSNEW with 1.6 version
+08ee283e4,build.xml source=1.2 does not work for javac 1.4.0 use a presetdef depending on the java version
+476678d4a,DynamicConfiguratorNS Initial code for dynamicConfiguratorNS. Change from patch the qualified name is given and not the prefix. PR: 28426
+69cd05e0f,temporary fix until Peter adds DynamicConfiguratorNS
+3051af774,Add reflectant task
+ade217719,"Opps, forgot to add DynamicConfiguratorNS"
+614648dc6,remove stephan's work-arounds
+7e3706411,"new tasks and project: emma, refactorit + jam"
+0faa0d5fc,Use the same class as JavaEnvUtils to check for 1.5+
+1efa389be,Push fix for PR#17934 to 1.6.2
+cd12d2176,Push fix for PR#22150 to 1.6.2
+a2128cc20,Push fix for PR#22150 to 1.6.2
+97263e1fe,macrodef manual page: the text element was described twice  also the element name description was a little confusing
+5e4408208,Don't try to add or remove shutdown hooks while the hook is running.  Remove a processes.wait that won't ever return as far as I can tell.
+278074659,add implicit element to macrodef PR:  25633
+edc2de392,opps: missed these
+fa7d0ce02,typedef: check for recursive loading of xml files/resources (aka antlibs) typedef: do not throw an NPE if attempting to load a file that does not exist
+e7cca3123,change message of recursive loading of antlibs to include the original location from where it was loaded.
+9ce980743,Add a binary flag to the concat task PR: 26312
+49c52d18d,JDK 1.3-
+c6c726e16,Tiny refactoring.
+dd5dfe2ce,Xalan2Executor doesn't need Xalan-J 2
+957f9e512,"Document the <junitreport>/JDK 1.5 problem, PR: 27541"
+d8361ec47,Addition of a nested property element to the XMLValidateTask to support string parser properties PR: 23395 Submitted by: Matthew Hawthorne (mhawthorne at alumni dot pitt dot edu)
+62e39365d,"Accentuated characters had been converted to question marks, now fixed"
+7028cb101,Doc fix concerning the library requirements of the ftp task PR: 29334 Submitted by: Steve Cohen (scohen at apache dot org)
+95ab6a33a,Removing and re-adding as binary
+47c37f808,Removing and re-adding as binary
+411d47b66,Make <genkey> independent of PATH.
+4bba55ce3,Changes by Pavel Vlasov for his projects
+c87a22c51,update WHATSNEW for dynamicconfiguratorNS and for implicit nested elements   in macrodef
+996bac3e3,Add getIf() and getUnless() to Target. PR: 29320 Submitted by: Christophe Labouisse
+0a8c6255b,Add Christophe Labouisse PR: 29320
+dc899ea41,"Changed default tempdir to java.io.tmpdir instead of user.dir.  See what breaks. PR: 29391, 4590"
+2c4b09e15,"Changed default tempdir to java.io.tmpdir instead of user.dir. PR: 29391, 4590"
+9f1eefd3a,Tasks extending from abstract DispatchTask may have multiple action methods that will get invoked depending upon the action attribute of the task.
+8efca5a58,"broken link, PR 29397"
+c012d33f0,Tests for bug 25181
+937f9095d,document bugfix
+dd3313800,Test for 22865
+54d0543e1,"prevent empty archive inip if whenempty is set to skip, PR: 22865"
+1120d83f2,indentation
+d762cc911,typos Obtained from: Yuji Yamano
+9aa711ca6,Add deleteonexit attribute to <delete>
+ecb175b0a,Make the deleteonexit warning stronger
+698b90a7d,always call fireTargetFinished to correspond to a fireTargetStarted
+5f037857b,Always call taskfinished if taskstarted has been called
+e8e425503,get Task#perform() to wrap all exceptions with a buildexception
+4010e0a25,Tests are failing...
+63c0593a8,Tasks extending from oata.Task and implementing Dispatchable are not dispatchable.
+5b5e9a7c3,"Add the feature   <attribute name=""http://xml.org/sax/features/namespaces"" value=""true""/> to the examples PR: 29187"
+96ee9e28b,Added Randy Watler for script submissions.
+713effc0b,Try to explain why one needs to set the namespaces feature to true when validating documents PR: 29187
+16197b95e,Fix example of usage of macrodef in an antlib
+e5eca124f,Allow nested elements of namespaced types to below to the ant default namespace as well as the type's namespace.
+b51b3c657,new J2ME tasks
+8573d3f65,2004
+306324c7f,Don't cripple remote file names that contain spaces.
+268a5447d,Add tofile attributes to scp.
+e7a1495da,Reorganize J2ME tasks. New SCM-section in external. DTDDoc.
+c569344ce,change antmerge contact
+527056c9e,Code cleanup.
+5f9698fab,Add ignoremissing attribute to <apply>. PR:  29585
+00b218efe,Add status attribute to <fail>.  Idea/design by Aurele Venet.
+6711063f1,Javadoc cleanup
+e8479cb9f,Exit status fixes.
+2c46f2cd5,"Added Since to the description for the ""negate"" attribute."
+897e0bb05,Show <fail> changes as merged.
+9f8254794,delete.html: add example of deleting a directory Obtained from: Ivan Ivanov
+c0a1986ec,"<loadproperties resource=""..."" /> merged."
+09e8fc708,typo
+c101fd763,correct compatibility statement of EMMA.
+5004c5658,Small refactoring to prepare for bug 25935
+86b741b60,properly disconnect from telnet server.
+befcdc720,"Indentation of telnet tasks, record bug fix"
+8fac17d33,PR 25935 applies to <rexec> as well
+7bb0f18d6,Add libgcj support to Path.addJavaRuntime
+8d4197a22,Preliminary fix for 8689
+75be43a0d,Show latest merges
+a22c8c09c,Follow Conor's and Jose Alberto's advice - improved fix for PR 8689
+b423ccde3,Some cleanup
+d761a89b6,change status to PMC
+9238ee886,NPE in cleanup on Windows (all non-Unix?).
+5e2008922,Merged ignoremissing.
+c672e8778,"Added multiple targets to <ant> and <antcall> using nested <target> elements. PR: 5270, 8148, 17071, 6368, 29623"
+145013470,Remove commented import.
+ad05cd8c7,"Okay, maybe I was a little ambitious."
+7c54c8821,ignoremissing is merged!
+2bb799126,Add pointer to Grand by Christophe Labouisse
+cadde0cf5,some people may find this article useful
+6a99f7d68,Another Ant 1.6 article
+ad384f8d1,typo
+cde70b0fa,Document SubBuildListener
+d891e90f6,Make <junitreport> work with JDK 1.5.
+0d0965a75,fix link
+093c63ad4,typos
+cc141e87c,try to support Tomcat 5.x
+37b617125,add NoClassDefFoundError to faq.xml
+b4e6928d4,Insert a space.
+12bf95a39,update to reflect the latest release of commons-net which fixed some bugs that interfered with the Ant interface.
+72ebccc09,How to resolve files in imported build files by Ivan Ivanov
+62320f789,turn visual markup into at least a little structural information
+98fd377b3,Pre-formatted comments
+7311e9ed3,explain why 1.2.2 of commons-net is recommended.
+720e980b4,Add pointer to yEd by Sebastian M�ller
+3e6dd09ac,fix <subant>'s I/O handling
+0d506f5ed,Make compile
+ec21dab4d,txt2html moved
+f54cc0dca,DynamicConfiguratorNS solves the case-sensitivity issue with <msbuild>
+7e4f42528,Ant162beta1 release
+78ebcbd5a,Resolution of Bugzilla 8689
+84f9f007f,Make JavaTest pass on Windows.
+81a639be9,Add pointer to luntbuild
+9c40397d1,"add a ""self"" reference for scriptdef"
+f14479c0e,Opps: misnamed instance
+11a03b2d6,Make ignoremissing test pass on Java 1.2 .
+44be0d652,"Ant2SVG, Savant, Surround SCM"
+590844e77,Small redesign of ModifiedSelector. Integrating BugIDs 29742+29743. Adding support of custom classes. Checkstyle.
+e7edb0e96,Forgot to add the Checksum
+5a8c242a0,2004 is enough for a new file
+04d73d156,No more -lib needed.
+3c922aa28,opps: forgot to commit the faq.xml for the faq.html
+b10dc1232,Let Gump pass in Headless-mode
+ca29bb40f,Use a proper ASCII character
+a34ad0e8f,"Enabled echo tests only for *nix & cygwin, like others."
+7dd5e65a0,A little extra for those people trying to debug inheritance of properties & save stuff in CVS. The XML output of <echoproperties> is now *sorted*.
+0e3b770c6,sorting of echoproperties is documented.

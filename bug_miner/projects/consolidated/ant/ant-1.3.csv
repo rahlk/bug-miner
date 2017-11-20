@@ -1,0 +1,826 @@
+Hash,Message
+068f73488,Merge after 1.3 release
+c54e268ac,Further merges now that CVS is going a little faster
+dfaa3a413,Update the latest release version on the Ant webpage
+6004b4adb,Update manual and link to webpage
+119e49b11,Delinquent change to the documentation to document build.sysclasspath.
+6f0139454,Add info about default target to -projecthelp
+a52b13778,Added SCCS dirs to default excludes list.
+239b313fa,Update to Jaxp 1.1
+ac29025ea,Quick fix to get nightly builds working again.
+f9d39540d,"Added information about the Jext-Plugin to the IDE-Integration section, renamed that section to Editor/IDE Integration at the same time. Removed stray CR in one document."
+1520867c3,No reason to test for TraX anymore as we now officially require JAXP 1.1.
+daf7ce483,Displaying default target failed when there wasn't a description.
+730543998,Restructured requested-features.txt and added some comments. No new content.
+d9595ea38,requests from Oliver Wieland VDI <wieland.oliver@vdi.de>
+c994f1b82,Added some stuff I remeber being discussed.
+fb15f2dcb,We don't have images for our website yet.
+078046471,Added requests submitted by Stephane Bailliez <sbailliez@imediation.com>. PR: Obtained from: Submitted by: Reviewed by:
+c5ce39d64,Added requests from John.D.Casey@mail.sprint.com
+acf4fa5a5,Merge in the stuff from FunctionalRequirements.html.
+0edf3b7ad,minor typo in install.html
+310829644,Enable bootstrap to be executed multiple times without prompting on Windows.  Does not appear to be a problem on Unix. ----------------------------------------------------------------------
+a432d9820,"Added request by SQUELART,GERALD <gerald_squelart@hp.com>"
+9878091f3,yet another distant memory
+be3dc4f25,Add a pointer to the requirements document to the homepage.
+832fe98ae,"Make sureip files, that <zip> is reading from, will be closed."
+731144880,Don't hardcode junit.jar - it is not included in the source distribution.
+288cc4996,Add Ant News page
+a2a085781,Fix a few links
+377649c83,Another small fix
+b30d297b2,Workaround for a bug in Kaffee.
+635c56e2d,Make testcases independent of current working directory - add one for <copy>.
+2136cff17,Added property missed in last patch.
+b0edc6575,"Fix bug in P4 tasks when port, user or client have not been specified."
+4c9deafd6,Replace some entity references to &#150; with a simple (and more portable) dash.
+bb97500b4,Make sure javah's outputFile attribute will be resolved correctly.
+3f45fc1d3,Make the whenempty attribute ofip use an EnumeratedAttribute - alows the DTD to be stricter.
+1dbdb41c5,record what I've been doing.
+e65f093c8,Make <antstructure> deal with EnumeratedAttribute attributes whose values don't match the NMTOKEN production.
+4053c68fd,Make antstructure ommit tasks it cannot load properly.
+1c1103184,update list of fixed bugs in <antstructure>
+1ee01780c,clarify the term filterset
+4888955d6,Added requests by Jay Glanville <dickon@nortelnetworks.com>
+f0058821d,Added requests from bugzilla.
+6c0b93ef1,Make <style> resolve stylesheet filename as relative to the projects base directory.
+aed3a871a,remove CRs from ant and antRun scripts in the dist targets. PR: 837 Obtained from: Submitted by: Reviewed by:
+a7df8b599,cloudy with some hard rain from time to time
+3ef676d75,Documented default excluded of <vajexport>. Removed stray CRs.
+0cb9c2b22,Added request by Les Hughes <leslie.hughes@rubus.com>
+753b60552,Make sure bootclasspath and extdirs attribute of <javac> get special treatment if running JDK 1.1.
+ed5b426ea,javac has been fixed for 1.1.
+a3db26c76,removed redundant condition.
+2870e59a5,Backing out change... ----------------------------------------------------------------------
+216f279d6,Added requests by Alex Rosen <arosen@silverstream.com>
+28df4c589,Some more distant memories
+96e0995d5,requests by Chris Todd <chris.todd@home.com>
+d2440f424,request from Stuart Halloway <stu@develop.com>
+806fc38b4,request by Paul Hammant <paul_hammant@yahoo.com>
+dab0e3723,Make <antcall> and <ant> more Script-friendly.
+2bc52047f,Make <style> resolve the stylesheet file name the same way as all other tasks do.
+dbebd7ff8,Make delete quiet when trying to delete non-existent files. The message is now logged with verbose mode.
+9c7871e71,Start a simple listing of all external resources for Ant that we are aware of.
+6c7334ca8,forgot to add the list itself.
+9783e6c8c,Make Ant deal with non-String elements stored in system properties.
+25ad85c0c,Admit that the patch to <style> breaks backwards compatibility.
+37b3d25cc,requests from Oliver Wieland <oliver.wieland@innoq.com>
+2d4bfedfb,Committed Nick Davis' patch to add action toggleability.
+8d904286f,Updated
+571c177da,"Change Chmod task so that the usage    <chmod dir=""${build.dir}"" perm=""ug+rwx""/> works. This was being used in the Alexandria project and seems reasonable usage but was not in fact supported."
+89c8921b2,Incorporated a few more points. More coming soon...
+6786b60dc,requests by Steve Loughran <steve_l@iseran.com>
+7ccd42b3e,request by Scott Sanders <satan@totalsync.com>
+0c0cce9b3,Added disclaimer. Added Anakia. Added contact information.
+7b485798b,revert <style> to old behavior - make its style attribute interpreted as relative to the basdir attribute. Make sure it works when handed an absolute path.
+f3f19e6f7,added compatibilty section - to the best of my knowledge.
+fca57f83a,Face lift - still trying to figure out what DTD Anakia uses.
+8a21be498,Support setting of the ejbc compiler class.
+f71b0b029,Define DTDs for the generic cae and not just the weblogic case
+6e99e2722,"Make Thomas' ""Nested Tasks"" proposal a discussion point of its own."
+a6b06d7be,request by Arent Gr�bner <arent@t-online.de>
+74fcd3cad,Make <chmod> work without a dir attribute.
+f7ef1e4b5,Make sure includeEmptyDirs attribute of <delete> does what it promises.
+93df9d29a,Make sure includeEmptyDirs attribute of <delete> does what it promises.
+b0f1f9cab,Defer sanity checks of dir attribute to the point where the fileset will be used for the first time. This will enable things like
+76c6de74b,"Make <delete quite=""true""> handle non-existing dirs in filesets gracefully."
+b806dbf97,"Added """" - the basedir itself - to the list of included directories, if it matches."
+8df265fd9,Changed the <chmod>s and <fixcrlf>s.
+9378601a4,adapt to new Anakia version
+26c549d47,requests by Kenneth Albert Liu <kenliu@lucent.com>
+9ce79a37c,Task request by Lutz Epperlein <epperlein@opix.de> and Julian gosnell <Julian.Gosnell@ubsw.com>
+70415e640,request by Rob Oxspring <roxspring@yahoo.com>
+879c6ac9b,request by Marvin Greenberg <MGreenberg@Eidea.com>
+020e9c358,request by Thomas Leonhardt <leonhardt@informatik.tu-darmstadt.de>
+ad4c56763,removed TODO - three of four points have already been implemented and the remaining one falls into the TaskExecutionEngine category of requested-features.txt.
+b31472d21,Make the AntClassLoader load resources in the same order as it currently loads classes.
+5e6db292f,Add Martin's Configure Task.
+1d920d92e,Changes to the Forte entry.
+e92e09294,Added request for sequence functionality in depends.
+19ac8e9bb,requests from Tim Vernum <Tim.Vernum@macquarie.com.au>
+52d6ae21d,requests by Thomas Leonhardt <leonhardt@informatik.tu-darmstadt.de>
+bdc051741,documentation for the optional <starteam> task.
+06656c4a9,Move TraXLiaison from optional.jar to ant.jar.
+aea2b0caa,Make sure bootstrap.sh runs in a clean environment by removing build/classes.
+d7b8f63f0,"Make <style> search relative to the project's basedir first - if it cannot be found, fall back to the task's basedir and print a deprecation warning."
+926fcdcbe,pass through the exit value from Ant
+5cc29f61e,Make <rmic> a factory task just like <javac> already is. Support Kaffe's rmic.
+faa722437,the future is now 8-)
+7fc63c89a,Fixed bug when displaying default target with a description.
+bc27fce2a,Fix for NPE when getClasspath is called before setRmic
+a9ea16d4a,Added layout request.
+6ef87655d,Fails on Windows
+c9b1cc727,request by Thomas Leonhardt <leonhardt@informatik.tu-darmstadt.de>.
+98bf0fac4,request by Scott Sanders <satan@totalsync.com>
+ff38a6188,Add support for Weblogic's rmic.
+823773454,destdir in <style> is no longer required if in/out have been specified.
+d6e5c9e81,Make <tar> handle empty directories.
+e78553b86,Add descriptions to main targets.
+c434eba78,Centralize method for setting last modification time of a file in Project.
+d10d01a97,add description attribute to <p4change>
+d8a9a58ad,request by Bill Burton <billb@progress.com>
+c0d791849,distant memory again
+d95cf71ff,Move over main goals from original Ant. Add a goal to have testcases for everything.
+dc51b010d,"make the ""no commit"" statements a little clearer"
+154fab9e8,ext dirs - the bane of java developers everywhere.
+3afa4e107,Add deprecation indicators for Deltree and Javadoc2
+f80406c2b,Missing throw in VAJImport
+7d1a12cac,Added some requirements from Eric Siegerman <erics@telepres.com>
+328a78b08,"request by Bill Brooks <wbrooks@lug.ee.calpoly.edu>, split into two parts."
+116120321,request by Peter Luttrell <peter@firepod.com>
+bc1261afe,request by Steve Loughran <steve_l@iseran.com> PR: Obtained from: Submitted by: Reviewed by:
+7e061a4d9,"request by Alex Solofnenko <asolofnenko@concordesolutions.com> - or better, my interpretation of it."
+ccd767b7a,request by Tim Vernum <Tim.Vernum@macquarie.com.au>
+b9f637fc9,requests by Glenn Twiggs <Glenn_Twiggs@bmc.com>
+a106a0a32,typos
+d9c3b5ca5,request by Deryk Sinotte <deryk.sinotte@audesi.com>
+8e21c4c12,request by David Rees <d.rees.l@usa.net>
+d9ce954d3,"Added in ""integrate depends/javac"" request."
+839c93f9e,Added attribute serverPath which lets the user specify the path to the srcsafe.ini.
+f9775c221,Fix for Bug #975 - sometimes (for example with a default installation of cygwin) there are environment-variables containing a new-line. We ignore anything after the first line and log the ignored lines with warning-level.
+1d080174e,Added support for the VSS History-command.
+d30b76e0d,group requests
+06e57b190,"chop .class at the end, not somewhere in the middle."
+1164d8842,Fixed a typo
+b162d01b9,Omit the basedir itself (which would be added as /) fromipfile.
+99c537ba3,Borland nested element for <ejbjar> to generate EJBs for the Borland Application Server
+1f805b5dc,A small documentation enhancement.
+c5b5b59b7,Bug #1011
+113069f80,Bug #1138
+999634525,Applied Nick Davis' patch to support generic elements based on an Ant DTD.
+0c4a72a81,results of the first voting stage
+e6e450dc1,Make <touch> work on <fileset>s
+2276ae89a,sanity checks for <touch>
+b16a773de,Add a value attribute to <uptodate>
+7c3493aaa,Make <fail> support nested text.
+3ccfe4645,Add pattern for CVS backup files to default excludes
+bf4ff9c36,make sureipFileSet works if the current working directory doesn't exist.
+a0958003e,Add link to CruiseControl.
+14d7f3c91,"Update ""other projects"" list."
+6231c77d2,<fixcrlf> will only overwrite files if their content is different from the original.
+b8de4702c,"Add ""REM"" to the comment identifiers fro <sql> - even if it's non-standard"
+8854bf786,Don't parse the XSLT stylesheet unless we know a file is going to be transformed. This should improve performance in cases where the generated files are up to date significantly.
+950bfd5cf,Added Ear task
+54b25780f,"- Removed javadoc explaining attributes of task. This info is already in the vsshistory.html file. I didn't want to duplicate the work. - Renamed task attribute ""outputfilename"" to ""output"" to unify the task attribute namespace (i.e., other tasks use ""output"", why not this one?). Also made sure that the output filename is relative to the project's basedir. - Added task attribute ""dateFormat"" to allow the format of dates in ""toDate"" and ""fromDate"" to be specified. This was necessary for the ""numDays"" functionality to work properly with my date format. - Added ""default"" choice to ""style"" attribute. If an unknown style attribute is provided, a BuildException is thrown. - Fixed examples in the documentation which not included vsspath - Only pass -R once to ss.exe and only if recursive is really specified"
+1386f41a4,New task <p4counter>
+29f5971d3,separate Ant specific menus from the rest
+d51357812,"oops, Front Page is Ant's, not the one of Jakarta."
+01793f8b4,document newenvironment attribute of apply.
+87def42d8,New task <recorder>
+c22df87cd,Add a <metainf> element to <jar>
+44a9c085a,Fixed coding system problem (dos-2-unix translation error).
+f84f566a2,First cut at a task writer guildline.
+4e4e5054b,minor correction for run-single-test
+405db5ebc,Add property attribute to <p4counter>
+e46851196,"Added ""DtdAttributes"" class and fixed DtdElement's getters and setters."
+0b9d88884,"changed ""NamedValues"" property to ACSDtdDefinedAttributes to allow for custom editor."
+fd1dbabec,registered DtdAttributePropertyEditor with PropertyEditorManager
+6913a6c5a,new elements will have required attributes added
+6c8512b89,removed the use of JDK 1.3 feature (Button.getAction)
+ac7223c6e,getAction was added to allow removal of JDK 1.3 feature
+5643ae498,editor which provides a combobox of available attributes
+ac8622f1a,"no ""delete"" menu for project element. display ""delete"" and ""new element"" for all elements."
+16218478e,added input validation to dialog
+edd396be1,Borland ejbjar element documentation New blgenclient task to generate client jar for Borland EJBs
+9a94f5c29,Added in basic RPM task
+c6d570f7e,Added in xmlvalidate task
+72053e82f,Claim some fame
+60ed8507e,Updated icontract task
+949e52ddb,"Move the ""Running Ant"" section from ""Installing Ant"" to a page of its own."
+e7168dce2,Tested <junit> with new JUnit 3.6.
+3e8ba1421,add function to fill a List from an Object[]
+53ddc59ec,sort elements in the combobox
+4c0c12c0f,add support for optional elements
+676859791,Added in python style runant script
+73a829852,Updated ant to get environment from MacOS X
+fdde39136,Rename <recorder> ro <record>.
+4ee2e5c26,The completion of the fix for Bug #975: include proper handling of parsing chunks of data returned by the external environment listing program (whose command is returned by getProcEnvCommand()).  UNIX environment variables can contain text with embedded newlines.
+8c0161b0c,added <patternset> to <fileset>'s possible children
+0cd4a15d8,added a few optional tasks
+31dfcee60,"modified getDisplayName to display common attribute information (eg ""mkdir: ${build.dir}"")"
+28ca8667a,changed the JTree to DragTree and added DragTreeListener
+d83e6c3d8,Added DragTree.java and DragTreeListener.java (a JTree with drop and drag support)
+0fbdf2138,Antidote officially moved to the CVS module jakarta-ant-antidote.
+e7b04a89a,Move message
+6769b415e,Add information about the AspectJC task.
+a9a32155c,"brush up documentation for <javadoc> (adding documentation for the excludepackagenames attribute in the first place), minor cleanups in the implementation of this task."
+de5c81da9,Add pointer to Dave Dribin's J2ME tasks.
+fc42e57c2,Provide a way to specify addtional class path for blgenclient task.
+e92225b1a,Create the ejbjar weblogic command line as a set of arguments rather than as a single line. Avoids problems with paths which contain spaces.
+00f96abeb,Made sure OS version is parsed correctly for OSX
+9bca5c023,Added extra feature request.
+d6db14611,voting results
+0deb1e2f5,Peter lifted his veto
+bb58f9a94,Reimplementation ofipOutputStream along with a subclass ofipEntry to allow Ant generatedip/jar/war/ear files to be extracted on Unix boxes without permission problems for directories.
+d040818b1,Make EjbcHelper JDK 1.1 compatible.
+3193a54aa,Fix stupid NPE introduced with myIP changes.
+c3714c50a,"More JDK 1.1 issues. Culprits have been <pvcs>, <record> and the newip package."
+460259a48,Added some external resources.
+c73410b59,More resources links
+450c5fee1,J2EEUnit is Cactus in the jakarta-commons project now.
+c7f38706e,we shouldn't forget that some committers also write articles
+360b474c6,change status message
+a202ce4f8,Use current time instead of something illegal when we don't know the last modification time of a dir.
+bc4d066c1,"modularize site.vsl, add a first cut at a FAQ with a stylesheet of its own."
+fa525259c,Minor clean-up (and verifying I can commit from my home machine <yay!>). PR: Obtained from: Submitted by: Reviewed by:
+c4646a69c,"for some reason, Ant isn't using the jakarta-site2 site.vsl file. so, this change brings it in line with the current file."
+c2ebee2fe,more project.xml cleanup PR: Obtained from: Submitted by: Reviewed by:
+b7a45932b,rebuilt the site with the latest project.xml cleanup fixes PR: Obtained from: Submitted by: Reviewed by:
+2130e9610,Bug# 1530
+d09b8e3f4,Added a note about how Ant (the javac task) finds the files that need a rebuild.
+a5094b960,Added a couple of FAQs.
+2820f0a23,"BuildMonitor is a listener, not a logger."
+2720eb209,remove the <question> element from generated HTML.
+f7fdd6f36,Make port and password file configurable in <cvs>.
+9cb6be8a8,add logging message to <copy>
+3957ddae2,"Moved <pvcs> to a package of its own, added nested element to it to handle multiple projects in one go."
+e7bcfc18b,"specify encoding for XmlLogger, handle TEXT Elements properly in DOMElementWriter."
+d939c519a,vsslabel now allows to specify a comment for the label.
+219dfb778,Support Checkin- and Checkout-Commands of Microsoft Visual SourceSafe.
+533acc4e3,- Merged VSS-Documentation into one file - Added documentation for vsscheckin and vsscheckout
+5c8dbd2dd,Added new tasks vsscheckin and vsscheckout
+d6a12245e,"Make ""file"" attribute only check for a file; add ""dir"" attribute for checking for a directory; update doc. PR: Obtained from: Submitted by: Reviewed by:"
+c1de5c691,Repair install target and correct mionor typo
+7624036cc,Rolling back whitespace changes.
+a80cf0dfe,iplanet-ejbc task for EJB stubs and skeletons for the iPlanet Application Server 6.0 Nested element to support iPlanet in ejbjar task
+981af7b3b,"Added some comments, so one knows which entry in the buildfile belongs to which test-method."
+a04e11dde,"The file was not correctly closed after validating it's contents, so the tests failed on Windows."
+ab5f1efaf,- Added new tests for the dir-attribute - Adjusted expected result for test13 - empty string is not a file - Corrected all the tests - seems I have got the arguments in the wrong   order on first submission :-(
+354afc93b,"Created a resource page at the website, updated links to FAQ."
+6424badf1,"Capitalised ""Perforce"", cleaned up some typos, amended authors names."
+a570213cc,Removed an invalid assumption regarding the replacement of already checked-out files.
+b482bf23b,"Backed out previous change that added a ""dir"" attribute, as this caused backwards-compatibility issues. Added a ""type"" attribute instead, which works with the ""file"" attribute to specify either a file or a directory. PR: Obtained from: Submitted by: Reviewed by:"
+95ee5d6ee,"Add blurb about new ""type"" attr for <available> (meant to bundle this in with the rest of the files for the change -- rats!) PR: Obtained from: Submitted by: Reviewed by: PR: Obtained from: Submitted by: Reviewed by:"
+f16ef2144,Added links to Steve Loughran's articles in Ant's docs dir.
+0254e32e7,"Moved stuff that I called SEMI-REJECTED in <http://marc.theaimsgroup.com/?l=ant-dev&m=98800940615921&w=2> to ACCEPTED state (will back out, if somebody complains)."
+e412f3152,fix testcase 13 for available.
+770b1dd27,Make <copy> throw an exception if the file to copy doesn't exist.
+cc8afe278,Pass -noexit flag to weblogic.rmic
+4b56e099f,"Make sure, we don't add """" to the archive -ip has gotten the same special treatment a few weeks ago."
+f8f5fb01a,Make <replace> work for multibyte character sets.
+91305712a,fix wording of fileset example.
+314bc565b,Make tarfilesets work.
+2ef872804,Make DirectoryScanner's error message a bit more useful.
+f76dfe452,capture System.out and System.err while running the junit tests.
+6433910ca,recored the results fot last voting round
+3ae40fb06,"Add a new formatter ""brief"" for <junit>"
+2fb97663f,Add in the addFailure method for later versions of JUnit copied from PlainFormatter
+af81133ec,this makes ant work with jikes on OSX
+9f4642716,Assorted patches:
+b8f7af872,"Made scripts a little more consistent, they should now work with IBM's JDK on AIX out of the box."
+1f0c45897,sync classpath creation between Unix and Windows version.
+a88cd5374,My proposal for Ant2 - Mutant
+b150eb636,Add getResource() implementation to AntClassLoader
+86bed70a9,Improve error reporting in <xmlvalidate> and tell the XML where the document is located.
+b5b31688e,Add some nested elements to javadoc where it seemed to be useful.
+a6c6685f6,"Initialize classes which are loaded through a classloader. Note that the approach here uses newInstance to achieve initialisation for JDK 1.1 compatability. Under JDK 1.2, both initialization and the classloader to use can be specified to Class.forName();"
+64d3b161d,Allow the SQL Delimiter to be set so that Oracle stored procs may be entered.
+ecab5d335,Make javadoc expand properties for the new nested elements.
+5c4140f46,Class.newInstance throws a NoSuchMethodError in JDK 1.1 if there is no no-arg constructor.
+cc695c5ea,Minor typo
+52579e968,Quote the -group parameter to Javadoc
+c3633d1c5,This patch enables a newly created Perforce label to be locked
+0b3766839,Update to SQL task documentation. General cleanup and documentation of new delimiter option
+02f44cc23,All the new things from recent patches
+a48208f6c,<jboss> element for <ejbjar>
+c2e518039,Mutant update. Reorganization of classes to a fair extent Introduction of a non-functional parallel task Converted some data types over Initial experiments with apsects used to store data type values
+15e2ec500,Spell Duncan's name correctly
+94fb3a440,Working on my data types :-)
+54e31d092,HTML-ify the requested-features file (as a diversion from the stuff I should really be working on :) PR: Obtained from: Submitted by: Reviewed by:
+cd70defe8,Fix an ArrayIndexOutOfBoundsException when building dom4j on Windows
+9d1c6ad01,Add link to Javadoc for date format + general clean-up. PR: Obtained from: Submitted by: Reviewed by:
+c2c9a383f,Update for JUnit 3.7.
+f0572cb75,Add skipemptyfilesets attributes to <execon> and <apply>.
+5366bd544,skipemptyfilesets attributes of apply and execon - part 2.
+7a2927dc6,Clarify documentation of destdir attribute.
+a07ff75e6,Very early version of sorting and grouping the feature request for Ant2.
+8d1300281,Link to list of system properties.
+362903a2b,Lots of mutant changes
+21e82d78a,"Added some more stuff, about 50% done now."
+7ded9a569,Added useexternalfile attribute to <javadoc> - this makes javadoc use a temporary file for source file and package names (via javadoc's @file parameter) to defeat command line length limitations.
+c31e31c52,Make usage of my email address consistent (probably going to change home provider).
+48c54a521,Run convert script to update to Beta Avalon.
+6caf36ea1,Started to update to task engine design I have been talking about.
+32dc44001,Starting to adapt to Cocoon2 style hierarchy as it fits Ant style.
+ce225a0e4,Removed instance data from Project object. This allows reuse of Project objects ... is this required ???
+451ca455d,Update Launcher package and update ProjectListener* to reflect * No project name * tasklet->task
+a44c5e5b9,Move AntEngine->Embeddor to follow suit with Avalon+Framework JSR naming conventions.
+2f95bc470,Started to fix some of the more ugly hacks that violated IOC.
+092ced78b,"Sun has put a profile of Ant in the ""Best Practices"" section on the Dot-Com Builder site - added some links to our site."
+cbac1574a,"save, then commit - aaargh."
+ad7ff5ac2,Moved TaskletEngine-> myrmidon.components.executor
+c82637259,Created separate package to contain project model as per mutant.
+2579eaa04,Migrates ProjectListeners to separate package
+87711d5af,Migrate ProjectBuilderss to separate package
+cef6bbb3c,Made model work with Arrays rather than Iterators (more typesafe).
+1ec0e4c4e,Model is not a user concern but a modder/embeddor concern.
+620c60381,Model is not a user concern but a modder/embeddor concern.
+2dddb40b2,ProjectEngine->ProjectManager (need a better name).
+2ade144b4,My PGP key.
+2f4b71ebb,Moved TskDeployer into separate directory.
+6f3f9cca3,Moved Main/Constants/AntException to new package and made AntException not a RuntimeException
+d32c26fc1,Removed need for AntException. Substituted TaskException where appropriate and used raw Exception in other places (ie setup of components).
+685af27ce,Whitespace removal.
+157d8f04d,Update names of properties.
+12ce7d67f,Extra clarification about where rpm task runs and what it does.
+3509786a7,Add in my public key
+d678e492b,Simplified Classloader management.
+524187523,Stripped out cp manipulation to use simpler launcher. Rearranged main method to be simpler by having spearate methods for CLI option parsing and setup of vars.
+c0d2a26fd,"Implemented ""ROLE attribute is role name in interfaces"" pattern."
+01b99d562,Started the type registry impl.
+18485227c,Added in jdpend task
+18ea21ee7,Added failonError attribute.
+621f3ea89,That profile has been improved a little ;-)
+758feca17,Continued work on registry (which I am now terming TypeManager).
+a87db6897,Updated properties to use role names rather than having an extra layer of indirection.
+b689612fa,Integrate TypeManager into embeddor and in deployment mechanism.
+6b4ce7ff5,Integrate type so that tasks/datatypes are access via TypeManager rather than through individual Registrys scattered through classes.
+47e9fd628,Removed DataTypeEngine as it is supersceded by TypeManager.
+7b722732f,Moved Condition to be part of project model.
+8d9a74fe2,Reworked Converter component. Made it work with TypeManager + an auxilliary Registry.
+68145035f,Update sample
+414575a43,Update myrmidon to remove dependencies on camelot part of Avalon (which is still alpha and not released).
+362616390,Removed ConverterInfo and simplified ConverterRegistry
+165ec8163,Started converting runtime so type instances don't have to implement Avalons Component interface.
+d23b08a30,Converted TypeManager so that types no longer have to implement Avalons 'Component' interface.
+5872737ff,Simplify deployment so that it uses files instead of URLs and does not name deployments.
+2a9f49ba6,Added AbstractContainerTask and made Property extend it.
+29ee64b27,Starting to define/test aspect interface.
+219593398,Made it possible to configure single attributes. This is to help container style tasks.
+ebe476933,Canonicalized filename to get around bug in  file: urls embedded in jar: urls. (they didn't resolve ./ or ../)
+75bc6925a,Read in roles from META-INF/ant-roles.xml and remove hardwired mapping for tasks/data-types.
+344f259a1,Follow suit with naming convention.
+2d449a4bb,First sweep of aspect manager.
+5c3c1ca86,Update Container class to use new configuration of attribute method.
+7a87980dc,Update class to use new configuration of attribute method.
+05f3d6bc8,update main to use new embeddor.
+183e00715,Update to use new role mapping system.
+96cd401d9,Update to include new role mapping data.
+070882371,Start of Ant1 task adapter.
+bd19cd4af,Update to current name of Embeddor (changed to become conformant with rest of components).
+9012ef840,Made preConfigure take taskModel as parameter. This is because original taskModel may have been modified.
+66bbf8cac,Made preConfigure take taskModel as parameter. This is because original taskModel may have been modified.
+2c4c47e8e,Update for new method signatures.
+33009d2a2,Id is no longer a special identifier.
+8fc57a55d,Update to work with JAXP1.1 rather than SAX2 mechanisms.
+794a88396,Updated to work with JAXP1.1 and crimson (as it is smaller).
+c16a7322c,Add pointer to article in recent JDJ issue.
+1dc00cb1d,Made setProject public.
+190db7ce1,Updated to use latest ant/avalon jars.
+3219e9d82,Think I've covered all accepted features now.
+91f7d992d,Don't change working directory for javadoc.
+68f6b984a,New task <typedef>
+1b342d1ac,Added a standard declaimer with s/Avalon/Ant
+277624f96,Added first sweep at TypeInstanceTask
+a2dc17607,Abstract task to define types.
+e94678ff4,"Concrete task to define types - where user specifies type of defionition (ie task/data-type, aspect, listener etc)."
+50da0f9f1,"Removed decoration of role with ""selector"" as it was legacy to old implementation."
+8de9ab12b,Added extra logging for debugging.
+12310aeb8,Remove whitespace.
+654f16a69,Updated to current descriptor name.
+1a4fd4f86,Broke up large method into multiple methods. Update descriptor format into two sections to make converters and types separate.
+67c9bd23c,Update descriptors to new name.
+3efaa3847,Update build process to add in descriptors.
+3808ad11f,Update sample build file.
+cfd119edd,Allow data types to appear inside of targets.
+ac6f3addd,Add a property that contains the version of Ant.
+35aee5cce,Prep for JDK 1.4.
+9bda81dad,Remove all old style tasks.
+c2bd8b527,Add in ROLE attribute so easy to reference.
+becc71955,Update to new descriptor name.
+ca6015fdc,ConverterDef task (should we even have this???).
+9e2468421,Facility task (for adding in AspectHandlers).
+c01cdc75f,Expand output string. .
+c60d74be9,Add in build file for testing primitive type conversion in myrmidon
+a3d6441dd,"Split test targets into many. Include an ""all"" target and moved primitive tests to another build file."
+e8cc085e9,Remove old descriptors.
+2d2f38d7a,Add in new descriptors.
+97f2c01ca,Update to fix exception handling bug.
+aa1de6e71,Update build file for new descriptor location.
+fd69f8f47,Finished the document. This is IMHO as good as it can be at the current state of discussion.
+d291ecb05,"Minor clarification, removed &apos;, fix typo."
+060c8d753,Fix typo in tar documentation.
+3b8aee8b3,"Change extention of ant libraries to ""atl"" for Ant Type Library. (more representative of content than .tsk)."
+c36c9d34e,cleaned whitespace.
+3ab3efa97,Made Executor support a TaskFrame. The TaskFrame is where context/logger/componentManager/typeManager are stored.
+da88f5e46,Default implementation of frame that just caches values passed to it.
+20f90e4e0,Update to use new ExecutionFrame construct.
+74a38b365,No longer separate Target interface and implementation.
+16db5240f,Made a object to model imports.
+c074a11c9,Changed Project so that it contains a list of Imports (of type libraries) and project references.
+1cdf53d7b,Added method to construct child TypeManagers that inherit from their parent.
+e2cc34fa9,Fixed a bug that made inherited TypeFactorys fail.
+7b867a10d,Modify ProjectBuilder so that it uses a vanilla string. This is in preparation for alternate formats (ie URLs).
+c7e6b6c8d,Changed interface so that instead of returning other components it hides it behind an abstraction. ie Instead of returning a ProjectBuilder it provides interface to ProjectBuilder. Same with ProjectManager.
+f26fff422,Changed interface so that instead of returning other components it hides it behind an abstraction. ie Instead of returning a ProjectBuilder it provides interface to ProjectBuilder. Same with ProjectManager.
+8c0388b0a,ProjectManager is no longer a FlyWeight. It now carries state pertinent to a set of Projects that are executed in concert.
+087abe77e,Interface used to contain relevent data for each project managed by ProjectManager.
+73fde2c99,ProjectManager is no longer a FlyWeight. It now carries state pertinent to a set of Projects that are executed in concert.
+15f44e67b,Update to work with new embeddor interface.
+17a239961,Doesn't work with new Frame model. Essentially as I am unclear on appropriate semantics.
+87f090a12,Moved getChildTypeManager to ProjectManager as havin in ExecutionFrame violates IOC and has not consistent with other approach for frame specific parameters.
+7b3d79630,Added in support for parameters that are sent to builder.
+9668de65a,"Update status of Ant2 development, add logo page."
+a89125592,Various typos and documentation fixes.
+e2e5aeee3,Make cross project DAGS work.
+4a677e7d6,Modify ProjectBuilder interface to accept Parameters. This allows arbitrary builders to be added in the future (such as for templating etc).
+6c5fc99a2,Modify to demonstrate X-Project DAG.
+d4de5ba0d,Starting to reintroduce Ant1 adapters.
+49c24d055,"should have added this file 36 hours ago, sorry."
+3ec663279,assorted logo submissions
+7cc3b6ec2,Move Patter type into framework directory.
+dd0a617ea,Remove old ant1 compatibility layer in preparation to move it.
+403768d13,Move Ant1 compatibility layer files into separate library.
+d12a4e9a8,Add in descriptor for Ant1 compatibility layer.
+b9ce27452,Migrated converter files into separate library.
+86a63f589,ant --> myrmidon
+299abac0c,Update core descriptor to reflect new location/arrangement of classes. PR: Obtained from: Submitted by: Reviewed by:
+810345b4c,Renamed descriptor built into main jar. Also migrate across Pattern type.
+7a89b85ad,Migrated self testing code to new library.
+f8831097c,Add in descriptor for self-test library.
+bf7c0c19e,Updated sample to show using ant1 style tasks.
+8ce90f1f9,Update build file to reflect multiple libraries
+06931fc27,Remove unused variable declaration.
+9243e2436,Changed embeddor so that a new ProjectBuilder is instantiated on every call to createProject. There is no longer a globally Cached and configured ProjectManager.
+c1c5ab00d,Updated descriptors to store role and instances of ProjectBuilder component.
+7431ea342,Modified interface to reflect the fact it is no longer a flyweight and thus can be passed Parameters via standard mechanisms (Parameterizable).
+112b6039b,Modified interface to reflect the fact it is no longer a flyweight and thus can be passed Parameters via standard mechanisms (Parameterizable).
+de6f7cfbc,Added in basic XSL templated builder. Currently uses template with same name as build file except the extension is xsl instead. PR: Obtained from: Submitted by: Reviewed by:
+f68102afa,Added in very simple demonstration of XSL templating.
+3b0d442c1,Add in xalan jar to support new XSL based ProjectBuilder.
+f30ab1c20,Update excalibur to support new FileUtil.getExtension() method added.
+a343b61d4,Made sure that xalan is copied to distribution.
+611ea2a73,Removed self-test tasks from descriptor
+6ed9702db,Add Add in task to import tasklibraries.
+5d3369eb3,Remove old register-tasklib task
+1d151aa4f,Removed commented out converters section.
+aa4d22adf,Moved Echo int myrmidon tree.
+1c62c7f5d,Migrated DataType interface to framework.
+ec540b86a,another logo proposal
+fcbf12d7b,"Made SignJar support nested FileSets. It will also check if relevent signature file is present before signing if attribute lazy=""true"" is set"
+15fc9190c,Added pointer to Josh Eckels' J2ME tasks.
+1f75455b6,Add pointer to Oliver Burn's Checkstyle
+2a0db5ae8,two new logos
+a185f6d7f,Explain difference between J2ME tasks.
+8a23eb5f5,new task <sleep>
+a26511e23,new files for new <sleep> task.
+6d4c233dc,Make the packagelistloc attribute of javadoc's link child a File so it will be resolved properly.
+87cd4dc6c,Remove definition of undocumented and obsolete compiletask task.
+94e5ec616,Fix JDK 1.1 incompatibility
+202ccdce2,New task to convert paths to those of a different OS.
+dc2e0846a,Link up new task to main index
+1e57e8303,Add force attribute to <style> task to allow it to run independent of file modification times.
+613142401,documentation for latest <style> changes.
+1adf07a68,include developer PGP keys in distribution.
+468543362,more logos
+ae030e51f,First steps on reforming the ejbjar naming conventions. This installment make the basejarname attribute actually do something useful
+e44bb7e39,try to use English.
+74e8a57c9,two more logos
+0b31d6f97,2nd Installment of the ejb-jar naming convention changes. This introduces a namign attribnute which can take one of four values ejb-name - use the ejb-name in the deployment descriptor to name the jar descriptor - name the jar based on the name of the deployment descriptor file basejarname - name the jars based on the given basejarname attribute directory - the directory containing the deployment descriptor is used
+d7604b42a,Add a FAQ entry about a common javadoc problem.
+ea556429d,Declare BuildException in Sleep.validate explicitly.
+904a021a3,Give credit to the right person.
+1cd764447,Add some FAQs.
+a50b60cdd,Allow the manifest to be specified in the ejbjar task. This adds the given manifest to the generic jar fed to the appserver ejb compiler.
+739311eb3,amended logos.
+68fb37b1a,Some initial work on rmic to make it handle -iiop better (doesn't detect generated files properly) - doesn't quite work ATM.
+ba42544e8,Add pointer to Jesse Tilly's article on onjava.com
+351a4613d,Add reference to remote builds with And and VAJ.
+08f1b720f,Change resource page format to match external tools page.
+87db93141,Remove placeholder files for framework component.
+aefe3a83c,Migrate Condition class to framework
+fa0358d8e,Remove cruft.
+ab8c0b3d2,Integrate change of Condition package into rest of system.
+a916e82d9,Changed name of Import->TypeLib
+e4c765d38,Rearranged location for final tasks still left in ant namespace.
+fc84cf3d0,Remove Antcall until it can be determined if we want or need it. (and if we do want/need it - what rules apply).
+55b417fb4,add missing author for JavaWorld article.
+8226fd426,iPlanet documentation for ejbjar and iplanet-ejbc tasks
+cea87ef98,Cleanup of Borland ejbjar element
+df8f6d006,Allow DTD locations to be URLs effectvely mapping the URLs
+30c15adf8,My excuse is that I was hit with a srupid stick when I was a child.
+b91a25c85,Updated to allow PIs to specify template and parameters to template.
+e582ce670,Rename builder to something sensible.
+cf4a207d8,Made templating example more sensible
+8036bb0eb,Change terminology from Type->Role to match rest of proposal.
+1c204914d,Updated so that each project has a separate Deployer (that writes to separate TypeManager).
+4b271a99d,Begine reworking code/terminology of ProjectManager into Workspace.
+45fd8b033,Continue migration of ProjectManager to Workspace
+75893cd3b,Workspace doesn't need to know about root Project anymore. Thus interface by embeddor and Workspace can be adapted to pass less parameters.
+bb630e09c,Separated Log hierarchy for tasks and engine.
+9fe3d6599,EJBJar now reports errors when weblogic ejbc fails rather than continuing
+0bd522451,Add support for getResources to the classloader
+8d35baf0f,more logos
+97dfa8b1b,CruiseControl has changed its license.
+da02e1b6b,Add in EAR task to the standard task defs
+aca10a1d1,make pathconvert task compile in JDK 1.1
+6440b64b5,"Changes to rmic based on discussion with Rob van Oostrum <rvanoostrum@ezgov.com> and Larry V. Streepy, Jr. <streepy@healthlanguage.com> on the ant-user mailing list:"
+ed7314300,I always seem to forget saving this file.
+a47dcdd21,"Search for the generated file in the ""right"" directory in <jjtree>."
+fa4f3ea2a,shortcut navigation for bug database - add extra link for enhancement requests
+cc432705f,delete existing target files before copying - this avoids overwriting symlinks and is consistent with Unix's cp(1).
+1c03d4738,properly recurse remote directory in <ftp>
+84b68cc94,Provide more descriptive error messages whenunknown attributes and elements are encountered in the build file.Bugzilla: 1722
+efe6a8f90,some method signatures in IntrospectionHelper have changed.
+218ad5fc4,Work around a feature of the system classloader in some VMs - it drops all classpath entries that are not present at VM start time.
+fc7cfffc8,Add encoding attribute to theip tasks and theipOutputStream to make the classes flexible enough to deal with non US-ASCII filenames either consistent with the command lineIP tools (it has been since it uses the org.apache classes instead of java.util.zip) or the jar command (which it has been up to Ant 1.3).
+1dfa5ca00,"Add new vmlauncher attribute to exec. This defaults to true to execute commands using the VM's capabilities, where available. If it is set to false the underlying OS's shell will be used, either directly, or through the antRun scripts. Allows use of some shell features (such as associating scripts with their interpreters under Windows"
+9301e386b,Documentation update for vmlauncher attribute
+6d157f462,Add inheritAll attribute to <ant> task
+54550bf31,Update documentation stating where os attribute values come from. PR:	1656
+53775a646,Improve OS related messages in Exec
+6a50cd226,Don't try to print out result set if the execute method returns false
+44eb536d1,javadoc @files do not work under JDK 1.1
+7999cd0fb,Add API as part of manual. The files that are in the API directory are there to handle the situation when the API has not been generated or it has been generated with JDK 1.1. One or both will be overwritten when the API is actually generated via javadoc.
+ff6f214d8,Restore use of external file
+30cf43949,Only delete the target file when it is in fact a file - don't delete directories.
+9de84f88c,Add support for delimiter type. Base don the ideas contained in the bugzilla report suggested by johan.adelow@corustechnologies.com (Johan Adelow)
+e72340e0a,Make Ant work with spaces everywhere. PR:	562
+9361281f3,"use Execute task instead of ExecTask , no temp file are now created. correct finding the Borland DD."
+54dc62a54,Remove unnecessary use of Project.resolveFile by converting arguments to Files from Strings
+ed46c7920,AntClassLoader now ignores paths which are invalid relative to the project.
+757c77d1a,Another location where invalid paths can be ignored PR: 381
+c51333377,Made the meaning of the dest directory explicit. PR: 1744
+168f6c9eb,Moved conversion of ANT_HOME to after the 'try to find ANT' section as suggested in Bug# 1479 by Daniel.Barclay@digitalfocus.com
+2cd414161,Add noEJBC attribute to <ejbjar>'s weblogic element to skip ejbc.
+67252b80d,Handle spaces in JikesPath. Add warning not to use Longfilenames for ANT_HOME on Win9X
+21a88b996,"If the package list cannot be found, the offline links are skipped - a message is printed at verbose level"
+807126822,Remove resolveValue() as it is not needed here but in AbstractContainerTask.
+697cacf73,Update task to reflect new location of property resolving
+cbbb531ca,Convert parameter to use FIle type directly rather than converting from String.
+47e31ec91,Change to reflect fact that context no longer resolves propertys.
+96f3bfd7f,Name->Value to reflect better semantics.
+1ef26fe3a,Change to throw context exception as lack of value in context is the reason for PropertyException.
+92712f7da,Update to reflect that that evaluate throws ContextException instead of TaskException.
+3f918df70,Update manifest and build file to reflect addition of new task file-manip-test. Also change in pattern from name->value for include/exclude etc.
+525c0f87f,Setup constructors so that they actually compile.
+6ffa10f97,Overview of core tasks with a short description of what each task does.
+5826ef196,Interim fix for Gump failure to build FOP. IN Gump's mode of operations ensures the system loader is always used.
+6c23151c7,Logo proposals from Blair Hughes
+2fa84738b,InheritAll documentation update
+b1c37b60a,"Test for the 4NT shell, which requires a different method of slurping command line args than cmd.exe."
+04c15d05c,CHange most usage of the classloader so that it loads from the system classpath first.
+cf3d81733,"Stop using canonical paths.  This will change the behavior of Ant when symbolic links are present (but in a way that is probably closer to what the user expects) and remove some problems on platforms that use ""uncommon"" native file names like OS/390 or VMS."
+8339c7f3e,Add debug information to the getResource methods.
+c51d45fd2,support java.util.regex package of JDK 1.4 in regexp mapper.
+da742d485,Properly mask out JDK 1.4 specific stuff.
+4624d76d0,Give a different message if a test fails due to timeout.
+230952c5a,Log properties for JUnit tests.
+ef2c9e1a3,Make bootstrap process for JDK < 1.3 on Unix work again (bootstrap uses the <chmod> task to make antRun executable which in turn needs an executable antRun script ...)
+07736d7ee,help the garbage collector by cleaning out references in AntClassLoader and IntrospectionHelper after the build has finished.
+8726d0dc5,testcase for JUnitTestRunner.
+37f6c6922,change credit for some logos.
+440e7a901,Changed the logging level of invalid property files to warning
+70d8b69e6,Describe timestamp's ability to offset dates
+891ef62c7,New task mimemail - this task requires JavaMail (and JAF) that's why it is optional and doesn't replace the existing mail task.  The main improvement is that it supports attachments you can specify via a fileset.
+80c2ad310,"Again forgot to save some files, argh."
+30b8b73ff,"<junit> will now try to include the task-definition itself as well as the needed support classes (Ant and JUnit itself) in the classpath if running in forked mode - this means that you shouldn't have to use different classpath elements for ""in VM"" and ""fork"" mode any longer."
+e5fcb1232,New filesonly attribute for <zip> and friends - suppresses directories.
+ec2d68aa7,update attribute for <zip> and friends - update archive instead of creating a new one.
+5bb077f59,make <uptodate> search for target files in the same directory as source files
+f3d84272e,update attribute ofip had the wrong default value (my fault).
+c9affb12a,Just find directory above script home rather than removing bin dirs which may take out more than was intended
+9ff2d6a1a,Set level back to verbose - messages are too annoying as it is common to attempt to load property files which don't exist - there for optional override of properties.
+eefa2aba5,Make <apply> work really parallel and not parallel on a per fileset basis.
+e49a5fb56,Use /nul when checkign for the existence of directories on Windows (Although it doesn't work if the directory name is quoted - woohoo) Check for Ant in C:\Ant for Windows 9X users
+c73084faf,Allow policy file to exist outside of Weblogic Home
+ea21f122a,Add vssver.scc to default excludes
+1e41b4c0f,Add filepath attribute/element to available to search for a file in a given path - handy if you want to search for an executable for example.
+e5893dd4c,Make sure XML report will be UTF8 encoded.
+2573103dc,Some javadoc enhancements in JUnitTask.
+6229635a0,Add two FAQs - had two answer the first one at least twice this week and the second one has been part of the defunct interactive FAQ.
+72e98275b,yet another article.
+d3ef19b3f,"Make sure streams get flushed and closed - otherwise we may be losing messages sent to the logging system, especially on platforms where line ends are neither \r nor \n - for example OS/390."
+2ce6cc484,forgot to check a package for missing close() calls on LogOutputStreams.
+537a07b01,fix log messages of perforce tasks.
+0e650797a,Various patches to PCVS task:
+ebdc90aee,Slightly change the output of the plain junit formatter to make it more readable.
+c341305e4,"The javadoc task now looks for the javadoc executable in the java.home/../bin directory.  That way if your java installation isn't in your path, you can still create javadocs."
+96e168a93,Make test OS independant.
+43804e4ea,Make references to files in CVS work with new box.
+0fcac6aa3,Add a new front end fro Ant which will perform many of the functions of the current ant launcher scripts. Also allows many of the classes necessary for Ant to be hidden from Java tasks run in VM.
+39c3dd318,documentation update for new errorProperty and failureProperty attributes of <junit>.
+c234e7e18,Set the thread context class loader when running <java> tasks
+6f1b5ab07,"Tell us which class you cannot find, please."
+cbef49e34,"Look for java.home/../bin/javadoc(.exe) before falling back on plain old javadoc.  Just looking in the java.home directory tree isn't sufficient, as it may give incorrect results on Windows (thanks to Connor for the info.)."
+b839a3ed0,"Improve the performance of the classloader - The classloader will, however, now have the jars open."
+f1bfa3291,More classloader improvements
+8d496e5da,proposed logo
+2ecc6fa52,"Add ability to define several tasks/types at once, reading definitions from a property file."
+5e097248d,Add the correct path to the runtime library on MacOS X in <javac> and <rmic>.
+1ca56f13c,"Apply the same magic <javadoc> uses to locate the javadoc command to CommandlineJava (and with thus to <java fork=""true"">)."
+64988531a,Adapt testcase to changes in CommandlineJava.
+47f06debb,Add example of environment variables being read in as properties.
+275c9f734,"Fixed check for differences. As it was, check would be ignored for all files after the manifest file."
+d5f9462fd,"Linked the compiler used by ejbjar to the build.compiler property. This linking can be overidden by either supplying a value to the compiler attribute or setting that attribute to ""default"", in which case ejbc's default compiler choise will be used."
+5867d1fc5,Add pointer to TiniAnt
+a44e2ea1d,"Make sure ""ant -find"" will return a ""normal"" filename (without /./) for the build file."
+8700d0aa0,Fix for when build.compiler is not defined (D'Oh)
+04cc5777e,Allow compiler attribute to contain compiler options
+b38b7eee8,Document the requirement for optional jar and how to install it
+d471a816c,Make inheritall attribute available to <antcall> as well.
+aff15381c,Fix up typo in documentation
+13ccc6a80,Add exit code to batch files
+49838c297,"OK, reverting change since it was bad and the errorlevel is being set anyway :-("
+059ad3591,This is a major change. :-)
+e32249e2c,Route log messages to the subproject in <ant> and <antcall> situations
+74eb73ac3,Add a security manager so that non-forked java programs that call System.exit() work
+9932ed799,"Fix for id/refid data type bug.  Delays adding the id to the list of references till runtime when the data type is inside a target.  Without this change, if multiple data types have the same id, only the one that is last refered to in the file *and* is configured at runtime (i.e. its target is executed) will work properly.  Otherwise, you will end up using an unconfigured data type."
+125c25095,Pointer to VAMP Ant Task Suite.
+be12707c6,Security Manager does not work under 1.1. Take it out for now but I'd like to bring it back with some reflective insulation.
+4f3e4e169,"Resolve properties loaded from files before sending them to the project helper for resolution. This removes extraneous reporting of undefined properties due to the ""reording"" of properties stored in the properties object."
+08535a06a,document handling of inner classes in <rmic>.
+2b6f0a872,this is a corrected version of the CVSPass task. The old one did not include shifts for all ASCII characters. A diff is included.
+262299e53,remove some stray tabs.
+50f2ebb20,Javadoc improvements.
+5a0613961,Make resource load failures only print under debug. Up to the caller to decide whether this is an error
+2bb82ea39,Got my wires crossed
+798eedafd,Upgrade <depend> to check dependencies on jars in the classpath. You need to provide a classpath to <depend> to trigger this behaviour.
+747f53993,Add FAQ entries for io-redirection via < and > in <exec>.
+0992b41f8,Add Dirk's Perl script to the -emacs mode question.
+75722dcb0,Fixed up the protocol checking for class resources. You can now use depend to pick up out of date class files with respect to dependent classes on the classpath (i.e. not just jars)
+0e5e5d50b,Old bug reverled by my recent changes.
+6e2f15d42,Add tests for property resolution in property files Update JUnit jar to latest version (3.7)
+6c36c507e,Adapt DTD to recent changes (types can be specified in targets and the TaskContainer concept).
+99a45aab1,remove temporary debug
+70f7d48db,Make UnknownElement aware of TaskContainer so that one can taskdef a TaskContainer at runtime.
+67dccb58f,More P4 tasks.
+9e9d8fecc,"Add overwrite attribute to unjar/war/zip and untar - if set to false, files newer than the entries in the archive will not be replaced."
+b22d6f7f8,Minor updates to make the CVS M messages go away ;)
+45003301e,Added simple ignore to get rid of CVSes '?' messages
+b263b1e28,Add failonerror attribute to <delete>.
+8ddd67ad8,added autoresponse attribute to <vssget> and <vsslabel> as well as a quiet attribute to <vssget>.
+68323a96a,New suite of tasks of Continuus.
+f3b55df1f,Add outputproperty attribute to <exec> to capture the output of the external command in a property.
+fabddf48a,update documentation for <apply> to add outputproperty attribute here as well.
+e11e04dc6,Fix for the NPE that makes the Cactus build fail.
+fffe72edb,Add ignoreNoncriticalErrors and skipFailedTransfers attributes to <ftp>
+b74b90675,Add new Manifest handling class. Manifest entries longer than 72 bytes are wrapped according to the spec Illegal manifest files now cause errors Standard fields are provided by default and merged in Manifest set by attribute and any added in META-INF/Manifest.mf are merged
+af0505dd8,Make the manifest class more accomodating to malformed manifests
+7e7fa2f90,Update documentation of <ftp> to mention the new mkdir action.
+590936af2,Manifest is no longer in a fileset and so needs an uptodate check of its own Also now log warnings about malformed manifests
+308891099,Add Locale support to TStamp task.
+6ed54839c,"Produce a summary, on request, of the actions taken by the replace task"
+561a6d3ab,"Add some better error management for exec errors. By wrapping the real exception in a build exception, hopefully we'll get a stack trace"
+25a3d7579,Update to Crimson 1.1.1 which is a bugfix release.
+6b8588300,"Sitraka JProbe Coverage tasks: covmerge, covreport, coverage As it needs a regexp engine, the build.xml is modified to build it only if OroMatcher exists in the classpath."
+523a67f3b,"JProbe Coverage tasks: covmerge, covreport, coverage"
+d5a2eaa26,Documentation for JProbe Coverage tasks
+74305aa0a,"added definition for the 3 JProbe Coverage tasks: jpcoverage, jpcovreport, jpcovmerge"
+a34bbd156,the optional xsl to be used with JProbe Coverage tasks. It generates a framed report a la JavaDoc
+25116b2c5,Resolve properties within properties files by first consulting the project properties first.
+55ed11a22,Fixed a typing mistake to exclude Sitraka's tasks
+c2e92b318,"Add <includesfile>/<excludesfile> elements to <patternset> and friends, thus allowing for more than one file of each type."
+8f282967e,Clean up documentation for <patternset> to better explain the nested elements.
+a7f39c75e,didn't mean to remove the toString method with my last commit.
+f60ca231a,Don't delete generated files if sourcebase and basedir happen to be the same.
+08e296e85,"New Tasks for Metamata Audit and Metamata Metrics. Since Metamata was acquired by Webgain, Quality Analyzer 2.0 is also compatible with them. I'm using them for a while and they were requested by Garrick Olson, Garrick.Olson@Aceva.com"
+99353c349,documentation for metamata tasks MMetrics and MAudit
+51db1b515,stylesheets that can be used to generate some framed report for Metamata tasks MMetrics and MAudit
+eacd7ea19,"The stylesheet that should replace all the one in the source code. As its name suggests, it will generate the framed report only. It can be used either w/ xalan 2.x or xalan 1.2.2 though the later requires bsf.jar in the classpath."
+2f374849c,add an exclude to remove MAudit task from the compile since it requires Oromatcher
+f32956be2,declare the tasks maudit and mmetrics to Metamata tasks.
+e2ae69c52,Documentation for new Locale option in <tstamp>
+f2bc3fe7c,New Introspection capability. Methods which have the signature addConfiguredXXX will be called for nested elements named XXX but will be called only once the XXX object has been configured
+cc911f599,Allow manifests of Jar files to be specified in-line. This allows the use of Ant properties in the manifest. The inline manifest will be merged with any external file manifests. Example usage
+693d7c890,Add nested <fileset> to <sql>
+261ac57e6,Expand properties in <sql>.
+f9a500cd6,Support for kopi and gcc implementations of <javac>.
+dce8636fe,"Small fix in manifest, added Class-Path attribute, now it should work with java -jar ant.jar Let me know if there's any problem."
+6e33aa3d8,Small fix inip.java.
+f97f71d5d,Make if and unless attributes of <target> dynamically evaluated
+6f0e2f06a,BuildExceptions were not printing their own stack trace. They do this now but it does make the output in the event of a failure a bit noisier
+046a49448,Actually set the exception on task level messages
+0e37f4714,Handle innser classes in the default package
+8543e47b2,Add jvmVersion attribute so that maxmeory is formatted correctly for the target JVM
+5f35fa88d,"Two steps forward, one step back - make it build under JDK 1.1"
+198880a64,Avoid NPE's - seen when running JUnit on Win2K
+886b55294,Added the support to the -jar option in the command line per suggestion of <aspyker@nc.rr.com> fixed a bug (?) in the size method that was not returning the correct size. added some javadocs....still a lot of work :-(
+458b181fc,Added the support to the -jar option in the command line per suggestion of <aspyker@nc.rr.com>
+cc569b21f,Mini testcase for the Java task....not fantastic but better than nothing.. It mainly test for the -jar option
+1228b336d,doc update to reflect the addition of the -jar option
+af7fb0127,Fixed a possible systemid problem reported by glennmaughan@optushome.com.au (Glenn Maughan) Moved the timing garbage generated as well to a global timing instead...
+a794b2b20,<fixcrlf> now deals with CR only line-ends and arbitrary tab lengths. It should work independant of the size of the file as well.
+6ff47bd2a,Rollback previous commit.
+1a93e607f,Add a Log4j listener
+36f7c9bb7,Some minor JDK 1.1 compatibility problems.  MMetricsStreamHandler.java still won't compile.
+b162d6d5c,Add fork attribute to <javac>.
+ac1664c3f,Propagate errorproperty and failureproperty from BatchTest to all of its elements.
+70b420621,Pesky windows locking Can't rename a file that is open or where the destination exists
+55dcf2dee,New task <condition>.
+057958d82,Fixed the stupid mistake I did when merging my last changes. I mistakenly removed part of a previous patch. Shame on me.
+40a387aa6,"Give data types some of the capabailities of Tasks, namely access to the project object and the ability to log messages through that project. The IntrospectionHelper cooperates to ensure DataTypes created as nested elements are correctly setup"
+fa21d1fe0,Initial implementation of FilterSets. I've done some major surgery on the patch from PR1545. There is also more to come.
+18c950a6f,Updated Filter task to use the new FilterSet in the Project fro global filters
+3558d5258,Docs fro jBoss element of <ejbjar>
+1f901a39e,General cleanup of typos in <ejbjar> documentation and description of which tools are now supported by the task
+9091202b2,Fix bootstrap problems. Two issues. Filtering was always been done Antcall was broken since the ProjectComponent check is too agressive Now only applies to data types. The Ant task is perhaps a little special in that it returns a task for one of its nested elements.
+bdb8014ea,Bring back FixCRLF usage in build
+0bf139178,WLJSPC task documentation
+722f6306c,"Only print the final stack trace if in verbose or debug mode, otherwise just print exception message"
+00e45341a,Add support for Symantec's javac.
+329021e4d,update documentation for <fixcrlf>
+446c76d83,Restore task logging and events
+5cf91961c,Define backward compatability constructor
+e2cf23ba9,"Provide access to old behaviour for those tasks that rely on it, such as Anakia"
+1a9be7f6f,"Add test for Bootstrap failures Simplify the build by using inheritAll=""false"""
+fa86f754a,Roll back those changes - just seeing the difference between current ant and site style sheets.
+f5f32f163,"Make log messages from System.out calls, remove some code in execute that was redundant, remove some tabs, add testcase that checks that files don't get overwritten if they'd be identical to the new version."
+9df10c6eb,remove stray CRs
+1a11e90cd,Add a page to describe steps taken to resolve issues and how to submit useful bug reports.
+b36f7bfbd,Forgot to regenerate after fixing typos
+21426bf47,Move FileUtils into util package.
+bdf4456a7,New task dependset
+8bde1a449,"leave it to the imagination of the users what may happen if you specify both, eol and cr."
+3c2825538,Explicitly compile the stuff that javac will pick up because of dependencies anyway.
+0bcf1432f,give a better name to FileUtil's factory method.
+4ad42dc53,clarify tarfileset documentation.
+deadaf0b0,fix typo
+aa8f01df3,update .NET tasks for the beta2 release
+ffc9cedab,Make sure <move> doesn't try to move a file to itself
+9092eca06,Make sure system properties as accessible in subbuilds in the inheritAll=false case as well.
+aa4eb280a,Ignore fork attribute if build.compiler doesn't point to a JDK javac.
+ca20f59a1,Defaultdist.dir property is no longer required
+3572ac711,If it is not a build exception best to get the full story
+02779fb08,Description of recent changes
+4d2ea9df2,fix typo
+e6a50fe31,Handle situation where the descriptor is out of date with respect to the EJB classes but the descriptor text has not changed.
+0c66c5a55,Move xdocs to top level
+3eb7289d0,Docs are now generated into here
+15dd8a794,build file for docs. Currently separate but can be integrated with main build file later on
+27ca344cf,Add in images
+8ade6db21,xdocs is now moved to top level
+856dad96a,Minor change so that doco link works when browsing locally Don't include generated API in source distribution
+98d821a06,Always going to happen when you generate into a source directory isn't it - oh well :-(
+db12ae554,Allow cvs to prune webpage
+bb11efae4,"Latest Xalan2  has problems related to the format-number and decimal-format that are due to locale. Scott Boag <scott_boag@lotus.com>, Gary Peskin <garyp@firstech.com> and David Marston <david_marston@lotus.com> are aware of this but the problem is mostly due to specifications ambiguities with locale and default separators... Just in case I'm redefining the separators used in format-number so that there will be no problems on non-us locale."
+37e1a6693,Stylesheet that will be used for non-framed report of JUnit. It can still be useful for sending a short summary via mail.
+ce8272e14,"Huge summer cleanup to the code... - takes advantage of Xalan redirect extension, therefore I don't need extra code to split the document several pieces and process them with different stylesheets. - now using a strategy to determine a valid Xalan executor at runtime. It first check for Xalan2 then for Xalan1. As a convenience the Xalan version is displayed in the output."
+480e64cc1,property environment=.. failed under JDK 1.2 with a NPE because WinNTCommandLauncher.exec() got a null working directory and a null Project -  reported by <Aimee.Ukasick@med.ge.com>
+0c10f4889,This is no more needed since it has been replace by xsl in src/etc: junit-frames.xsl for framed reports. junit-noframes.xsl for non-framed reports.
+f7ce826bb,Get the stylesheets from the xsl package since there is one... Stylesheets have to be copied to xsl directory after compile.
+043682556,Copy the 2 JUnit stylesheets to the xsl directory in the junit package so that they can be loaded as a resource.
+f33a70b7e,Updated the documentation to reflect stylesheet changes and thus customization. Also updated Xalan information with a direct link for Xalan 1.2.2
+0e9de7414,Added links to Metamata Audit/Metrics and JProbe Coverage
+fefc52e34,Added a link to this wonderful IDEA editor that has refactoring support and Ant integration.
+6160d9904,newly generated file with the link to IDEA
+3c3b2c3ab,"Changed the systemid to have a valid one with file:/// rather than file:. Some xalan code are doing some check on file:, file:/, file://, file:///, file:/// But I'd rather take file:/// which is normally the valid one. Reported by Michael J. Hudson <mhudson@blueprinttech.com>"
+cbbb182ea,testcase for FileUtils.
+8e8d51c35,Testcase for Project.resolveFile
+2030358e5,Ignore any classes from java. and javax hierarchies. This allows classes such as java.math.BigDecimal to be used as keys.
+616dd57d1,Fixes to the borland ejbjar component to get it to handle non-windows builds. Make work with ejb-naming schemes
+66810782a,Does this pass on Windows?
+c8691cff5,Clarify what happens in an antcall and why some targets are evaluated twice
+0ea3777ec,Set the executable.
+bdd7cc0e9,New Threadsafe (needs more testing) version of the XMLLogger. Used the concept of a TimedElement from Thomas' patch but not the rest of it since I didn't want to modify other components. Tracks what happens on each thread.
+25484253d,"Move resolveFile methods to FileUtils, add a normalize method there."
+48428f7b4,Convenient description task that allows a multiple line description of a buildfile with a <description> elment. Submitted by Craeg K. Strong <cstrong@arielpartners.com>
+72be7d7f0,Convenient description task that allows a multiple line description of a buildfile with a <description> element. Submitted by Craeg K. Strong <cstrong@arielpartners.com>
+8730c548e,Must be in CoreTypes..not CoreTasks. This is really not a good day....
+656070c3d,Cygwin support in bootstrap.sh
+23b43fc4b,Exclude files were not working PR:	3050 Submitted by:	tpv@spamcop.net (Tim Vernum)
+2fb9b9ca2,Documentation for <condition>
+12fb88e09,Description of parallel task
+b8d229b18,Description of sequential task
+796db3811,Main branch is now open for commits for 1.5alpha
+e0ebd2716,New area in WHATSNEW for new changes
+ae04df647,Updates to the problem procedure
+09b4c53ef,Add pointer to AntFarm plugin in jEdit.
+4143707f0,Add pointers to the FAQs and jGuru's forum.
+d32c14def,Put Ant 1.4 Beta news on front page
+732aa8589,News on news too.
+b437e6f5e,Added a link to Junit/Ant article.
+721462b8a,Three more logos.
+edbafdd5b,Add presentation.
+85344c438,Give numbers to the logo proposals
+f66cab0ea,Merge from ANT_145_BRANCH up to Beta 2 PR: Obtained from: Submitted by: Reviewed by:
+545a78f82,Merge from Ant 1.4 Beta 2
+beb603160,Merge from fix in 1.4 branch for gump test
+7bea937e0,one more (the last?) logo submission
+217be78dd,Beta 2 is now available
+0acf3ce17,Dump some properties from Xalan to check for various XML/XSL/JAXP information. Hopefuly this will give additional details when running GUMP or running unit tests and figure out problems.
+e16b9ad86,Remove uneeded exclude.
+b3c44651d,Update to recent versions of Excalibur jars.
+f522a0a7b,Begin integration of i18n'ed messages.
+fd0da1440,Sort imports.
+523f5d39a,Continue i18n.
+a71d6f91a,i18n.
+abaf00f78,i18n continues on.
+a3bafc4dc,More i18n.
+c748e33dc,i18n-ized remaining components.
+83dcf695d,Added TaskContext.createSubContext( String name ) so that it is no longer necessary at all to know the underlying implementation - even when creating container tasks.
+23b2b6949,Removed unused import.
+5f35e5e95,Moved DefaultTaskContext class to workspace package as it is only used in that package.
+f09afe103,i18n'ed TaskContext implementation.
+7d4f0d15e,Added an extra ignore.
+fe127c56c,Made sure i18n files are included in jar.
+bdc61a322,Made it work for those who are not me.
+1125ea2c3,i18n'ed Converter APIs.
+f91f77646,Added newline
+b30c14430,i18n'ed CLI frontend.
+f9224257b,i18n'ed most of framework.
+e982760c8,i18n'ed the tasks.
+36ced42ff,Merge in 1.4 documentation changes
+2d7ef74ac,"Update docs with 1.4 changes. Note this was not a merge, but just the result of regenerating from the merged xdocs - other docs changes to follow"
+a8d439124,Merge from 1.4 changes
+df1413228,Merge in 1.4 src changes
+ecf0c1ea9,Final merge from 1.4 tree

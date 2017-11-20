@@ -1,0 +1,151 @@
+Hash,Message
+6cc06e519,preparation for Ant 1.9.5
+b9b8af4a5,add a special property to set to build the MacOSX installer since we do not ship it by default add a check that our POMS are able to compile the code in release.sh
+6a66bea04,"fixing syntax error, only one condition is supported inside the condition task"
+2c950354e,adding a classpath tag in order to prevent a runtime error caused by a Java bug and the JUnit 4 annotations from happening
+ca8ade576,compile before running findbugs
+524d1e31e,add contributors files and patch.xml to source tarballs
+845f1de9e,zap tabs
+806749177,add contributors files and patch.xml to binary tarballs as well
+39ad231a2,upgrade AntUnit
+f0f1a3ca0,BUnzipTest was writing outside of ${output}
+74d19d829,BZip2Test was writing outside of ${output}
+24e5a0e88,update STATUS file
+c56d59fe3,update STATUS file
+a0c94c50e,Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/ant
+3691c213c,svn => git
+f168a341f,wrong host name
+731805f22,Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/ant
+7472cb03e,Add some useful classes to ant-testutil.jar (e.g. BuildFileRule)
+34fdc2f62,PR 56641 <untar> cannot read entries with empty gid/uid anymore
+8819ee167,Deal with InputStreams that don't return the full PAX header in one read()
+ca34ebdbd,whitespace
+a6b49f948,PR 56593 XMLJUnitResultFormatter may throw NPE when Java cannot determine hostname.  Submitted by Joel Tucci.
+ca4d61911,freecode is no more
+6e88f92ea,PR 56584 allow ReplaceTokens filter to use multi-character token separators.  Submitted by Ralf Hergert.
+211b7188a,update checkstyle (check 'DoubleCheckLocking' was removed in CS)
+66329f7fe,Merge branch 'master' of https://git-wip-us.apache.org/repos/asf/ant
+aa21694b8,checkstyle
+877b505fe,Creating the HTMLReport doesnt need Ivy
+4e9ffe5bb,"Checkstyle creates the directory, so report transformation does not need that any more."
+f6bdb170f,Show the checkstyle messages sorted by error instead by file.
+f13816683,"checkstyle, some Java5"
+71ae87127,checkstyle
+bf6026a14,organize imports
+1b76f1b6d,checkstyle
+13f6d98c9,make it compile under Java5 (1.5.0_22-b03)
+789422e13,oops - make it compile under Java5 again
+7f5188230,PR 56678 - add proxy support to signjar when using the TSA.  Submitted by Robbie Gibson.
+f98f49551,PR 56678 only set proxy configuration for TSA if url is set
+97030dbec,whitespace
+a2cf61633,fix up-to-date check for filesets in tar
+37a64a407,"fixcrlf tests are failing, likely because git ""fixes"" crlf sequences -ip up the original test files from svn and use them instead"
+ba170891d,PR 56678 allow tsa proxy host to be used without tsaurl in signjar
+df33426bf,whitespace
+66c2551a5,fix bogus imports
+9eb4c3a9a,try to make spawn test pass in Jenkins by using a bigger security margin
+49d1d9845,make ManifestTest write its output to the common tmp-dir
+af875267e,even three seconds wait time seem to be too little sometimes
+496553532,properly close stream in test
+956b80a68,whitespace
+47a3b5144,"PR 56747 Document which options exit in help output, submitted by Ville Skyttä"
+43844a7e6,"PR 56748 Spelling fixes, submitted by Ville Skyttä"
+8a597546b,"PR 56749 Javadoc 1.8 fixes, submitted by Ville Skyttä"
+d92b5275c,Bug-56850: null safe property access
+0724e3a23,update Ivy
+e8b160a93,PR 56873 make sure connection is established when reading last modified
+ad72b9a92,revert e8b160a which didn't fix anything but rather broke stuff
+c89d650a9,PR 56973 getLastModified in URLResource throws NPE for FTP URLs
+6d98fbb95,port fix for COMPRESS-289 from Commons Compress
+13b0df1f0,PR 56849 - don't even try to create a classpath without a project component
+963d6c9a0,PR 56830 classloader hint when assigning refs fails
+090b5587c,typo
+faedd2bc5,only enable transparent gzip encoding when explicitly specified fixes bugzilla issue 57048
+2da8188cd,we shouldn't try to follow the different directions apache.org is taking
+ad2d3bccc,closes #2 as it seems to be just somebody playing around with PRs
+14b24bcc9,after all these years we still have some author tags left
+123266127,patch by Vitold S: make runant.py deal with spaces in java's path. fixes #1
+d6f6f5c16,add @vit1251 's full name to contributor list
+744399e91,"add a github ""contributing guide"" based on the great work Benedikt Ritter has done for Commons."
+fae798e81,ignore a few GNU global files
+95ea95ce5,junitreport: Expose classpath and factory of internal XSLTProcess task.
+d8a51e9fd,fix for Bugzilla 47002 by Martin van Gagern - closes #3
+c8edc8e0f,make sure AggregateTransformer knows its task when running the test
+cc2ca5375,fix version number
+f1930b006,Test with @-sign like discussed on the user list.
+a3125e6e7,enhance complete-ant-cmd.pl to know about -file and $ANT_ARGS Bugzilla Report 57371 Submitted by Christian Schmidt
+f7f5327d2,Try to reduce the risk of StackOverflow/OOM in junitereport Submitted by: Ryan Bennitt Bugzilla: https://issues.apache.org/bugzilla/show_bug.cgi?id=57341
+fa15b7c21,ZipEntry's copy constructor was incomplete
+3cdcaf96f,better use getter than raw attribute access
+2ebe9fc7d,happy new year
+4cbbf3629,Don't whine about unclosed archives if the file isn't even there.
+2c04d7e83,port Kristian Rosenvold's write performance improvements from Commons Compress
+0903005b8,ignore stray logfiles
+66b5f3f06,Arrays.copyOf is Java 1.6 only
+e6a5e8299,ensure hamcrest becomes part of the source distribution
+6f3185926,typo
+dc37a17ff,NullPointerException in ResourceUtils.copyUsingFileChannels
+33d20f436,make complete-ant.pl provide all targets as completions
+1388e372a,make LocalPropertyStack thread-safe
+207ce00bb,make assumeJava19 actually look for 1.9 instead of 1.8
+e09e4bbac,whitespace
+db2254973,update some comments
+1be3f9cc5,whitespace
+7b88a6581,Java9's javac doesn't support -source 1.5 anymore
+744c8f04f,adaot to default -source values in Java8/Java9
+e0f845f8c,no need to check for Java5 anymore
+17ebe7ad3,Java9's javac doesn't support -source 1.4 anymore
+89dc07df9,fix some comments
+06c4fc609,javac *is* inside the JRE dir from Java9 onwards
+54f96c90a,javac defaults to -source 1.9 with 1.9.0-ea-b49
+15d585e54,there is no .jar with AWT in 1.9 anymore
+e6ab69873,even more places where -source needed a newer version on 1.9
+f06f36620,"javac1.9 is now a supported ""compiler"""
+fe046d186,record changes
+2e23a881f,test needs Java5
+da83de920,performance improvement for <intersect>
+c848f9a57,typo
+931c004a5,Example derived from the example in the java source.
+32062cc59,Precise the manual: <restrict> uses AND for combining nested resource selectors
+ceb39e2a0,style
+833af4b2b,Java requires Java 1.5 since Ant 1.9.0 (07 March 2013)
+d11cb1454,Clarify when ${ant.project.invoked-targets} is set.
+66adc2e34,Clean up whitespace in build.xml example
+307229339,Fix an extra space in the <pre>
+b626ed991,close #6
+20b4dabc0,close #7 which seems to have been created by accident
+06bdb4521,clearly document the effect of empty includesfile attribute
+71715055c,"COMPRESS-312 normalize filename in TarEntry's (File, String) constructor"
+28cfaa46c,fix classname
+1ae680978,fix some lineends
+1327e07cd,ignore downloaded license
+7bc975931,Add ability to send carbon copies to MailLogger. Submitted by Roman Savko PR: 57789
+1a584200e,"Add encoding attributes to <tar>, <untar> and <tarfileset>"
+f22352a18,wrong class name
+e145abe05,increase buffer size to improve transfer speed
+815a36f52,increase buffer size to improve transfer speed
+039a348aa,wrong version number detected by @PascalSchumacher
+5ebe69330,use git attributes to control line-ends
+8ce81aa24,Merge commit 'refs/pull/8/head' of https://github.com/apache/ant
+446f1442c,Merge commit 'refs/pull/9/head' of https://github.com/apache/ant into pr
+94f972232,Merge branch 'pr'
+1ee66cbe7,increase buffer size for <scp> Submitted by Petr Kureš @pkures closes #8 and closes #9
+8a8ebf595,create test jar outside of ${output}
+ef6cad6a1,make tar package deal with bigger gid/uids
+2f0edba2a,all permissions to be set when uploading files/dirs
+7e3e1fcab,wrong default dir mode in scp manual page
+6a7a62835,expected test output lost its carriage-returns
+989ca3b78,"new resource collection ""allbutfirst"""
+d7125a524,allbutlast resource collection
+36ec8947f,document <allbutfirst> and <allbutlast>
+54eeab675,copy-past error
+d769172a1,some text fixes
+a6802baa3,adapt instructions to git
+da5a1fc05,change version number for consistency
+8f2df5d33,"Manual <javadoc>: - clarify what ""availibility"" means - fix </td> on @postProcessGeneratedJavadocs"
+b03307583,Manual <mail>: small fix layout
+237c7fc4c,Manual:develop: there is no Jakarta any more
+ac6b5ec25,fix javadoc
+ab834233b,fix javadoc
+a2ebcf66a,document what we really do
+5d02c5f67,more updates

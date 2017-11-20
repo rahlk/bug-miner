@@ -1,0 +1,11 @@
+Hash,Message
+b6fd9f9b1,Release Vote is open 3 days only these days.
+52cae7c98,preparing ant 1.9.2 release
+ba19f6fab,#43362 follow-ups: missing/incorrect @since; minor doc improvements and corrections.
+66dbdd5d8,nexus user interface changed
+3fb018053,mergeip64 fix from commons compress
+1a22123f5,"propely handle GNU longlink entries, PR 55040, submitted by Christoph Gysin"
+362376d62,Merge handling of duplicate entries from Commons Compress'ipFile - needed to fix PR 54967
+09d19ba10,sometimes setting a flag isn't incompatible with spawn.  PR 55112
+7bc745a28,post-process generated javadocs as workaround for CVE-2013-1571 - based on Maven patch by Uwe Schindler - PR 55132
+6a1e5bf81,More robust handling of line-feeds - in particular make it work on Windows - thanks Uwe!

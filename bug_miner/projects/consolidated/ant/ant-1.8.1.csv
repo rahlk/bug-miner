@@ -1,0 +1,264 @@
+Hash,Message
+da109667b,typo; thanks to Jean-Baptiste Nivoit
+63b259979,testcase for PR 49261
+79670427f,actual release date is May 7th 2010 for Apache Ant 1.8.1
+79e2bb534,the newsgroup comp.lang.java.announce is being retired. See http://groups.google.com/group/comp.lang.java.announce/msg/8476c67626eeee9b
+b00f385f7,bump version
+c9c4a2ce8,adapt to version change
+35e9c976a,"be consistent when it comes to overwriting read-only files, add an option to do just that to <copy>.  PR 49261"
+18e948f21,add a new example
+508bb0dae,Make <move> behave consistently for read-only destinations.  PR 49261
+c83bf3257,deal with read-only dest files in echo and concat.
+6b0cc9488,wrong assignment after I renamed the parameter.  Unfortunately there doesn't seem to be a testcase that catches the error
+8bc8b6357,testcase for concat's overwrite attribute
+fdbe8c9fe,try to make javamail use the specified port even when using SSL.  Bugzilla Report 49267
+fedabb553,JDK 1.4
+a26365ccc,<xslt> ignores classpath when defaulting to TraX.  PR 49271
+17c956a19,"Pr 49279, DemuxInputStream.read() should return unsigned values (mandated by contract of InputStream)"
+5a0c10d85,git-svn-id: https://svn.apache.org/repos/asf/ant/core/trunk@943930 13f79535-47bb-0310-9956-ffa450edef68
+a0f02bf26,"Fix compilation inside a container which may have some 3rd-party libraries loaded somewhere but not accessible with includeantruntime=""false"". Otherwise get numerous errors trying to compile e.g. JavaMail- or JSCH-related tasks from inside NetBeans. Would be cleaner for <available> to have an option to check in the specified classpath + bootstrap & extension loader, but not elsewhere; lacking that, have to specifically not use ignoresystemclasses=""true"" on anything which is likely to be part of the JRE."
+da48edd72,Distinguishing between compile-time and runtime classpath for JUnit tests.
+4f97344bd,"#49287: TraXLiaison belongs in ant.jar, not ant-nodeps.jar, since it is (now) a hard dep of XSLTProcess."
+c83d25789,"Fork JUnit tests by default. Otherwise two major problems prevent plain old 'ant test' from working: 1. You get NCDFEs, mostly from JUnit framework classes, for most tests. 2. The version tested is `which ant` rather than what is in the source tree,    resulting in weird failures such as in ConcatTest:      The <concat> type doesn't support the ""overwrite"" attribute."
+4519c37a7,"Now that it is not necessary to put junit.jar into $CLASSPATH to run tests, need to make sure -Dtestcase=... works too."
+d47d4cf35,"Added short story, described fetch.xml, updated download instructions"
+3fb4745e7,<checksum>'s totalproperty doesn't work with repeated file names.  PR 36748
+25968eb0c,grammar
+92663dfd6,ftp download fails for certain setups.  PR 49296.  Based on patch by Kristof Neirynck
+969aeca23,merge fix for PR 49296
+b5e966962,Ignoring everything fetch.xml currently seems to download.
+9b4c1eb6d,remove starteam from manual
+5cd87d016,Add JAI library through the JBoss public maven repository
+84a0001a8,Fixing ignore list for JAI.
+b3dd34d99,"attempt to make jar examples a little easier to read, updateipfileset example"
+354020355,#49287 cont'd: XSLTTraceSupport must also be in ant.jar.
+d01dd6aff,"Add NetRexxC library, add support for FTP and temp cache, delete obsolete comment, update ignores for IBM license"
+c8f231cce,"Fixed missing dependency on networking, in case netrexx target is called by itself"
+4fd200234,pr 49326. Sun JVM tries to mmap the entire file during a copy. For large files this is not feasible. We now explicitly request to copy at most 16 MiB per request.
+c78b5d0ba,fix spelling error in var name
+418e5964d,attempt to upload artefacts to maven repository
+eb9d50343,"after all, nexus wants the checksums"
+82f828eb0,adding information about nexus upload
+f7d47f6b7,Continued spelling fix from 947340.
+c16ad8705,eol-style
+6e3e104ba,"updating release instructions, adding promote step"
+63de28ca8,Ignoring java-repository.
+96d124bbb,1.1.3 is the version currently downloaded.
+18a4492f1,Can now compile against regular JDK.
+c8902947a,JMF no longer needed since javax.sound is in JDK; suggesting fetch.xml for nonstandard deps.
+27bd9990f,Apparent typo.
+a341fc03e,Merging ant-nodeps.jar into ant.jar. Not at all sure that the POMs are now correct; very hard to tell with a monolithic source tree. Consolidation in manual to follow.
+61b4c00b3,"Obliterating ""core"" vs. ""optional"" distinction for tasks and types in manual and associated doc files."
+16f0d2985,Ignore target dir.
+af5b94e9d,drop version check now that ant-nodeps.jar has been removed
+35bcdc15f,Use System.getenv where available. Faster and more reliable than /usr/bin/env and its ilk.
+99c578262,"Clarify some instructions, remove netrexx and jai as manual download examples"
+0accb98c9,failing test for issue 49404
+372c44bbf,sort by task name rather than page name
+e052e5e8d,some JUnit tests to verify/falsify http://mail-archives.apache.org/mod_mbox/ant-user/201006.mbox/%3C28829117.post@talk.nabble.com%3E
+7a1ed77a0,try a little harder when deleting temporary files in <junit>
+436200f3e,provide file name when you fail to delete the temporary file.  PR 49419
+6a87b53fc,don't scan directories that are excluded recursively - this used to be done everywhere except for the (most common) case where the directory itself was not explicitly included.  PR 49420
+af9defd74,"Test failed on Windows, don't know why I never noticed before"
+d1e73735e,test failed on Windows
+d73ff2cc6,"remove redundant assertions, they are already contained in testantOnRemoteShare"
+b0b920b08,<javac> faild for long command lines on OS/2.  PR 49425.  Submitted by <dmik DOT for MINUS maillists AT hugaida DOT com>
+114d55869,#34748: run individual test methods.
+d15c92db5,Build failure on JDK 1.4.
+642439097,#49430: trying to work around NIO bug in JDK 1.4.
+9c09fb058,Mentioning #49430.
+1e1f933a7,Seems to be necessary to build ant-junit4.jar separately.
+19509322a,Dmitri A. Kuminov contributed the patch for PR 49425
+e3463c1ff,This is a text file.
+458b69240,#49418: produce HTML output for stdout/stderr from <junitreport> to declare encoding.
+3209b4182,allow file names to be 'fixed in case' on Windows.  PR 41948
+f8f45e9f0,unconditionally encode & as &amp; in DOMElementWriter.  PR 49404
+ebb29d5bb,only ignore system classes if not running in Gump or similar environments.  Hopefully fixes test-ant in Gump
+3f4cb68de,resolve properties defined via -propertyfile against each other.  PR 18732
+fb2d2b20b,use a more robust approach that doesn't rely on stream redirections
+9cde786c6,use a better approach to encode CDATA end markers in CDATA sections as suggested by Mark Lassau and Wikipedia.  PR 49404
+9d86eb6be,typos
+befb30e40,Java 1.4
+8a079a7de,"attrib doesn't support parallel/maxparallel.  On my Win7 box it looks as if the attrib command could deal with multiple files at once, though, could be a valid enhancement request."
+cc50116dd,Note about NetBeans 6.9.1.
+95a34b0a2,some more tests
+3ac732f3f,Support wildcards in CLASSPATH.  PR 46842.  Based on patch by Mike Murray.
+047941f03,don't warn about multiple versions of Ant if the CLASSPATH entries really point to the same JAR.  PR 49041
+bd52e7b9b,allow targets to deal with missing extension points.  PR 49473.  Submitted by Danny Yates.
+4276a308c,Use FileUtils#setFileLastModified instead of File#setLastModified
+2f588f517,log a warning message if File#setLastModified fails.  PR 49485
+7e0865026,document <touch>'s limitations.  PR 47821
+e30d3c24f,"Record location of Hudson job in POM. (For example, NetBeans can use this to automatically display build results when project is open.)"
+1af339b70,Added display names to POMs.
+c531cbd6e,"Make 'mvn clean test-compile' finish, though tests when run still have a lot of failures. (As usual, we suffer from a lot of complexity due to the monolithic source root; include/exclude lists in POMs are surely still far from accurate.)"
+cf0368cc6,Fix a perf issue with <restrict>: it now loads only necessary resources
+74f2e55f3,make the flush of the error stream actually flush
+9b19344ae,properly encode whitespace in attribute values
+f67b8649e,reinstate prefix handling of property task at the expense of even more state in a thread-unfriendly class and with a new attribute on two tasks to make everybody happy.  PR 49373.
+62c16a4a5,address efficiency concerns
+0c20e94ff,revert local change that should never have been committed
+fe0fba57d,new handling of attributes breaks BWC
+ce8969a8d,simplify fix for PR 49373
+28816bd67,a POM to help Gump - Ant 1.6.5's POM lacks a dependency on ant-launcher
+b9e6d155b,relocation is causing different problems
+32c1f6a73,"JAI is in fact available in a nondefault public Maven repository, so use that."
+8de81028e,"Fixing various dependencies, mostly from FindBugs, some from the NetBeans editor."
+cb33b4f82,"Hackish way of making NetRexxC.jar available to the Maven build without using a public repo. Easy enough to run fetch.xml during Maven build, but complicated by fact that system-scope dependencies are checked for existence before plugins get a chance to run. Also complicated a bit by the fact that adding a plugin dependency to maven-antrun-plugin (on commons-net:commons-net:1.4.0) does not seem to suffice to let Ant load the <ftp> task (which does not support nested <classpath>)."
+a3b7ed9f7,JUnitTaskTest.testFailureRecorder failure (on JDK 1.4) after rev 960931.
+87fe42262,multiple parallel mkdirs could make each other fail.  PR 49572
+4743b55ae,move POM used by Gump to Gump's part of the ASF repository
+056c4a96b,remove author
+7533471c8,add pointer to Commons Config Tasks - submitted by Nathan Dunn
+f92367d75,regenerate site
+51446ae68,Resources#toString relies on cache too much.  PR 49588
+5ecb379c5,typo detected by Jon Stevens
+0485dd6a6,create distribution artifacts for the manual
+e148f6157,host of ASF webs has changed
+ef9897900,typo
+eada44e28,update
+5b89076d0,download page for manuals
+2b2540b44,sha512
+c871178ec,old releases are available as .tar.* as well by now
+de8e58e3f,re-generate site
+40d415348,extraneous dot
+52ce2ee6e,link to Ant's manual download page
+5761a36f0,new download page
+8dd8b1bb0,something seems to be wrong with vmgump's hostname resolution - allow for alternative real host names
+fdc711e2e,"- make the import task able to switch the project helper - introduce a <projecthelper> task to install project helpers dynamically, especially usefull for unit testing"
+2921fcca5,Add AntStatistics BuildLogger.
+83eea4b1e,vmgump doesn't resolve www.apache.org properly
+43de42a38,"add Git, Mercurial and Bazaar files/dirs to defaultexcludes.  Submitted by Ville Skyttä.  PR 49624"
+0b52075bb,better fix for bug 49271 as suggested by Jesse
+907f06aed,unused variable
+c7c202419,DNS changes
+5d1bf3263,nested redirectors and parrallel-apply don't mix well - PR 49594
+282291fb5,<jar doesn't merge manifests that come fromipfilesets with prefix.  PR 49605
+4bbdcf7db,compress antlib requires commons compress 1.1
+11d029431,"Bug #49119 : A forked <java> task is creating a pumping thread on the input stream. The read was made blocking, so the pumping thread is still blocked after <java> finished. So it will steal the first flushed charaters from the input stream. Making the pumping non blocking fixed the issue."
+51971d633,"r985632 : actually it is breaking unit test, reverting"
+791824d67,Give a name to the thread
+3cc14f2d5,New builder location.
+0c08ce1f0,Avoid NPE in createTempFile if no prfix has been specified.  PR 49755
+151c5d7d7,clean up after test
+e16cf630b,tofile is incompatible with non-file resources.  PR 49756
+3a912beff,allow copy/@tofile to be used with non-file resources.  PR 49756
+401473f8d,merge redundant code
+5a6247d49,"support casesensitive in linecontainsregexp and casesensitive, multiline and singleline in containsregexp.  PR 49764"
+1b30eea46,bug #49119:  - put the fix back again but only for input which is not a string or a file  - and a unit test
+6f621798e,document fix for PR 49587
+7fd46296e,allow test listener events to be enabled by an attribute or a magic property - disable them by default
+7119b3f03,theipfileset example is simply wrong
+b0d9f8aa0,NPE in Project.setDefault.  PR 49803
+9119c6870,Oracle owns the trademarks by now
+e61535add,replace java.sun.com links where possible and remove some old cruft
+309d4d1aa,re-generate site
+b4877ac5e,Add license information to parent POM
+ff51ff341,"Bugzilla 49513, reported by jks/iname Availability of hostname is now taken into consideration when selecting a local address."
+54d098809,fixed error in patch committed yesterday. Site Local with address no longer overwrites global without.
+6015e1623,Compress Antlib Release
+80ac49e23,Forward lookup will no longer give back ip address split in host and domain. On gump apparently the ip address cannot be resolved to the real hostname.
+2e602c77f,point to trunk of compress antlib
+af6695877,use viewvc instead of old viewcvs URLs
+4db9258ab,re-generate site
+9a62b6ec6,move vss antlib from sandbox->proper
+1528f7417,Judoscript is now at .org instead of .com - reported by Gilbert Rebhan
+41500c073,"Add a mapper similar to wget --cut-dirs, based on user-list discussion initiated by Michael Ludwig"
+4b2c9ab49,"correct phrasing, PR 49962"
+7fea6ffda,Fixed typo in developer-scm-url.
+aed233d7f,don't swallow first arg if CLASSPATH isn't set.  PR 49963.  Submitted by Devon C. Miller
+99f7402a2,eos-new isn't that new anymore
+88a7b66eb,"If we cannot build Javadoc, we cannot copy it to the dist dir either. https://hudson.apache.org/hudson/view/Ant/job/Ant_Nightly/151/console javadoc_check: -javadocs.do: -javadocs.dont:      [echo] Javadoc creation of Ant's API does not work with JDK 1.4. Please use a newer one. javadocs: dist_javadocs:     [mkdir] Created dir: .../apache-ant-1.8.2alpha/docs/manual/api BUILD FAILED .../build.xml:1086: The following error occurred while executing this line: .../build.xml:850: .../build/javadocs not found."
+a9b1c6e96,document behavior of property elements in nested structures of ant tasks.  PR 49891.
+3ef6daa0c,"according to the javadocs of JarURLConnection the separator is !/ not ! - this allows dealing with jars in directories that contain a ! in their name, as long as it is not at the end of the directory name.  PR 50007"
+f632659d1,move jars that are created during tests but cannot be deleted to a directory inside the build dir rather than java.io.tmpdir
+403a4beca,revert file committed by accident
+1a27d56d5,implement Closeable in AntClassLoader5
+43c676f95,these files are not needed for a working CVS repository
+3ce577022,fixing typo
+aaa422b00,"ant.bat exit strategy improvements and issues, Bugzilla 41039, patch supplied by Mark DeLaFranier"
+ea620f969,announce ivy 2.2.0 on main ant page
+56aa176d0,"Bugzilla 50137: Incorrect links to nightly Hudson builds - Changed the stylesheet for adding the ""job"" into the URL. (therefore regenerating of the site) - Also updated the links to Hudson hosting + project. - Added the Ant jobs and the missing Ivy job. - Added the build commands."
+06e70664c,Regenerate site with Velocity 1.4 instead 1.6.4. The newer version steals the links ...
+f3cf23259,"Bump versions: Ivy, RAT and Checkstyle. Can't easily switch Checkstyle 5.0 because of CS-Error ""TreeWalker is not allowed as a parent of Header"""
+1ff3cd647,Bump versions: Findbugs
+c735a5cc4,move bulk of signjar tests to AntUnit tests
+db19df41c,improvements to 'writing tasks' tutorial by Kevin Connor Arpe
+0ce95ee95,found two non-closed tags (were missing the > sign).  Had to make it well-formed XML so Emacs' nXML mode could assist me.
+38cd07c80,don't rely on IntorspectionHelper normalizing file names in signjar.  PR 50081.
+66750f934,whitespace
+ed02c6c30,passing testcase for PR 50115
+6d79f276e,don't ignore fileset's errorOnMissingDir in <delete>
+52504ea28,properly close streams.  PR 50136
+651ed09ed,sort imports
+7f25ba893,add support for gchj to javah.  PR 50149.  Submitted by Bernhard Rosenkraenzer
+f8364919d,Apaches Hudson instance now uses nested views.
+b4b082c56,allow more path 'views' of a file as elements inside <checksum>s pattern.  PR 50114
+84b4cc0ca,don't allow tasks to finish in <parallel> when the manual says 'execution is terminated'.  PR 49527
+a18d38bbd,"the package name ends at the last dot of a classname, not the first.  PR 45227."
+9f471a747,preserve linefeed-style in propertyfile task.  PR 50049
+036a9cd77,write all buffered data to the stream in TarOutputStream#finish.  PR 50014
+9c0ef0192,"clarify documentation on regexp mapper, suggestions by Francis Galiegue.  PR 47984"
+c13965235,regex requirements are softer now that Ant requires Java 1.4
+aea7d36e1,JUnit XMLResultAggregator logs the stack trace of caught IO exceptions in verbose runs. Bugzilla Report 48836.
+f2453ec2a,Bugzilla Report 48835 StringUtils.parseHumanSizes() should turn parse failures into  BuildExceptions.
+ee4aa0108,zip's whenempty doesn't look at non-filesets at all.  PR 50115
+b6422c58b,comments and indentation only
+8e1d92a9a,make it a sentence
+ce8105904,"fix for bug 50217, NPE in ftp chmod"
+49187e407,new 4096 bit key
+44da21928,Add a task to bind a target to an extension point. doc and unit test still to do.
+51fe5cb2d,add some comment about some type parameter
+3849918af,"If there is -d, debug mode, make the -p, project help, print the dependencies of the targets This will help debugging extension points"
+ae9833864,update WHATSNEW for the print of the dependencies of the target in the project help in debug
+a2b3e159f,"unit test, doc and fix for the bindtargets task"
+0ac1625a8,I forgot to commit the doc about the bindtargets tasks
+bdf0cfed4,fix my english
+9d678b51d,fix grammar
+3b604c9b6,JDK 7 compilability.
+23b52c482,"Compilability under JDK 1.4/5 too, sigh. (Cannot verify since Ant is unbuildable on Linux under JDK 1.4 anyway, due to NIO bug worked around in 1.8.2.)"
+9fec95e95,print whether Kaffe/gcj have been detected in -diagnostics
+9f59925bb,detect Apache Harmony
+80c9b5cb2,Try to explain the rationale of the task bindtargets and highlights some point raised on the ant-dev mailing list
+70eea97ca,"second checkpoint of branding requirements - add 'Apache' at least on each first mention of each product on each page.  xdocs done, but the other static pages, in particular the manual need to be checked as well."
+cf31b84a9,overlooked the navigation
+6441f6397,make sure each page of the Ant website says 'Apache Ant' at least once before it uses the shorter 'Ant'
+fd2e761fe,required links
+0c63f9299,re-generate site
+4196a2c4d,trademark attributes on the site
+66bb8571d,and some more trademarks
+568f81e94,trademark
+70abcb7f5,Make an enum like class for the values of the missing extension point behavior
+db666cd28,remove useless import
+96d032712,must have forgotten to commit this
+9e3506d96,Wrong Hudson-Job name. Split Ivy job-section into Ivy+IvyDE
+ae9303a22,typo + whitespace
+17d4b3461,Make DirectoryScanner work on buggy JVMs where File.list() returns an empty array rather than null for files.  PR 50295.  Submitted by Daniel Smith
+d85d2da8e,restrict impact of fix for PR 50295 on 'good' VMs to an additional syscall for empty directories rather than an additional call for every directory
+b856b9417,detect Java7 features
+9016f4106,Detect OpenJDK7 and Harmony (not that we'd use it for now)
+40e298139,fixup -source for OpenJDK7's javac
+a28f64f5c,fix a bunch of warnings you get when building on Harmony which uses Eclipse's compiler.  There are still lots (more than 100) of deprecation warnings and warnings about missing serialversionids that I have ignored.
+ff41336fc,provide a Map based method to access environment variables and use that.  Don't use System.getenv() on OpenVMS.  PR 49366
+c60459738,keep case of env var keys the user has added
+1675d90f1,document erroronmissingdir attribute for dirset.  PR 50365
+dfe890041,another nice place to add a TM.  PR 50246
+06a078f0e,Use a class not present in libgcj to detect Java 1.6 - PR 50256
+55e44c4ce,document all known differences WRT environment variables.  PR 49366.
+944781202,Try to be more explicit about classloaders and their impact on typedef/taskdef
+4a07176ab,support sources with extensions other than .java in javac.  Submitted by Andrew Eisenberg.  PR 48829.
+2e0f59156,forgot to add file need to close PR 48829.
+0c6703e41,whitespace
+bc71d586a,"forgot to save a file, oh my."
+9fcf95ae0,A Hashtable subclass that works like a LinkedHashMap.  Will be useful for PR 50297
+c851716b8,create a more predictable order in copy.  PR 50297.
+b9db9faf8,fixing warnings in javadoc generation
+d21926dbc,updating release procedure
+1ffcacd80,get 100% passing tests under Windows jdk 1.5 - the JRE 1.5 is not able to open a jar URL when the jar is in a path containing an exclamation mark in the middle
+0b7abed55,improve performance of VectorSet#add - PR 50200
+37e928564,preparation for the 1.8.2 release
+99012ffd2,preparing for the next release
+f20bf084f,Trivial edits.
+aae4e79e6,another change in order not to get any warnings during JavaDoc generation when preparing releases
+222846dc0,needed for execution of single methods according to email of Jesse Glick. Bugzilla 34748.reference of the email http://mail-archives.apache.org/mod_mbox/ant-dev/201012.mbox/%3Cloom.20101217T222806-442@post.gmane.org%3E
+ae5ba9c00,rolling back changes of revision 1045376 in order to generate a second 1.8.2 release candidate
+0571e86ef,changing release date to December 27th

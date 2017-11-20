@@ -1,0 +1,93 @@
+Hash,Message
+134207ad6,ignore release dir
+62647cba6,spelling
+cb5bba144,indentation
+a218020f1,bump versions
+99684cfd7,yet another potential AIOBException inip package
+7451a066c,tests that show gunzip for non-file resources is broken
+7f0eeea18,Make <gunzip> really work with non-filesystem resources
+3c2ed1374,Make <bunzip2> really work with non-filesystem resources
+a76cf99dd,record bugfixes to <gunzip> <bunzip2>
+76455a35c,<jar> ignoresip64Mode for manifest-only jars
+661f8becc,COMPRESS-324 be mor lenient when detecting GNU long name entries
+43e11902e,Bug 50769 - SCP needs to align with the COPY task and support nested resource collections
+bfefc400c,whitespace
+84e5abf85,merge test case by @rednoah
+f065a2267,record for for BZ 50769
+0ca8c46cc,never ignore an explicit dir attribute in <exec>
+4ccca1fc1,use reflection rather than getResource to locate javax.script
+97e463ea9,Reinhard Pointner contributed the patch for #10
+853879108,closes #11
+440b60148,scp task: update docs and add new ResourceCollection usage
+f15c3de41,"Prevent string concatenations as argument to ""StringBuffer.append()"""
+fdc05e695,New ReleaseStep: add new release to Apache Reporter System
+8c23f03fc,ReleaseInstructions: merge the two reporter steps
+9b210733d,don't use deprecated attribute in examples
+9de4ec709,closes #12
+881a0ff79,preserveLastModified for scp uploads
+7051493ef,wrong package
+e7d5d49db,extension is ignored when both in and out are given
+790987e70,bump copyright year after changing the manual
+14e71c1a9,Bug 58874: Ant fails to run if ANT_HOME contains a double-quote character.
+568c3eeb9,Bug 58898: Ant fails to run when arguments contain double-quote character
+7046631e9,normalize file names when importing files with absolute paths
+faa26a012,port tar fix from commons compress
+494e86555,make ant.project.invoked-targets available for top-level tasks
+d713b1785,Ant is able to detect more java versions by now
+c78ecf75b,optionally don't follow redirects in <http>
+be00fccc2,self-check in equals
+592aa7497,take name into account when comparing FileResources
+b25b8c4fa,mention bugfix for 57965
+421ae34d7,Preserve cause of AssertionError
+4d0bbb440,ensure defined order of filters in <replace>
+26dc32342,Test for Bugzilla Issue 58997
+5a6fda589,Really fix Bugzilla Issue 58997
+31e3c02f2,Merge branch 'master' of https://github.com/jwadamson/ant-1
+327a811c0,closes #14
+32634d817,@Override annotation is not supported at build time by Java 1.5 for interface methods. Updating the STATUS file too.
+49f24c871,rename yearcheck.sh to copyrightcheck.sh and change the implementation to use git.
+23b0cf06c,"Added module, modulepath attributes and modulepath, moduleupgradepath elements into Java task."
+dd8b5f45d,"Added module, modulepath attributes and modulepath, moduleupgradepath elements into Java task."
+aeed1d84d,fix for bad URL parsing code by Uwe Schindler
+c6e225580,whitespace
+90c1cc085,assume change will go into Ant 1.9.7
+0ff7cc851,record change for <java> module support
+7a477febf,close #15
+588ce1fbe,avoid slash translations for module names
+8bb69bfdd,"commit a test illustrated by the bug report 59114, that is that the ""**"" pattern matches the empty path, but the ""*"" pattern does not."
+aef407be4,Updated Java task manual. Added since tags.
+1e501f27e,Added modulepathref attribute to Java.
+83eaf4804,"Added modulepath, modulesourcepath and upgrademodulepath into Javac task."
+7bd7ed44b,Removed misleading comment. The sourcepath and modulesourcepath cannot be combined.
+ea99177eb,Added unit test for excludes in multi module compilation.
+038e1948e,Merge branch 'jigsaw/java'
+b2558bc97,some cosmetic changes
+edca1db3d,record module support for javac
+11cd7ffab,Java6ism
+04f501e77,Preserve exit status on error in <ant>/<antcall>
+f8a27a13f,"record Anthony Wat's patch, closes #17"
+67aea0e57,Java5
+057c3f8ab,"master -> 1.10.x, requires java8"
+8becd9dd7,try debugging Jenkins build failure on Windows
+53c776e45,"Revert ""try debugging Jenkins build failure on Windows"""
+4af291c58,embrace AutoCloseable
+1591c1f83,whitespace
+cd1ff3566,makeipFile implement Closeable
+a8d6367dd,remove re-implementations of FileUtils.close()
+48cdc84cc,Merge branch '1.9.x'
+d3a67a363,"Revert ""Java5"""
+0906b0ad9,even more FileUtils.close and try-with-resources cases
+311138d0a,whitespace
+f7f58eeec,implement Closeable inipFile to be compatible with 1.9.7
+b7ef1bcd0,whitespace
+17527b649,AntClassLoader5 has become obsolete long ago
+9f50f363b,Merge branch '1.9.x'
+d1736c7bb,try-with-resource for AntClassLoader
+851aa5fb5,serverAliveInterval and serverAliveCountMax in <sshexec> and <scp>
+edeb171a7,cosmetics
+356972ab3,document serverAliveInterval and serverAliveCountMax
+5024dcf97,Merge branch '1.9.x'
+a2eb30552,use Java8 in POMs as well
+fd2327b8b,simplification suggested by @silviu-burcea
+d02ecf6fe,whitespace
+dc592e630,"nobody needs httpclient, remove the check"

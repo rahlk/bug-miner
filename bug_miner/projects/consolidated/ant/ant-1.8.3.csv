@@ -1,0 +1,62 @@
+Hash,Message
+7903272dd,bad artifact name for javadoc artifact
+5f0f83111,#52738: safer stream closing.
+c28ec7da7,#52740: safer stream closing.
+50c1cfa57,#52742: safer stream closing.
+778b198fb,Mentioning recent fixes.
+246b80980,#52743: stream leak.
+fa37ac7cc,Badly formatted message.
+300003120,"Update release instructions, delete DOAP file which now lives on the site"
+9513b3915,Add an Ant build file to help with the Ant-Build-Matrix on Jenkins
+998e10eb2,Commenting out failing test.
+1364289f4,Fixed JBoss repo reference.
+8fa5e9b72,Trying to diagnose DeleteTest.test9 failures in Ant-Build-Matrix.
+83d2993be,Windows-only failure in Ant-Build-Matrix.
+c5d14d94c,Refined fix of #52743 to close output stream before renaming temp file. Windows-only failure in Ant-Build-Matrix.
+7be0300bd,@link
+846806e75,"DeleteTest.test9 failures in Ant-Build-Matrix caused by spaces in workspace path. (<files includes=""${dir}/**""/> is parsed as multiple items.)"
+538257ea8,"Weaken antunit location message to warning. Otherwise it can incorrectly fail due to canonicalization differences. https://builds.apache.org/job/Ant_JDK_1.5_Test/453/console antunit-tests: BUILD FAILED /zonestorage/hudson_solaris/home/hudson/hudson-slave/workspace/Ant_JDK_1.5_Test/trunk/build.xml:1927: AntUnit tests must be run with /zonestorage/hudson_solaris/home/hudson/hudson-slave/workspace/Ant_JDK_1.5_Test/trunk/bootstrap (or /zonestorage/hudson_solaris/home/hudson/hudson-slave/workspace/Ant_JDK_1.5_Test/trunk/dist), not /export/home/hudson/hudson-slave/workspace/Ant_JDK_1.5_Test/trunk/bootstrap. Try './build.sh antunit-tests' for example."
+d605afdd5,RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE
+26337bb13,MS_SHOULD_BE_FINAL
+fca4fe69e,NS_DANGEROUS_NON_SHORT_CIRCUIT
+08cfa7aa7,...and only warn if actually running AntUnit.
+e07eede7b,More idiomatic check with Os.isFamily.
+78d4c36b5,"Ant-Build-Matrix failure (also local on XP): ""Jar's directory not found: C:\Temp""."
+1d05861c2,Trying to make JavaTest more reliably on Windows.
+583f7cd1c,Local test failure on XP w/ JDK 7.
+7d92ec818,"Clarifying that a FS-only collection might be using any FileProvider, not necessarily FileResource."
+6ec534027,"Must have a well-formed URL, or builds.apache.org croaks."
+34ec53439,Fixing most Maven warnings.
+844a7edee,Consistent indentation.
+b61ed496a,Centralized source/target level config.
+030eecb1d,Typo caused JAR to be empty.
+5ff08103c,"Ongoing random failures in JavaTest, now even on Ubuntu."
+19a0a949b,Permit -Drun.junit.report=false (saved about three seconds off single test run).
+d516870b6,Random failures in AntClassLoaderTest traceable to different jobs overwriting the same test.jar.
+c43ac3bf9,Indentation.
+455cd8481,Update the release process: dist is now under svnpubsub
+1c63fba0b,make AntUnit tests use a temp-dir inside the build tree rather than
+8cab09b51,Use a local temp directory for JUnit tests as well
+da0a9ef6d,try to debug test failures in Jenkins
+25fbde8b7,test onyl works if invoked from root of Ant's source tree
+de0b80895,help debugging Jenkins test failure
+72bdafb6b,move test directories out of source tree
+22f08c296,Maybe java simply isn't on the PATH on the Jenkins boxes
+9abbf2c71,try to see what gets logged
+0b981adf8,a problem with the files resource?
+18b6cf346,"if test-directory contains spaces, an includes attribute will split it into several patterns"
+b3b0de19a,likely a 'space in path' issue as well
+a4a5fb9b1,ensure forward-slashes on Windows; deal with directories containing spaces in exec task's arguments
+a35572672,help debugging Jenkins failure
+dea5e3c23,"https://builds.apache.org/pview/job/Ant-Build-Matrix/475/jdk=JDK%201.5%20(latest),label=Ubuntu/testReport/junit/(root)/%3Cinit%3E/src_tests_antunit_taskdefs_import_url_test_xml/ .../src/tests/antunit/taskdefs/import-url-test.xml:74: The following error occurred while executing this line: .../src/tests/antunit/taskdefs/import-url-test.xml:48: java.lang.IllegalStateException:ip file closed 	at org.apache.tools.ant.ProjectHelper.addLocationToBuildException(ProjectHelper.java:551) 	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:395) 	at org.apache.tools.ant.taskdefs.CallTarget.execute(CallTarget.java:105) 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291) 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source) 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) 	at java.lang.reflect.Method.invoke(Method.java:592) 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106) 	at org.apache.tools.ant.Task.perform(Task.java:348) 	at org.apache.tools.ant.Target.execute(Target.java:392) 	at org.apache.tools.ant.Target.performTasks(Target.java:413) 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399) 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368) 	at org.apache.ant.antunit.AntUnitScriptRunner.runTarget(AntUnitScriptRunner.java:237) 	at org.apache.ant.antunit.AntUnitScriptRunner.runSuite(AntUnitScriptRunner.java:303) 	at org.apache.ant.antunit.AntUnit.doFile(AntUnit.java:268) 	at org.apache.ant.antunit.AntUnit.doResourceCollection(AntUnit.java:247) 	at org.apache.ant.antunit.AntUnit.execute(AntUnit.java:218) 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291) 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source) 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) 	at java.lang.reflect.Method.invoke(Method.java:592) 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106) 	at org.apache.tools.ant.Task.perform(Task.java:348) 	at org.apache.tools.ant.Target.execute(Target.java:392) 	at org.apache.tools.ant.Target.performTasks(Target.java:413) 	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399) 	at org.apache.tools.ant.Project.executeTarget(Project.java:1368) 	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41) 	at org.apache.tools.ant.Project.executeTargets(Project.java:1251) 	at org.apache.tools.ant.Main.runBuild(Main.java:811) 	at org.apache.tools.ant.Main.startAnt(Main.java:217) 	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280) 	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109) Caused by: .../src/tests/antunit/taskdefs/import-url-test.xml:48: java.lang.IllegalStateException:ip file closed 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:116) 	at org.apache.tools.ant.Task.perform(Task.java:348) 	at org.apache.tools.ant.Target.execute(Target.java:392) 	at org.apache.tools.ant.helper.ProjectHelper2.parse(ProjectHelper2.java:180) 	at org.apache.tools.ant.ProjectHelper.configureProject(ProjectHelper.java:82) 	at org.apache.tools.ant.taskdefs.Ant.execute(Ant.java:393) 	... 32 more Caused by: java.lang.IllegalStateException:ip file closed 	at java.util.zip.ZipFile.ensureOpen(ZipFile.java:518) 	at java.util.zip.ZipFile.getEntry(ZipFile.java:251) 	at java.util.jar.JarFile.getEntry(JarFile.java:204) 	at sun.net.www.protocol.jar.URLJarFile.getEntry(URLJarFile.java:90) 	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:112) 	at sun.net.www.protocol.jar.JarURLConnection.getInputStream(JarURLConnection.java:124) 	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:973) 	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:184) 	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:798) 	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764) 	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:148) 	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1242) 	at org.apache.tools.ant.helper.ProjectHelper2.parse(ProjectHelper2.java:307) 	at org.apache.tools.ant.helper.ProjectHelper2.parse(ProjectHelper2.java:168) 	at org.apache.tools.ant.taskdefs.ImportTask.importResource(ImportTask.java:229) 	at org.apache.tools.ant.taskdefs.ImportTask.execute(ImportTask.java:163) 	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291) 	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source) 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) 	at java.lang.reflect.Method.invoke(Method.java:592) 	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106) 	... 37 more"
+e741015b7,"https://builds.apache.org/pview/job/Ant-Build-Matrix/475/jdk=JDK%201.5%20(latest),label=Ubuntu/testReport/src.tests.antunit.taskdefs/hostinfo-test_xml/testApache/ src/tests/antunit/taskdefs/hostinfo-test.xml:53: Assertion failed https://builds.apache.org/pview/job/Ant-Build-Matrix/475/jdk=JDK%201.5%20(latest),label=Ubuntu/testReport/src.tests.antunit.taskdefs/hostinfo-test_xml/testApacheNoPrefix/ src/tests/antunit/taskdefs/hostinfo-test.xml:70: Expected 'eos' but was 'aurora-2012' From my Linux machine: $ host www.apache.org www.apache.org has address 140.211.11.131 www.apache.org has address 192.87.106.229 www.apache.org has IPv6 address 2001:610:1:80bc:192:87:106:229 www.apache.org mail is handled by 10 minotaur.apache.org. $ host 140.211.11.131 131.11.211.140.in-addr.arpa domain name pointer eos.apache.org. $ host 192.87.106.229 229.106.87.192.in-addr.arpa is an alias for 229.224.106.87.192.in-addr.arpa. 229.224.106.87.192.in-addr.arpa domain name pointer aurora-2012.apache.org."
+d4aa652e4,Jenkins build boxes 'see' a different www.apache.org from the rest of the world
+bd7585adb,Switch to JDK 5 as baseline.
+ea3330104,#52829: ResourceCollection now Iterable<Resource>.
+e21405f8e,JDK 5.
+33b564a18,JDK 5.
+339c580b6,JDK 5.
+8d4736cfc,<properties> started to support loading XML files with 1.8.0 not 1.7.1.  PR 53141
+36787ae6b,don't need reflection anymore for Properties#loadFromXML
+08284bc7a,[CVE-2012-2098] merge bzip2 edge case improvement from Commons Compress
+8f2b4c5f4,"merged one hunk the wrong way around, allowableblocksize should remain final"

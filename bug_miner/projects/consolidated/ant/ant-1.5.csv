@@ -1,0 +1,206 @@
+Hash,Message
+e5235423c,dIon's cleanup and doc patches.  I put this on the HEAD branch so as to not touch 1.5 branch right before the release.
+da5a13f8e,Merge differences between the ANT_15_FINAL branch and the trunk into the trunk.
+d63e5f7e8,Resolve unresolved conflict
+395544ee5,Doc updates for announcing the 1.5 release.
+670c32326,Fix ANT_LIB path so that it uses a valid ANT_HOME under Cygwin.. PR: 10664 Submitted by: patdtaylor2000@yahoo.com (Patrick Taylor)
+66c400def,Add jdk1.4 friendly getCause() method
+70936fadd,Wow - look at all the things you can do in a single commit. No need to commit each directory separately. :-)
+8f70bc2a9,Allow all tasks to be used outside of targets.
+1e8307708,"Allow to specify a given factory implementation for the transformer (xsltc, xalan, saxon...) and to specify processor specific settings."
+d810b1b86,Remove useless import
+2e823e15b,Kaffe has ThreadLocal but no swing.
+dad32bdae,Typo. PR: 10736
+5d7a97184,2002
+0dd749e0a,PR: 10728
+4e461155a,More quotes.
+a3e2b5d82,Henri's got a new key
+5fa2b3cd6,trax factory settings are now configured within a <factory> element.
+4ce5b624e,Take care of extreme cases to do some suffix magic. Added some more testcases to document this behavior.
+f1a281460,"Initial attempt to fix the optional.jar ( for 1.5+ ). The ProjectHelper will replace all optional tasks, using an AntClassLoader to load ( delegation disabled for the optional package )."
+13c833611,"A small refactoring, getting to a more 'real' interface for the dynamic properties."
+2b442b9b9,merge from 1.5 branch
+98f202ddd,Provide download for Cygwin-fixed ant wrapper script and announce it.
+74617bddc,Make it serializable Requested by: Jonas G�ransson (jongo728@student.liu.se)
+1c960e7c1,Allow target-less build files by
+ebdf3b5ae,Bringing HEAD up to speed with the code I used to generate Appendix E of the infamous Java Development with Ant book.
+b4b4814a9,Donated from Java Development with Ant
+648275616,Forgot to catch Errors while doing the diagnostics..making it totally useless when there is a ClassDefNotFoundError...that is...most of the time.. hem...
+706007fa7,"Move all top level elements to an implicit target named """" and make all othere targets depend on that one."
+a2e5b12e3,First version of the <systemPath>.
+a7c30f4d0,relocating Appendix E
+ecb45355a,blurb about appendix E
+77ebc51b5,Merge from the 1.5 branch.
+beb22f149,Make build files that rely on Ant 1.5's behavior work again.
+d3ce4da4f,Henri likes to have multiple keys
+03b6e2541,Merged all the changes from ProjectHelper.
+fc6a4383f,* Add encoding attribute to <loadproperties> * Remove dependency of <loadproperties> on StringInputStream * Modify StringInputStream to support encoding * Note that StringInputStream is not being used by any other Ant classes - the sole consumer was LoadProperties which no longer uses it.
+75cdfc682,Added import-related info to AntXmlContext. Made few fields public - the whole thing will be refactored with proper getter/setters after things are stable.
+b4532de80,"Import task, first version."
+cb8e13aae,Implement the change in handling the top-level target before executing other targets ( which is closer to the original behavior ).
+95b08cc54,Improve debugging ( to find the super. problems with import ). Smaller fixes.
+61a377b66,"A bit of cleanup, remove duplicated code."
+e69f35fd2,Merge changes from 1.5 branch to HEAD.
+aa07dd461,Make task replacements recreate their child elements when they get redefined.
+89cec29e1,fix should go into 1.5.1
+2db614f7f,Add pointer to jMetra.
+d1dfe6065,Remove javadoc for throws that no exist
+ef45079a1,Remove unused variable
+5c0429c7a,Fix broken link. Submitted by:	Trevor Fields <fields_t@ociweb.com>
+764ef4fd8,untabify
+28b68ab7d,Encapsulate usage of project object rather than allowing objects 7 subclasses acessing a protected variable of their super super super .... class.
+12e8a63e2,Remove redundent assignments
+f9121ee81,Encapsulate some fields in Task and add some deprecation warnings to coresponding fields.
+d4028badb,Add ignores for more cache files.
+c97bf5bab,Fixed up JavaDocs (where possible) to remove warnings (mostly about breakiterator).
+15c3ec9b2,Destroy the process in case the thread is interrupted otherwise it may run forever. PR: 10345 Submitted by: Hal.Hildebrand@hellblazer.com (Hal Hildebrand)
+8955734dc,'java' attribute has never been used here. Get rid of it.
+af97c64cb,Make <project>'s default attribute required to stop the sky from falling.
+3256156dc,"Finally, make all AntHandlers 'stateless' and make sure all the state is in AntContext."
+21ded555a,Added a bit more info :-)
+74f104a7d,Remove redudent assignments
+de93400d0,Encapsulate some fields of DataType.
+f93b4f4fc,Remove unused import
+8f413c120,"Remove unused imports, remove glob imports, sort imports."
+e1e77456b,First draft of JXPath.
+f3fc0f677,"Moved the embed proposal, use a 'normal' hierarchy and build system."
+a8ffca315,One more try :-)
+749486ba9,Fixed the loading of JXPath.
+835adba18,Add JXPath and a modified Taskdef that uses the 'system path'.
+9ee51f37b,Add the new taskdef ( it'll replace the original one ). ( we need the new one so that it works with ant1.5 )
+d8affe435,Added (back) TaskAdapter2. It'll allow more flexibility on how 'normal' beans are turned into tasks - it allows to specify the method name.
+4a0fa3211,Build changes to optionally include/exclude the JAI <image> task.
+c647455d2,"Kevin Grey's <image> task.  A few modifications were made, most notably changes on setter types and removal of some unused variables flagged by IDEA."
+9d2f4ca3b,Fixed bootstrap when JAI not present
+31fb6432c,port ANTLR fix from 1.5 branch. PR: 11222
+1e5fa0492,"<war> and <ear> have the duplicate attribute, too. Submitted by:	Larry Shatzer <Larry.Shatzer@Spirent.com>"
+e9029b083,Shell snippet that autodetects Emacs' compile mode and then passes -emacs as well as build.compiler.emacs to Ant.
+f7cf15321,Fixing some typos - has been submitted as part of PR: 11056
+5e67dc2a6,merge bug fix from 1.5 branch.
+5896b285f,Add a getter for linkname.
+dca8d020b,Put JspcTest at the end to ensure we run all other tests in Gump.
+7a3141d68,Keep the kids happy - they need a project too.
+270295d73,Include underlying exception message in exception. Makes it simpler to debug
+71c647859,"Added a check on Property names using the ""if"" and ""unless"" attributes for the selector tag, so that selectors that it contains are made conditional."
+ba4dc28a8,"add copyright line, remove stray ^Ms"
+f052bb39d,"Applied patch from Romin Irani, thanks"
+8d673eadc,Submited the patch from Patrick.
+a996eeb23,MailLogger documentation patch
+0d370d68a,Make <available> less noisy.
+03bcc3e5c,Fix a problem with HOME containing spaces on Cygwin.
+130a54050,"Make <arg line=""''""/> closer to what a shell would do."
+2ccf9c422,Only set jikes.class.path if JIKESPATH is defined.
+04aa863d2,two new tests
+ae4f3c881,cleanup
+94182a1df,"this patch does not fix the failing of jspc test, it fixes two other bugs in bugzilla -NPE on inclusion of non jsp file, and webapp attr broken."
+75cdf1021,"here is the bugfix. concatSystemClasspath returns a new classpath, so if jasperc was in ant's lib it got lost along with everything else."
+eafae992b,JNI++ pointer; moved jing into its right place (didnt notice it was alpha sorted before; sorry)
+983dcaeed,Check in 11644. Thanks Nicola.
+7c1da627d,Revive int constructor for 1.4 compatibility PR: 11207 Reported by: martin.brehovsky@sun.com (Martin Brehovsky)
+4f04b8d83,"Why this has not been done before is beyond me, but its something I can't live without!  :)"
+5090cd936,"Fix the xsl to produce a valid html (I changed the font size since it was not that readable for me, switched to a loose dtd otherwise we have to work more on the html and I encoded the entity '&' so that it is correct in the html attribute.) PR: 11701 Submitted by: ville.skytta@iki.fi (Ville Skytt�)"
+4e0fc1b36,The date format seems to be in 24h format (did not have time to browse all docs but this is what I get on my machine so far) though it is clear that unlike all cvs commands the timezone is in UTC so I added an additional setup to configure the format with the utc timezone.
+b996094b4,Ooops. Bad IDEA configuration ruined the imports.
+6a12e3ec4,Siwtch to strict dtd. The escaping has been removed because this case is not adressed by the xslt specs. Xalan 2.4D1 unescape &amp in the attribute while Saxon 7.1 does. See PR 1604 for more information.
+3e0206270,Make junit report more informative when looking for xalan PR: 11067 Reported by: stevel@apache.org (Steve Loughran)
+fd43fc2ad,Add missing rmicoptions setter PR: 9830 Submitted by: hengels@mercatis.de (Holger Engels)
+462f94f6c,"Clean up batch scripts with simplified syntax to avoid problems with some w2k boxes and 4nt. PR:11478, 11250 Submitted by: Patrick Luby <patrick.luby@sun.com>"
+797446cd4,2002
+01d744455,Correct javadoc strings on methods that list deselected files and directories to indicate that they do in fact list files that have NOT been selected.
+aa5ace7d3,Few fixes ( I hope it won't brake anything ).
+cef3b4c34,Added org.w3c.dom too.
+8716cc548,"If no logger is set, default to system.out instead of ignoring the message."
+396422915,Allow the task type to be set from a differnet package. That elminate the need to have RuntimeConfigurable2 in the same package.
+ad8dd9aa6,Add an extra attempt to load tools.jar
+ea4bf0e8e,Costins need reminded me to turn on the java version specific system library stuff; though I would still like a good test for this.
+435a5672f,More batch hacking. JAVACMD was reset each time and was jumping right off without appending tools.jar
+e0c04a3b2,Fix PDF mangling
+1f2eea24c,"changes submitted by Eric Pugh improving the <image> task.  dest is now destdir - this breaks backwards compatibility, but its still in alpha so no worries."
+bc718c934,Add a link to ant eater.
+9dd88b23e,More patches (+ test cases!) from Eric Pugh on the <image> task.
+4e3c6c6dc,More patches (+ test cases!) from Eric Pugh on the <image> task.
+aed89f634,Add quotes when %JAVA_HOME% contains spaces Submitted by: Patrick Luby <patrick.luby@sun.com>
+130ad0822,Added examples for velocity and jexl properties.
+64420d72a,Added support for velocity and jexl.
+05c71c8fc,Moved from discovery - it'll be the start on discovering the tasks.
+4f2134272,Added velocity and jexp dynamic properties.
+2d2fd6a3f,Patch from Nicola.
+1259545cb,Upgrade to JUnit 3.8 and Xerces 2.1.0.
+319442387,"vacations are never long enough, are they?"
+335376808,Make sure Python and Perl scripts get only included once in -bin.tar.
+f2f144446,Show all command line options of Ant and fix a typo.
+fbd0560eb,fixed binary for those of you non-Mac OS Xers :)
+f914213e1,refactored to be 1.1 compatible and allow filenames that contain spaces
+174269d91,updated WHATSNEW with things I've changed recently.
+b522a2e89,Merge from 1.5 Branch
+80377e9c7,getParentFile may return null.
+c0287b1df,Replace > with &gt; where appropriate.
+2f4ff0ab9,Announce 1.5.1 Beta1 release in antnews
+0ee75128d,Add explicit tests for <fixcrlf>'s CRCRLF handling.
+7f2af7960,<tag /> ---> <tag/> remove some stray CRs fix some typos
+fdc1b0264,"Add announcement of 1.5.1beta1 on main page, fix a typo in replaceregexp docs."
+f0c70acd8,Make cvstagdiff inherit from AbstractCvsTask
+078be842a,Make sure the prompt is visible even in -quiet mode.
+6e797b3a5,Fix typo.
+1c4050694,"little trick to allow <ant> callers to spec a classpath for their own stuff, cos I am trying to invoke this from axis, with mixed results."
+8e63fe9db,"patch queue link; will only go into the web site when an update takes place. NB, why doesnt gump do that?"
+b629309bf,DD's junit patch. a bigger diff than you'd think on account of tab to space fixup across the whole doc.
+c33a92d16,"more tag to space fixup on the rest of the dir. left alone tagdiff.xsl as that has other problems, like every second line is blank. Saved as binary?"
+d9128d1e5,JUnit 3.8.1 has been released
+9d40bce40,case change
+41f77159f,"Tests for XML schema support. I think we have issues w.r.t catalogs, dtd and Schema, or at least need some docs on the subject."
+2479f91a7,"Feature support from Nick Pellow, nick.pellow@mindmatics.de."
+c2731f64d,XMLValidate now depends on JDK 1.2
+2807b6e3f,New <isreference> condition.
+5ac70fbef,document <isreference> in WHATSNEW
+ea5d48a63,Supply location when complaining about empty target names.
+c4e987aea,Merge fix from 1.5 branch.
+aa139d2ab,rolling back feature support till it works on 1.1 and looks more like xstyle
+c4b1bed3b,"rolling back feature support, but retaining the extra explanation text under existing examples"
+86d0884a6,XmlValidate no longer needs 1.2
+b623a8a40,and commenting out the feature tests in the test file.
+0695ed141,"This is a fractional refactor of the class to split task creation from adding it to the list of tasks we know about. As the factored out method is private, external routines still cannot create tasks that arent added to the list...this change does not alter the external API of Project, just makes it possible."
+013928839,"little consequence of """" not being a valid target name; you cannot have default="""" in <project>"
+56a71a007,"a reference that is hard on 1.1, weak on 1.2+"
+263a1d74d,"I'm always scared of changing the core classes, so would be more reluctant to commit this if it wasnt needed so much by Axis. Once committed. I'm going to do more soak testing."
+38495bec1,Release references to the child project when <ant*> has been done.
+686cb8ffd,Provide a resonable name value for test implementations that are not TestCase subclasses - user their getName method if present.
+8d3464f4e,"IDEA reformat, and changed destdir to be File type"
+c5257beb0,even more missing quotes.
+e1ef86cb2,Support name() accessors as well.
+fb92b3da3,Don't add extra linefeed in <replaceregexp>
+23b5b9d2c,"This looks like duplicate code, I'm not 100% sure, waiting to see whether it affects any Gump run.  It causes problems with custom tasks that have nested Sequential child elements."
+a26c94ea6,"Make sure <replaceregexp> doesn't add a newline char at the end of the file if byline=""true"" either."
+d176e333b,remove commented out lines
+de3b69c37,typos in docs.
+8dd879b20,AbstractFileSet should check whether it is a reference in a couple of places
+a22447207,Add pointer to Karthik Kumar's doxygen task.
+6f5a6677f,"Create FAQ on the Ant 1.4, Windows XP, JDK 1.4 problem and mention the workaround confirmed by Curt Wilhelm."
+8b8ee0cc2,Add FAQ contributed by Henri Gomez <hgomez at apache.org>
+9b7f00ab2,Add ability to set parser features in <xmlvalidate>.
+c8d4ba239,Add preservelastmodified attribute to <ftp>.
+2bf9f10a8,New <ftp> action rmdir.
+718a6705d,change misleading example in <mail>'s documentation.
+c6c2722ad,Fix the path to discovery.
+387d93e6e,Make <ftp>'s MKDIR action work recursively (if necessary).
+aea068074,Go on if a non-JSP has been found in <wljspc>.
+f1fd5e5e8,<tstamp>'s prefix attribute didn't apply to nested <format>s.
+1e760c735,Make <cab> use the not deprecated methods of ExecTask.
+1e75ac7d0,Make HTML generated by <junitreport> look more like valid HTML.
+ddece83ca,<junitreport> would create an empty junit-noframes.html if format was not defined.
+d928ea97f,conditionally exclude JUnitReportTest
+04408cb59,Remove magic that prepends a $ to vsspath and projectpath in VSS and SOS tasks.
+d7e86a8f8,forgot to save some files
+5abd6bec4,documentation for some of the inherited attributes has been missing
+8d9a2577c,Add some clarification to <antcall>'s docs.
+7abf6af62,Make jjtree as verbose as javacc.
+f24f4991f,add example for referencing filtersets by id.
+29cec9ac5,Upgrade to Xerces 2.2.0
+8e67850ad,Add <os> and <exec> support for OS/400.
+967ec861a,filtersets that are nested into filersets don't work as the code tries to access nested elements before they have been configured.
+6650efb10,Next try for PR: 12844 (Stochern im Nebel)
+e42bd46a5,Throw BuildException in <xmlvalidate> if a requested feature is not supported.
+6a012bdb4,Fix <linecontains> filter.
+89e7e1bb5,New URL and contact for genjar
+197435bd0,make genjar URL valid 8-(
+d303ffde2,Remove Class-Path from Ant's manifest and provide an ant-bootstrap.jar for people who'd like to run Ant via java -jar.

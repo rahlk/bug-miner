@@ -4,89 +4,136 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-ANT_ARGS	../bug_miner/projects/raw/ant/src/script/runant.py	/^    ANT_ARGS = os.environ['ANT_ARGS']$/;"	kind:variable	line:85
-ANT_ARGS	../bug_miner/projects/raw/ant/src/script/runant.py	/^ANT_ARGS = ""$/;"	kind:variable	line:83
-ANT_HOME	../bug_miner/projects/raw/ant/src/script/runant.py	/^    ANT_HOME = os.environ['ANT_HOME']$/;"	kind:variable	line:40
-ANT_HOME	../bug_miner/projects/raw/ant/src/script/runant.py	/^    ANT_HOME = os.path.dirname(os.path.dirname(os.path.abspath(sys.argv[0])))$/;"	kind:variable	line:42
-ANT_LIB	../bug_miner/projects/raw/ant/src/script/runant.py	/^ANT_LIB = os.path.join(ANT_HOME, 'lib')$/;"	kind:variable	line:45
-ANT_OPTS	../bug_miner/projects/raw/ant/src/script/runant.py	/^    ANT_OPTS = os.environ['ANT_OPTS']$/;"	kind:variable	line:77
-ANT_OPTS	../bug_miner/projects/raw/ant/src/script/runant.py	/^ANT_OPTS = ""$/;"	kind:variable	line:75
-ApacheAntURL	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^ApacheAntURL = collections.namedtuple($/;"	kind:variable	line:24
-CLASSPATH	../bug_miner/projects/raw/ant/src/script/runant.py	/^    CLASSPATH = "-lib " + os.environ['CLASSPATH']$/;"	kind:variable	line:89
-CLASSPATH	../bug_miner/projects/raw/ant/src/script/runant.py	/^CLASSPATH = ""$/;"	kind:variable	line:87
-JAVACMD	../bug_miner/projects/raw/ant/src/script/runant.py	/^            JAVACMD = os.path.join(JAVA_HOME, 'bin', 'java')$/;"	kind:variable	line:57
-JAVACMD	../bug_miner/projects/raw/ant/src/script/runant.py	/^    JAVACMD = 'java'$/;"	kind:variable	line:63
-JAVACMD	../bug_miner/projects/raw/ant/src/script/runant.py	/^    JAVACMD = JAVACMD[1:-1]$/;"	kind:variable	line:92
-JAVACMD	../bug_miner/projects/raw/ant/src/script/runant.py	/^    JAVACMD = os.environ['JAVACMD']$/;"	kind:variable	line:61
-JAVACMD	../bug_miner/projects/raw/ant/src/script/runant.py	/^JAVACMD = None$/;"	kind:variable	line:48
-JAVA_HOME	../bug_miner/projects/raw/ant/src/script/runant.py	/^                JAVA_HOME = JAVA_HOME[1:-1]$/;"	kind:variable	line:56
-JAVA_HOME	../bug_miner/projects/raw/ant/src/script/runant.py	/^            JAVA_HOME = os.environ['JAVA_HOME']$/;"	kind:variable	line:54
-JavaUtil	../bug_miner/Utils/MetricsUtil.py	/^class JavaUtil:$/;"	kind:class	line:13
-LOCALCLASSPATH	../bug_miner/projects/raw/ant/src/script/runant.py	/^LOCALCLASSPATH = launcher_jar$/;"	kind:variable	line:71
+ANT_ARGS	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^    ANT_ARGS = os.environ['ANT_ARGS']$/;"	kind:variable	line:85
+ANT_ARGS	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^ANT_ARGS = ""$/;"	kind:variable	line:83
+ANT_ARGS	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^    ANT_ARGS = os.environ['ANT_ARGS']$/;"	kind:variable	line:85
+ANT_ARGS	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^ANT_ARGS = ""$/;"	kind:variable	line:83
+ANT_HOME	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^    ANT_HOME = os.environ['ANT_HOME']$/;"	kind:variable	line:40
+ANT_HOME	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^    ANT_HOME = os.path.dirname(os.path.dirname(os.path.abspath(sys.argv[0])))$/;"	kind:variable	line:42
+ANT_HOME	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^    ANT_HOME = os.environ['ANT_HOME']$/;"	kind:variable	line:40
+ANT_HOME	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^    ANT_HOME = os.path.dirname(os.path.dirname(os.path.abspath(sys.argv[0])))$/;"	kind:variable	line:42
+ANT_LIB	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^ANT_LIB = os.path.join(ANT_HOME, 'lib')$/;"	kind:variable	line:45
+ANT_LIB	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^ANT_LIB = os.path.join(ANT_HOME, 'lib')$/;"	kind:variable	line:45
+ANT_OPTS	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^    ANT_OPTS = os.environ['ANT_OPTS']$/;"	kind:variable	line:77
+ANT_OPTS	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^ANT_OPTS = ""$/;"	kind:variable	line:75
+ANT_OPTS	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^    ANT_OPTS = os.environ['ANT_OPTS']$/;"	kind:variable	line:77
+ANT_OPTS	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^ANT_OPTS = ""$/;"	kind:variable	line:75
+CLASSPATH	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^    CLASSPATH = "-lib " + os.environ['CLASSPATH']$/;"	kind:variable	line:89
+CLASSPATH	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^CLASSPATH = ""$/;"	kind:variable	line:87
+CLASSPATH	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^    CLASSPATH = "-lib " + os.environ['CLASSPATH']$/;"	kind:variable	line:89
+CLASSPATH	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^CLASSPATH = ""$/;"	kind:variable	line:87
+DataUtil.py	../bug_miner/Utils/DataUtil.py	1;"	kind:file	line:1
+ET	../bug_miner/Utils/FileUtils.py	/^import xml.etree.ElementTree as ET$/;"	kind:namespace	line:7
+FileUtils.py	../bug_miner/Utils/FileUtils.py	1;"	kind:file	line:1
+JAVACMD	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^            JAVACMD = os.path.join(JAVA_HOME, 'bin', 'java')$/;"	kind:variable	line:57
+JAVACMD	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^    JAVACMD = 'java'$/;"	kind:variable	line:63
+JAVACMD	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^    JAVACMD = JAVACMD[1:-1]$/;"	kind:variable	line:92
+JAVACMD	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^    JAVACMD = os.environ['JAVACMD']$/;"	kind:variable	line:61
+JAVACMD	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^JAVACMD = None$/;"	kind:variable	line:48
+JAVACMD	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^            JAVACMD = os.path.join(JAVA_HOME, 'bin', 'java')$/;"	kind:variable	line:57
+JAVACMD	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^    JAVACMD = 'java'$/;"	kind:variable	line:63
+JAVACMD	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^    JAVACMD = JAVACMD[1:-1]$/;"	kind:variable	line:92
+JAVACMD	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^    JAVACMD = os.environ['JAVACMD']$/;"	kind:variable	line:61
+JAVACMD	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^JAVACMD = None$/;"	kind:variable	line:48
+JAVA_HOME	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^                JAVA_HOME = JAVA_HOME[1:-1]$/;"	kind:variable	line:56
+JAVA_HOME	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^            JAVA_HOME = os.environ['JAVA_HOME']$/;"	kind:variable	line:54
+JAVA_HOME	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^                JAVA_HOME = JAVA_HOME[1:-1]$/;"	kind:variable	line:56
+JAVA_HOME	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^            JAVA_HOME = os.environ['JAVA_HOME']$/;"	kind:variable	line:54
+JSONUtil	../bug_miner/Utils/FileUtils.py	/^class JSONUtil:$/;"	kind:class	line:18
+JavaUtil	../bug_miner/Utils/MetricsUtil.py	/^class JavaUtil:$/;"	kind:class	line:19
+JavaUtil	../main.py	/^from bug_miner.Utils.MetricsUtil import JavaUtil$/;"	kind:namespace	line:9
+LOCALCLASSPATH	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^LOCALCLASSPATH = launcher_jar$/;"	kind:variable	line:71
+LOCALCLASSPATH	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^LOCALCLASSPATH = launcher_jar$/;"	kind:variable	line:71
 MetricsUtil.py	../bug_miner/Utils/MetricsUtil.py	1;"	kind:file	line:1
-OPTS	../bug_miner/projects/raw/ant/src/script/runant.py	/^OPTS = ""$/;"	kind:variable	line:79
-XMLUtil	../bug_miner/Utils/MetricsUtil.py	/^from FileUtils import XMLUtil$/;"	kind:namespace	line:8
-__init__	../bug_miner/Utils/MetricsUtil.py	/^    def __init__(self, jar_path_json, project_path, save_path="metrics", file_name="metrics"):$/;"	kind:member	line:14
+OPTS	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^OPTS = ""$/;"	kind:variable	line:79
+OPTS	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^OPTS = ""$/;"	kind:variable	line:79
+XMLUtil	../bug_miner/Utils/FileUtils.py	/^class XMLUtil:$/;"	kind:class	line:85
+__init__	../bug_miner/Utils/FileUtils.py	/^    def __init__(self, json_path="metrics", json_name="metrics.json"):$/;"	kind:member	line:19
+__init__	../bug_miner/Utils/FileUtils.py	/^    def __init__(self, metrics_name):$/;"	kind:member	line:86
+__init__	../bug_miner/Utils/MetricsUtil.py	/^    def __init__(self, tags, project_path, jar_path, save_path):$/;"	kind:member	line:20
 __init__.py	../bug_miner/Utils/__init__.py	1;"	kind:file	line:1
 __init__.py	../bug_miner/__init__.py	1;"	kind:file	line:1
 __init__.py	../bug_miner/projects/__init__.py	1;"	kind:file	line:1
-__test_util	../bug_miner/Utils/MetricsUtil.py	/^def __test_util():$/;"	kind:function	line:56
-_copy_to_jars	../bug_miner/Utils/MetricsUtil.py	/^    def _copy_to_jars():$/;"	kind:member	line:38
-_git_checkout	../bug_miner/Utils/MetricsUtil.py	/^    def _git_checkout(commit_hash):$/;"	kind:member	line:33
-_run_ckjm	../bug_miner/Utils/MetricsUtil.py	/^    def _run_ckjm(jar):$/;"	kind:member	line:22
-_run_maven	../bug_miner/Utils/MetricsUtil.py	/^    def _run_maven(project_path):$/;"	kind:member	line:28
-apache_ant_url	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^def apache_ant_url(url_string):$/;"	kind:function	line:45
-argparse	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^    import argparse$/;"	kind:namespace	line:155
-argparse	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^    import argparse, collections, os.path, urlparse$/;"	kind:namespace	line:47
-build-osx-pkg.py	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	1;"	kind:file	line:1
-cmdline	../bug_miner/projects/raw/ant/src/script/runant.py	/^        CLASSPATH, string.join(sys.argv[1:], ' '))$/;"	kind:variable	line:98
-collections	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^    import argparse, collections, os.path, urlparse$/;"	kind:namespace	line:47
-collections	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^import collections$/;"	kind:namespace	line:20
-commits	../main.py	/^    commits = dict$/;"	kind:variable	line:13
-contextlib	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^import contextlib$/;"	kind:namespace	line:21
-debug	../bug_miner/projects/raw/ant/src/script/runant.py	/^debug = 0$/;"	kind:variable	line:34
-division	../bug_miner/Utils/MetricsUtil.py	/^from __future__ import division$/;"	kind:namespace	line:1
-fetch_apache_ant_url	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^def fetch_apache_ant_url(apache_ant_url, temp_dir):$/;"	kind:function	line:75
-fetch_url	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^def fetch_url(url, local_output_file):$/;"	kind:function	line:61
+__test_metrics	../bug_miner/Utils/MetricsUtil.py	/^def __test_metrics():$/;"	kind:function	line:57
+_git_checkout	../bug_miner/Utils/MetricsUtil.py	/^    def _git_checkout(commit_hash):$/;"	kind:member	line:38
+_run_ckjm	../bug_miner/Utils/MetricsUtil.py	/^    def _run_ckjm():$/;"	kind:member	line:30
+all_commits	../bug_miner/projects/raw/consolidate_commits.py	/^    all_commits = pd.read_csv("ant_commits.txt", delimiter="___", header=None)$/;"	kind:variable	line:7
+as_dataframe	../bug_miner/Utils/FileUtils.py	/^    def as_dataframe(self):$/;"	kind:member	line:74
+cmdline	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^        CLASSPATH, string.join(sys.argv[1:], ' '))$/;"	kind:variable	line:98
+cmdline	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^        CLASSPATH, string.join(sys.argv[1:], ' '))$/;"	kind:variable	line:98
+commits	../main.py	/^    commits = dict()$/;"	kind:variable	line:14
+consolidate_commits.py	../bug_miner/projects/raw/consolidate_commits.py	1;"	kind:file	line:1
+create_find_bugs_project	../bug_miner/Utils/DataUtil.py	/^def create_find_bugs_project(jar_path):$/;"	kind:function	line:42
+datetime	../bug_miner/Utils/MetricsUtil.py	/^from datetime import datetime$/;"	kind:namespace	line:8
+dateutil	../bug_miner/Utils/MetricsUtil.py	/^import dateutil$/;"	kind:namespace	line:9
+debug	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^debug = 0$/;"	kind:variable	line:34
+debug	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^debug = 0$/;"	kind:variable	line:34
+division	../bug_miner/Utils/DataUtil.py	/^from __future__ import division$/;"	kind:namespace	line:2
+division	../bug_miner/Utils/FileUtils.py	/^from __future__ import division$/;"	kind:namespace	line:1
+etree	../bug_miner/Utils/FileUtils.py	/^import xml.etree.ElementTree as ET$/;"	kind:namespace	line:7
+get_bugs	../bug_miner/Utils/FileUtils.py	/^    def get_bugs(self):$/;"	kind:member	line:94
+get_jar_paths	../bug_miner/Utils/DataUtil.py	/^def get_jar_paths():$/;"	kind:function	line:16
+get_metrics	../bug_miner/Utils/FileUtils.py	/^    def get_metrics(self):$/;"	kind:member	line:143
 getcwd	../main.py	/^from os import path, getcwd$/;"	kind:namespace	line:4
+glob	../bug_miner/Utils/DataUtil.py	/^from glob2 import glob$/;"	kind:namespace	line:7
+glob	../bug_miner/Utils/MetricsUtil.py	/^from glob2 import glob$/;"	kind:namespace	line:11
 glob	../main.py	/^from glob2 import glob$/;"	kind:namespace	line:7
-launcher_jar	../bug_miner/projects/raw/ant/src/script/runant.py	/^launcher_jar = os.path.join(ANT_LIB, 'ant-launcher.jar')$/;"	kind:variable	line:65
-main	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^def main():$/;"	kind:function	line:154
+json	../bug_miner/Utils/DataUtil.py	/^import json$/;"	kind:namespace	line:9
+json	../bug_miner/Utils/FileUtils.py	/^import json$/;"	kind:namespace	line:4
+launcher_jar	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^launcher_jar = os.path.join(ANT_LIB, 'ant-launcher.jar')$/;"	kind:variable	line:65
+launcher_jar	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^launcher_jar = os.path.join(ANT_LIB, 'ant-launcher.jar')$/;"	kind:variable	line:65
+m	../main.py	/^    m = JavaUtil(tags=commits$/;"	kind:variable	line:21
 main.py	../main.py	1;"	kind:file	line:1
-make_pkg	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^def make_pkg(pkg_dir, pkg_identifier, pkg_version, output_pkg_path):$/;"	kind:function	line:143
-make_temp_directory	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^def make_temp_directory():$/;"	kind:function	line:29
-os	../bug_miner/Utils/MetricsUtil.py	/^import os$/;"	kind:namespace	line:4
-os	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^    import argparse, collections, os.path, urlparse$/;"	kind:namespace	line:47
-os	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^import os$/;"	kind:namespace	line:22
-os	../bug_miner/projects/raw/ant/src/script/runant.py	/^import os, os.path, string, sys$/;"	kind:namespace	line:31
-path	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^    import argparse, collections, os.path, urlparse$/;"	kind:namespace	line:47
-path	../bug_miner/projects/raw/ant/src/script/runant.py	/^import os, os.path, string, sys$/;"	kind:namespace	line:31
+metrics_as_list	../bug_miner/Utils/FileUtils.py	/^    def metrics_as_list(self):$/;"	kind:member	line:112
+module_metrics	../bug_miner/Utils/FileUtils.py	/^    def module_metrics(self):$/;"	kind:member	line:50
+np	../bug_miner/Utils/FileUtils.py	/^import numpy as np$/;"	kind:namespace	line:10
+os	../bug_miner/Utils/DataUtil.py	/^import os$/;"	kind:namespace	line:4
+os	../bug_miner/Utils/FileUtils.py	/^import os$/;"	kind:namespace	line:5
+os	../bug_miner/Utils/MetricsUtil.py	/^import os$/;"	kind:namespace	line:2
+os	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^import os, os.path, string, sys$/;"	kind:namespace	line:31
+os	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^import os, os.path, string, sys$/;"	kind:namespace	line:31
+path	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^import os, os.path, string, sys$/;"	kind:namespace	line:31
+path	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^import os, os.path, string, sys$/;"	kind:namespace	line:31
 path	../main.py	/^from os import path, getcwd$/;"	kind:namespace	line:4
+pd	../bug_miner/Utils/FileUtils.py	/^import pandas as pd$/;"	kind:namespace	line:11
+pd	../bug_miner/Utils/MetricsUtil.py	/^import pandas as pd$/;"	kind:namespace	line:5
+pd	../bug_miner/projects/raw/consolidate_commits.py	/^import pandas as pd$/;"	kind:namespace	line:2
 pd	../main.py	/^import pandas as pd$/;"	kind:namespace	line:5
-print_function	../bug_miner/Utils/MetricsUtil.py	/^from __future__ import print_function$/;"	kind:namespace	line:2
+pprint	../bug_miner/Utils/DataUtil.py	/^from pprint import pprint$/;"	kind:namespace	line:8
+print_function	../bug_miner/Utils/DataUtil.py	/^from __future__ import print_function$/;"	kind:namespace	line:1
+print_function	../bug_miner/Utils/FileUtils.py	/^from __future__ import print_function$/;"	kind:namespace	line:2
+print_function	../bug_miner/Utils/MetricsUtil.py	/^from __future__ import print_function$/;"	kind:namespace	line:1
+print_function	../bug_miner/projects/raw/consolidate_commits.py	/^from __future__ import print_function$/;"	kind:namespace	line:1
 print_function	../main.py	/^from __future__ import print_function$/;"	kind:namespace	line:1
-pwd	../main.py	/^pwd = getcwd()$/;"	kind:variable	line:10
+pwd	../main.py	/^pwd = getcwd()$/;"	kind:variable	line:11
 re	../main.py	/^import re$/;"	kind:namespace	line:3
-root	../bug_miner/Utils/MetricsUtil.py	/^root = os.getcwd()$/;"	kind:variable	line:10
-runant.py	../bug_miner/projects/raw/ant/src/script/runant.py	1;"	kind:file	line:1
-save_metrics	../bug_miner/Utils/MetricsUtil.py	/^    def save_metrics(self):$/;"	kind:member	line:41
-self_closing_url	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^def self_closing_url(url):$/;"	kind:function	line:38
-set_trace	../bug_miner/Utils/MetricsUtil.py	/^from ipdb import set_trace$/;"	kind:namespace	line:6
+root	../bug_miner/Utils/DataUtil.py	/^root = os.path.join(os.getcwd().split("src")[0], "src")$/;"	kind:variable	line:11
+root	../bug_miner/Utils/FileUtils.py	/^root = os.path.join(os.getcwd().split("src")[0], "src")$/;"	kind:variable	line:13
+root	../bug_miner/Utils/MetricsUtil.py	/^root = os.path.join(os.getcwd().split("bug_miner")[0], "bug_miner")$/;"	kind:variable	line:15
+runant.py	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	1;"	kind:file	line:1
+runant.py	../bug_miner/projects/raw/ant/dist/bin/runant.py	1;"	kind:file	line:1
+save_as_csv	../bug_miner/Utils/FileUtils.py	/^    def save_as_csv(self):$/;"	kind:member	line:148
+save_as_csv	../bug_miner/Utils/FileUtils.py	/^    def save_as_csv(self):$/;"	kind:member	line:79
+save_metrics	../bug_miner/Utils/MetricsUtil.py	/^    def save_metrics(self):$/;"	kind:member	line:42
+set_trace	../bug_miner/Utils/DataUtil.py	/^from pdb import set_trace$/;"	kind:namespace	line:6
+set_trace	../bug_miner/Utils/FileUtils.py	/^from pdb import set_trace$/;"	kind:namespace	line:8
+set_trace	../bug_miner/Utils/MetricsUtil.py	/^from pdb import set_trace$/;"	kind:namespace	line:6
+set_trace	../bug_miner/projects/raw/consolidate_commits.py	/^from pdb import set_trace$/;"	kind:namespace	line:3
 set_trace	../main.py	/^from pdb import set_trace$/;"	kind:namespace	line:8
-shutil	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^    import shutil$/;"	kind:namespace	line:31
-shutil	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^    import shutil$/;"	kind:namespace	line:63
-shutil	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^    import shutil, zipfile$/;"	kind:namespace	line:92
+shlex	../bug_miner/Utils/MetricsUtil.py	/^import shlex$/;"	kind:namespace	line:4
 sp	../main.py	/^import subprocess as sp$/;"	kind:namespace	line:6
-string	../bug_miner/projects/raw/ant/src/script/runant.py	/^import os, os.path, string, sys$/;"	kind:namespace	line:31
-subprocess	../bug_miner/Utils/MetricsUtil.py	/^import subprocess$/;"	kind:namespace	line:5
-subprocess	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^    import subprocess$/;"	kind:namespace	line:144
-sys	../bug_miner/projects/raw/ant/src/script/runant.py	/^import os, os.path, string, sys$/;"	kind:namespace	line:31
-tag	../main.py	/^            tag = re.sub("rel\/|,", "", tag)$/;"	kind:variable	line:17
-tempfile	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^    import tempfile$/;"	kind:namespace	line:32
-tempfile	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^    import tempfile$/;"	kind:namespace	line:78
-uncompress_contents	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^def uncompress_contents(temp_dir, archive_file, directory_name, path_prefix):$/;"	kind:function	line:86
-urllib2	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^    import urllib2$/;"	kind:namespace	line:40
-urllib2	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^    import urllib2$/;"	kind:namespace	line:64
-urlparse	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^    import argparse, collections, os.path, urlparse$/;"	kind:namespace	line:47
-write_paths_d_entry	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^def write_paths_d_entry(paths_d_directory, filename):$/;"	kind:function	line:137
-zipfile	../bug_miner/projects/raw/ant/release/build-osx-pkg.py	/^    import shutil, zipfile$/;"	kind:namespace	line:92
+stitch_bugs	../bug_miner/Utils/FileUtils.py	/^    def stitch_bugs(metrics, bugs):$/;"	kind:member	line:108
+string	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^import os, os.path, string, sys$/;"	kind:namespace	line:31
+string	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^import os, os.path, string, sys$/;"	kind:namespace	line:31
+subprocess	../bug_miner/Utils/MetricsUtil.py	/^import subprocess$/;"	kind:namespace	line:10
+sys	../bug_miner/Utils/DataUtil.py	/^import sys$/;"	kind:namespace	line:5
+sys	../bug_miner/Utils/FileUtils.py	/^import sys$/;"	kind:namespace	line:6
+sys	../bug_miner/Utils/MetricsUtil.py	/^import sys$/;"	kind:namespace	line:3
+sys	../bug_miner/projects/raw/ant/bootstrap/bin/runant.py	/^import os, os.path, string, sys$/;"	kind:namespace	line:31
+sys	../bug_miner/projects/raw/ant/dist/bin/runant.py	/^import os, os.path, string, sys$/;"	kind:namespace	line:31
+tag	../main.py	/^            tag = re.sub("rel\/|,|\\)", "", tag)$/;"	kind:variable	line:18
+tags	../bug_miner/projects/raw/consolidate_commits.py	/^    tags = pd.read_csv("ant_tags.csv", delimiter="  ", header=None)$/;"	kind:variable	line:6
+unpack_aggregate	../bug_miner/Utils/FileUtils.py	/^    def unpack_aggregate(aggregate_dict):$/;"	kind:member	line:25
+warnings	../bug_miner/Utils/MetricsUtil.py	/^import warnings$/;"	kind:namespace	line:7
+warp_fbp	../bug_miner/Utils/DataUtil.py	/^    def warp_fbp(version, jarfiles):$/;"	kind:function	line:47
+xml	../bug_miner/Utils/FileUtils.py	/^import xml.etree.ElementTree as ET$/;"	kind:namespace	line:7
