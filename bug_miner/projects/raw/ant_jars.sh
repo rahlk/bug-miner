@@ -5,10 +5,10 @@ cat ant_tags.csv| while read line
     hash=$(echo $line | cut -f3 -d' ')
     version=$(echo $line | cut -f4 -d' ')
 
-    # Go to project directory 
+    # Go to project directory
     cd ant
     git checkout -f $hash
     sh build.sh
-    cp ./build/lib/ant.jar ../../jars/ant/ant-$version.jar
+    find build -name '*.class' -print | java -jar ~/ckjm/target/runable-ckjm_ext-2.3-SNAPSHOT.jar -x 
     cd ..
   done
